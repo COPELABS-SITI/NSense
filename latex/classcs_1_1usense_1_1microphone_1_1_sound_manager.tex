@@ -1,0 +1,263 @@
+\hypertarget{classcs_1_1usense_1_1microphone_1_1_sound_manager}{}\section{cs.\+usense.\+microphone.\+Sound\+Manager Class Reference}
+\label{classcs_1_1usense_1_1microphone_1_1_sound_manager}\index{cs.\+usense.\+microphone.\+Sound\+Manager@{cs.\+usense.\+microphone.\+Sound\+Manager}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcs_1_1usense_1_1microphone_1_1_sound_manager_a19056164df8fe6de6f14e92e55de2b8a}{Sound\+Manager} (\hyperlink{classcs_1_1usense_1_1_usense_service}{Usense\+Service} callback)
+\item 
+void \hyperlink{classcs_1_1usense_1_1microphone_1_1_sound_manager_ae7631d35a3f90932b3c568f2cc6ddc6b}{start} ()
+\item 
+void \hyperlink{classcs_1_1usense_1_1microphone_1_1_sound_manager_af050c3c4176f1b7bbc2d955ba0e7fd60}{stop} ()
+\item 
+double \hyperlink{classcs_1_1usense_1_1microphone_1_1_sound_manager_a4992e80dd01380fd08ee9993627f241b}{sound\+Db} ()
+\item 
+double \hyperlink{classcs_1_1usense_1_1microphone_1_1_sound_manager_a454733a8ba799e043203904ec1e71226}{get\+Max\+Amplitude} ()
+\item 
+double \hyperlink{classcs_1_1usense_1_1microphone_1_1_sound_manager_a57d2557c71f38c878c8833e60534993b}{get\+Amplitude\+H\+P\+F} ()
+\item 
+void \hyperlink{classcs_1_1usense_1_1microphone_1_1_sound_manager_a79876b56d977cb0f37b63cba2a83d480}{set\+Sound\+Listener} (\hyperlink{interfacecs_1_1usense_1_1microphone_1_1_sound_listener}{Sound\+Listener} listener)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static boolean \hyperlink{classcs_1_1usense_1_1microphone_1_1_sound_manager_aea1e2aeefef904f814ab832f1b5e3a43}{mic\+Exist} (Context context)
+\item 
+static boolean \hyperlink{classcs_1_1usense_1_1microphone_1_1_sound_manager_a0de5a00d32015ff0df267cc54738782b}{is\+Capturing} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final double \hyperlink{classcs_1_1usense_1_1microphone_1_1_sound_manager_ae0b25469186700acabc09e655fb8bfe9}{A\+M\+P} = 1.\+0
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Dialog \hyperlink{classcs_1_1usense_1_1microphone_1_1_sound_manager_ac4afe4d33872868da936f44ac4d3fd09}{show\+Dialog} (String id)
+\item 
+static void \hyperlink{classcs_1_1usense_1_1microphone_1_1_sound_manager_a2b58d527d8f9b6d31aa74e3cd622ab99}{finish} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{classcs_1_1usense_1_1microphone_1_1_sound_manager_a579a2ba7e02772e9f0460cf3cb3e1f4b}{avgd\+B}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Package\+Manager \hyperlink{classcs_1_1usense_1_1microphone_1_1_sound_manager_a4c960477f018d76591a7d743dfe23e4f}{get\+Package\+Manager} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Media\+Recorder \hyperlink{classcs_1_1usense_1_1microphone_1_1_sound_manager_a9ef598c38a43c11b72944957704b07e4}{m\+Recorder} = null
+\item 
+double \hyperlink{classcs_1_1usense_1_1microphone_1_1_sound_manager_a084f0ee4775fa8409368743eaa35c261}{h\+P\+F} = 0.\+0
+\item 
+Runnable \hyperlink{classcs_1_1usense_1_1microphone_1_1_sound_manager_a654ce160547e8ea92271b68ebb11a6b2}{m\+Run\+Pool}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static Context \hyperlink{classcs_1_1usense_1_1microphone_1_1_sound_manager_a5a69cb1ee55ad355470977fd94a9b190}{m\+Context}
+\item 
+static final double \hyperlink{classcs_1_1usense_1_1microphone_1_1_sound_manager_ace3edd2393c86123473d78860e48ee6a}{H\+P\+F\+\_\+\+F\+I\+L\+T\+E\+R} = 0.\+97
+\item 
+static final String \hyperlink{classcs_1_1usense_1_1microphone_1_1_sound_manager_ab8c335dc6f2b49d508849e61a044b60c}{F\+E\+A\+T\+U\+R\+E\+\_\+\+N\+O\+T\+\_\+\+A\+V\+A\+I\+L\+B\+L\+E} = null
+\item 
+static final int \hyperlink{classcs_1_1usense_1_1microphone_1_1_sound_manager_a402c544cc461ed5f455b1ae97fd6cbbc}{P\+O\+L\+L\+\_\+\+I\+N\+T\+E\+R\+V\+A\+L} = 300
+\item 
+static Boolean \hyperlink{classcs_1_1usense_1_1microphone_1_1_sound_manager_ae449a315ff7fb69c5b46ed55145d4e35}{mic\+Exist}
+\item 
+static boolean \hyperlink{classcs_1_1usense_1_1microphone_1_1_sound_manager_ac33ab3ce4cf4d4c09406fb509ab30bcc}{capturing} = false
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This gives us the filtered sound frequency, and converion to amplitude. In this class we implement two filters which are E\+M\+A and H\+P\+F filters. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcs_1_1usense_1_1microphone_1_1_sound_manager_a19056164df8fe6de6f14e92e55de2b8a}{}\index{cs\+::usense\+::microphone\+::\+Sound\+Manager@{cs\+::usense\+::microphone\+::\+Sound\+Manager}!Sound\+Manager@{Sound\+Manager}}
+\index{Sound\+Manager@{Sound\+Manager}!cs\+::usense\+::microphone\+::\+Sound\+Manager@{cs\+::usense\+::microphone\+::\+Sound\+Manager}}
+\subsubsection[{Sound\+Manager(\+Usense\+Service callback)}]{\setlength{\rightskip}{0pt plus 5cm}cs.\+usense.\+microphone.\+Sound\+Manager.\+Sound\+Manager (
+\begin{DoxyParamCaption}
+\item[{{\bf Usense\+Service}}]{callback}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1microphone_1_1_sound_manager_a19056164df8fe6de6f14e92e55de2b8a}
+This method construct the \hyperlink{classcs_1_1usense_1_1microphone_1_1_sound_manager}{Sound\+Manager} 
+\begin{DoxyParams}{Parameters}
+{\em callback} & Supply functionality for \hyperlink{classcs_1_1usense_1_1_usense_activity}{Usense\+Activity} to use \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcs_1_1usense_1_1microphone_1_1_sound_manager_a2b58d527d8f9b6d31aa74e3cd622ab99}{}\index{cs\+::usense\+::microphone\+::\+Sound\+Manager@{cs\+::usense\+::microphone\+::\+Sound\+Manager}!finish@{finish}}
+\index{finish@{finish}!cs\+::usense\+::microphone\+::\+Sound\+Manager@{cs\+::usense\+::microphone\+::\+Sound\+Manager}}
+\subsubsection[{finish()}]{\setlength{\rightskip}{0pt plus 5cm}static void cs.\+usense.\+microphone.\+Sound\+Manager.\+finish (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}\label{classcs_1_1usense_1_1microphone_1_1_sound_manager_a2b58d527d8f9b6d31aa74e3cd622ab99}
+This method to finish \hypertarget{classcs_1_1usense_1_1microphone_1_1_sound_manager_a57d2557c71f38c878c8833e60534993b}{}\index{cs\+::usense\+::microphone\+::\+Sound\+Manager@{cs\+::usense\+::microphone\+::\+Sound\+Manager}!get\+Amplitude\+H\+P\+F@{get\+Amplitude\+H\+P\+F}}
+\index{get\+Amplitude\+H\+P\+F@{get\+Amplitude\+H\+P\+F}!cs\+::usense\+::microphone\+::\+Sound\+Manager@{cs\+::usense\+::microphone\+::\+Sound\+Manager}}
+\subsubsection[{get\+Amplitude\+H\+P\+F()}]{\setlength{\rightskip}{0pt plus 5cm}double cs.\+usense.\+microphone.\+Sound\+Manager.\+get\+Amplitude\+H\+P\+F (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1microphone_1_1_sound_manager_a57d2557c71f38c878c8833e60534993b}
+This method is to apply the sound filter to supress some noise on the captured sound wave In this method implemented two filters namely E\+M\+A and H\+P\+F Either the filter we can choose
+
+Highpass Pre-\/emphasizing Filter h\+P\+F y(n) = x(n)-\/0.\+97$\ast$x(n-\/1)
+
+E\+M\+A Filter E\+M\+A yk = a $\ast$ xk+(1-\/a)yk-\/1 \begin{DoxyReturn}{Returns}
+hpf Highpass Pre-\/emphasizing Filter 
+\end{DoxyReturn}
+\hypertarget{classcs_1_1usense_1_1microphone_1_1_sound_manager_a454733a8ba799e043203904ec1e71226}{}\index{cs\+::usense\+::microphone\+::\+Sound\+Manager@{cs\+::usense\+::microphone\+::\+Sound\+Manager}!get\+Max\+Amplitude@{get\+Max\+Amplitude}}
+\index{get\+Max\+Amplitude@{get\+Max\+Amplitude}!cs\+::usense\+::microphone\+::\+Sound\+Manager@{cs\+::usense\+::microphone\+::\+Sound\+Manager}}
+\subsubsection[{get\+Max\+Amplitude()}]{\setlength{\rightskip}{0pt plus 5cm}double cs.\+usense.\+microphone.\+Sound\+Manager.\+get\+Max\+Amplitude (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1microphone_1_1_sound_manager_a454733a8ba799e043203904ec1e71226}
+This method extract the maximum sound amplitude by using Android method \hyperlink{classcs_1_1usense_1_1microphone_1_1_sound_manager_a454733a8ba799e043203904ec1e71226}{get\+Max\+Amplitude()} \begin{DoxyReturn}{Returns}
+get\+Max\+Amplitude null or maximum amplitude of captured sound wave 
+\end{DoxyReturn}
+\hypertarget{classcs_1_1usense_1_1microphone_1_1_sound_manager_a4c960477f018d76591a7d743dfe23e4f}{}\index{cs\+::usense\+::microphone\+::\+Sound\+Manager@{cs\+::usense\+::microphone\+::\+Sound\+Manager}!get\+Package\+Manager@{get\+Package\+Manager}}
+\index{get\+Package\+Manager@{get\+Package\+Manager}!cs\+::usense\+::microphone\+::\+Sound\+Manager@{cs\+::usense\+::microphone\+::\+Sound\+Manager}}
+\subsubsection[{get\+Package\+Manager()}]{\setlength{\rightskip}{0pt plus 5cm}static Package\+Manager cs.\+usense.\+microphone.\+Sound\+Manager.\+get\+Package\+Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classcs_1_1usense_1_1microphone_1_1_sound_manager_a4c960477f018d76591a7d743dfe23e4f}
+\hypertarget{classcs_1_1usense_1_1microphone_1_1_sound_manager_a0de5a00d32015ff0df267cc54738782b}{}\index{cs\+::usense\+::microphone\+::\+Sound\+Manager@{cs\+::usense\+::microphone\+::\+Sound\+Manager}!is\+Capturing@{is\+Capturing}}
+\index{is\+Capturing@{is\+Capturing}!cs\+::usense\+::microphone\+::\+Sound\+Manager@{cs\+::usense\+::microphone\+::\+Sound\+Manager}}
+\subsubsection[{is\+Capturing()}]{\setlength{\rightskip}{0pt plus 5cm}static boolean cs.\+usense.\+microphone.\+Sound\+Manager.\+is\+Capturing (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classcs_1_1usense_1_1microphone_1_1_sound_manager_a0de5a00d32015ff0df267cc54738782b}
+This method returns true if capturing the sound \begin{DoxyReturn}{Returns}
+capturing Checks whether it is capturing or not 
+\end{DoxyReturn}
+\hypertarget{classcs_1_1usense_1_1microphone_1_1_sound_manager_aea1e2aeefef904f814ab832f1b5e3a43}{}\index{cs\+::usense\+::microphone\+::\+Sound\+Manager@{cs\+::usense\+::microphone\+::\+Sound\+Manager}!mic\+Exist@{mic\+Exist}}
+\index{mic\+Exist@{mic\+Exist}!cs\+::usense\+::microphone\+::\+Sound\+Manager@{cs\+::usense\+::microphone\+::\+Sound\+Manager}}
+\subsubsection[{mic\+Exist(\+Context context)}]{\setlength{\rightskip}{0pt plus 5cm}static boolean cs.\+usense.\+microphone.\+Sound\+Manager.\+mic\+Exist (
+\begin{DoxyParamCaption}
+\item[{Context}]{context}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classcs_1_1usense_1_1microphone_1_1_sound_manager_aea1e2aeefef904f814ab832f1b5e3a43}
+This method checks whether the microphone exists in the device or not 
+\begin{DoxyParams}{Parameters}
+{\em context} & Interface to global information about an application environment \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if device exists, dialog otherwise 
+\end{DoxyReturn}
+\hypertarget{classcs_1_1usense_1_1microphone_1_1_sound_manager_a79876b56d977cb0f37b63cba2a83d480}{}\index{cs\+::usense\+::microphone\+::\+Sound\+Manager@{cs\+::usense\+::microphone\+::\+Sound\+Manager}!set\+Sound\+Listener@{set\+Sound\+Listener}}
+\index{set\+Sound\+Listener@{set\+Sound\+Listener}!cs\+::usense\+::microphone\+::\+Sound\+Manager@{cs\+::usense\+::microphone\+::\+Sound\+Manager}}
+\subsubsection[{set\+Sound\+Listener(\+Sound\+Listener listener)}]{\setlength{\rightskip}{0pt plus 5cm}void cs.\+usense.\+microphone.\+Sound\+Manager.\+set\+Sound\+Listener (
+\begin{DoxyParamCaption}
+\item[{{\bf Sound\+Listener}}]{listener}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1microphone_1_1_sound_manager_a79876b56d977cb0f37b63cba2a83d480}
+This method set the \hyperlink{interfacecs_1_1usense_1_1microphone_1_1_sound_listener}{Sound\+Listener} 
+\begin{DoxyParams}{Parameters}
+{\em listener} & the \hyperlink{interfacecs_1_1usense_1_1microphone_1_1_sound_listener}{Sound\+Listener} \\
+\hline
+\end{DoxyParams}
+\hypertarget{classcs_1_1usense_1_1microphone_1_1_sound_manager_ac4afe4d33872868da936f44ac4d3fd09}{}\index{cs\+::usense\+::microphone\+::\+Sound\+Manager@{cs\+::usense\+::microphone\+::\+Sound\+Manager}!show\+Dialog@{show\+Dialog}}
+\index{show\+Dialog@{show\+Dialog}!cs\+::usense\+::microphone\+::\+Sound\+Manager@{cs\+::usense\+::microphone\+::\+Sound\+Manager}}
+\subsubsection[{show\+Dialog(\+String id)}]{\setlength{\rightskip}{0pt plus 5cm}static Dialog cs.\+usense.\+microphone.\+Sound\+Manager.\+show\+Dialog (
+\begin{DoxyParamCaption}
+\item[{String}]{id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}\label{classcs_1_1usense_1_1microphone_1_1_sound_manager_ac4afe4d33872868da936f44ac4d3fd09}
+This method shows the dailog 
+\begin{DoxyParams}{Parameters}
+{\em id} & String which provide the availability of feature \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True/\+False if Feature not available/\+Feature is available 
+\end{DoxyReturn}
+\hypertarget{classcs_1_1usense_1_1microphone_1_1_sound_manager_a4992e80dd01380fd08ee9993627f241b}{}\index{cs\+::usense\+::microphone\+::\+Sound\+Manager@{cs\+::usense\+::microphone\+::\+Sound\+Manager}!sound\+Db@{sound\+Db}}
+\index{sound\+Db@{sound\+Db}!cs\+::usense\+::microphone\+::\+Sound\+Manager@{cs\+::usense\+::microphone\+::\+Sound\+Manager}}
+\subsubsection[{sound\+Db()}]{\setlength{\rightskip}{0pt plus 5cm}double cs.\+usense.\+microphone.\+Sound\+Manager.\+sound\+Db (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1microphone_1_1_sound_manager_a4992e80dd01380fd08ee9993627f241b}
+This method convert the received sound apmlitude into decibels by using acustic wave equation \begin{DoxyReturn}{Returns}
+sound in amplitude 
+\end{DoxyReturn}
+\hypertarget{classcs_1_1usense_1_1microphone_1_1_sound_manager_ae7631d35a3f90932b3c568f2cc6ddc6b}{}\index{cs\+::usense\+::microphone\+::\+Sound\+Manager@{cs\+::usense\+::microphone\+::\+Sound\+Manager}!start@{start}}
+\index{start@{start}!cs\+::usense\+::microphone\+::\+Sound\+Manager@{cs\+::usense\+::microphone\+::\+Sound\+Manager}}
+\subsubsection[{start()}]{\setlength{\rightskip}{0pt plus 5cm}void cs.\+usense.\+microphone.\+Sound\+Manager.\+start (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1microphone_1_1_sound_manager_ae7631d35a3f90932b3c568f2cc6ddc6b}
+This method intialise the Media recorder. Media Recorder is used to start microhphone activity by collecting sound samples captured dynamically. The process takes place in the temporary file of the users device. \hypertarget{classcs_1_1usense_1_1microphone_1_1_sound_manager_af050c3c4176f1b7bbc2d955ba0e7fd60}{}\index{cs\+::usense\+::microphone\+::\+Sound\+Manager@{cs\+::usense\+::microphone\+::\+Sound\+Manager}!stop@{stop}}
+\index{stop@{stop}!cs\+::usense\+::microphone\+::\+Sound\+Manager@{cs\+::usense\+::microphone\+::\+Sound\+Manager}}
+\subsubsection[{stop()}]{\setlength{\rightskip}{0pt plus 5cm}void cs.\+usense.\+microphone.\+Sound\+Manager.\+stop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1microphone_1_1_sound_manager_af050c3c4176f1b7bbc2d955ba0e7fd60}
+This method stop the media recorder 
+
+\subsection{Member Data Documentation}
+\hypertarget{classcs_1_1usense_1_1microphone_1_1_sound_manager_ae0b25469186700acabc09e655fb8bfe9}{}\index{cs\+::usense\+::microphone\+::\+Sound\+Manager@{cs\+::usense\+::microphone\+::\+Sound\+Manager}!A\+M\+P@{A\+M\+P}}
+\index{A\+M\+P@{A\+M\+P}!cs\+::usense\+::microphone\+::\+Sound\+Manager@{cs\+::usense\+::microphone\+::\+Sound\+Manager}}
+\subsubsection[{A\+M\+P}]{\setlength{\rightskip}{0pt plus 5cm}final double cs.\+usense.\+microphone.\+Sound\+Manager.\+A\+M\+P = 1.\+0\hspace{0.3cm}{\ttfamily [static]}}\label{classcs_1_1usense_1_1microphone_1_1_sound_manager_ae0b25469186700acabc09e655fb8bfe9}
+This variable to set the Amplitude \hypertarget{classcs_1_1usense_1_1microphone_1_1_sound_manager_a579a2ba7e02772e9f0460cf3cb3e1f4b}{}\index{cs\+::usense\+::microphone\+::\+Sound\+Manager@{cs\+::usense\+::microphone\+::\+Sound\+Manager}!avgd\+B@{avgd\+B}}
+\index{avgd\+B@{avgd\+B}!cs\+::usense\+::microphone\+::\+Sound\+Manager@{cs\+::usense\+::microphone\+::\+Sound\+Manager}}
+\subsubsection[{avgd\+B}]{\setlength{\rightskip}{0pt plus 5cm}double cs.\+usense.\+microphone.\+Sound\+Manager.\+avgd\+B\hspace{0.3cm}{\ttfamily [protected]}}\label{classcs_1_1usense_1_1microphone_1_1_sound_manager_a579a2ba7e02772e9f0460cf3cb3e1f4b}
+This variable to access average decibles \hypertarget{classcs_1_1usense_1_1microphone_1_1_sound_manager_ac33ab3ce4cf4d4c09406fb509ab30bcc}{}\index{cs\+::usense\+::microphone\+::\+Sound\+Manager@{cs\+::usense\+::microphone\+::\+Sound\+Manager}!capturing@{capturing}}
+\index{capturing@{capturing}!cs\+::usense\+::microphone\+::\+Sound\+Manager@{cs\+::usense\+::microphone\+::\+Sound\+Manager}}
+\subsubsection[{capturing}]{\setlength{\rightskip}{0pt plus 5cm}boolean cs.\+usense.\+microphone.\+Sound\+Manager.\+capturing = false\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classcs_1_1usense_1_1microphone_1_1_sound_manager_ac33ab3ce4cf4d4c09406fb509ab30bcc}
+This variable to check the capturing \hypertarget{classcs_1_1usense_1_1microphone_1_1_sound_manager_ab8c335dc6f2b49d508849e61a044b60c}{}\index{cs\+::usense\+::microphone\+::\+Sound\+Manager@{cs\+::usense\+::microphone\+::\+Sound\+Manager}!F\+E\+A\+T\+U\+R\+E\+\_\+\+N\+O\+T\+\_\+\+A\+V\+A\+I\+L\+B\+L\+E@{F\+E\+A\+T\+U\+R\+E\+\_\+\+N\+O\+T\+\_\+\+A\+V\+A\+I\+L\+B\+L\+E}}
+\index{F\+E\+A\+T\+U\+R\+E\+\_\+\+N\+O\+T\+\_\+\+A\+V\+A\+I\+L\+B\+L\+E@{F\+E\+A\+T\+U\+R\+E\+\_\+\+N\+O\+T\+\_\+\+A\+V\+A\+I\+L\+B\+L\+E}!cs\+::usense\+::microphone\+::\+Sound\+Manager@{cs\+::usense\+::microphone\+::\+Sound\+Manager}}
+\subsubsection[{F\+E\+A\+T\+U\+R\+E\+\_\+\+N\+O\+T\+\_\+\+A\+V\+A\+I\+L\+B\+L\+E}]{\setlength{\rightskip}{0pt plus 5cm}final String cs.\+usense.\+microphone.\+Sound\+Manager.\+F\+E\+A\+T\+U\+R\+E\+\_\+\+N\+O\+T\+\_\+\+A\+V\+A\+I\+L\+B\+L\+E = null\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classcs_1_1usense_1_1microphone_1_1_sound_manager_ab8c335dc6f2b49d508849e61a044b60c}
+This variable to check the Feature is not available \hypertarget{classcs_1_1usense_1_1microphone_1_1_sound_manager_a084f0ee4775fa8409368743eaa35c261}{}\index{cs\+::usense\+::microphone\+::\+Sound\+Manager@{cs\+::usense\+::microphone\+::\+Sound\+Manager}!h\+P\+F@{h\+P\+F}}
+\index{h\+P\+F@{h\+P\+F}!cs\+::usense\+::microphone\+::\+Sound\+Manager@{cs\+::usense\+::microphone\+::\+Sound\+Manager}}
+\subsubsection[{h\+P\+F}]{\setlength{\rightskip}{0pt plus 5cm}double cs.\+usense.\+microphone.\+Sound\+Manager.\+h\+P\+F = 0.\+0\hspace{0.3cm}{\ttfamily [private]}}\label{classcs_1_1usense_1_1microphone_1_1_sound_manager_a084f0ee4775fa8409368743eaa35c261}
+This variable to set the High pass filter \hypertarget{classcs_1_1usense_1_1microphone_1_1_sound_manager_ace3edd2393c86123473d78860e48ee6a}{}\index{cs\+::usense\+::microphone\+::\+Sound\+Manager@{cs\+::usense\+::microphone\+::\+Sound\+Manager}!H\+P\+F\+\_\+\+F\+I\+L\+T\+E\+R@{H\+P\+F\+\_\+\+F\+I\+L\+T\+E\+R}}
+\index{H\+P\+F\+\_\+\+F\+I\+L\+T\+E\+R@{H\+P\+F\+\_\+\+F\+I\+L\+T\+E\+R}!cs\+::usense\+::microphone\+::\+Sound\+Manager@{cs\+::usense\+::microphone\+::\+Sound\+Manager}}
+\subsubsection[{H\+P\+F\+\_\+\+F\+I\+L\+T\+E\+R}]{\setlength{\rightskip}{0pt plus 5cm}final double cs.\+usense.\+microphone.\+Sound\+Manager.\+H\+P\+F\+\_\+\+F\+I\+L\+T\+E\+R = 0.\+97\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classcs_1_1usense_1_1microphone_1_1_sound_manager_ace3edd2393c86123473d78860e48ee6a}
+This variable to set the filter for High pass filter \hypertarget{classcs_1_1usense_1_1microphone_1_1_sound_manager_a5a69cb1ee55ad355470977fd94a9b190}{}\index{cs\+::usense\+::microphone\+::\+Sound\+Manager@{cs\+::usense\+::microphone\+::\+Sound\+Manager}!m\+Context@{m\+Context}}
+\index{m\+Context@{m\+Context}!cs\+::usense\+::microphone\+::\+Sound\+Manager@{cs\+::usense\+::microphone\+::\+Sound\+Manager}}
+\subsubsection[{m\+Context}]{\setlength{\rightskip}{0pt plus 5cm}Context cs.\+usense.\+microphone.\+Sound\+Manager.\+m\+Context\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classcs_1_1usense_1_1microphone_1_1_sound_manager_a5a69cb1ee55ad355470977fd94a9b190}
+Interface to global information about an application environment. \hypertarget{classcs_1_1usense_1_1microphone_1_1_sound_manager_ae449a315ff7fb69c5b46ed55145d4e35}{}\index{cs\+::usense\+::microphone\+::\+Sound\+Manager@{cs\+::usense\+::microphone\+::\+Sound\+Manager}!mic\+Exist@{mic\+Exist}}
+\index{mic\+Exist@{mic\+Exist}!cs\+::usense\+::microphone\+::\+Sound\+Manager@{cs\+::usense\+::microphone\+::\+Sound\+Manager}}
+\subsubsection[{mic\+Exist}]{\setlength{\rightskip}{0pt plus 5cm}Boolean cs.\+usense.\+microphone.\+Sound\+Manager.\+mic\+Exist\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classcs_1_1usense_1_1microphone_1_1_sound_manager_ae449a315ff7fb69c5b46ed55145d4e35}
+This variable to check the microphone is exist \hypertarget{classcs_1_1usense_1_1microphone_1_1_sound_manager_a9ef598c38a43c11b72944957704b07e4}{}\index{cs\+::usense\+::microphone\+::\+Sound\+Manager@{cs\+::usense\+::microphone\+::\+Sound\+Manager}!m\+Recorder@{m\+Recorder}}
+\index{m\+Recorder@{m\+Recorder}!cs\+::usense\+::microphone\+::\+Sound\+Manager@{cs\+::usense\+::microphone\+::\+Sound\+Manager}}
+\subsubsection[{m\+Recorder}]{\setlength{\rightskip}{0pt plus 5cm}Media\+Recorder cs.\+usense.\+microphone.\+Sound\+Manager.\+m\+Recorder = null\hspace{0.3cm}{\ttfamily [private]}}\label{classcs_1_1usense_1_1microphone_1_1_sound_manager_a9ef598c38a43c11b72944957704b07e4}
+This class is Used to record audio. \hypertarget{classcs_1_1usense_1_1microphone_1_1_sound_manager_a654ce160547e8ea92271b68ebb11a6b2}{}\index{cs\+::usense\+::microphone\+::\+Sound\+Manager@{cs\+::usense\+::microphone\+::\+Sound\+Manager}!m\+Run\+Pool@{m\+Run\+Pool}}
+\index{m\+Run\+Pool@{m\+Run\+Pool}!cs\+::usense\+::microphone\+::\+Sound\+Manager@{cs\+::usense\+::microphone\+::\+Sound\+Manager}}
+\subsubsection[{m\+Run\+Pool}]{\setlength{\rightskip}{0pt plus 5cm}Runnable cs.\+usense.\+microphone.\+Sound\+Manager.\+m\+Run\+Pool\hspace{0.3cm}{\ttfamily [private]}}\label{classcs_1_1usense_1_1microphone_1_1_sound_manager_a654ce160547e8ea92271b68ebb11a6b2}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \textcolor{keyword}{new} Runnable() \{
+        @Override
+        \textcolor{keyword}{public} \textcolor{keywordtype}{void} run() \{
+            \textcolor{keywordflow}{if}(\hyperlink{classcs_1_1usense_1_1microphone_1_1_sound_manager_a0de5a00d32015ff0df267cc54738782b}{isCapturing}())\{
+                \hyperlink{classcs_1_1usense_1_1microphone_1_1_sound_manager_af050c3c4176f1b7bbc2d955ba0e7fd60}{stop}();
+            \}\textcolor{keywordflow}{else}\{
+                Toast.makeText(\hyperlink{classcs_1_1usense_1_1microphone_1_1_sound_manager_a5a69cb1ee55ad355470977fd94a9b190}{mContext}, \textcolor{stringliteral}{"Error enabling Microphone Closing..."}, Toast.LENGTH\_SHORT
+      ).show();
+                \hyperlink{classcs_1_1usense_1_1microphone_1_1_sound_manager_af050c3c4176f1b7bbc2d955ba0e7fd60}{stop}();
+            \}
+        \}
+    \}
+\end{DoxyCode}
+\hypertarget{classcs_1_1usense_1_1microphone_1_1_sound_manager_a402c544cc461ed5f455b1ae97fd6cbbc}{}\index{cs\+::usense\+::microphone\+::\+Sound\+Manager@{cs\+::usense\+::microphone\+::\+Sound\+Manager}!P\+O\+L\+L\+\_\+\+I\+N\+T\+E\+R\+V\+A\+L@{P\+O\+L\+L\+\_\+\+I\+N\+T\+E\+R\+V\+A\+L}}
+\index{P\+O\+L\+L\+\_\+\+I\+N\+T\+E\+R\+V\+A\+L@{P\+O\+L\+L\+\_\+\+I\+N\+T\+E\+R\+V\+A\+L}!cs\+::usense\+::microphone\+::\+Sound\+Manager@{cs\+::usense\+::microphone\+::\+Sound\+Manager}}
+\subsubsection[{P\+O\+L\+L\+\_\+\+I\+N\+T\+E\+R\+V\+A\+L}]{\setlength{\rightskip}{0pt plus 5cm}final int cs.\+usense.\+microphone.\+Sound\+Manager.\+P\+O\+L\+L\+\_\+\+I\+N\+T\+E\+R\+V\+A\+L = 300\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classcs_1_1usense_1_1microphone_1_1_sound_manager_a402c544cc461ed5f455b1ae97fd6cbbc}
+This variable to set the poll interval 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/cs/usense/microphone/\hyperlink{_sound_manager_8java}{Sound\+Manager.\+java}\end{DoxyCompactItemize}

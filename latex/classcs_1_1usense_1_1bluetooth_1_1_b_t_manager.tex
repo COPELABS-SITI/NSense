@@ -1,0 +1,278 @@
+\hypertarget{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager}{}\section{cs.\+usense.\+bluetooth.\+B\+T\+Manager Class Reference}
+\label{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager}\index{cs.\+usense.\+bluetooth.\+B\+T\+Manager@{cs.\+usense.\+bluetooth.\+B\+T\+Manager}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries adapter\+Broadcast\+Receiver}
+\item 
+class {\bfseries Find\+Bluetooth\+Device}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_af895e31c32ccd84b460196192d2a14eb}{B\+T\+Manager} (Context c)
+\item 
+void \hyperlink{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_a8afc2effffd2aedb21a324c3b238861a}{close} (Context c)
+\item 
+void \hyperlink{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_adb39d12e1183bcb07676123c59d5b085}{start\+Periodic\+Scanning} ()
+\item 
+boolean \hyperlink{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_ae7dbf04ed9779907a153dde734da6086}{is\+B\+T\+Enabled} ()
+\item 
+boolean \hyperlink{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_ae1f12992264846080805558d2cd69120}{enable\+B\+T} ()
+\item 
+boolean \hyperlink{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_aa8e2b14cdca7d30dd853b8540e3a011c}{start\+Discovery} ()
+\item 
+void \hyperlink{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_a7589599079a1761477e044daa97008af}{set\+On\+B\+T\+Change\+Listener} (\hyperlink{interfacecs_1_1usense_1_1bluetooth_1_1_b_t_device_finder}{B\+T\+Device\+Finder} \hyperlink{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_a7210126f7a9be3ab7bc154a0526c18ad}{listener})
+\item 
+void \hyperlink{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_a2eb24bf47a6174389c8805b2e1907d39}{clear\+On\+B\+T\+Change\+Listener} ()
+\item 
+List$<$ String $>$ \hyperlink{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_ae2e0b0bbc2ec9ffd6cdb45d6d8da8f8c}{get\+Local\+Info} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+boolean \hyperlink{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_ab3a60155e936f776929704c2b44d45cc}{is\+Scanning\+Active} = false
+\item 
+boolean \hyperlink{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_acc88a4bb258b6fffee54f75b0f0cd0c5}{is\+Waiting\+Scan\+Results} = false
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int \hyperlink{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_af4ae2473d2f4169917a5d16bbd2dfd61}{D\+I\+S\+C\+O\+V\+E\+R\+\_\+\+I\+N\+T\+E\+R\+V\+A\+L} = 180000
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_afd083ea1e108b700415d0ad690a17d34}{stop\+Periodic\+Scanning} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+boolean \hyperlink{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_a82ed52e2ad49e81104984257a21a24d4}{debug} = true
+\item 
+Context \hyperlink{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_abd0ee7affd39e2c98ec93d60c00d72ad}{m\+Context}
+\item 
+Bluetooth\+Adapter \hyperlink{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_ab723a5668db796334a5568239a12dd7c}{android\+B\+T\+Adapter}
+\item 
+Bluetooth\+Server\+Socket \hyperlink{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_a28cdfcd55e5eb8100696324bdde40ccc}{socket}
+\item 
+U\+U\+I\+D \hyperlink{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_a15181a6e41bb0031cded5d0888074c73}{uuid} = U\+U\+I\+D.\+from\+String(\char`\"{}10101010-\/0101-\/0101-\/0101-\/010101010101\char`\"{})
+\item 
+Map$<$ Bluetooth\+Device, Bluetooth\+Class $>$ \hyperlink{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_ac01ae1f551a056f0cbf7feee7b353608}{bt\+Device\+List} = new Hash\+Map$<$Bluetooth\+Device, Bluetooth\+Class$>$()
+\item 
+Find\+Bluetooth\+Device \hyperlink{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_ac1045a31137eac95b1e8538258e3d56b}{B\+T\+Dev\+Finder}
+\item 
+adapter\+Broadcast\+Receiver \hyperlink{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_a64744011b97a36325b6f8f3040a8afe3}{adapter\+Receiver}
+\item 
+\hyperlink{interfacecs_1_1usense_1_1bluetooth_1_1_b_t_device_finder}{B\+T\+Device\+Finder} \hyperlink{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_a7210126f7a9be3ab7bc154a0526c18ad}{listener}
+\item 
+String \hyperlink{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_ad6f34da89d1e49ac447a664e494e9f80}{fetching\+U\+U\+I\+Dfrom\+Device}
+\item 
+Handler \hyperlink{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_a34f0247df92d1f695334948e7f5a064a}{m\+Handler} = new Handler()
+\item 
+Runnable \hyperlink{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_a92284865c642201dbf7a1a30458ee035}{run\+Scan}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final String \hyperlink{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_a64c930ada22e67f8a41555c063c466d9}{T\+A\+G} = \char`\"{}B\+T\+Manager\char`\"{}
+\item 
+static boolean \hyperlink{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_a49b258b5af884eb047ec2360f4ca3c0b}{m\+B\+Tis\+Turning\+On\+Off} = false
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_af895e31c32ccd84b460196192d2a14eb}{}\index{cs\+::usense\+::bluetooth\+::\+B\+T\+Manager@{cs\+::usense\+::bluetooth\+::\+B\+T\+Manager}!B\+T\+Manager@{B\+T\+Manager}}
+\index{B\+T\+Manager@{B\+T\+Manager}!cs\+::usense\+::bluetooth\+::\+B\+T\+Manager@{cs\+::usense\+::bluetooth\+::\+B\+T\+Manager}}
+\subsubsection[{B\+T\+Manager(\+Context c)}]{\setlength{\rightskip}{0pt plus 5cm}cs.\+usense.\+bluetooth.\+B\+T\+Manager.\+B\+T\+Manager (
+\begin{DoxyParamCaption}
+\item[{Context}]{c}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_af895e31c32ccd84b460196192d2a14eb}
+This method is the constructor for \hyperlink{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager}{B\+T\+Manager}. 
+\begin{DoxyParams}{Parameters}
+{\em c} & Interface to global information about an application environment. \\
+\hline
+\end{DoxyParams}
+Advertised U\+U\+I\+D to let peer node knows that current node runs usense! 
+
+\subsection{Member Function Documentation}
+\hypertarget{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_a2eb24bf47a6174389c8805b2e1907d39}{}\index{cs\+::usense\+::bluetooth\+::\+B\+T\+Manager@{cs\+::usense\+::bluetooth\+::\+B\+T\+Manager}!clear\+On\+B\+T\+Change\+Listener@{clear\+On\+B\+T\+Change\+Listener}}
+\index{clear\+On\+B\+T\+Change\+Listener@{clear\+On\+B\+T\+Change\+Listener}!cs\+::usense\+::bluetooth\+::\+B\+T\+Manager@{cs\+::usense\+::bluetooth\+::\+B\+T\+Manager}}
+\subsubsection[{clear\+On\+B\+T\+Change\+Listener()}]{\setlength{\rightskip}{0pt plus 5cm}void cs.\+usense.\+bluetooth.\+B\+T\+Manager.\+clear\+On\+B\+T\+Change\+Listener (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_a2eb24bf47a6174389c8805b2e1907d39}
+This method clears the change listener. \hypertarget{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_a8afc2effffd2aedb21a324c3b238861a}{}\index{cs\+::usense\+::bluetooth\+::\+B\+T\+Manager@{cs\+::usense\+::bluetooth\+::\+B\+T\+Manager}!close@{close}}
+\index{close@{close}!cs\+::usense\+::bluetooth\+::\+B\+T\+Manager@{cs\+::usense\+::bluetooth\+::\+B\+T\+Manager}}
+\subsubsection[{close(\+Context c)}]{\setlength{\rightskip}{0pt plus 5cm}void cs.\+usense.\+bluetooth.\+B\+T\+Manager.\+close (
+\begin{DoxyParamCaption}
+\item[{Context}]{c}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_a8afc2effffd2aedb21a324c3b238861a}
+This method stops scanning and unregister Broadcast\+Receivers. 
+\begin{DoxyParams}{Parameters}
+{\em c} & Interface to global information about an application environment. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_ae1f12992264846080805558d2cd69120}{}\index{cs\+::usense\+::bluetooth\+::\+B\+T\+Manager@{cs\+::usense\+::bluetooth\+::\+B\+T\+Manager}!enable\+B\+T@{enable\+B\+T}}
+\index{enable\+B\+T@{enable\+B\+T}!cs\+::usense\+::bluetooth\+::\+B\+T\+Manager@{cs\+::usense\+::bluetooth\+::\+B\+T\+Manager}}
+\subsubsection[{enable\+B\+T()}]{\setlength{\rightskip}{0pt plus 5cm}boolean cs.\+usense.\+bluetooth.\+B\+T\+Manager.\+enable\+B\+T (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_ae1f12992264846080805558d2cd69120}
+This method enables Bluetooth. \begin{DoxyReturn}{Returns}
+true/false If Bluetooth Adapter is Turning on or off 
+\end{DoxyReturn}
+\hypertarget{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_ae2e0b0bbc2ec9ffd6cdb45d6d8da8f8c}{}\index{cs\+::usense\+::bluetooth\+::\+B\+T\+Manager@{cs\+::usense\+::bluetooth\+::\+B\+T\+Manager}!get\+Local\+Info@{get\+Local\+Info}}
+\index{get\+Local\+Info@{get\+Local\+Info}!cs\+::usense\+::bluetooth\+::\+B\+T\+Manager@{cs\+::usense\+::bluetooth\+::\+B\+T\+Manager}}
+\subsubsection[{get\+Local\+Info()}]{\setlength{\rightskip}{0pt plus 5cm}List$<$String$>$ cs.\+usense.\+bluetooth.\+B\+T\+Manager.\+get\+Local\+Info (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_ae2e0b0bbc2ec9ffd6cdb45d6d8da8f8c}
+This method provides the M\+A\+C Address and name of local Bluetooth adapter. \begin{DoxyReturn}{Returns}
+localinfo The local M\+A\+C Address 
+\end{DoxyReturn}
+\hypertarget{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_ae7dbf04ed9779907a153dde734da6086}{}\index{cs\+::usense\+::bluetooth\+::\+B\+T\+Manager@{cs\+::usense\+::bluetooth\+::\+B\+T\+Manager}!is\+B\+T\+Enabled@{is\+B\+T\+Enabled}}
+\index{is\+B\+T\+Enabled@{is\+B\+T\+Enabled}!cs\+::usense\+::bluetooth\+::\+B\+T\+Manager@{cs\+::usense\+::bluetooth\+::\+B\+T\+Manager}}
+\subsubsection[{is\+B\+T\+Enabled()}]{\setlength{\rightskip}{0pt plus 5cm}boolean cs.\+usense.\+bluetooth.\+B\+T\+Manager.\+is\+B\+T\+Enabled (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_ae7dbf04ed9779907a153dde734da6086}
+This method checks whether Bluetooth is enabled. \begin{DoxyReturn}{Returns}
+true/false If Bluetooth Adapter is enabled/not 
+\end{DoxyReturn}
+\hypertarget{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_a7589599079a1761477e044daa97008af}{}\index{cs\+::usense\+::bluetooth\+::\+B\+T\+Manager@{cs\+::usense\+::bluetooth\+::\+B\+T\+Manager}!set\+On\+B\+T\+Change\+Listener@{set\+On\+B\+T\+Change\+Listener}}
+\index{set\+On\+B\+T\+Change\+Listener@{set\+On\+B\+T\+Change\+Listener}!cs\+::usense\+::bluetooth\+::\+B\+T\+Manager@{cs\+::usense\+::bluetooth\+::\+B\+T\+Manager}}
+\subsubsection[{set\+On\+B\+T\+Change\+Listener(\+B\+T\+Device\+Finder listener)}]{\setlength{\rightskip}{0pt plus 5cm}void cs.\+usense.\+bluetooth.\+B\+T\+Manager.\+set\+On\+B\+T\+Change\+Listener (
+\begin{DoxyParamCaption}
+\item[{{\bf B\+T\+Device\+Finder}}]{listener}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_a7589599079a1761477e044daa97008af}
+This method sets a change listener. 
+\begin{DoxyParams}{Parameters}
+{\em listener} & The \hyperlink{interfacecs_1_1usense_1_1bluetooth_1_1_b_t_device_finder}{B\+T\+Device\+Finder} listener \\
+\hline
+\end{DoxyParams}
+\hypertarget{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_aa8e2b14cdca7d30dd853b8540e3a011c}{}\index{cs\+::usense\+::bluetooth\+::\+B\+T\+Manager@{cs\+::usense\+::bluetooth\+::\+B\+T\+Manager}!start\+Discovery@{start\+Discovery}}
+\index{start\+Discovery@{start\+Discovery}!cs\+::usense\+::bluetooth\+::\+B\+T\+Manager@{cs\+::usense\+::bluetooth\+::\+B\+T\+Manager}}
+\subsubsection[{start\+Discovery()}]{\setlength{\rightskip}{0pt plus 5cm}boolean cs.\+usense.\+bluetooth.\+B\+T\+Manager.\+start\+Discovery (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_aa8e2b14cdca7d30dd853b8540e3a011c}
+This method starts Bluetooth discovery process. \begin{DoxyReturn}{Returns}
+true/false True on success, false on failure 
+\end{DoxyReturn}
+\hypertarget{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_adb39d12e1183bcb07676123c59d5b085}{}\index{cs\+::usense\+::bluetooth\+::\+B\+T\+Manager@{cs\+::usense\+::bluetooth\+::\+B\+T\+Manager}!start\+Periodic\+Scanning@{start\+Periodic\+Scanning}}
+\index{start\+Periodic\+Scanning@{start\+Periodic\+Scanning}!cs\+::usense\+::bluetooth\+::\+B\+T\+Manager@{cs\+::usense\+::bluetooth\+::\+B\+T\+Manager}}
+\subsubsection[{start\+Periodic\+Scanning()}]{\setlength{\rightskip}{0pt plus 5cm}void cs.\+usense.\+bluetooth.\+B\+T\+Manager.\+start\+Periodic\+Scanning (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_adb39d12e1183bcb07676123c59d5b085}
+This method starts scanning. \hypertarget{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_afd083ea1e108b700415d0ad690a17d34}{}\index{cs\+::usense\+::bluetooth\+::\+B\+T\+Manager@{cs\+::usense\+::bluetooth\+::\+B\+T\+Manager}!stop\+Periodic\+Scanning@{stop\+Periodic\+Scanning}}
+\index{stop\+Periodic\+Scanning@{stop\+Periodic\+Scanning}!cs\+::usense\+::bluetooth\+::\+B\+T\+Manager@{cs\+::usense\+::bluetooth\+::\+B\+T\+Manager}}
+\subsubsection[{stop\+Periodic\+Scanning()}]{\setlength{\rightskip}{0pt plus 5cm}void cs.\+usense.\+bluetooth.\+B\+T\+Manager.\+stop\+Periodic\+Scanning (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_afd083ea1e108b700415d0ad690a17d34}
+This method stops scanning. 
+
+\subsection{Member Data Documentation}
+\hypertarget{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_a64744011b97a36325b6f8f3040a8afe3}{}\index{cs\+::usense\+::bluetooth\+::\+B\+T\+Manager@{cs\+::usense\+::bluetooth\+::\+B\+T\+Manager}!adapter\+Receiver@{adapter\+Receiver}}
+\index{adapter\+Receiver@{adapter\+Receiver}!cs\+::usense\+::bluetooth\+::\+B\+T\+Manager@{cs\+::usense\+::bluetooth\+::\+B\+T\+Manager}}
+\subsubsection[{adapter\+Receiver}]{\setlength{\rightskip}{0pt plus 5cm}adapter\+Broadcast\+Receiver cs.\+usense.\+bluetooth.\+B\+T\+Manager.\+adapter\+Receiver\hspace{0.3cm}{\ttfamily [private]}}\label{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_a64744011b97a36325b6f8f3040a8afe3}
+This class is to access functionality of Bluetooth Adapter \hypertarget{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_ab723a5668db796334a5568239a12dd7c}{}\index{cs\+::usense\+::bluetooth\+::\+B\+T\+Manager@{cs\+::usense\+::bluetooth\+::\+B\+T\+Manager}!android\+B\+T\+Adapter@{android\+B\+T\+Adapter}}
+\index{android\+B\+T\+Adapter@{android\+B\+T\+Adapter}!cs\+::usense\+::bluetooth\+::\+B\+T\+Manager@{cs\+::usense\+::bluetooth\+::\+B\+T\+Manager}}
+\subsubsection[{android\+B\+T\+Adapter}]{\setlength{\rightskip}{0pt plus 5cm}Bluetooth\+Adapter cs.\+usense.\+bluetooth.\+B\+T\+Manager.\+android\+B\+T\+Adapter\hspace{0.3cm}{\ttfamily [private]}}\label{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_ab723a5668db796334a5568239a12dd7c}
+This class is to access functionality of Bluetooth Adapter \hypertarget{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_ac1045a31137eac95b1e8538258e3d56b}{}\index{cs\+::usense\+::bluetooth\+::\+B\+T\+Manager@{cs\+::usense\+::bluetooth\+::\+B\+T\+Manager}!B\+T\+Dev\+Finder@{B\+T\+Dev\+Finder}}
+\index{B\+T\+Dev\+Finder@{B\+T\+Dev\+Finder}!cs\+::usense\+::bluetooth\+::\+B\+T\+Manager@{cs\+::usense\+::bluetooth\+::\+B\+T\+Manager}}
+\subsubsection[{B\+T\+Dev\+Finder}]{\setlength{\rightskip}{0pt plus 5cm}Find\+Bluetooth\+Device cs.\+usense.\+bluetooth.\+B\+T\+Manager.\+B\+T\+Dev\+Finder\hspace{0.3cm}{\ttfamily [private]}}\label{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_ac1045a31137eac95b1e8538258e3d56b}
+Used to identify Bluetooth Device \hypertarget{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_ac01ae1f551a056f0cbf7feee7b353608}{}\index{cs\+::usense\+::bluetooth\+::\+B\+T\+Manager@{cs\+::usense\+::bluetooth\+::\+B\+T\+Manager}!bt\+Device\+List@{bt\+Device\+List}}
+\index{bt\+Device\+List@{bt\+Device\+List}!cs\+::usense\+::bluetooth\+::\+B\+T\+Manager@{cs\+::usense\+::bluetooth\+::\+B\+T\+Manager}}
+\subsubsection[{bt\+Device\+List}]{\setlength{\rightskip}{0pt plus 5cm}Map$<$Bluetooth\+Device, Bluetooth\+Class$>$ cs.\+usense.\+bluetooth.\+B\+T\+Manager.\+bt\+Device\+List = new Hash\+Map$<$Bluetooth\+Device, Bluetooth\+Class$>$()\hspace{0.3cm}{\ttfamily [private]}}\label{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_ac01ae1f551a056f0cbf7feee7b353608}
+Used to access the Bluetooth device list \hypertarget{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_a82ed52e2ad49e81104984257a21a24d4}{}\index{cs\+::usense\+::bluetooth\+::\+B\+T\+Manager@{cs\+::usense\+::bluetooth\+::\+B\+T\+Manager}!debug@{debug}}
+\index{debug@{debug}!cs\+::usense\+::bluetooth\+::\+B\+T\+Manager@{cs\+::usense\+::bluetooth\+::\+B\+T\+Manager}}
+\subsubsection[{debug}]{\setlength{\rightskip}{0pt plus 5cm}boolean cs.\+usense.\+bluetooth.\+B\+T\+Manager.\+debug = true\hspace{0.3cm}{\ttfamily [private]}}\label{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_a82ed52e2ad49e81104984257a21a24d4}
+for debugging purposes \hypertarget{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_af4ae2473d2f4169917a5d16bbd2dfd61}{}\index{cs\+::usense\+::bluetooth\+::\+B\+T\+Manager@{cs\+::usense\+::bluetooth\+::\+B\+T\+Manager}!D\+I\+S\+C\+O\+V\+E\+R\+\_\+\+I\+N\+T\+E\+R\+V\+A\+L@{D\+I\+S\+C\+O\+V\+E\+R\+\_\+\+I\+N\+T\+E\+R\+V\+A\+L}}
+\index{D\+I\+S\+C\+O\+V\+E\+R\+\_\+\+I\+N\+T\+E\+R\+V\+A\+L@{D\+I\+S\+C\+O\+V\+E\+R\+\_\+\+I\+N\+T\+E\+R\+V\+A\+L}!cs\+::usense\+::bluetooth\+::\+B\+T\+Manager@{cs\+::usense\+::bluetooth\+::\+B\+T\+Manager}}
+\subsubsection[{D\+I\+S\+C\+O\+V\+E\+R\+\_\+\+I\+N\+T\+E\+R\+V\+A\+L}]{\setlength{\rightskip}{0pt plus 5cm}int cs.\+usense.\+bluetooth.\+B\+T\+Manager.\+D\+I\+S\+C\+O\+V\+E\+R\+\_\+\+I\+N\+T\+E\+R\+V\+A\+L = 180000\hspace{0.3cm}{\ttfamily [static]}}\label{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_af4ae2473d2f4169917a5d16bbd2dfd61}
+check how long B\+T scan is !!!!!! \hypertarget{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_ad6f34da89d1e49ac447a664e494e9f80}{}\index{cs\+::usense\+::bluetooth\+::\+B\+T\+Manager@{cs\+::usense\+::bluetooth\+::\+B\+T\+Manager}!fetching\+U\+U\+I\+Dfrom\+Device@{fetching\+U\+U\+I\+Dfrom\+Device}}
+\index{fetching\+U\+U\+I\+Dfrom\+Device@{fetching\+U\+U\+I\+Dfrom\+Device}!cs\+::usense\+::bluetooth\+::\+B\+T\+Manager@{cs\+::usense\+::bluetooth\+::\+B\+T\+Manager}}
+\subsubsection[{fetching\+U\+U\+I\+Dfrom\+Device}]{\setlength{\rightskip}{0pt plus 5cm}String cs.\+usense.\+bluetooth.\+B\+T\+Manager.\+fetching\+U\+U\+I\+Dfrom\+Device\hspace{0.3cm}{\ttfamily [private]}}\label{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_ad6f34da89d1e49ac447a664e494e9f80}
+This variable for fetching U\+U\+I\+D from Device \hypertarget{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_ab3a60155e936f776929704c2b44d45cc}{}\index{cs\+::usense\+::bluetooth\+::\+B\+T\+Manager@{cs\+::usense\+::bluetooth\+::\+B\+T\+Manager}!is\+Scanning\+Active@{is\+Scanning\+Active}}
+\index{is\+Scanning\+Active@{is\+Scanning\+Active}!cs\+::usense\+::bluetooth\+::\+B\+T\+Manager@{cs\+::usense\+::bluetooth\+::\+B\+T\+Manager}}
+\subsubsection[{is\+Scanning\+Active}]{\setlength{\rightskip}{0pt plus 5cm}boolean cs.\+usense.\+bluetooth.\+B\+T\+Manager.\+is\+Scanning\+Active = false}\label{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_ab3a60155e936f776929704c2b44d45cc}
+This variable is to check Scanning is Active \hypertarget{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_acc88a4bb258b6fffee54f75b0f0cd0c5}{}\index{cs\+::usense\+::bluetooth\+::\+B\+T\+Manager@{cs\+::usense\+::bluetooth\+::\+B\+T\+Manager}!is\+Waiting\+Scan\+Results@{is\+Waiting\+Scan\+Results}}
+\index{is\+Waiting\+Scan\+Results@{is\+Waiting\+Scan\+Results}!cs\+::usense\+::bluetooth\+::\+B\+T\+Manager@{cs\+::usense\+::bluetooth\+::\+B\+T\+Manager}}
+\subsubsection[{is\+Waiting\+Scan\+Results}]{\setlength{\rightskip}{0pt plus 5cm}boolean cs.\+usense.\+bluetooth.\+B\+T\+Manager.\+is\+Waiting\+Scan\+Results = false}\label{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_acc88a4bb258b6fffee54f75b0f0cd0c5}
+This variable is to check Waiting for Scan Results \hypertarget{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_a7210126f7a9be3ab7bc154a0526c18ad}{}\index{cs\+::usense\+::bluetooth\+::\+B\+T\+Manager@{cs\+::usense\+::bluetooth\+::\+B\+T\+Manager}!listener@{listener}}
+\index{listener@{listener}!cs\+::usense\+::bluetooth\+::\+B\+T\+Manager@{cs\+::usense\+::bluetooth\+::\+B\+T\+Manager}}
+\subsubsection[{listener}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+T\+Device\+Finder} cs.\+usense.\+bluetooth.\+B\+T\+Manager.\+listener\hspace{0.3cm}{\ttfamily [private]}}\label{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_a7210126f7a9be3ab7bc154a0526c18ad}
+This class is to access the listener of Bluetooth device finder \hypertarget{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_a49b258b5af884eb047ec2360f4ca3c0b}{}\index{cs\+::usense\+::bluetooth\+::\+B\+T\+Manager@{cs\+::usense\+::bluetooth\+::\+B\+T\+Manager}!m\+B\+Tis\+Turning\+On\+Off@{m\+B\+Tis\+Turning\+On\+Off}}
+\index{m\+B\+Tis\+Turning\+On\+Off@{m\+B\+Tis\+Turning\+On\+Off}!cs\+::usense\+::bluetooth\+::\+B\+T\+Manager@{cs\+::usense\+::bluetooth\+::\+B\+T\+Manager}}
+\subsubsection[{m\+B\+Tis\+Turning\+On\+Off}]{\setlength{\rightskip}{0pt plus 5cm}boolean cs.\+usense.\+bluetooth.\+B\+T\+Manager.\+m\+B\+Tis\+Turning\+On\+Off = false\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_a49b258b5af884eb047ec2360f4ca3c0b}
+This variable is to check Bluetooth is turning on or off \hypertarget{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_abd0ee7affd39e2c98ec93d60c00d72ad}{}\index{cs\+::usense\+::bluetooth\+::\+B\+T\+Manager@{cs\+::usense\+::bluetooth\+::\+B\+T\+Manager}!m\+Context@{m\+Context}}
+\index{m\+Context@{m\+Context}!cs\+::usense\+::bluetooth\+::\+B\+T\+Manager@{cs\+::usense\+::bluetooth\+::\+B\+T\+Manager}}
+\subsubsection[{m\+Context}]{\setlength{\rightskip}{0pt plus 5cm}Context cs.\+usense.\+bluetooth.\+B\+T\+Manager.\+m\+Context\hspace{0.3cm}{\ttfamily [private]}}\label{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_abd0ee7affd39e2c98ec93d60c00d72ad}
+Interface to global information about an application environment. \hypertarget{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_a34f0247df92d1f695334948e7f5a064a}{}\index{cs\+::usense\+::bluetooth\+::\+B\+T\+Manager@{cs\+::usense\+::bluetooth\+::\+B\+T\+Manager}!m\+Handler@{m\+Handler}}
+\index{m\+Handler@{m\+Handler}!cs\+::usense\+::bluetooth\+::\+B\+T\+Manager@{cs\+::usense\+::bluetooth\+::\+B\+T\+Manager}}
+\subsubsection[{m\+Handler}]{\setlength{\rightskip}{0pt plus 5cm}Handler cs.\+usense.\+bluetooth.\+B\+T\+Manager.\+m\+Handler = new Handler()\hspace{0.3cm}{\ttfamily [private]}}\label{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_a34f0247df92d1f695334948e7f5a064a}
+This class is to use send or process message \hypertarget{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_a92284865c642201dbf7a1a30458ee035}{}\index{cs\+::usense\+::bluetooth\+::\+B\+T\+Manager@{cs\+::usense\+::bluetooth\+::\+B\+T\+Manager}!run\+Scan@{run\+Scan}}
+\index{run\+Scan@{run\+Scan}!cs\+::usense\+::bluetooth\+::\+B\+T\+Manager@{cs\+::usense\+::bluetooth\+::\+B\+T\+Manager}}
+\subsubsection[{run\+Scan}]{\setlength{\rightskip}{0pt plus 5cm}Runnable cs.\+usense.\+bluetooth.\+B\+T\+Manager.\+run\+Scan\hspace{0.3cm}{\ttfamily [private]}}\label{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_a92284865c642201dbf7a1a30458ee035}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \textcolor{keyword}{new} Runnable() \{
+        \textcolor{keyword}{public} \textcolor{keywordtype}{void} run() \{
+            \textcolor{keywordflow}{if} (\hyperlink{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_ab3a60155e936f776929704c2b44d45cc}{isScanningActive}) \{
+                \textcolor{keywordflow}{if} (!\hyperlink{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_ae7dbf04ed9779907a153dde734da6086}{isBTEnabled}()) \{
+                    \textcolor{keywordflow}{if}(\hyperlink{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_ae1f12992264846080805558d2cd69120}{enableBT}()) \{
+                        \hyperlink{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_afd083ea1e108b700415d0ad690a17d34}{stopPeriodicScanning}();
+                    \} \textcolor{keywordflow}{else} \{
+                        Toast.makeText(\hyperlink{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_abd0ee7affd39e2c98ec93d60c00d72ad}{mContext}, \textcolor{stringliteral}{"Error enabling BT. Closing Social Pipeline."}, 
+      Toast.LENGTH\_SHORT).show();
+                        \hyperlink{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_a8afc2effffd2aedb21a324c3b238861a}{close}(\hyperlink{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_abd0ee7affd39e2c98ec93d60c00d72ad}{mContext});
+                    \}
+                    \textcolor{keywordflow}{return};
+                \}
+                \textcolor{keywordflow}{if} (!\hyperlink{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_acc88a4bb258b6fffee54f75b0f0cd0c5}{isWaitingScanResults} && \hyperlink{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_ae7dbf04ed9779907a153dde734da6086}{isBTEnabled}()) \{
+                    \hyperlink{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_ac01ae1f551a056f0cbf7feee7b353608}{btDeviceList}.clear();
+                    \textcolor{keywordflow}{if} (\hyperlink{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_aa8e2b14cdca7d30dd853b8540e3a011c}{startDiscovery}()) \{
+                        \textcolor{keywordflow}{if}(\hyperlink{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_a82ed52e2ad49e81104984257a21a24d4}{debug})\{
+                            Log.i(\hyperlink{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_a64c930ada22e67f8a41555c063c466d9}{TAG}, \textcolor{stringliteral}{"Starting BT scaning..."});
+                        \}
+                        \hyperlink{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_acc88a4bb258b6fffee54f75b0f0cd0c5}{isWaitingScanResults} = \textcolor{keyword}{true};
+                    \}
+                    \hyperlink{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_a34f0247df92d1f695334948e7f5a064a}{mHandler}.postDelayed(\hyperlink{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_a92284865c642201dbf7a1a30458ee035}{runScan}, 
+      \hyperlink{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_af4ae2473d2f4169917a5d16bbd2dfd61}{DISCOVER\_INTERVAL});
+                \}
+                \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\hyperlink{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_acc88a4bb258b6fffee54f75b0f0cd0c5}{isWaitingScanResults}) \{
+                    \hyperlink{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_a34f0247df92d1f695334948e7f5a064a}{mHandler}.postDelayed(\hyperlink{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_a92284865c642201dbf7a1a30458ee035}{runScan}, 
+      \hyperlink{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_af4ae2473d2f4169917a5d16bbd2dfd61}{DISCOVER\_INTERVAL});
+                    \hyperlink{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_acc88a4bb258b6fffee54f75b0f0cd0c5}{isWaitingScanResults} = \textcolor{keyword}{false};
+                \}
+            \}
+        \}
+    \}
+\end{DoxyCode}
+This method allows for starting and stopping periodic Bluetooth scanning. \hypertarget{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_a28cdfcd55e5eb8100696324bdde40ccc}{}\index{cs\+::usense\+::bluetooth\+::\+B\+T\+Manager@{cs\+::usense\+::bluetooth\+::\+B\+T\+Manager}!socket@{socket}}
+\index{socket@{socket}!cs\+::usense\+::bluetooth\+::\+B\+T\+Manager@{cs\+::usense\+::bluetooth\+::\+B\+T\+Manager}}
+\subsubsection[{socket}]{\setlength{\rightskip}{0pt plus 5cm}Bluetooth\+Server\+Socket cs.\+usense.\+bluetooth.\+B\+T\+Manager.\+socket\hspace{0.3cm}{\ttfamily [private]}}\label{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_a28cdfcd55e5eb8100696324bdde40ccc}
+Used to identify U\+Sense! devices \hypertarget{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_a64c930ada22e67f8a41555c063c466d9}{}\index{cs\+::usense\+::bluetooth\+::\+B\+T\+Manager@{cs\+::usense\+::bluetooth\+::\+B\+T\+Manager}!T\+A\+G@{T\+A\+G}}
+\index{T\+A\+G@{T\+A\+G}!cs\+::usense\+::bluetooth\+::\+B\+T\+Manager@{cs\+::usense\+::bluetooth\+::\+B\+T\+Manager}}
+\subsubsection[{T\+A\+G}]{\setlength{\rightskip}{0pt plus 5cm}final String cs.\+usense.\+bluetooth.\+B\+T\+Manager.\+T\+A\+G = \char`\"{}B\+T\+Manager\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_a64c930ada22e67f8a41555c063c466d9}
+\hypertarget{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_a15181a6e41bb0031cded5d0888074c73}{}\index{cs\+::usense\+::bluetooth\+::\+B\+T\+Manager@{cs\+::usense\+::bluetooth\+::\+B\+T\+Manager}!uuid@{uuid}}
+\index{uuid@{uuid}!cs\+::usense\+::bluetooth\+::\+B\+T\+Manager@{cs\+::usense\+::bluetooth\+::\+B\+T\+Manager}}
+\subsubsection[{uuid}]{\setlength{\rightskip}{0pt plus 5cm}U\+U\+I\+D cs.\+usense.\+bluetooth.\+B\+T\+Manager.\+uuid = U\+U\+I\+D.\+from\+String(\char`\"{}10101010-\/0101-\/0101-\/0101-\/010101010101\char`\"{})\hspace{0.3cm}{\ttfamily [private]}}\label{classcs_1_1usense_1_1bluetooth_1_1_b_t_manager_a15181a6e41bb0031cded5d0888074c73}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/cs/usense/bluetooth/\hyperlink{_b_t_manager_8java}{B\+T\+Manager.\+java}\end{DoxyCompactItemize}

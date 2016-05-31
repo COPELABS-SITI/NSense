@@ -1,0 +1,88 @@
+\hypertarget{classcs_1_1usense_1_1location_1_1_clean_task}{}\section{cs.\+usense.\+location.\+Clean\+Task Class Reference}
+\label{classcs_1_1usense_1_1location_1_1_clean_task}\index{cs.\+usense.\+location.\+Clean\+Task@{cs.\+usense.\+location.\+Clean\+Task}}
+Inheritance diagram for cs.\+usense.\+location.\+Clean\+Task\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcs_1_1usense_1_1location_1_1_clean_task}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcs_1_1usense_1_1location_1_1_clean_task_a90005f17296054c91da426a984853a4b}{Clean\+Task} (\hyperlink{classcs_1_1usense_1_1db_1_1_usense_data_source}{Usense\+Data\+Source} \hyperlink{classcs_1_1usense_1_1location_1_1_clean_task_a5ef1698db183a017fd359be211bcae32}{data\+Source}, \hyperlink{classcs_1_1usense_1_1location_1_1_location_pipeline}{Location\+Pipeline} \hyperlink{classcs_1_1usense_1_1location_1_1_clean_task_a8b902c430d2b3a4369934283e547bf79}{callback})
+\item 
+void \hyperlink{classcs_1_1usense_1_1location_1_1_clean_task_aaa42692c23da0fafcd4b39c70140cf3c}{run} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+String \hyperlink{classcs_1_1usense_1_1location_1_1_clean_task_a4bdda62bc609f592de1371a578225c8f}{T\+A\+G} = \char`\"{}Location\+Pipeline\char`\"{}
+\item 
+\hyperlink{classcs_1_1usense_1_1db_1_1_usense_data_source}{Usense\+Data\+Source} \hyperlink{classcs_1_1usense_1_1location_1_1_clean_task_a5ef1698db183a017fd359be211bcae32}{data\+Source}
+\item 
+\hyperlink{classcs_1_1usense_1_1location_1_1_location_pipeline}{Location\+Pipeline} \hyperlink{classcs_1_1usense_1_1location_1_1_clean_task_a8b902c430d2b3a4369934283e547bf79}{callback}
+\item 
+int \hyperlink{classcs_1_1usense_1_1location_1_1_clean_task_a7ac42a9cae72c0162de562270d727dab}{timeout} = 360000
+\item 
+Handler \hyperlink{classcs_1_1usense_1_1location_1_1_clean_task_ab8a01d00f36803279927b7df497d5641}{notify\+Data\+Base\+Change\+Handler}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcs_1_1usense_1_1location_1_1_clean_task_a90005f17296054c91da426a984853a4b}{}\index{cs\+::usense\+::location\+::\+Clean\+Task@{cs\+::usense\+::location\+::\+Clean\+Task}!Clean\+Task@{Clean\+Task}}
+\index{Clean\+Task@{Clean\+Task}!cs\+::usense\+::location\+::\+Clean\+Task@{cs\+::usense\+::location\+::\+Clean\+Task}}
+\subsubsection[{Clean\+Task(\+Usense\+Data\+Source data\+Source, Location\+Pipeline callback)}]{\setlength{\rightskip}{0pt plus 5cm}cs.\+usense.\+location.\+Clean\+Task.\+Clean\+Task (
+\begin{DoxyParamCaption}
+\item[{{\bf Usense\+Data\+Source}}]{data\+Source, }
+\item[{{\bf Location\+Pipeline}}]{callback}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1location_1_1_clean_task_a90005f17296054c91da426a984853a4b}
+Clean Task constructor 
+\begin{DoxyParams}{Parameters}
+{\em data\+Source} & the Usense data base \\
+\hline
+{\em callback} & the Location Pipeline \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcs_1_1usense_1_1location_1_1_clean_task_aaa42692c23da0fafcd4b39c70140cf3c}{}\index{cs\+::usense\+::location\+::\+Clean\+Task@{cs\+::usense\+::location\+::\+Clean\+Task}!run@{run}}
+\index{run@{run}!cs\+::usense\+::location\+::\+Clean\+Task@{cs\+::usense\+::location\+::\+Clean\+Task}}
+\subsubsection[{run()}]{\setlength{\rightskip}{0pt plus 5cm}void cs.\+usense.\+location.\+Clean\+Task.\+run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1location_1_1_clean_task_aaa42692c23da0fafcd4b39c70140cf3c}
+Thread core -\/ It checks the last update in every location table entry. 
+
+\subsection{Member Data Documentation}
+\hypertarget{classcs_1_1usense_1_1location_1_1_clean_task_a8b902c430d2b3a4369934283e547bf79}{}\index{cs\+::usense\+::location\+::\+Clean\+Task@{cs\+::usense\+::location\+::\+Clean\+Task}!callback@{callback}}
+\index{callback@{callback}!cs\+::usense\+::location\+::\+Clean\+Task@{cs\+::usense\+::location\+::\+Clean\+Task}}
+\subsubsection[{callback}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Location\+Pipeline} cs.\+usense.\+location.\+Clean\+Task.\+callback\hspace{0.3cm}{\ttfamily [private]}}\label{classcs_1_1usense_1_1location_1_1_clean_task_a8b902c430d2b3a4369934283e547bf79}
+Location Pipeline class. Used to notify the location pipeline about a change in D\+B. \hypertarget{classcs_1_1usense_1_1location_1_1_clean_task_a5ef1698db183a017fd359be211bcae32}{}\index{cs\+::usense\+::location\+::\+Clean\+Task@{cs\+::usense\+::location\+::\+Clean\+Task}!data\+Source@{data\+Source}}
+\index{data\+Source@{data\+Source}!cs\+::usense\+::location\+::\+Clean\+Task@{cs\+::usense\+::location\+::\+Clean\+Task}}
+\subsubsection[{data\+Source}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Usense\+Data\+Source} cs.\+usense.\+location.\+Clean\+Task.\+data\+Source\hspace{0.3cm}{\ttfamily [private]}}\label{classcs_1_1usense_1_1location_1_1_clean_task_a5ef1698db183a017fd359be211bcae32}
+Usense Database \hypertarget{classcs_1_1usense_1_1location_1_1_clean_task_ab8a01d00f36803279927b7df497d5641}{}\index{cs\+::usense\+::location\+::\+Clean\+Task@{cs\+::usense\+::location\+::\+Clean\+Task}!notify\+Data\+Base\+Change\+Handler@{notify\+Data\+Base\+Change\+Handler}}
+\index{notify\+Data\+Base\+Change\+Handler@{notify\+Data\+Base\+Change\+Handler}!cs\+::usense\+::location\+::\+Clean\+Task@{cs\+::usense\+::location\+::\+Clean\+Task}}
+\subsubsection[{notify\+Data\+Base\+Change\+Handler}]{\setlength{\rightskip}{0pt plus 5cm}Handler cs.\+usense.\+location.\+Clean\+Task.\+notify\+Data\+Base\+Change\+Handler\hspace{0.3cm}{\ttfamily [private]}}\label{classcs_1_1usense_1_1location_1_1_clean_task_ab8a01d00f36803279927b7df497d5641}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \textcolor{keyword}{new} Handler() \{
+        \textcolor{keyword}{public} \textcolor{keywordtype}{void} handleMessage(Message msg) \{
+            super.handleMessage(msg);
+            \hyperlink{classcs_1_1usense_1_1location_1_1_clean_task_a8b902c430d2b3a4369934283e547bf79}{callback}.\hyperlink{classcs_1_1usense_1_1location_1_1_location_pipeline_a2dc0b2f65fc9c6d15a037eb3528e8c14}{notifyDataBaseChange}();
+        \}
+    \}
+\end{DoxyCode}
+Handler used to notify the callback about a D\+B change. \hypertarget{classcs_1_1usense_1_1location_1_1_clean_task_a4bdda62bc609f592de1371a578225c8f}{}\index{cs\+::usense\+::location\+::\+Clean\+Task@{cs\+::usense\+::location\+::\+Clean\+Task}!T\+A\+G@{T\+A\+G}}
+\index{T\+A\+G@{T\+A\+G}!cs\+::usense\+::location\+::\+Clean\+Task@{cs\+::usense\+::location\+::\+Clean\+Task}}
+\subsubsection[{T\+A\+G}]{\setlength{\rightskip}{0pt plus 5cm}String cs.\+usense.\+location.\+Clean\+Task.\+T\+A\+G = \char`\"{}Location\+Pipeline\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}\label{classcs_1_1usense_1_1location_1_1_clean_task_a4bdda62bc609f592de1371a578225c8f}
+\hypertarget{classcs_1_1usense_1_1location_1_1_clean_task_a7ac42a9cae72c0162de562270d727dab}{}\index{cs\+::usense\+::location\+::\+Clean\+Task@{cs\+::usense\+::location\+::\+Clean\+Task}!timeout@{timeout}}
+\index{timeout@{timeout}!cs\+::usense\+::location\+::\+Clean\+Task@{cs\+::usense\+::location\+::\+Clean\+Task}}
+\subsubsection[{timeout}]{\setlength{\rightskip}{0pt plus 5cm}int cs.\+usense.\+location.\+Clean\+Task.\+timeout = 360000\hspace{0.3cm}{\ttfamily [private]}}\label{classcs_1_1usense_1_1location_1_1_clean_task_a7ac42a9cae72c0162de562270d727dab}
+Timeout for a location entry to be removed. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/cs/usense/location/\hyperlink{_clean_task_8java}{Clean\+Task.\+java}\end{DoxyCompactItemize}

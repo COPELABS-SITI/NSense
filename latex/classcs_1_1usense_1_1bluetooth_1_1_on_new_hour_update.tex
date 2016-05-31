@@ -1,0 +1,127 @@
+\hypertarget{classcs_1_1usense_1_1bluetooth_1_1_on_new_hour_update}{}\section{cs.\+usense.\+bluetooth.\+On\+New\+Hour\+Update Class Reference}
+\label{classcs_1_1usense_1_1bluetooth_1_1_on_new_hour_update}\index{cs.\+usense.\+bluetooth.\+On\+New\+Hour\+Update@{cs.\+usense.\+bluetooth.\+On\+New\+Hour\+Update}}
+Inheritance diagram for cs.\+usense.\+bluetooth.\+On\+New\+Hour\+Update\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcs_1_1usense_1_1bluetooth_1_1_on_new_hour_update}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcs_1_1usense_1_1bluetooth_1_1_on_new_hour_update_af5363cd149e80b1b4abbeb44a0251e4e}{On\+New\+Hour\+Update} (\hyperlink{classcs_1_1usense_1_1db_1_1_usense_data_source}{Usense\+Data\+Source} datasource2)
+\item 
+void \hyperlink{classcs_1_1usense_1_1bluetooth_1_1_on_new_hour_update_ac238f8079381da35e6fe4cc08b09ff20}{on\+Receive} (Context context, Intent intent)
+\item 
+int \hyperlink{classcs_1_1usense_1_1bluetooth_1_1_on_new_hour_update_a631338f7e73961f53f62a85e46350c74}{get\+Time\+Slot} ()
+\item 
+void \hyperlink{classcs_1_1usense_1_1bluetooth_1_1_on_new_hour_update_adfe6b0c83611152834e2196651d19948}{show\+Devices\+On\+D\+B} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int \hyperlink{classcs_1_1usense_1_1bluetooth_1_1_on_new_hour_update_a7843bdaadcf923564765c6a3e5f2941d}{day} = 1
+\item 
+static final String \hyperlink{classcs_1_1usense_1_1bluetooth_1_1_on_new_hour_update_aa896ac5cee7c10c70a6f9159bf7c8ec4}{N\+E\+W\+\_\+\+H\+O\+U\+R}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classcs_1_1usense_1_1bluetooth_1_1_on_new_hour_update_ab077ff7c27e637837cff94ca204a0814}{notify\+Data\+Base\+Change} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcs_1_1usense_1_1db_1_1_usense_data_source}{Usense\+Data\+Source} \hyperlink{classcs_1_1usense_1_1bluetooth_1_1_on_new_hour_update_a9499fb14e1441d5fe2ea131919f14a46}{datasource}
+\item 
+Array\+List$<$ \hyperlink{interfacecs_1_1usense_1_1db_1_1_data_base_change_listener}{Data\+Base\+Change\+Listener} $>$ \hyperlink{classcs_1_1usense_1_1bluetooth_1_1_on_new_hour_update_aa0d7b5151c9ed9a0e6e2c83c63cbb7f5}{listeners} = new Array\+List$<$\hyperlink{interfacecs_1_1usense_1_1db_1_1_data_base_change_listener}{Data\+Base\+Change\+Listener}$>$ ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class provides the computing updates for Social weights among users on hourly basis 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcs_1_1usense_1_1bluetooth_1_1_on_new_hour_update_af5363cd149e80b1b4abbeb44a0251e4e}{}\index{cs\+::usense\+::bluetooth\+::\+On\+New\+Hour\+Update@{cs\+::usense\+::bluetooth\+::\+On\+New\+Hour\+Update}!On\+New\+Hour\+Update@{On\+New\+Hour\+Update}}
+\index{On\+New\+Hour\+Update@{On\+New\+Hour\+Update}!cs\+::usense\+::bluetooth\+::\+On\+New\+Hour\+Update@{cs\+::usense\+::bluetooth\+::\+On\+New\+Hour\+Update}}
+\subsubsection[{On\+New\+Hour\+Update(\+Usense\+Data\+Source datasource2)}]{\setlength{\rightskip}{0pt plus 5cm}cs.\+usense.\+bluetooth.\+On\+New\+Hour\+Update.\+On\+New\+Hour\+Update (
+\begin{DoxyParamCaption}
+\item[{{\bf Usense\+Data\+Source}}]{datasource2}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1bluetooth_1_1_on_new_hour_update_af5363cd149e80b1b4abbeb44a0251e4e}
+This method is the constructor for \hyperlink{classcs_1_1usense_1_1bluetooth_1_1_on_new_hour_update}{On\+New\+Hour\+Update}. 
+\begin{DoxyParams}{Parameters}
+{\em datasource2} & Usense\+Data\+Source to access various methods and information of the U\+Sense Data base. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcs_1_1usense_1_1bluetooth_1_1_on_new_hour_update_a631338f7e73961f53f62a85e46350c74}{}\index{cs\+::usense\+::bluetooth\+::\+On\+New\+Hour\+Update@{cs\+::usense\+::bluetooth\+::\+On\+New\+Hour\+Update}!get\+Time\+Slot@{get\+Time\+Slot}}
+\index{get\+Time\+Slot@{get\+Time\+Slot}!cs\+::usense\+::bluetooth\+::\+On\+New\+Hour\+Update@{cs\+::usense\+::bluetooth\+::\+On\+New\+Hour\+Update}}
+\subsubsection[{get\+Time\+Slot()}]{\setlength{\rightskip}{0pt plus 5cm}int cs.\+usense.\+bluetooth.\+On\+New\+Hour\+Update.\+get\+Time\+Slot (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1bluetooth_1_1_on_new_hour_update_a631338f7e73961f53f62a85e46350c74}
+This method provides the current time slot. \begin{DoxyReturn}{Returns}
+current\+Time\+Slot The actual time slot. 
+\end{DoxyReturn}
+\hypertarget{classcs_1_1usense_1_1bluetooth_1_1_on_new_hour_update_ab077ff7c27e637837cff94ca204a0814}{}\index{cs\+::usense\+::bluetooth\+::\+On\+New\+Hour\+Update@{cs\+::usense\+::bluetooth\+::\+On\+New\+Hour\+Update}!notify\+Data\+Base\+Change@{notify\+Data\+Base\+Change}}
+\index{notify\+Data\+Base\+Change@{notify\+Data\+Base\+Change}!cs\+::usense\+::bluetooth\+::\+On\+New\+Hour\+Update@{cs\+::usense\+::bluetooth\+::\+On\+New\+Hour\+Update}}
+\subsubsection[{notify\+Data\+Base\+Change()}]{\setlength{\rightskip}{0pt plus 5cm}void cs.\+usense.\+bluetooth.\+On\+New\+Hour\+Update.\+notify\+Data\+Base\+Change (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{classcs_1_1usense_1_1bluetooth_1_1_on_new_hour_update_ab077ff7c27e637837cff94ca204a0814}
+This method notifies a database change to the listeners. \hypertarget{classcs_1_1usense_1_1bluetooth_1_1_on_new_hour_update_ac238f8079381da35e6fe4cc08b09ff20}{}\index{cs\+::usense\+::bluetooth\+::\+On\+New\+Hour\+Update@{cs\+::usense\+::bluetooth\+::\+On\+New\+Hour\+Update}!on\+Receive@{on\+Receive}}
+\index{on\+Receive@{on\+Receive}!cs\+::usense\+::bluetooth\+::\+On\+New\+Hour\+Update@{cs\+::usense\+::bluetooth\+::\+On\+New\+Hour\+Update}}
+\subsubsection[{on\+Receive(\+Context context, Intent intent)}]{\setlength{\rightskip}{0pt plus 5cm}void cs.\+usense.\+bluetooth.\+On\+New\+Hour\+Update.\+on\+Receive (
+\begin{DoxyParamCaption}
+\item[{Context}]{context, }
+\item[{Intent}]{intent}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1bluetooth_1_1_on_new_hour_update_ac238f8079381da35e6fe4cc08b09ff20}
+This method receives action concerning social weight updates. 
+\begin{DoxyParams}{Parameters}
+{\em context} & Interface to global information about an application environment. \\
+\hline
+{\em intent} & The intent. \\
+\hline
+\end{DoxyParams}
+Set new encounter start
+
+Update average encounter duration
+
+Update social weight \hypertarget{classcs_1_1usense_1_1bluetooth_1_1_on_new_hour_update_adfe6b0c83611152834e2196651d19948}{}\index{cs\+::usense\+::bluetooth\+::\+On\+New\+Hour\+Update@{cs\+::usense\+::bluetooth\+::\+On\+New\+Hour\+Update}!show\+Devices\+On\+D\+B@{show\+Devices\+On\+D\+B}}
+\index{show\+Devices\+On\+D\+B@{show\+Devices\+On\+D\+B}!cs\+::usense\+::bluetooth\+::\+On\+New\+Hour\+Update@{cs\+::usense\+::bluetooth\+::\+On\+New\+Hour\+Update}}
+\subsubsection[{show\+Devices\+On\+D\+B()}]{\setlength{\rightskip}{0pt plus 5cm}void cs.\+usense.\+bluetooth.\+On\+New\+Hour\+Update.\+show\+Devices\+On\+D\+B (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1bluetooth_1_1_on_new_hour_update_adfe6b0c83611152834e2196651d19948}
+This method shows the Bluetooth devices stored on the D\+B. 
+
+\subsection{Member Data Documentation}
+\hypertarget{classcs_1_1usense_1_1bluetooth_1_1_on_new_hour_update_a9499fb14e1441d5fe2ea131919f14a46}{}\index{cs\+::usense\+::bluetooth\+::\+On\+New\+Hour\+Update@{cs\+::usense\+::bluetooth\+::\+On\+New\+Hour\+Update}!datasource@{datasource}}
+\index{datasource@{datasource}!cs\+::usense\+::bluetooth\+::\+On\+New\+Hour\+Update@{cs\+::usense\+::bluetooth\+::\+On\+New\+Hour\+Update}}
+\subsubsection[{datasource}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Usense\+Data\+Source} cs.\+usense.\+bluetooth.\+On\+New\+Hour\+Update.\+datasource\hspace{0.3cm}{\ttfamily [private]}}\label{classcs_1_1usense_1_1bluetooth_1_1_on_new_hour_update_a9499fb14e1441d5fe2ea131919f14a46}
+This class is to access functionality of Usense Data base \hypertarget{classcs_1_1usense_1_1bluetooth_1_1_on_new_hour_update_a7843bdaadcf923564765c6a3e5f2941d}{}\index{cs\+::usense\+::bluetooth\+::\+On\+New\+Hour\+Update@{cs\+::usense\+::bluetooth\+::\+On\+New\+Hour\+Update}!day@{day}}
+\index{day@{day}!cs\+::usense\+::bluetooth\+::\+On\+New\+Hour\+Update@{cs\+::usense\+::bluetooth\+::\+On\+New\+Hour\+Update}}
+\subsubsection[{day}]{\setlength{\rightskip}{0pt plus 5cm}int cs.\+usense.\+bluetooth.\+On\+New\+Hour\+Update.\+day = 1\hspace{0.3cm}{\ttfamily [static]}}\label{classcs_1_1usense_1_1bluetooth_1_1_on_new_hour_update_a7843bdaadcf923564765c6a3e5f2941d}
+This variable is to provide the day \hypertarget{classcs_1_1usense_1_1bluetooth_1_1_on_new_hour_update_aa0d7b5151c9ed9a0e6e2c83c63cbb7f5}{}\index{cs\+::usense\+::bluetooth\+::\+On\+New\+Hour\+Update@{cs\+::usense\+::bluetooth\+::\+On\+New\+Hour\+Update}!listeners@{listeners}}
+\index{listeners@{listeners}!cs\+::usense\+::bluetooth\+::\+On\+New\+Hour\+Update@{cs\+::usense\+::bluetooth\+::\+On\+New\+Hour\+Update}}
+\subsubsection[{listeners}]{\setlength{\rightskip}{0pt plus 5cm}Array\+List$<${\bf Data\+Base\+Change\+Listener}$>$ cs.\+usense.\+bluetooth.\+On\+New\+Hour\+Update.\+listeners = new Array\+List$<${\bf Data\+Base\+Change\+Listener}$>$ ()\hspace{0.3cm}{\ttfamily [private]}}\label{classcs_1_1usense_1_1bluetooth_1_1_on_new_hour_update_aa0d7b5151c9ed9a0e6e2c83c63cbb7f5}
+\hypertarget{classcs_1_1usense_1_1bluetooth_1_1_on_new_hour_update_aa896ac5cee7c10c70a6f9159bf7c8ec4}{}\index{cs\+::usense\+::bluetooth\+::\+On\+New\+Hour\+Update@{cs\+::usense\+::bluetooth\+::\+On\+New\+Hour\+Update}!N\+E\+W\+\_\+\+H\+O\+U\+R@{N\+E\+W\+\_\+\+H\+O\+U\+R}}
+\index{N\+E\+W\+\_\+\+H\+O\+U\+R@{N\+E\+W\+\_\+\+H\+O\+U\+R}!cs\+::usense\+::bluetooth\+::\+On\+New\+Hour\+Update@{cs\+::usense\+::bluetooth\+::\+On\+New\+Hour\+Update}}
+\subsubsection[{N\+E\+W\+\_\+\+H\+O\+U\+R}]{\setlength{\rightskip}{0pt plus 5cm}final String cs.\+usense.\+bluetooth.\+On\+New\+Hour\+Update.\+N\+E\+W\+\_\+\+H\+O\+U\+R\hspace{0.3cm}{\ttfamily [static]}}\label{classcs_1_1usense_1_1bluetooth_1_1_on_new_hour_update_aa896ac5cee7c10c70a6f9159bf7c8ec4}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+            \textcolor{stringliteral}{"android.intent.action.NEWHOUR"}
+\end{DoxyCode}
+This variable is to get the new hour 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/cs/usense/bluetooth/\hyperlink{_on_new_hour_update_8java}{On\+New\+Hour\+Update.\+java}\end{DoxyCompactItemize}

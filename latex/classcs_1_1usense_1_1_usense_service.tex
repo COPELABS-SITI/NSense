@@ -1,0 +1,300 @@
+\hypertarget{classcs_1_1usense_1_1_usense_service}{}\section{cs.\+usense.\+Usense\+Service Class Reference}
+\label{classcs_1_1usense_1_1_usense_service}\index{cs.\+usense.\+Usense\+Service@{cs.\+usense.\+Usense\+Service}}
+Inheritance diagram for cs.\+usense.\+Usense\+Service\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcs_1_1usense_1_1_usense_service}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classcs_1_1usense_1_1_usense_service_1_1_local_binder}{Local\+Binder}
+\item 
+interface \hyperlink{interfacecs_1_1usense_1_1_usense_service_1_1_n_o_t_i_f_i_c_a_t_i_o_n___i_d}{N\+O\+T\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+I\+D}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcs_1_1usense_1_1_usense_service_ac99c82284e69bfc5dbc5b989fb30997a}{Usense\+Service} ()
+\item 
+void \hyperlink{classcs_1_1usense_1_1_usense_service_a0a51268c26f69d4741aebf56b80b0ea7}{append\+Logs} (String current\+Time, String battery\+Level)
+\item 
+I\+Binder \hyperlink{classcs_1_1usense_1_1_usense_service_a6767bb0fe63b15780a2286e5c0a648ce}{on\+Bind} (Intent intent)
+\item 
+int \hyperlink{classcs_1_1usense_1_1_usense_service_a2692d2a87d04d21efcaccb80e5288145}{on\+Start\+Command} (Intent intent, int i, int j)
+\item 
+void \hyperlink{classcs_1_1usense_1_1_usense_service_ab777e6a3f067e6b2a6e8f6e94a24c8e9}{run\+As\+Foreground} ()
+\item 
+void \hyperlink{classcs_1_1usense_1_1_usense_service_af3951f4a9b22086b60c765e190e71019}{close\+All} ()
+\item 
+void \hyperlink{classcs_1_1usense_1_1_usense_service_a6aaa5b42a8143fc7f768285acd0923c6}{on\+Create} ()
+\item 
+void \hyperlink{classcs_1_1usense_1_1_usense_service_ad4d6bb0e2e1b794cad28496ed136afd7}{on\+Destroy} ()
+\item 
+void \hyperlink{classcs_1_1usense_1_1_usense_service_aa679ec7f12a4b3ab5eca53c19b3e0e77}{set\+On\+State\+Change\+Listener} (\hyperlink{interfacecs_1_1usense_1_1_change_listener}{Change\+Listener} listener)
+\item 
+void \hyperlink{classcs_1_1usense_1_1_usense_service_aea33c3dbd7c41e6fc9666062548fa9a9}{notify\+Location\+Outdoor} (String new\+Message)
+\item 
+void \hyperlink{classcs_1_1usense_1_1_usense_service_ab0c3e6a74883848bec5c69acde6fdc24}{notify\+Location\+Indoor} (Array\+List$<$ \hyperlink{classcs_1_1usense_1_1location_1_1_location_entry}{Location\+Entry} $>$ array\+List)
+\item 
+void \hyperlink{classcs_1_1usense_1_1_usense_service_aa12410019072ef4d35fda9aeef5987a8}{notify\+Action} (String new\+Message)
+\item 
+void \hyperlink{classcs_1_1usense_1_1_usense_service_a70d4675c2cafeeb34c50e42c3e7f1d70}{notify\+Social\+Weight} (Array\+List$<$ \hyperlink{classcs_1_1usense_1_1bluetooth_1_1_bluetooth_core_1_1social_weight}{social\+Weight} $>$ array\+List)
+\item 
+void \hyperlink{classcs_1_1usense_1_1_usense_service_a0eebaecc44d6dc8363b1867f01f47a02}{notify\+Sound\+Level} (String new\+Message)
+\item 
+void \hyperlink{classcs_1_1usense_1_1_usense_service_ac68f6c9dec8ba7bc40eb3559ffa5fe3a}{notify\+Sociality} (Array\+List$<$ \hyperlink{classcs_1_1usense_1_1inference_module_1_1_sociality_details}{Sociality\+Details} $>$ array\+List)
+\item 
+void \hyperlink{classcs_1_1usense_1_1_usense_service_a505a4dd908fdf01cb3757d723317d2c6}{notify\+Avg\+S\+I} (double avg\+S\+I)
+\item 
+void \hyperlink{classcs_1_1usense_1_1_usense_service_a703c4fcc3a80c711a614917b57114753}{notify\+Avg\+Prop} (double avg\+Prop)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Google\+Api\+Client \hyperlink{classcs_1_1usense_1_1_usense_service_affdbe849b516c9fac9164abfecce9a13}{m\+Google\+Api\+Client}
+\item 
+Detected\+Activity \hyperlink{classcs_1_1usense_1_1_usense_service_ad4dd4b6f3a051c8a74ad961b9d49b1a7}{mdetectd\+Activity}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Array\+List$<$ \hyperlink{interfacecs_1_1usense_1_1_change_listener}{Change\+Listener} $>$ \hyperlink{classcs_1_1usense_1_1_usense_service_a71cb28de66ce79c32cc7bb9cf8299c1a}{listeners} = new Array\+List$<$\hyperlink{interfacecs_1_1usense_1_1_change_listener}{Change\+Listener}$>$ ()
+\item 
+Sensor\+Manager \hyperlink{classcs_1_1usense_1_1_usense_service_ab93d0af2a257379caa8406afd31f070e}{m\+Sensor\+Manager}
+\item 
+\hyperlink{classcs_1_1usense_1_1location_1_1_location_pipeline}{Location\+Pipeline} \hyperlink{classcs_1_1usense_1_1_usense_service_a9233b9b84371bc77c397123c28f54f32}{m\+Location\+Pipeline}
+\item 
+\hyperlink{classcs_1_1usense_1_1bluetooth_1_1_bluetooth_core}{Bluetooth\+Core} \hyperlink{classcs_1_1usense_1_1_usense_service_ac1def6b6926720ac65169b1c45bcca02}{bluetooth}
+\item 
+\hyperlink{classcs_1_1usense_1_1accelerometer_1_1_accelerometer_pipeline}{Accelerometer\+Pipeline} \hyperlink{classcs_1_1usense_1_1_usense_service_a8a34b51ec2f7731dee62e886cd50dffe}{m\+Accelerometer\+Pipeline}
+\item 
+\hyperlink{classcs_1_1usense_1_1microphone_1_1_microphone_pipeline}{Microphone\+Pipeline} \hyperlink{classcs_1_1usense_1_1_usense_service_a7f6a621051f5527dc7a126f0c8115483}{m\+Icrophone}
+\item 
+final I\+Binder \hyperlink{classcs_1_1usense_1_1_usense_service_abfd01552fe63f68304a96a1022f1b550}{m\+Binder} = new \hyperlink{classcs_1_1usense_1_1_usense_service_1_1_local_binder}{Local\+Binder}()
+\item 
+\hyperlink{classcs_1_1usense_1_1db_1_1_usense_data_source}{Usense\+Data\+Source} \hyperlink{classcs_1_1usense_1_1_usense_service_a9474e65ad523c9db7405f7216bd89e7a}{data\+Source}
+\item 
+\hyperlink{classcs_1_1usense_1_1inference_module_1_1_social_interaction}{Social\+Interaction} \hyperlink{classcs_1_1usense_1_1_usense_service_a5f5920a5da11e00ac573b18f3be7c351}{m\+Social\+Interaction}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final String \hyperlink{classcs_1_1usense_1_1_usense_service_a2f4af137278818b3b651b780cad78960}{T\+A\+G} = \char`\"{}U\+S\+E\+N\+S\+E\char`\"{}
+\item 
+static final String \hyperlink{classcs_1_1usense_1_1_usense_service_a10a54c0fde66fe10afd4a1eb5b4a50d5}{Accelerometer} = \char`\"{}Accelerometer\char`\"{}
+\item 
+static final String \hyperlink{classcs_1_1usense_1_1_usense_service_a725424fc8ea92ac915d016e55328b6fe}{G\+P\+S} = \char`\"{}G\+P\+S\char`\"{}
+\item 
+static final Object \hyperlink{classcs_1_1usense_1_1_usense_service_a9aa9f695b19d30971c75c182c744f0eb}{B\+T} = \char`\"{}B\+T\char`\"{}
+\item 
+static final Object \hyperlink{classcs_1_1usense_1_1_usense_service_a9e01e85451a3a948de9de1cff5bc9b74}{Microphone} =\char`\"{}Microphone\char`\"{}
+\item 
+static final Timer \hyperlink{classcs_1_1usense_1_1_usense_service_a2840167e746fe3e7184721310b75f31d}{timer} = new Timer()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class provides methods to initialize all the pipelines, data base and get the data from all pipelines 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcs_1_1usense_1_1_usense_service_ac99c82284e69bfc5dbc5b989fb30997a}{}\index{cs\+::usense\+::\+Usense\+Service@{cs\+::usense\+::\+Usense\+Service}!Usense\+Service@{Usense\+Service}}
+\index{Usense\+Service@{Usense\+Service}!cs\+::usense\+::\+Usense\+Service@{cs\+::usense\+::\+Usense\+Service}}
+\subsubsection[{Usense\+Service()}]{\setlength{\rightskip}{0pt plus 5cm}cs.\+usense.\+Usense\+Service.\+Usense\+Service (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1_usense_service_ac99c82284e69bfc5dbc5b989fb30997a}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcs_1_1usense_1_1_usense_service_a0a51268c26f69d4741aebf56b80b0ea7}{}\index{cs\+::usense\+::\+Usense\+Service@{cs\+::usense\+::\+Usense\+Service}!append\+Logs@{append\+Logs}}
+\index{append\+Logs@{append\+Logs}!cs\+::usense\+::\+Usense\+Service@{cs\+::usense\+::\+Usense\+Service}}
+\subsubsection[{append\+Logs(\+String current\+Time, String battery\+Level)}]{\setlength{\rightskip}{0pt plus 5cm}void cs.\+usense.\+Usense\+Service.\+append\+Logs (
+\begin{DoxyParamCaption}
+\item[{String}]{current\+Time, }
+\item[{String}]{battery\+Level}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1_usense_service_a0a51268c26f69d4741aebf56b80b0ea7}
+This method stores the the battery level and time 
+\begin{DoxyParams}{Parameters}
+{\em current\+Time} & Current time \\
+\hline
+{\em battery\+Level} & Battery level \\
+\hline
+\end{DoxyParams}
+Buffered\+Writer for performance, true to set append to file flag \hypertarget{classcs_1_1usense_1_1_usense_service_af3951f4a9b22086b60c765e190e71019}{}\index{cs\+::usense\+::\+Usense\+Service@{cs\+::usense\+::\+Usense\+Service}!close\+All@{close\+All}}
+\index{close\+All@{close\+All}!cs\+::usense\+::\+Usense\+Service@{cs\+::usense\+::\+Usense\+Service}}
+\subsubsection[{close\+All()}]{\setlength{\rightskip}{0pt plus 5cm}void cs.\+usense.\+Usense\+Service.\+close\+All (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1_usense_service_af3951f4a9b22086b60c765e190e71019}
+This method close the U\+Sense service if it is running on foreground \hypertarget{classcs_1_1usense_1_1_usense_service_aa12410019072ef4d35fda9aeef5987a8}{}\index{cs\+::usense\+::\+Usense\+Service@{cs\+::usense\+::\+Usense\+Service}!notify\+Action@{notify\+Action}}
+\index{notify\+Action@{notify\+Action}!cs\+::usense\+::\+Usense\+Service@{cs\+::usense\+::\+Usense\+Service}}
+\subsubsection[{notify\+Action(\+String new\+Message)}]{\setlength{\rightskip}{0pt plus 5cm}void cs.\+usense.\+Usense\+Service.\+notify\+Action (
+\begin{DoxyParamCaption}
+\item[{String}]{new\+Message}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1_usense_service_aa12410019072ef4d35fda9aeef5987a8}
+\hypertarget{classcs_1_1usense_1_1_usense_service_a703c4fcc3a80c711a614917b57114753}{}\index{cs\+::usense\+::\+Usense\+Service@{cs\+::usense\+::\+Usense\+Service}!notify\+Avg\+Prop@{notify\+Avg\+Prop}}
+\index{notify\+Avg\+Prop@{notify\+Avg\+Prop}!cs\+::usense\+::\+Usense\+Service@{cs\+::usense\+::\+Usense\+Service}}
+\subsubsection[{notify\+Avg\+Prop(double avg\+Prop)}]{\setlength{\rightskip}{0pt plus 5cm}void cs.\+usense.\+Usense\+Service.\+notify\+Avg\+Prop (
+\begin{DoxyParamCaption}
+\item[{double}]{avg\+Prop}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1_usense_service_a703c4fcc3a80c711a614917b57114753}
+\hypertarget{classcs_1_1usense_1_1_usense_service_a505a4dd908fdf01cb3757d723317d2c6}{}\index{cs\+::usense\+::\+Usense\+Service@{cs\+::usense\+::\+Usense\+Service}!notify\+Avg\+S\+I@{notify\+Avg\+S\+I}}
+\index{notify\+Avg\+S\+I@{notify\+Avg\+S\+I}!cs\+::usense\+::\+Usense\+Service@{cs\+::usense\+::\+Usense\+Service}}
+\subsubsection[{notify\+Avg\+S\+I(double avg\+S\+I)}]{\setlength{\rightskip}{0pt plus 5cm}void cs.\+usense.\+Usense\+Service.\+notify\+Avg\+S\+I (
+\begin{DoxyParamCaption}
+\item[{double}]{avg\+S\+I}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1_usense_service_a505a4dd908fdf01cb3757d723317d2c6}
+\hypertarget{classcs_1_1usense_1_1_usense_service_ab0c3e6a74883848bec5c69acde6fdc24}{}\index{cs\+::usense\+::\+Usense\+Service@{cs\+::usense\+::\+Usense\+Service}!notify\+Location\+Indoor@{notify\+Location\+Indoor}}
+\index{notify\+Location\+Indoor@{notify\+Location\+Indoor}!cs\+::usense\+::\+Usense\+Service@{cs\+::usense\+::\+Usense\+Service}}
+\subsubsection[{notify\+Location\+Indoor(\+Array\+List$<$ Location\+Entry $>$ array\+List)}]{\setlength{\rightskip}{0pt plus 5cm}void cs.\+usense.\+Usense\+Service.\+notify\+Location\+Indoor (
+\begin{DoxyParamCaption}
+\item[{Array\+List$<$ {\bf Location\+Entry} $>$}]{array\+List}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1_usense_service_ab0c3e6a74883848bec5c69acde6fdc24}
+\hypertarget{classcs_1_1usense_1_1_usense_service_aea33c3dbd7c41e6fc9666062548fa9a9}{}\index{cs\+::usense\+::\+Usense\+Service@{cs\+::usense\+::\+Usense\+Service}!notify\+Location\+Outdoor@{notify\+Location\+Outdoor}}
+\index{notify\+Location\+Outdoor@{notify\+Location\+Outdoor}!cs\+::usense\+::\+Usense\+Service@{cs\+::usense\+::\+Usense\+Service}}
+\subsubsection[{notify\+Location\+Outdoor(\+String new\+Message)}]{\setlength{\rightskip}{0pt plus 5cm}void cs.\+usense.\+Usense\+Service.\+notify\+Location\+Outdoor (
+\begin{DoxyParamCaption}
+\item[{String}]{new\+Message}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1_usense_service_aea33c3dbd7c41e6fc9666062548fa9a9}
+\hypertarget{classcs_1_1usense_1_1_usense_service_ac68f6c9dec8ba7bc40eb3559ffa5fe3a}{}\index{cs\+::usense\+::\+Usense\+Service@{cs\+::usense\+::\+Usense\+Service}!notify\+Sociality@{notify\+Sociality}}
+\index{notify\+Sociality@{notify\+Sociality}!cs\+::usense\+::\+Usense\+Service@{cs\+::usense\+::\+Usense\+Service}}
+\subsubsection[{notify\+Sociality(\+Array\+List$<$ Sociality\+Details $>$ array\+List)}]{\setlength{\rightskip}{0pt plus 5cm}void cs.\+usense.\+Usense\+Service.\+notify\+Sociality (
+\begin{DoxyParamCaption}
+\item[{Array\+List$<$ {\bf Sociality\+Details} $>$}]{array\+List}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1_usense_service_ac68f6c9dec8ba7bc40eb3559ffa5fe3a}
+\hypertarget{classcs_1_1usense_1_1_usense_service_a70d4675c2cafeeb34c50e42c3e7f1d70}{}\index{cs\+::usense\+::\+Usense\+Service@{cs\+::usense\+::\+Usense\+Service}!notify\+Social\+Weight@{notify\+Social\+Weight}}
+\index{notify\+Social\+Weight@{notify\+Social\+Weight}!cs\+::usense\+::\+Usense\+Service@{cs\+::usense\+::\+Usense\+Service}}
+\subsubsection[{notify\+Social\+Weight(\+Array\+List$<$ social\+Weight $>$ array\+List)}]{\setlength{\rightskip}{0pt plus 5cm}void cs.\+usense.\+Usense\+Service.\+notify\+Social\+Weight (
+\begin{DoxyParamCaption}
+\item[{Array\+List$<$ {\bf social\+Weight} $>$}]{array\+List}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1_usense_service_a70d4675c2cafeeb34c50e42c3e7f1d70}
+\hypertarget{classcs_1_1usense_1_1_usense_service_a0eebaecc44d6dc8363b1867f01f47a02}{}\index{cs\+::usense\+::\+Usense\+Service@{cs\+::usense\+::\+Usense\+Service}!notify\+Sound\+Level@{notify\+Sound\+Level}}
+\index{notify\+Sound\+Level@{notify\+Sound\+Level}!cs\+::usense\+::\+Usense\+Service@{cs\+::usense\+::\+Usense\+Service}}
+\subsubsection[{notify\+Sound\+Level(\+String new\+Message)}]{\setlength{\rightskip}{0pt plus 5cm}void cs.\+usense.\+Usense\+Service.\+notify\+Sound\+Level (
+\begin{DoxyParamCaption}
+\item[{String}]{new\+Message}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1_usense_service_a0eebaecc44d6dc8363b1867f01f47a02}
+\hypertarget{classcs_1_1usense_1_1_usense_service_a6767bb0fe63b15780a2286e5c0a648ce}{}\index{cs\+::usense\+::\+Usense\+Service@{cs\+::usense\+::\+Usense\+Service}!on\+Bind@{on\+Bind}}
+\index{on\+Bind@{on\+Bind}!cs\+::usense\+::\+Usense\+Service@{cs\+::usense\+::\+Usense\+Service}}
+\subsubsection[{on\+Bind(\+Intent intent)}]{\setlength{\rightskip}{0pt plus 5cm}I\+Binder cs.\+usense.\+Usense\+Service.\+on\+Bind (
+\begin{DoxyParamCaption}
+\item[{Intent}]{intent}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1_usense_service_a6767bb0fe63b15780a2286e5c0a648ce}
+\hypertarget{classcs_1_1usense_1_1_usense_service_a6aaa5b42a8143fc7f768285acd0923c6}{}\index{cs\+::usense\+::\+Usense\+Service@{cs\+::usense\+::\+Usense\+Service}!on\+Create@{on\+Create}}
+\index{on\+Create@{on\+Create}!cs\+::usense\+::\+Usense\+Service@{cs\+::usense\+::\+Usense\+Service}}
+\subsubsection[{on\+Create()}]{\setlength{\rightskip}{0pt plus 5cm}void cs.\+usense.\+Usense\+Service.\+on\+Create (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1_usense_service_a6aaa5b42a8143fc7f768285acd0923c6}
+\hypertarget{classcs_1_1usense_1_1_usense_service_ad4d6bb0e2e1b794cad28496ed136afd7}{}\index{cs\+::usense\+::\+Usense\+Service@{cs\+::usense\+::\+Usense\+Service}!on\+Destroy@{on\+Destroy}}
+\index{on\+Destroy@{on\+Destroy}!cs\+::usense\+::\+Usense\+Service@{cs\+::usense\+::\+Usense\+Service}}
+\subsubsection[{on\+Destroy()}]{\setlength{\rightskip}{0pt plus 5cm}void cs.\+usense.\+Usense\+Service.\+on\+Destroy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1_usense_service_ad4d6bb0e2e1b794cad28496ed136afd7}
+This method close all the pipelines from the U\+Sense Service \hypertarget{classcs_1_1usense_1_1_usense_service_a2692d2a87d04d21efcaccb80e5288145}{}\index{cs\+::usense\+::\+Usense\+Service@{cs\+::usense\+::\+Usense\+Service}!on\+Start\+Command@{on\+Start\+Command}}
+\index{on\+Start\+Command@{on\+Start\+Command}!cs\+::usense\+::\+Usense\+Service@{cs\+::usense\+::\+Usense\+Service}}
+\subsubsection[{on\+Start\+Command(\+Intent intent, int i, int j)}]{\setlength{\rightskip}{0pt plus 5cm}int cs.\+usense.\+Usense\+Service.\+on\+Start\+Command (
+\begin{DoxyParamCaption}
+\item[{Intent}]{intent, }
+\item[{int}]{i, }
+\item[{int}]{j}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1_usense_service_a2692d2a87d04d21efcaccb80e5288145}
+Creates a file for Bluetooth debugging
+
+handle case of no S\+D\+C\+A\+R\+D present
+
+create folder
+
+create file
+
+Run this service as foreground \hypertarget{classcs_1_1usense_1_1_usense_service_ab777e6a3f067e6b2a6e8f6e94a24c8e9}{}\index{cs\+::usense\+::\+Usense\+Service@{cs\+::usense\+::\+Usense\+Service}!run\+As\+Foreground@{run\+As\+Foreground}}
+\index{run\+As\+Foreground@{run\+As\+Foreground}!cs\+::usense\+::\+Usense\+Service@{cs\+::usense\+::\+Usense\+Service}}
+\subsubsection[{run\+As\+Foreground()}]{\setlength{\rightskip}{0pt plus 5cm}void cs.\+usense.\+Usense\+Service.\+run\+As\+Foreground (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1_usense_service_ab777e6a3f067e6b2a6e8f6e94a24c8e9}
+This method provides the functionality to run the service as Foreground \hypertarget{classcs_1_1usense_1_1_usense_service_aa679ec7f12a4b3ab5eca53c19b3e0e77}{}\index{cs\+::usense\+::\+Usense\+Service@{cs\+::usense\+::\+Usense\+Service}!set\+On\+State\+Change\+Listener@{set\+On\+State\+Change\+Listener}}
+\index{set\+On\+State\+Change\+Listener@{set\+On\+State\+Change\+Listener}!cs\+::usense\+::\+Usense\+Service@{cs\+::usense\+::\+Usense\+Service}}
+\subsubsection[{set\+On\+State\+Change\+Listener(\+Change\+Listener listener)}]{\setlength{\rightskip}{0pt plus 5cm}void cs.\+usense.\+Usense\+Service.\+set\+On\+State\+Change\+Listener (
+\begin{DoxyParamCaption}
+\item[{{\bf Change\+Listener}}]{listener}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1_usense_service_aa679ec7f12a4b3ab5eca53c19b3e0e77}
+Listener Methods of all the pipelines to get data 
+
+\subsection{Member Data Documentation}
+\hypertarget{classcs_1_1usense_1_1_usense_service_a10a54c0fde66fe10afd4a1eb5b4a50d5}{}\index{cs\+::usense\+::\+Usense\+Service@{cs\+::usense\+::\+Usense\+Service}!Accelerometer@{Accelerometer}}
+\index{Accelerometer@{Accelerometer}!cs\+::usense\+::\+Usense\+Service@{cs\+::usense\+::\+Usense\+Service}}
+\subsubsection[{Accelerometer}]{\setlength{\rightskip}{0pt plus 5cm}final String cs.\+usense.\+Usense\+Service.\+Accelerometer = \char`\"{}Accelerometer\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classcs_1_1usense_1_1_usense_service_a10a54c0fde66fe10afd4a1eb5b4a50d5}
+This variable is to check Accelerometer module to be initiated \hypertarget{classcs_1_1usense_1_1_usense_service_ac1def6b6926720ac65169b1c45bcca02}{}\index{cs\+::usense\+::\+Usense\+Service@{cs\+::usense\+::\+Usense\+Service}!bluetooth@{bluetooth}}
+\index{bluetooth@{bluetooth}!cs\+::usense\+::\+Usense\+Service@{cs\+::usense\+::\+Usense\+Service}}
+\subsubsection[{bluetooth}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Bluetooth\+Core} cs.\+usense.\+Usense\+Service.\+bluetooth\hspace{0.3cm}{\ttfamily [private]}}\label{classcs_1_1usense_1_1_usense_service_ac1def6b6926720ac65169b1c45bcca02}
+This class is to access core functionality of Bluetooth pipeline \hypertarget{classcs_1_1usense_1_1_usense_service_a9aa9f695b19d30971c75c182c744f0eb}{}\index{cs\+::usense\+::\+Usense\+Service@{cs\+::usense\+::\+Usense\+Service}!B\+T@{B\+T}}
+\index{B\+T@{B\+T}!cs\+::usense\+::\+Usense\+Service@{cs\+::usense\+::\+Usense\+Service}}
+\subsubsection[{B\+T}]{\setlength{\rightskip}{0pt plus 5cm}final Object cs.\+usense.\+Usense\+Service.\+B\+T = \char`\"{}B\+T\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classcs_1_1usense_1_1_usense_service_a9aa9f695b19d30971c75c182c744f0eb}
+This variable is to check Bluetooth module to be initiated \hypertarget{classcs_1_1usense_1_1_usense_service_a9474e65ad523c9db7405f7216bd89e7a}{}\index{cs\+::usense\+::\+Usense\+Service@{cs\+::usense\+::\+Usense\+Service}!data\+Source@{data\+Source}}
+\index{data\+Source@{data\+Source}!cs\+::usense\+::\+Usense\+Service@{cs\+::usense\+::\+Usense\+Service}}
+\subsubsection[{data\+Source}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Usense\+Data\+Source} cs.\+usense.\+Usense\+Service.\+data\+Source\hspace{0.3cm}{\ttfamily [private]}}\label{classcs_1_1usense_1_1_usense_service_a9474e65ad523c9db7405f7216bd89e7a}
+This class is to access functionality of Usense Data base \hypertarget{classcs_1_1usense_1_1_usense_service_a725424fc8ea92ac915d016e55328b6fe}{}\index{cs\+::usense\+::\+Usense\+Service@{cs\+::usense\+::\+Usense\+Service}!G\+P\+S@{G\+P\+S}}
+\index{G\+P\+S@{G\+P\+S}!cs\+::usense\+::\+Usense\+Service@{cs\+::usense\+::\+Usense\+Service}}
+\subsubsection[{G\+P\+S}]{\setlength{\rightskip}{0pt plus 5cm}final String cs.\+usense.\+Usense\+Service.\+G\+P\+S = \char`\"{}G\+P\+S\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classcs_1_1usense_1_1_usense_service_a725424fc8ea92ac915d016e55328b6fe}
+This variable is to check Location module to be initiated \hypertarget{classcs_1_1usense_1_1_usense_service_a71cb28de66ce79c32cc7bb9cf8299c1a}{}\index{cs\+::usense\+::\+Usense\+Service@{cs\+::usense\+::\+Usense\+Service}!listeners@{listeners}}
+\index{listeners@{listeners}!cs\+::usense\+::\+Usense\+Service@{cs\+::usense\+::\+Usense\+Service}}
+\subsubsection[{listeners}]{\setlength{\rightskip}{0pt plus 5cm}Array\+List$<${\bf Change\+Listener}$>$ cs.\+usense.\+Usense\+Service.\+listeners = new Array\+List$<${\bf Change\+Listener}$>$ ()\hspace{0.3cm}{\ttfamily [private]}}\label{classcs_1_1usense_1_1_usense_service_a71cb28de66ce79c32cc7bb9cf8299c1a}
+This variable is used to access the listeners \hypertarget{classcs_1_1usense_1_1_usense_service_a8a34b51ec2f7731dee62e886cd50dffe}{}\index{cs\+::usense\+::\+Usense\+Service@{cs\+::usense\+::\+Usense\+Service}!m\+Accelerometer\+Pipeline@{m\+Accelerometer\+Pipeline}}
+\index{m\+Accelerometer\+Pipeline@{m\+Accelerometer\+Pipeline}!cs\+::usense\+::\+Usense\+Service@{cs\+::usense\+::\+Usense\+Service}}
+\subsubsection[{m\+Accelerometer\+Pipeline}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Accelerometer\+Pipeline} cs.\+usense.\+Usense\+Service.\+m\+Accelerometer\+Pipeline\hspace{0.3cm}{\ttfamily [private]}}\label{classcs_1_1usense_1_1_usense_service_a8a34b51ec2f7731dee62e886cd50dffe}
+This class is to access functionality of Accelerometer pipeline \hypertarget{classcs_1_1usense_1_1_usense_service_abfd01552fe63f68304a96a1022f1b550}{}\index{cs\+::usense\+::\+Usense\+Service@{cs\+::usense\+::\+Usense\+Service}!m\+Binder@{m\+Binder}}
+\index{m\+Binder@{m\+Binder}!cs\+::usense\+::\+Usense\+Service@{cs\+::usense\+::\+Usense\+Service}}
+\subsubsection[{m\+Binder}]{\setlength{\rightskip}{0pt plus 5cm}final I\+Binder cs.\+usense.\+Usense\+Service.\+m\+Binder = new {\bf Local\+Binder}()\hspace{0.3cm}{\ttfamily [private]}}\label{classcs_1_1usense_1_1_usense_service_abfd01552fe63f68304a96a1022f1b550}
+This variable to get functionality of I\+Binder \hypertarget{classcs_1_1usense_1_1_usense_service_ad4dd4b6f3a051c8a74ad961b9d49b1a7}{}\index{cs\+::usense\+::\+Usense\+Service@{cs\+::usense\+::\+Usense\+Service}!mdetectd\+Activity@{mdetectd\+Activity}}
+\index{mdetectd\+Activity@{mdetectd\+Activity}!cs\+::usense\+::\+Usense\+Service@{cs\+::usense\+::\+Usense\+Service}}
+\subsubsection[{mdetectd\+Activity}]{\setlength{\rightskip}{0pt plus 5cm}Detected\+Activity cs.\+usense.\+Usense\+Service.\+mdetectd\+Activity\hspace{0.3cm}{\ttfamily [protected]}}\label{classcs_1_1usense_1_1_usense_service_ad4dd4b6f3a051c8a74ad961b9d49b1a7}
+This variable to store the detected activity \hypertarget{classcs_1_1usense_1_1_usense_service_affdbe849b516c9fac9164abfecce9a13}{}\index{cs\+::usense\+::\+Usense\+Service@{cs\+::usense\+::\+Usense\+Service}!m\+Google\+Api\+Client@{m\+Google\+Api\+Client}}
+\index{m\+Google\+Api\+Client@{m\+Google\+Api\+Client}!cs\+::usense\+::\+Usense\+Service@{cs\+::usense\+::\+Usense\+Service}}
+\subsubsection[{m\+Google\+Api\+Client}]{\setlength{\rightskip}{0pt plus 5cm}Google\+Api\+Client cs.\+usense.\+Usense\+Service.\+m\+Google\+Api\+Client\hspace{0.3cm}{\ttfamily [protected]}}\label{classcs_1_1usense_1_1_usense_service_affdbe849b516c9fac9164abfecce9a13}
+This class is to access functionality of Google Client A\+P\+I \hypertarget{classcs_1_1usense_1_1_usense_service_a9e01e85451a3a948de9de1cff5bc9b74}{}\index{cs\+::usense\+::\+Usense\+Service@{cs\+::usense\+::\+Usense\+Service}!Microphone@{Microphone}}
+\index{Microphone@{Microphone}!cs\+::usense\+::\+Usense\+Service@{cs\+::usense\+::\+Usense\+Service}}
+\subsubsection[{Microphone}]{\setlength{\rightskip}{0pt plus 5cm}final Object cs.\+usense.\+Usense\+Service.\+Microphone =\char`\"{}Microphone\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classcs_1_1usense_1_1_usense_service_a9e01e85451a3a948de9de1cff5bc9b74}
+This variable is to check Microphone module to be initiated \hypertarget{classcs_1_1usense_1_1_usense_service_a7f6a621051f5527dc7a126f0c8115483}{}\index{cs\+::usense\+::\+Usense\+Service@{cs\+::usense\+::\+Usense\+Service}!m\+Icrophone@{m\+Icrophone}}
+\index{m\+Icrophone@{m\+Icrophone}!cs\+::usense\+::\+Usense\+Service@{cs\+::usense\+::\+Usense\+Service}}
+\subsubsection[{m\+Icrophone}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Microphone\+Pipeline} cs.\+usense.\+Usense\+Service.\+m\+Icrophone\hspace{0.3cm}{\ttfamily [private]}}\label{classcs_1_1usense_1_1_usense_service_a7f6a621051f5527dc7a126f0c8115483}
+This class is to access functionality of Microphone pipeline \hypertarget{classcs_1_1usense_1_1_usense_service_a9233b9b84371bc77c397123c28f54f32}{}\index{cs\+::usense\+::\+Usense\+Service@{cs\+::usense\+::\+Usense\+Service}!m\+Location\+Pipeline@{m\+Location\+Pipeline}}
+\index{m\+Location\+Pipeline@{m\+Location\+Pipeline}!cs\+::usense\+::\+Usense\+Service@{cs\+::usense\+::\+Usense\+Service}}
+\subsubsection[{m\+Location\+Pipeline}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Location\+Pipeline} cs.\+usense.\+Usense\+Service.\+m\+Location\+Pipeline\hspace{0.3cm}{\ttfamily [private]}}\label{classcs_1_1usense_1_1_usense_service_a9233b9b84371bc77c397123c28f54f32}
+This class is to access functionality of Location pipeline \hypertarget{classcs_1_1usense_1_1_usense_service_ab93d0af2a257379caa8406afd31f070e}{}\index{cs\+::usense\+::\+Usense\+Service@{cs\+::usense\+::\+Usense\+Service}!m\+Sensor\+Manager@{m\+Sensor\+Manager}}
+\index{m\+Sensor\+Manager@{m\+Sensor\+Manager}!cs\+::usense\+::\+Usense\+Service@{cs\+::usense\+::\+Usense\+Service}}
+\subsubsection[{m\+Sensor\+Manager}]{\setlength{\rightskip}{0pt plus 5cm}Sensor\+Manager cs.\+usense.\+Usense\+Service.\+m\+Sensor\+Manager\hspace{0.3cm}{\ttfamily [private]}}\label{classcs_1_1usense_1_1_usense_service_ab93d0af2a257379caa8406afd31f070e}
+This class is to access functionality of Sensor Manager from accelerometer pipeline \hypertarget{classcs_1_1usense_1_1_usense_service_a5f5920a5da11e00ac573b18f3be7c351}{}\index{cs\+::usense\+::\+Usense\+Service@{cs\+::usense\+::\+Usense\+Service}!m\+Social\+Interaction@{m\+Social\+Interaction}}
+\index{m\+Social\+Interaction@{m\+Social\+Interaction}!cs\+::usense\+::\+Usense\+Service@{cs\+::usense\+::\+Usense\+Service}}
+\subsubsection[{m\+Social\+Interaction}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Social\+Interaction} cs.\+usense.\+Usense\+Service.\+m\+Social\+Interaction\hspace{0.3cm}{\ttfamily [private]}}\label{classcs_1_1usense_1_1_usense_service_a5f5920a5da11e00ac573b18f3be7c351}
+This class is to access functionality of Social Interaction details \hypertarget{classcs_1_1usense_1_1_usense_service_a2f4af137278818b3b651b780cad78960}{}\index{cs\+::usense\+::\+Usense\+Service@{cs\+::usense\+::\+Usense\+Service}!T\+A\+G@{T\+A\+G}}
+\index{T\+A\+G@{T\+A\+G}!cs\+::usense\+::\+Usense\+Service@{cs\+::usense\+::\+Usense\+Service}}
+\subsubsection[{T\+A\+G}]{\setlength{\rightskip}{0pt plus 5cm}final String cs.\+usense.\+Usense\+Service.\+T\+A\+G = \char`\"{}U\+S\+E\+N\+S\+E\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classcs_1_1usense_1_1_usense_service_a2f4af137278818b3b651b780cad78960}
+\hypertarget{classcs_1_1usense_1_1_usense_service_a2840167e746fe3e7184721310b75f31d}{}\index{cs\+::usense\+::\+Usense\+Service@{cs\+::usense\+::\+Usense\+Service}!timer@{timer}}
+\index{timer@{timer}!cs\+::usense\+::\+Usense\+Service@{cs\+::usense\+::\+Usense\+Service}}
+\subsubsection[{timer}]{\setlength{\rightskip}{0pt plus 5cm}final Timer cs.\+usense.\+Usense\+Service.\+timer = new Timer()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classcs_1_1usense_1_1_usense_service_a2840167e746fe3e7184721310b75f31d}
+This variable to get the timer 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/cs/usense/\hyperlink{_usense_service_8java}{Usense\+Service.\+java}\end{DoxyCompactItemize}

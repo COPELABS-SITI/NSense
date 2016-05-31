@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clickable="false"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+
+    <!-- Access Point -->
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="false"
+        android:layout_marginLeft="10dip"
+        android:text="Device Name"
+        android:textColor="#040404"
+        android:textSize="15dip"
+        android:textStyle="bold"
+        android:typeface="sans" />
+    <!-- Access Point Information -->
+
+    <ImageView
+        android:id="@+id/row_ratingStars1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      	android:layout_toLeftOf="@+id/row_ratingStars2"
+        android:paddingLeft="1dp"
+        android:layout_marginTop="3dp"
+        android:src="@drawable/star_rating_small" />
+
+    <ImageView
+        android:id="@+id/row_ratingStars2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/row_ratingStars3"
+        android:paddingLeft="1dp"
+        android:layout_marginTop="3dp"
+        android:src="@drawable/star_rating_small" />
+
+    <ImageView
+        android:id="@+id/row_ratingStars3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/row_ratingStars4"
+        android:paddingLeft="1dp"
+        android:layout_marginTop="3dp"
+        android:src="@drawable/star_rating_small" />
+
+    <ImageView
+        android:id="@+id/row_ratingStars4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/row_ratingStars5"
+        android:paddingLeft="1dp"
+        android:layout_marginTop="3dp"
+        android:src="@drawable/star_rating_small" />
+
+    <ImageView
+        android:id="@+id/row_ratingStars5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dip"
+        android:paddingLeft="1dp"
+        android:layout_marginTop="3dp"
+        android:src="@drawable/star_rating_small" />
+
+</RelativeLayout>

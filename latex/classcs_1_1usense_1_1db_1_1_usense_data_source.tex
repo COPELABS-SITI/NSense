@@ -1,0 +1,947 @@
+\hypertarget{classcs_1_1usense_1_1db_1_1_usense_data_source}{}\section{cs.\+usense.\+db.\+Usense\+Data\+Source Class Reference}
+\label{classcs_1_1usense_1_1db_1_1_usense_data_source}\index{cs.\+usense.\+db.\+Usense\+Data\+Source@{cs.\+usense.\+db.\+Usense\+Data\+Source}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcs_1_1usense_1_1db_1_1_usense_data_source_a0e9b00a5b3a1036ec3f4e9e7ce16ed20}{Usense\+Data\+Source} (Context context)
+\item 
+void \hyperlink{classcs_1_1usense_1_1db_1_1_usense_data_source_a4fb669af37772373739d32870d995c40}{open\+D\+B} (boolean writable)  throws S\+Q\+L\+Exception 
+\item 
+void \hyperlink{classcs_1_1usense_1_1db_1_1_usense_data_source_a5be54aab8aee19314587de9be15ff88b}{close\+D\+B} ()
+\item 
+long \hyperlink{classcs_1_1usense_1_1db_1_1_usense_data_source_a520cf0bb7675132c6a32ead25a8b9b45}{get\+Num\+A\+P} ()
+\item 
+long \hyperlink{classcs_1_1usense_1_1db_1_1_usense_data_source_a691039457f8be413ad6990a70f83db98}{get\+Num\+Action\+Entry} ()
+\item 
+long \hyperlink{classcs_1_1usense_1_1db_1_1_usense_data_source_a0afbd8c5efe2b3f4ece076cc8ca5539d}{register\+New\+Action\+Entry} (\hyperlink{classcs_1_1usense_1_1accelerometer_1_1_actions_entry}{Actions\+Entry} ae)
+\item 
+boolean \hyperlink{classcs_1_1usense_1_1db_1_1_usense_data_source_a1e9a9327d9a72b0f7ed92250ddf59908}{update\+Action\+Entry} (\hyperlink{classcs_1_1usense_1_1accelerometer_1_1_actions_entry}{Actions\+Entry} ae)
+\item 
+\hyperlink{classcs_1_1usense_1_1accelerometer_1_1_actions_entry}{Actions\+Entry} \hyperlink{classcs_1_1usense_1_1db_1_1_usense_data_source_a1f62185e027045d848892b200209a22b}{get\+Action\+Entry} (String actionentry)
+\item 
+boolean \hyperlink{classcs_1_1usense_1_1db_1_1_usense_data_source_aefd9dcea92c0d55f36582e9f2aaf0ec2}{has\+Action\+Entry} (String action\+Type)
+\item 
+Map$<$ String, \hyperlink{classcs_1_1usense_1_1accelerometer_1_1_actions_entry}{Actions\+Entry} $>$ \hyperlink{classcs_1_1usense_1_1db_1_1_usense_data_source_a77f9a3a6d8a2d89c7d1a764cd9106927}{get\+All\+Action\+Entry} ()
+\item 
+long \hyperlink{classcs_1_1usense_1_1db_1_1_usense_data_source_a158073fd29763e580866798e7e65ef3e}{get\+Num\+B\+T\+Device} ()
+\item 
+void \hyperlink{classcs_1_1usense_1_1db_1_1_usense_data_source_a00733a5faba0031ae832092fd16fe30d}{register\+New\+B\+T\+Device} (\hyperlink{classcs_1_1usense_1_1bluetooth_1_1_b_t_user_device}{B\+T\+User\+Device} bt\+Dev, \hyperlink{classcs_1_1usense_1_1bluetooth_1_1_b_t_user_dev_encounter_duration}{B\+T\+User\+Dev\+Encounter\+Duration} duration, \hyperlink{classcs_1_1usense_1_1bluetooth_1_1_b_t_user_dev_average_encounter_duration}{B\+T\+User\+Dev\+Average\+Encounter\+Duration} average\+Duration, \hyperlink{classcs_1_1usense_1_1bluetooth_1_1_b_t_user_dev_social_weight}{B\+T\+User\+Dev\+Social\+Weight} \hyperlink{classcs_1_1usense_1_1bluetooth_1_1_bluetooth_core_1_1social_weight}{social\+Weight})
+\item 
+void \hyperlink{classcs_1_1usense_1_1db_1_1_usense_data_source_a14742aad8c76e400fe56cd07321ac202}{update\+B\+T\+Device\+And\+Duration} (\hyperlink{classcs_1_1usense_1_1bluetooth_1_1_b_t_user_device}{B\+T\+User\+Device} bt\+Dev, \hyperlink{classcs_1_1usense_1_1bluetooth_1_1_b_t_user_dev_encounter_duration}{B\+T\+User\+Dev\+Encounter\+Duration} duration)
+\item 
+void \hyperlink{classcs_1_1usense_1_1db_1_1_usense_data_source_a69a781c3c921797e89e42598f6938929}{update\+B\+T\+Dev\+Avg\+Encounter\+Duration} (\hyperlink{classcs_1_1usense_1_1bluetooth_1_1_b_t_user_dev_average_encounter_duration}{B\+T\+User\+Dev\+Average\+Encounter\+Duration} average\+Duration)
+\item 
+void \hyperlink{classcs_1_1usense_1_1db_1_1_usense_data_source_a3ded9bd1da6f82f8e6599b9d1ee5cfe6}{update\+B\+T\+Dev\+Social\+Weight} (\hyperlink{classcs_1_1usense_1_1bluetooth_1_1_b_t_user_dev_social_weight}{B\+T\+User\+Dev\+Social\+Weight} \hyperlink{classcs_1_1usense_1_1bluetooth_1_1_bluetooth_core_1_1social_weight}{social\+Weight})
+\item 
+\hyperlink{classcs_1_1usense_1_1bluetooth_1_1_b_t_user_device}{B\+T\+User\+Device} \hyperlink{classcs_1_1usense_1_1db_1_1_usense_data_source_a76c3bb13724a07d858cf391c3b565b72}{get\+B\+T\+Device} (String bt\+Device)
+\item 
+\hyperlink{classcs_1_1usense_1_1bluetooth_1_1_b_t_user_dev_encounter_duration}{B\+T\+User\+Dev\+Encounter\+Duration} \hyperlink{classcs_1_1usense_1_1db_1_1_usense_data_source_a618c08c948d949eca47872f0bb34a225}{get\+B\+T\+Device\+Encounter\+Duration} (String bt\+Dev\+Encounter\+Duration)
+\item 
+\hyperlink{classcs_1_1usense_1_1bluetooth_1_1_b_t_user_dev_average_encounter_duration}{B\+T\+User\+Dev\+Average\+Encounter\+Duration} \hyperlink{classcs_1_1usense_1_1db_1_1_usense_data_source_ade91c6cd3621cc6fd48181b72c03530f}{get\+B\+T\+Device\+Average\+Encounter\+Duration} (String bt\+Dev\+Average\+Encounter\+Duration)
+\item 
+\hyperlink{classcs_1_1usense_1_1bluetooth_1_1_b_t_user_dev_social_weight}{B\+T\+User\+Dev\+Social\+Weight} \hyperlink{classcs_1_1usense_1_1db_1_1_usense_data_source_a552ef323bbb97e8cd1b440fa513ef1de}{get\+B\+T\+Device\+Social\+Weight} (String bt\+Dev\+Social\+Weight)
+\item 
+boolean \hyperlink{classcs_1_1usense_1_1db_1_1_usense_data_source_aa8636b1ac08b4d9c0f1a054b84b51223}{has\+B\+T\+Device} (String bt\+Dev)
+\item 
+Map$<$ String, \hyperlink{classcs_1_1usense_1_1bluetooth_1_1_b_t_user_device}{B\+T\+User\+Device} $>$ \hyperlink{classcs_1_1usense_1_1db_1_1_usense_data_source_ab91b8f4f44080668b3bf54756c1fedfc}{get\+All\+B\+T\+Device} ()
+\item 
+Map$<$ String, \hyperlink{classcs_1_1usense_1_1bluetooth_1_1_b_t_user_dev_encounter_duration}{B\+T\+User\+Dev\+Encounter\+Duration} $>$ \hyperlink{classcs_1_1usense_1_1db_1_1_usense_data_source_ac3c52fdaefeed93bca2c821bc47230fa}{get\+All\+B\+T\+Dev\+Encounter\+Duration} ()
+\item 
+Map$<$ String, \hyperlink{classcs_1_1usense_1_1bluetooth_1_1_b_t_user_dev_average_encounter_duration}{B\+T\+User\+Dev\+Average\+Encounter\+Duration} $>$ \hyperlink{classcs_1_1usense_1_1db_1_1_usense_data_source_a9523ea800b620677ca3033848781b695}{get\+All\+B\+T\+Dev\+Average\+Encounter\+Duration} ()
+\item 
+Map$<$ String, \hyperlink{classcs_1_1usense_1_1bluetooth_1_1_b_t_user_dev_social_weight}{B\+T\+User\+Dev\+Social\+Weight} $>$ \hyperlink{classcs_1_1usense_1_1db_1_1_usense_data_source_a0aef6418bc985e73f9065107d26cf49a}{get\+All\+B\+T\+Dev\+Social\+Weight} ()
+\item 
+long \hyperlink{classcs_1_1usense_1_1db_1_1_usense_data_source_a88597c44daea873d78983e138ef76c01}{get\+Num\+Entries} ()
+\item 
+long \hyperlink{classcs_1_1usense_1_1db_1_1_usense_data_source_ac4365c25de9b831d3cd89e13b1f7933c}{register\+Location\+Entry} (\hyperlink{classcs_1_1usense_1_1location_1_1_location_entry}{Location\+Entry} entry)
+\item 
+boolean \hyperlink{classcs_1_1usense_1_1db_1_1_usense_data_source_aec18fea380d682f4bd249a7c5e4d1679}{update\+Location\+Entry} (\hyperlink{classcs_1_1usense_1_1location_1_1_location_entry}{Location\+Entry} entry)
+\item 
+int \hyperlink{classcs_1_1usense_1_1db_1_1_usense_data_source_a8b72c3ef4cce8d4535034fb5f7a3b6dc}{remove\+Location\+Entry} (\hyperlink{classcs_1_1usense_1_1location_1_1_location_entry}{Location\+Entry} entry)
+\item 
+\hyperlink{classcs_1_1usense_1_1location_1_1_location_entry}{Location\+Entry} \hyperlink{classcs_1_1usense_1_1db_1_1_usense_data_source_abda578af60b176eedda9cd90ceed2dfc}{get\+Location\+Entry} (String bssid)
+\item 
+boolean \hyperlink{classcs_1_1usense_1_1db_1_1_usense_data_source_a346a0f88cfeff37a187c0b010c0542a7}{has\+Location\+Entry} (String bssid)
+\item 
+Map$<$ String, \hyperlink{classcs_1_1usense_1_1location_1_1_location_entry}{Location\+Entry} $>$ \hyperlink{classcs_1_1usense_1_1db_1_1_usense_data_source_a7109548f119f84053a54e571d51339ae}{get\+All\+Location\+Entries} ()
+\item 
+void \hyperlink{classcs_1_1usense_1_1db_1_1_usense_data_source_a5913e07ca828a258cef9b9c421ecb0ce}{clean\+Location\+Table} ()
+\item 
+long \hyperlink{classcs_1_1usense_1_1db_1_1_usense_data_source_a7f08dba29d26ca8d33a5eda2714640fb}{get\+Num\+Sound\+Level} ()
+\item 
+long \hyperlink{classcs_1_1usense_1_1db_1_1_usense_data_source_a88dd2b18825241d4946ede0353b4fd26}{register\+New\+Sound\+Level} (\hyperlink{classcs_1_1usense_1_1microphone_1_1_sound_level}{Sound\+Level} sl)
+\item 
+boolean \hyperlink{classcs_1_1usense_1_1db_1_1_usense_data_source_a079854050c01f42e4bc2dd03f659eba3}{update\+Sound\+Level} (\hyperlink{classcs_1_1usense_1_1microphone_1_1_sound_level}{Sound\+Level} sl)
+\item 
+\hyperlink{classcs_1_1usense_1_1microphone_1_1_sound_level}{Sound\+Level} \hyperlink{classcs_1_1usense_1_1db_1_1_usense_data_source_ae9c1bce7d6fa9b86dc0ab01f4acebf09}{get\+Sound\+Level} (long today\+Millis)
+\item 
+boolean \hyperlink{classcs_1_1usense_1_1db_1_1_usense_data_source_a626b15f5c0c222e54e13e0667e3fd579}{has\+Sound\+Level} (long sound\+Date)
+\item 
+Map$<$ String, \hyperlink{classcs_1_1usense_1_1microphone_1_1_sound_level}{Sound\+Level} $>$ \hyperlink{classcs_1_1usense_1_1db_1_1_usense_data_source_a66b812c9d52996f0b3e670e2e67114a4}{get\+All\+Sound\+Level} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+String\mbox{[}$\,$\mbox{]} \hyperlink{classcs_1_1usense_1_1db_1_1_usense_data_source_a974d57d1a21d3d3d4769d6ad8be5d15e}{all\+Columns\+Sound}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcs_1_1usense_1_1accelerometer_1_1_actions_entry}{Actions\+Entry} \hyperlink{classcs_1_1usense_1_1db_1_1_usense_data_source_abbe275083aca050d1cbd6bbbdea06998}{cursor\+To\+Actions} (Cursor cursor)
+\item 
+\hyperlink{classcs_1_1usense_1_1bluetooth_1_1_b_t_user_device}{B\+T\+User\+Device} \hyperlink{classcs_1_1usense_1_1db_1_1_usense_data_source_acad2f3e8a11782169f8f6941959039d1}{cursor\+To\+B\+T\+Device} (Cursor cursor)
+\item 
+\hyperlink{classcs_1_1usense_1_1bluetooth_1_1_b_t_user_dev_encounter_duration}{B\+T\+User\+Dev\+Encounter\+Duration} \hyperlink{classcs_1_1usense_1_1db_1_1_usense_data_source_ae0294f5a8d5deb5e122a952c5a1d0364}{cursor\+To\+B\+T\+Dev\+Encounter\+Duration} (Cursor cursor)
+\item 
+\hyperlink{classcs_1_1usense_1_1bluetooth_1_1_b_t_user_dev_average_encounter_duration}{B\+T\+User\+Dev\+Average\+Encounter\+Duration} \hyperlink{classcs_1_1usense_1_1db_1_1_usense_data_source_a7f7c118dce0e90ab6bb9702fd3ed8ae1}{cursor\+To\+B\+T\+Dev\+Average\+Encounter\+Duration} (Cursor cursor)
+\item 
+\hyperlink{classcs_1_1usense_1_1bluetooth_1_1_b_t_user_dev_social_weight}{B\+T\+User\+Dev\+Social\+Weight} \hyperlink{classcs_1_1usense_1_1db_1_1_usense_data_source_ad6b535b88ac79cfa89cc85a88746d837}{cursor\+To\+B\+T\+Dev\+Social\+Weight} (Cursor cursor)
+\item 
+\hyperlink{classcs_1_1usense_1_1location_1_1_location_entry}{Location\+Entry} \hyperlink{classcs_1_1usense_1_1db_1_1_usense_data_source_a943576fbfbaa055cafa80e6a91ed948a}{cursor\+To\+Location} (Cursor cursor)
+\item 
+\hyperlink{classcs_1_1usense_1_1microphone_1_1_sound_level}{Sound\+Level} \hyperlink{classcs_1_1usense_1_1db_1_1_usense_data_source_a8ad9511fece0a0b5bb954e41de8bf62a}{cursor\+To\+Sound} (Cursor cursor)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+S\+Q\+Lite\+Database \hyperlink{classcs_1_1usense_1_1db_1_1_usense_data_source_abb7afa1a31cea70787b725a5e5e4efdd}{db}
+\item 
+\hyperlink{classcs_1_1usense_1_1db_1_1_usense_s_q_lite_helper}{Usense\+S\+Q\+Lite\+Helper} \hyperlink{classcs_1_1usense_1_1db_1_1_usense_data_source_aa008324e180fdd3b8a05df5592323953}{db\+Helper}
+\item 
+boolean \hyperlink{classcs_1_1usense_1_1db_1_1_usense_data_source_a2f2c3e38590dacfb49c2d184ff6bd996}{is\+Db\+Open}
+\item 
+String\mbox{[}$\,$\mbox{]} \hyperlink{classcs_1_1usense_1_1db_1_1_usense_data_source_a688543575d053c8e63be693eec2d31ef}{all\+Columns\+Actions\+Entry}
+\item 
+String\mbox{[}$\,$\mbox{]} \hyperlink{classcs_1_1usense_1_1db_1_1_usense_data_source_af5076f24e3994d5f0969f5ec40104f0f}{all\+Columns\+B\+T\+Devices}
+\item 
+String\mbox{[}$\,$\mbox{]} \hyperlink{classcs_1_1usense_1_1db_1_1_usense_data_source_ae0da67fa4d853379fe723ec28a581de0}{all\+Columns\+B\+T\+Device\+Encounter\+Duration}
+\item 
+String\mbox{[}$\,$\mbox{]} \hyperlink{classcs_1_1usense_1_1db_1_1_usense_data_source_a0b84e480cbc128dfd1931c07b46c98f6}{all\+Columns\+B\+T\+Device\+Average\+Encounter\+Duration}
+\item 
+String\mbox{[}$\,$\mbox{]} \hyperlink{classcs_1_1usense_1_1db_1_1_usense_data_source_a9948c3c3b6014ecafccea0ce7fa0ba01}{all\+Columns\+B\+T\+Device\+Social\+Weight}
+\item 
+String\mbox{[}$\,$\mbox{]} \hyperlink{classcs_1_1usense_1_1db_1_1_usense_data_source_a95178df715a8c412f84764ab9be54d81}{all\+Columns\+Location}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class provides various methods and information of the U\+Sense Data base. Methods include, open database, close database, access to the tables 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcs_1_1usense_1_1db_1_1_usense_data_source_a0e9b00a5b3a1036ec3f4e9e7ce16ed20}{}\index{cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}!Usense\+Data\+Source@{Usense\+Data\+Source}}
+\index{Usense\+Data\+Source@{Usense\+Data\+Source}!cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}}
+\subsubsection[{Usense\+Data\+Source(\+Context context)}]{\setlength{\rightskip}{0pt plus 5cm}cs.\+usense.\+db.\+Usense\+Data\+Source.\+Usense\+Data\+Source (
+\begin{DoxyParamCaption}
+\item[{Context}]{context}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1db_1_1_usense_data_source_a0e9b00a5b3a1036ec3f4e9e7ce16ed20}
+This method Construct the context. which takes Android Context as input. 
+\begin{DoxyParams}{Parameters}
+{\em context} & Interface to global information about an application environment. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcs_1_1usense_1_1db_1_1_usense_data_source_a5913e07ca828a258cef9b9c421ecb0ce}{}\index{cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}!clean\+Location\+Table@{clean\+Location\+Table}}
+\index{clean\+Location\+Table@{clean\+Location\+Table}!cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}}
+\subsubsection[{clean\+Location\+Table()}]{\setlength{\rightskip}{0pt plus 5cm}void cs.\+usense.\+db.\+Usense\+Data\+Source.\+clean\+Location\+Table (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1db_1_1_usense_data_source_a5913e07ca828a258cef9b9c421ecb0ce}
+This method clean the T\+A\+B\+L\+E\+\_\+\+L\+O\+C\+A\+T\+I\+O\+N table \hypertarget{classcs_1_1usense_1_1db_1_1_usense_data_source_a5be54aab8aee19314587de9be15ff88b}{}\index{cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}!close\+D\+B@{close\+D\+B}}
+\index{close\+D\+B@{close\+D\+B}!cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}}
+\subsubsection[{close\+D\+B()}]{\setlength{\rightskip}{0pt plus 5cm}void cs.\+usense.\+db.\+Usense\+Data\+Source.\+close\+D\+B (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1db_1_1_usense_data_source_a5be54aab8aee19314587de9be15ff88b}
+This method close the predefined U\+Sense database. \hypertarget{classcs_1_1usense_1_1db_1_1_usense_data_source_abbe275083aca050d1cbd6bbbdea06998}{}\index{cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}!cursor\+To\+Actions@{cursor\+To\+Actions}}
+\index{cursor\+To\+Actions@{cursor\+To\+Actions}!cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}}
+\subsubsection[{cursor\+To\+Actions(\+Cursor cursor)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Actions\+Entry} cs.\+usense.\+db.\+Usense\+Data\+Source.\+cursor\+To\+Actions (
+\begin{DoxyParamCaption}
+\item[{Cursor}]{cursor}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{classcs_1_1usense_1_1db_1_1_usense_data_source_abbe275083aca050d1cbd6bbbdea06998}
+This method converts a cursor pointing to a record in the A\+C\+T\+I\+O\+N\+S table to a Actions\+Entry object. 
+\begin{DoxyParams}{Parameters}
+{\em cursor} & Cursor pointing to a record of the A\+C\+T\+I\+O\+N\+S table. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ae the Actions\+Entry object 
+\end{DoxyReturn}
+\hypertarget{classcs_1_1usense_1_1db_1_1_usense_data_source_a7f7c118dce0e90ab6bb9702fd3ed8ae1}{}\index{cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}!cursor\+To\+B\+T\+Dev\+Average\+Encounter\+Duration@{cursor\+To\+B\+T\+Dev\+Average\+Encounter\+Duration}}
+\index{cursor\+To\+B\+T\+Dev\+Average\+Encounter\+Duration@{cursor\+To\+B\+T\+Dev\+Average\+Encounter\+Duration}!cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}}
+\subsubsection[{cursor\+To\+B\+T\+Dev\+Average\+Encounter\+Duration(\+Cursor cursor)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+T\+User\+Dev\+Average\+Encounter\+Duration} cs.\+usense.\+db.\+Usense\+Data\+Source.\+cursor\+To\+B\+T\+Dev\+Average\+Encounter\+Duration (
+\begin{DoxyParamCaption}
+\item[{Cursor}]{cursor}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{classcs_1_1usense_1_1db_1_1_usense_data_source_a7f7c118dce0e90ab6bb9702fd3ed8ae1}
+This method converts a cursor pointing to a record in the B\+T\+D\+E\+V\+I\+C\+E\+A\+V\+E\+R\+A\+G\+E\+E\+N\+C\+O\+U\+N\+T\+E\+R\+D\+U\+R\+A\+T\+I\+O\+N table to a B\+T\+User\+Dev\+Average\+Encounter\+Duration object. 
+\begin{DoxyParams}{Parameters}
+{\em cursor} & The cursor pointing to a record of the B\+T\+D\+E\+V\+I\+C\+E\+A\+V\+E\+R\+A\+G\+E\+E\+N\+C\+O\+U\+N\+T\+E\+R\+D\+U\+R\+A\+T\+I\+O\+N table. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+average\+Duration The B\+T\+User\+Dev\+Average\+Encounter\+Duration object. 
+\end{DoxyReturn}
+\hypertarget{classcs_1_1usense_1_1db_1_1_usense_data_source_ae0294f5a8d5deb5e122a952c5a1d0364}{}\index{cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}!cursor\+To\+B\+T\+Dev\+Encounter\+Duration@{cursor\+To\+B\+T\+Dev\+Encounter\+Duration}}
+\index{cursor\+To\+B\+T\+Dev\+Encounter\+Duration@{cursor\+To\+B\+T\+Dev\+Encounter\+Duration}!cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}}
+\subsubsection[{cursor\+To\+B\+T\+Dev\+Encounter\+Duration(\+Cursor cursor)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+T\+User\+Dev\+Encounter\+Duration} cs.\+usense.\+db.\+Usense\+Data\+Source.\+cursor\+To\+B\+T\+Dev\+Encounter\+Duration (
+\begin{DoxyParamCaption}
+\item[{Cursor}]{cursor}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{classcs_1_1usense_1_1db_1_1_usense_data_source_ae0294f5a8d5deb5e122a952c5a1d0364}
+This method converts a cursor pointing to a record in the B\+T\+D\+E\+V\+I\+C\+E\+E\+N\+C\+O\+U\+N\+T\+E\+R\+D\+U\+R\+A\+T\+I\+O\+N table to a B\+T\+User\+Dev\+Encounter\+Duration object. 
+\begin{DoxyParams}{Parameters}
+{\em cursor} & The cursor pointing to a record of the B\+T\+D\+E\+V\+I\+C\+E\+E\+N\+C\+O\+U\+N\+T\+E\+R\+D\+U\+R\+A\+T\+I\+O\+N table. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+duration The B\+T\+User\+Dev\+Encounter\+Duration object. 
+\end{DoxyReturn}
+\hypertarget{classcs_1_1usense_1_1db_1_1_usense_data_source_acad2f3e8a11782169f8f6941959039d1}{}\index{cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}!cursor\+To\+B\+T\+Device@{cursor\+To\+B\+T\+Device}}
+\index{cursor\+To\+B\+T\+Device@{cursor\+To\+B\+T\+Device}!cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}}
+\subsubsection[{cursor\+To\+B\+T\+Device(\+Cursor cursor)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+T\+User\+Device} cs.\+usense.\+db.\+Usense\+Data\+Source.\+cursor\+To\+B\+T\+Device (
+\begin{DoxyParamCaption}
+\item[{Cursor}]{cursor}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{classcs_1_1usense_1_1db_1_1_usense_data_source_acad2f3e8a11782169f8f6941959039d1}
+This method converts a cursor pointing to a record in the B\+T\+D\+E\+V\+I\+C\+E table to a B\+T\+Device object. 
+\begin{DoxyParams}{Parameters}
+{\em cursor} & The cursor pointing to a record of the B\+T\+D\+E\+V\+I\+C\+E table. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bt\+Dev The B\+T\+Device object 
+\end{DoxyReturn}
+\hypertarget{classcs_1_1usense_1_1db_1_1_usense_data_source_ad6b535b88ac79cfa89cc85a88746d837}{}\index{cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}!cursor\+To\+B\+T\+Dev\+Social\+Weight@{cursor\+To\+B\+T\+Dev\+Social\+Weight}}
+\index{cursor\+To\+B\+T\+Dev\+Social\+Weight@{cursor\+To\+B\+T\+Dev\+Social\+Weight}!cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}}
+\subsubsection[{cursor\+To\+B\+T\+Dev\+Social\+Weight(\+Cursor cursor)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+T\+User\+Dev\+Social\+Weight} cs.\+usense.\+db.\+Usense\+Data\+Source.\+cursor\+To\+B\+T\+Dev\+Social\+Weight (
+\begin{DoxyParamCaption}
+\item[{Cursor}]{cursor}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{classcs_1_1usense_1_1db_1_1_usense_data_source_ad6b535b88ac79cfa89cc85a88746d837}
+This method converts a cursor pointing to a record in the B\+T\+D\+E\+V\+I\+C\+E\+S\+O\+C\+I\+A\+L\+W\+E\+I\+G\+H\+T table to a B\+T\+User\+Dev\+Social\+Weight object. 
+\begin{DoxyParams}{Parameters}
+{\em cursor} & The cursor pointing to a record of the B\+T\+D\+E\+V\+I\+C\+E\+A\+V\+E\+R\+A\+G\+E\+E\+N\+C\+O\+U\+N\+T\+E\+R\+D\+U\+R\+A\+T\+I\+O\+N table. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+social\+Weight The B\+T\+User\+Dev\+Social\+Weight object. 
+\end{DoxyReturn}
+\hypertarget{classcs_1_1usense_1_1db_1_1_usense_data_source_a943576fbfbaa055cafa80e6a91ed948a}{}\index{cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}!cursor\+To\+Location@{cursor\+To\+Location}}
+\index{cursor\+To\+Location@{cursor\+To\+Location}!cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}}
+\subsubsection[{cursor\+To\+Location(\+Cursor cursor)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Location\+Entry} cs.\+usense.\+db.\+Usense\+Data\+Source.\+cursor\+To\+Location (
+\begin{DoxyParamCaption}
+\item[{Cursor}]{cursor}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{classcs_1_1usense_1_1db_1_1_usense_data_source_a943576fbfbaa055cafa80e6a91ed948a}
+This method converts a cursor pointing to a record in the T\+A\+B\+L\+E\+\_\+\+L\+O\+C\+A\+T\+I\+O\+N table to a Location\+Entry object. 
+\begin{DoxyParams}{Parameters}
+{\em cursor} & Cursor pointing to a record of the T\+A\+B\+L\+E\+\_\+\+L\+O\+C\+A\+T\+I\+O\+N table. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+entry the Location\+Entry object 
+\end{DoxyReturn}
+\hypertarget{classcs_1_1usense_1_1db_1_1_usense_data_source_a8ad9511fece0a0b5bb954e41de8bf62a}{}\index{cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}!cursor\+To\+Sound@{cursor\+To\+Sound}}
+\index{cursor\+To\+Sound@{cursor\+To\+Sound}!cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}}
+\subsubsection[{cursor\+To\+Sound(\+Cursor cursor)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sound\+Level} cs.\+usense.\+db.\+Usense\+Data\+Source.\+cursor\+To\+Sound (
+\begin{DoxyParamCaption}
+\item[{Cursor}]{cursor}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{classcs_1_1usense_1_1db_1_1_usense_data_source_a8ad9511fece0a0b5bb954e41de8bf62a}
+This method provides cursor to the T\+A\+B\+L\+E\+\_\+\+S\+O\+U\+N\+D table 
+\begin{DoxyParams}{Parameters}
+{\em cursor} & Cursor pointing to a record of the T\+A\+B\+L\+E\+\_\+\+S\+O\+U\+N\+D table. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+sl Sound\+Level 
+\end{DoxyReturn}
+\hypertarget{classcs_1_1usense_1_1db_1_1_usense_data_source_a1f62185e027045d848892b200209a22b}{}\index{cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}!get\+Action\+Entry@{get\+Action\+Entry}}
+\index{get\+Action\+Entry@{get\+Action\+Entry}!cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}}
+\subsubsection[{get\+Action\+Entry(\+String actionentry)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Actions\+Entry} cs.\+usense.\+db.\+Usense\+Data\+Source.\+get\+Action\+Entry (
+\begin{DoxyParamCaption}
+\item[{String}]{actionentry}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1db_1_1_usense_data_source_a1f62185e027045d848892b200209a22b}
+This method gets an Actions already registered by the application. 
+\begin{DoxyParams}{Parameters}
+{\em actionentry} & Actions which information should be returned \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ae the Actions\+Entry object, null if not found. 
+\end{DoxyReturn}
+\hypertarget{classcs_1_1usense_1_1db_1_1_usense_data_source_a77f9a3a6d8a2d89c7d1a764cd9106927}{}\index{cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}!get\+All\+Action\+Entry@{get\+All\+Action\+Entry}}
+\index{get\+All\+Action\+Entry@{get\+All\+Action\+Entry}!cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}}
+\subsubsection[{get\+All\+Action\+Entry()}]{\setlength{\rightskip}{0pt plus 5cm}Map$<$String, {\bf Actions\+Entry}$>$ cs.\+usense.\+db.\+Usense\+Data\+Source.\+get\+All\+Action\+Entry (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1db_1_1_usense_data_source_a77f9a3a6d8a2d89c7d1a764cd9106927}
+This method gets the all the Actions recorded by the application on the A\+C\+C\+E\+S\+S\+\_\+\+P\+O\+I\+N\+T\+S table. \begin{DoxyReturn}{Returns}
+ae\+Map A map with the Actions objects, and the actiontype as key. 
+\end{DoxyReturn}
+\hypertarget{classcs_1_1usense_1_1db_1_1_usense_data_source_a9523ea800b620677ca3033848781b695}{}\index{cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}!get\+All\+B\+T\+Dev\+Average\+Encounter\+Duration@{get\+All\+B\+T\+Dev\+Average\+Encounter\+Duration}}
+\index{get\+All\+B\+T\+Dev\+Average\+Encounter\+Duration@{get\+All\+B\+T\+Dev\+Average\+Encounter\+Duration}!cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}}
+\subsubsection[{get\+All\+B\+T\+Dev\+Average\+Encounter\+Duration()}]{\setlength{\rightskip}{0pt plus 5cm}Map$<$String, {\bf B\+T\+User\+Dev\+Average\+Encounter\+Duration}$>$ cs.\+usense.\+db.\+Usense\+Data\+Source.\+get\+All\+B\+T\+Dev\+Average\+Encounter\+Duration (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1db_1_1_usense_data_source_a9523ea800b620677ca3033848781b695}
+This method gets the all the B\+T\+User\+Dev\+Average\+Encounter\+Duration recorded by the application on the B\+T\+D\+E\+V\+I\+C\+E\+A\+V\+E\+R\+A\+G\+E\+E\+N\+C\+O\+U\+N\+T\+E\+R\+D\+U\+R\+A\+T\+I\+O\+N table. \begin{DoxyReturn}{Returns}
+bt\+Dev\+Average\+Encounter\+Duration\+Map The map with the B\+T\+User\+Dev\+Average\+Encounter\+Duration objects, and the B\+T\+D\+E\+V\+\_\+\+M\+A\+C\+\_\+\+A\+D\+D\+R\+E\+S\+S as key. 
+\end{DoxyReturn}
+\hypertarget{classcs_1_1usense_1_1db_1_1_usense_data_source_ac3c52fdaefeed93bca2c821bc47230fa}{}\index{cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}!get\+All\+B\+T\+Dev\+Encounter\+Duration@{get\+All\+B\+T\+Dev\+Encounter\+Duration}}
+\index{get\+All\+B\+T\+Dev\+Encounter\+Duration@{get\+All\+B\+T\+Dev\+Encounter\+Duration}!cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}}
+\subsubsection[{get\+All\+B\+T\+Dev\+Encounter\+Duration()}]{\setlength{\rightskip}{0pt plus 5cm}Map$<$String, {\bf B\+T\+User\+Dev\+Encounter\+Duration}$>$ cs.\+usense.\+db.\+Usense\+Data\+Source.\+get\+All\+B\+T\+Dev\+Encounter\+Duration (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1db_1_1_usense_data_source_ac3c52fdaefeed93bca2c821bc47230fa}
+This method gets the all the B\+T\+User\+Dev\+Encounter\+Duration recorded by the application on the B\+T\+D\+E\+V\+I\+C\+E\+E\+N\+C\+O\+U\+N\+T\+E\+R\+D\+U\+R\+A\+T\+I\+O\+N table. \begin{DoxyReturn}{Returns}
+bt\+Dev\+Encounter\+Duration\+Map The map with the B\+T\+User\+Dev\+Encounter\+Duration objects, and the B\+T\+D\+E\+V\+\_\+\+M\+A\+C\+\_\+\+A\+D\+D\+R\+E\+S\+S as key. 
+\end{DoxyReturn}
+\hypertarget{classcs_1_1usense_1_1db_1_1_usense_data_source_ab91b8f4f44080668b3bf54756c1fedfc}{}\index{cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}!get\+All\+B\+T\+Device@{get\+All\+B\+T\+Device}}
+\index{get\+All\+B\+T\+Device@{get\+All\+B\+T\+Device}!cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}}
+\subsubsection[{get\+All\+B\+T\+Device()}]{\setlength{\rightskip}{0pt plus 5cm}Map$<$String, {\bf B\+T\+User\+Device}$>$ cs.\+usense.\+db.\+Usense\+Data\+Source.\+get\+All\+B\+T\+Device (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1db_1_1_usense_data_source_ab91b8f4f44080668b3bf54756c1fedfc}
+This method gets the all the B\+T\+Device recorded by the application on the B\+T\+D\+E\+V\+I\+C\+E table. \begin{DoxyReturn}{Returns}
+bt\+Dev\+Map The map with the B\+T\+User\+Device objects, and the B\+T\+D\+E\+V\+\_\+\+M\+A\+C\+\_\+\+A\+D\+D\+R\+E\+S\+S as key. 
+\end{DoxyReturn}
+\hypertarget{classcs_1_1usense_1_1db_1_1_usense_data_source_a0aef6418bc985e73f9065107d26cf49a}{}\index{cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}!get\+All\+B\+T\+Dev\+Social\+Weight@{get\+All\+B\+T\+Dev\+Social\+Weight}}
+\index{get\+All\+B\+T\+Dev\+Social\+Weight@{get\+All\+B\+T\+Dev\+Social\+Weight}!cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}}
+\subsubsection[{get\+All\+B\+T\+Dev\+Social\+Weight()}]{\setlength{\rightskip}{0pt plus 5cm}Map$<$String, {\bf B\+T\+User\+Dev\+Social\+Weight}$>$ cs.\+usense.\+db.\+Usense\+Data\+Source.\+get\+All\+B\+T\+Dev\+Social\+Weight (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1db_1_1_usense_data_source_a0aef6418bc985e73f9065107d26cf49a}
+This method gets the all the B\+T\+User\+Dev\+Social\+Weight recorded by the application on the B\+T\+D\+E\+V\+I\+C\+E\+S\+O\+C\+I\+A\+L\+W\+E\+I\+G\+H\+T table. \begin{DoxyReturn}{Returns}
+bt\+Dev\+Social\+Weight\+Map The map with the B\+T\+User\+Dev\+Social\+Weight objects, and the B\+T\+D\+E\+V\+\_\+\+M\+A\+C\+\_\+\+A\+D\+D\+R\+E\+S\+S as key. 
+\end{DoxyReturn}
+\hypertarget{classcs_1_1usense_1_1db_1_1_usense_data_source_a7109548f119f84053a54e571d51339ae}{}\index{cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}!get\+All\+Location\+Entries@{get\+All\+Location\+Entries}}
+\index{get\+All\+Location\+Entries@{get\+All\+Location\+Entries}!cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}}
+\subsubsection[{get\+All\+Location\+Entries()}]{\setlength{\rightskip}{0pt plus 5cm}Map$<$String, {\bf Location\+Entry}$>$ cs.\+usense.\+db.\+Usense\+Data\+Source.\+get\+All\+Location\+Entries (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1db_1_1_usense_data_source_a7109548f119f84053a54e571d51339ae}
+This method gets the all the location entries recorded by the application on the T\+A\+B\+L\+E\+\_\+\+L\+O\+C\+A\+T\+I\+O\+N table. \begin{DoxyReturn}{Returns}
+m\+Location\+Map A map with the Location\+Entry objects. 
+\end{DoxyReturn}
+\hypertarget{classcs_1_1usense_1_1db_1_1_usense_data_source_a66b812c9d52996f0b3e670e2e67114a4}{}\index{cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}!get\+All\+Sound\+Level@{get\+All\+Sound\+Level}}
+\index{get\+All\+Sound\+Level@{get\+All\+Sound\+Level}!cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}}
+\subsubsection[{get\+All\+Sound\+Level()}]{\setlength{\rightskip}{0pt plus 5cm}Map$<$String, {\bf Sound\+Level}$>$ cs.\+usense.\+db.\+Usense\+Data\+Source.\+get\+All\+Sound\+Level (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1db_1_1_usense_data_source_a66b812c9d52996f0b3e670e2e67114a4}
+This method gets the all the sound level entries recorded by the application on the T\+A\+B\+L\+E\+\_\+\+S\+O\+U\+N\+D table. \begin{DoxyReturn}{Returns}
+sl\+Map A map with the Sound\+Level objects. 
+\end{DoxyReturn}
+\hypertarget{classcs_1_1usense_1_1db_1_1_usense_data_source_a76c3bb13724a07d858cf391c3b565b72}{}\index{cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}!get\+B\+T\+Device@{get\+B\+T\+Device}}
+\index{get\+B\+T\+Device@{get\+B\+T\+Device}!cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}}
+\subsubsection[{get\+B\+T\+Device(\+String bt\+Device)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+T\+User\+Device} cs.\+usense.\+db.\+Usense\+Data\+Source.\+get\+B\+T\+Device (
+\begin{DoxyParamCaption}
+\item[{String}]{bt\+Device}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1db_1_1_usense_data_source_a76c3bb13724a07d858cf391c3b565b72}
+This method gets information about a B\+T\+Device already registered by the application. 
+\begin{DoxyParams}{Parameters}
+{\em mac} & The M\+A\+C address of the B\+T\+Device which information should be returned. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bt\+Dev The bt\+Dev object, null if not found. 
+\end{DoxyReturn}
+\hypertarget{classcs_1_1usense_1_1db_1_1_usense_data_source_ade91c6cd3621cc6fd48181b72c03530f}{}\index{cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}!get\+B\+T\+Device\+Average\+Encounter\+Duration@{get\+B\+T\+Device\+Average\+Encounter\+Duration}}
+\index{get\+B\+T\+Device\+Average\+Encounter\+Duration@{get\+B\+T\+Device\+Average\+Encounter\+Duration}!cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}}
+\subsubsection[{get\+B\+T\+Device\+Average\+Encounter\+Duration(\+String bt\+Dev\+Average\+Encounter\+Duration)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+T\+User\+Dev\+Average\+Encounter\+Duration} cs.\+usense.\+db.\+Usense\+Data\+Source.\+get\+B\+T\+Device\+Average\+Encounter\+Duration (
+\begin{DoxyParamCaption}
+\item[{String}]{bt\+Dev\+Average\+Encounter\+Duration}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1db_1_1_usense_data_source_ade91c6cd3621cc6fd48181b72c03530f}
+This method gets average encounter duration information of a B\+T\+Device already registered by the application. 
+\begin{DoxyParams}{Parameters}
+{\em mac} & The M\+A\+C address of the B\+T\+Device which information should be returned. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bt\+Dev\+Avg\+Enc\+Dur The bt\+Dev\+Avg\+Enc\+Dur object, null if not found. 
+\end{DoxyReturn}
+\hypertarget{classcs_1_1usense_1_1db_1_1_usense_data_source_a618c08c948d949eca47872f0bb34a225}{}\index{cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}!get\+B\+T\+Device\+Encounter\+Duration@{get\+B\+T\+Device\+Encounter\+Duration}}
+\index{get\+B\+T\+Device\+Encounter\+Duration@{get\+B\+T\+Device\+Encounter\+Duration}!cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}}
+\subsubsection[{get\+B\+T\+Device\+Encounter\+Duration(\+String bt\+Dev\+Encounter\+Duration)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+T\+User\+Dev\+Encounter\+Duration} cs.\+usense.\+db.\+Usense\+Data\+Source.\+get\+B\+T\+Device\+Encounter\+Duration (
+\begin{DoxyParamCaption}
+\item[{String}]{bt\+Dev\+Encounter\+Duration}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1db_1_1_usense_data_source_a618c08c948d949eca47872f0bb34a225}
+This method gets encounter duration information of a B\+T\+Device already registered by the application. 
+\begin{DoxyParams}{Parameters}
+{\em mac} & The M\+A\+C address of the B\+T\+Device which information should be returned. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bt\+Dev\+Enc\+Dur The bt\+Dev\+Enc\+Dur object, null if not found. 
+\end{DoxyReturn}
+\hypertarget{classcs_1_1usense_1_1db_1_1_usense_data_source_a552ef323bbb97e8cd1b440fa513ef1de}{}\index{cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}!get\+B\+T\+Device\+Social\+Weight@{get\+B\+T\+Device\+Social\+Weight}}
+\index{get\+B\+T\+Device\+Social\+Weight@{get\+B\+T\+Device\+Social\+Weight}!cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}}
+\subsubsection[{get\+B\+T\+Device\+Social\+Weight(\+String bt\+Dev\+Social\+Weight)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+T\+User\+Dev\+Social\+Weight} cs.\+usense.\+db.\+Usense\+Data\+Source.\+get\+B\+T\+Device\+Social\+Weight (
+\begin{DoxyParamCaption}
+\item[{String}]{bt\+Dev\+Social\+Weight}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1db_1_1_usense_data_source_a552ef323bbb97e8cd1b440fa513ef1de}
+This method gets social weight information of a B\+T\+Device already registered by the application. 
+\begin{DoxyParams}{Parameters}
+{\em mac} & The M\+A\+C address of the B\+T\+Device which information should be returned. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bt\+Dev\+Soc\+Weight The bt\+Dev\+Soc\+Weight object, null if not found. 
+\end{DoxyReturn}
+\hypertarget{classcs_1_1usense_1_1db_1_1_usense_data_source_abda578af60b176eedda9cd90ceed2dfc}{}\index{cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}!get\+Location\+Entry@{get\+Location\+Entry}}
+\index{get\+Location\+Entry@{get\+Location\+Entry}!cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}}
+\subsubsection[{get\+Location\+Entry(\+String bssid)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Location\+Entry} cs.\+usense.\+db.\+Usense\+Data\+Source.\+get\+Location\+Entry (
+\begin{DoxyParamCaption}
+\item[{String}]{bssid}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1db_1_1_usense_data_source_abda578af60b176eedda9cd90ceed2dfc}
+This method get the location entries from the T\+A\+B\+L\+E\+\_\+\+L\+O\+C\+A\+T\+I\+O\+N 
+\begin{DoxyParams}{Parameters}
+{\em bssid} & location id \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ap location entry object 
+\end{DoxyReturn}
+\hypertarget{classcs_1_1usense_1_1db_1_1_usense_data_source_a691039457f8be413ad6990a70f83db98}{}\index{cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}!get\+Num\+Action\+Entry@{get\+Num\+Action\+Entry}}
+\index{get\+Num\+Action\+Entry@{get\+Num\+Action\+Entry}!cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}}
+\subsubsection[{get\+Num\+Action\+Entry()}]{\setlength{\rightskip}{0pt plus 5cm}long cs.\+usense.\+db.\+Usense\+Data\+Source.\+get\+Num\+Action\+Entry (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1db_1_1_usense_data_source_a691039457f8be413ad6990a70f83db98}
+This method gets the number of records in the A\+C\+T\+I\+O\+N\+\_\+\+E\+N\+T\+R\+Y table. This is, the number of Actions registered on the application. \begin{DoxyReturn}{Returns}
+the number of Actions registered by the application. 
+\end{DoxyReturn}
+\hypertarget{classcs_1_1usense_1_1db_1_1_usense_data_source_a520cf0bb7675132c6a32ead25a8b9b45}{}\index{cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}!get\+Num\+A\+P@{get\+Num\+A\+P}}
+\index{get\+Num\+A\+P@{get\+Num\+A\+P}!cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}}
+\subsubsection[{get\+Num\+A\+P()}]{\setlength{\rightskip}{0pt plus 5cm}long cs.\+usense.\+db.\+Usense\+Data\+Source.\+get\+Num\+A\+P (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1db_1_1_usense_data_source_a520cf0bb7675132c6a32ead25a8b9b45}
+This method gets the number of records in the A\+C\+C\+E\+S\+S\+\_\+\+P\+O\+I\+N\+T\+S table. This is, the number of A\+P registered on the application. \begin{DoxyReturn}{Returns}
+number of A\+P registered by the application. 
+\end{DoxyReturn}
+\hypertarget{classcs_1_1usense_1_1db_1_1_usense_data_source_a158073fd29763e580866798e7e65ef3e}{}\index{cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}!get\+Num\+B\+T\+Device@{get\+Num\+B\+T\+Device}}
+\index{get\+Num\+B\+T\+Device@{get\+Num\+B\+T\+Device}!cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}}
+\subsubsection[{get\+Num\+B\+T\+Device()}]{\setlength{\rightskip}{0pt plus 5cm}long cs.\+usense.\+db.\+Usense\+Data\+Source.\+get\+Num\+B\+T\+Device (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1db_1_1_usense_data_source_a158073fd29763e580866798e7e65ef3e}
+This method gets the number of records in the B\+T\+D\+E\+V\+I\+C\+E table. This is, the number of B\+T\+Device registered on the application. \begin{DoxyReturn}{Returns}
+The number of B\+T\+Device registered by the application. 
+\end{DoxyReturn}
+\hypertarget{classcs_1_1usense_1_1db_1_1_usense_data_source_a88597c44daea873d78983e138ef76c01}{}\index{cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}!get\+Num\+Entries@{get\+Num\+Entries}}
+\index{get\+Num\+Entries@{get\+Num\+Entries}!cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}}
+\subsubsection[{get\+Num\+Entries()}]{\setlength{\rightskip}{0pt plus 5cm}long cs.\+usense.\+db.\+Usense\+Data\+Source.\+get\+Num\+Entries (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1db_1_1_usense_data_source_a88597c44daea873d78983e138ef76c01}
+This method gets the number of records in the T\+A\+B\+L\+E\+\_\+\+L\+O\+C\+A\+T\+I\+O\+N table. This is, the number of locations registered on the application. \begin{DoxyReturn}{Returns}
+the number of locations registered by the application. 
+\end{DoxyReturn}
+\hypertarget{classcs_1_1usense_1_1db_1_1_usense_data_source_a7f08dba29d26ca8d33a5eda2714640fb}{}\index{cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}!get\+Num\+Sound\+Level@{get\+Num\+Sound\+Level}}
+\index{get\+Num\+Sound\+Level@{get\+Num\+Sound\+Level}!cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}}
+\subsubsection[{get\+Num\+Sound\+Level()}]{\setlength{\rightskip}{0pt plus 5cm}long cs.\+usense.\+db.\+Usense\+Data\+Source.\+get\+Num\+Sound\+Level (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1db_1_1_usense_data_source_a7f08dba29d26ca8d33a5eda2714640fb}
+This method get the entries in T\+A\+B\+L\+E\+\_\+\+S\+O\+U\+N\+D table \begin{DoxyReturn}{Returns}
+Sound\+Level The number of rows in the table 
+\end{DoxyReturn}
+\hypertarget{classcs_1_1usense_1_1db_1_1_usense_data_source_ae9c1bce7d6fa9b86dc0ab01f4acebf09}{}\index{cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}!get\+Sound\+Level@{get\+Sound\+Level}}
+\index{get\+Sound\+Level@{get\+Sound\+Level}!cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}}
+\subsubsection[{get\+Sound\+Level(long today\+Millis)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sound\+Level} cs.\+usense.\+db.\+Usense\+Data\+Source.\+get\+Sound\+Level (
+\begin{DoxyParamCaption}
+\item[{long}]{today\+Millis}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1db_1_1_usense_data_source_ae9c1bce7d6fa9b86dc0ab01f4acebf09}
+This method provides the sound level 
+\begin{DoxyParams}{Parameters}
+{\em today\+Millis} & Time in milliseconds \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+sl Sound\+Level with time in milliseconds 
+\end{DoxyReturn}
+\hypertarget{classcs_1_1usense_1_1db_1_1_usense_data_source_aefd9dcea92c0d55f36582e9f2aaf0ec2}{}\index{cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}!has\+Action\+Entry@{has\+Action\+Entry}}
+\index{has\+Action\+Entry@{has\+Action\+Entry}!cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}}
+\subsubsection[{has\+Action\+Entry(\+String action\+Type)}]{\setlength{\rightskip}{0pt plus 5cm}boolean cs.\+usense.\+db.\+Usense\+Data\+Source.\+has\+Action\+Entry (
+\begin{DoxyParamCaption}
+\item[{String}]{action\+Type}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1db_1_1_usense_data_source_aefd9dcea92c0d55f36582e9f2aaf0ec2}
+This method checks if a given Actions has already been registered by the application. 
+\begin{DoxyParams}{Parameters}
+{\em action\+Type} & Actions of the Actions \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if Actions has already been registered by the application, false otherwise. 
+\end{DoxyReturn}
+\hypertarget{classcs_1_1usense_1_1db_1_1_usense_data_source_aa8636b1ac08b4d9c0f1a054b84b51223}{}\index{cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}!has\+B\+T\+Device@{has\+B\+T\+Device}}
+\index{has\+B\+T\+Device@{has\+B\+T\+Device}!cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}}
+\subsubsection[{has\+B\+T\+Device(\+String bt\+Dev)}]{\setlength{\rightskip}{0pt plus 5cm}boolean cs.\+usense.\+db.\+Usense\+Data\+Source.\+has\+B\+T\+Device (
+\begin{DoxyParamCaption}
+\item[{String}]{bt\+Dev}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1db_1_1_usense_data_source_aa8636b1ac08b4d9c0f1a054b84b51223}
+This method checks if a given B\+T\+Device has already been registered by the application. 
+\begin{DoxyParams}{Parameters}
+{\em mac} & The M\+A\+C address of the B\+T\+Device. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true, if B\+T\+Device has already been registered by the application, false otherwise. 
+\end{DoxyReturn}
+\hypertarget{classcs_1_1usense_1_1db_1_1_usense_data_source_a346a0f88cfeff37a187c0b010c0542a7}{}\index{cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}!has\+Location\+Entry@{has\+Location\+Entry}}
+\index{has\+Location\+Entry@{has\+Location\+Entry}!cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}}
+\subsubsection[{has\+Location\+Entry(\+String bssid)}]{\setlength{\rightskip}{0pt plus 5cm}boolean cs.\+usense.\+db.\+Usense\+Data\+Source.\+has\+Location\+Entry (
+\begin{DoxyParamCaption}
+\item[{String}]{bssid}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1db_1_1_usense_data_source_a346a0f88cfeff37a187c0b010c0542a7}
+This method checks whether the bssid is available in T\+A\+B\+L\+E\+\_\+\+L\+O\+C\+A\+T\+I\+O\+N table 
+\begin{DoxyParams}{Parameters}
+{\em bssid} & location id \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if location id is in location ebtry object 
+\end{DoxyReturn}
+\hypertarget{classcs_1_1usense_1_1db_1_1_usense_data_source_a626b15f5c0c222e54e13e0667e3fd579}{}\index{cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}!has\+Sound\+Level@{has\+Sound\+Level}}
+\index{has\+Sound\+Level@{has\+Sound\+Level}!cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}}
+\subsubsection[{has\+Sound\+Level(long sound\+Date)}]{\setlength{\rightskip}{0pt plus 5cm}boolean cs.\+usense.\+db.\+Usense\+Data\+Source.\+has\+Sound\+Level (
+\begin{DoxyParamCaption}
+\item[{long}]{sound\+Date}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1db_1_1_usense_data_source_a626b15f5c0c222e54e13e0667e3fd579}
+This method check whether the entry is available or not from T\+A\+B\+L\+E\+\_\+\+S\+O\+U\+N\+D table 
+\begin{DoxyParams}{Parameters}
+{\em sound\+Date} & Date of the sound level \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true If the entry is available 
+\end{DoxyReturn}
+\hypertarget{classcs_1_1usense_1_1db_1_1_usense_data_source_a4fb669af37772373739d32870d995c40}{}\index{cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}!open\+D\+B@{open\+D\+B}}
+\index{open\+D\+B@{open\+D\+B}!cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}}
+\subsubsection[{open\+D\+B(boolean writable)}]{\setlength{\rightskip}{0pt plus 5cm}void cs.\+usense.\+db.\+Usense\+Data\+Source.\+open\+D\+B (
+\begin{DoxyParamCaption}
+\item[{boolean}]{writable}
+\end{DoxyParamCaption}
+) throws S\+Q\+L\+Exception}\label{classcs_1_1usense_1_1db_1_1_usense_data_source_a4fb669af37772373739d32870d995c40}
+This method opens the predefined U\+Sense database. 
+\begin{DoxyParams}{Parameters}
+{\em writable} & The first time this is called, the database will be opened. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em S\+Q\+L\+Exception} & Throws S\+Q\+L Exception \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classcs_1_1usense_1_1db_1_1_usense_data_source_ac4365c25de9b831d3cd89e13b1f7933c}{}\index{cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}!register\+Location\+Entry@{register\+Location\+Entry}}
+\index{register\+Location\+Entry@{register\+Location\+Entry}!cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}}
+\subsubsection[{register\+Location\+Entry(\+Location\+Entry entry)}]{\setlength{\rightskip}{0pt plus 5cm}long cs.\+usense.\+db.\+Usense\+Data\+Source.\+register\+Location\+Entry (
+\begin{DoxyParamCaption}
+\item[{{\bf Location\+Entry}}]{entry}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1db_1_1_usense_data_source_ac4365c25de9b831d3cd89e13b1f7933c}
+This method register a new Location\+Entry in the application. It creates a new record on the T\+A\+B\+L\+E\+\_\+\+L\+O\+C\+A\+T\+I\+O\+N table, with the information passed as M\+Tracker\+A\+P. 
+\begin{DoxyParams}{Parameters}
+{\em entry} & Location Entry information. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+row\+I\+D of the newly inserted row, or -\/1 if an error occurred. 
+\end{DoxyReturn}
+\hypertarget{classcs_1_1usense_1_1db_1_1_usense_data_source_a0afbd8c5efe2b3f4ece076cc8ca5539d}{}\index{cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}!register\+New\+Action\+Entry@{register\+New\+Action\+Entry}}
+\index{register\+New\+Action\+Entry@{register\+New\+Action\+Entry}!cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}}
+\subsubsection[{register\+New\+Action\+Entry(\+Actions\+Entry ae)}]{\setlength{\rightskip}{0pt plus 5cm}long cs.\+usense.\+db.\+Usense\+Data\+Source.\+register\+New\+Action\+Entry (
+\begin{DoxyParamCaption}
+\item[{{\bf Actions\+Entry}}]{ae}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1db_1_1_usense_data_source_a0afbd8c5efe2b3f4ece076cc8ca5539d}
+This method register a new Action\+Entry in the application. It creates a new record on the Action Entry table, with the information passed as Action\+Entry. 
+\begin{DoxyParams}{Parameters}
+{\em ae} & Action enty information. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the action type of the newly inserted row, or -\/1 if an error occurred. 
+\end{DoxyReturn}
+\hypertarget{classcs_1_1usense_1_1db_1_1_usense_data_source_a00733a5faba0031ae832092fd16fe30d}{}\index{cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}!register\+New\+B\+T\+Device@{register\+New\+B\+T\+Device}}
+\index{register\+New\+B\+T\+Device@{register\+New\+B\+T\+Device}!cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}}
+\subsubsection[{register\+New\+B\+T\+Device(\+B\+T\+User\+Device bt\+Dev, B\+T\+User\+Dev\+Encounter\+Duration duration, B\+T\+User\+Dev\+Average\+Encounter\+Duration average\+Duration, B\+T\+User\+Dev\+Social\+Weight social\+Weight)}]{\setlength{\rightskip}{0pt plus 5cm}void cs.\+usense.\+db.\+Usense\+Data\+Source.\+register\+New\+B\+T\+Device (
+\begin{DoxyParamCaption}
+\item[{{\bf B\+T\+User\+Device}}]{bt\+Dev, }
+\item[{{\bf B\+T\+User\+Dev\+Encounter\+Duration}}]{duration, }
+\item[{{\bf B\+T\+User\+Dev\+Average\+Encounter\+Duration}}]{average\+Duration, }
+\item[{{\bf B\+T\+User\+Dev\+Social\+Weight}}]{social\+Weight}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1db_1_1_usense_data_source_a00733a5faba0031ae832092fd16fe30d}
+This method registers a new B\+T\+Device in the application. It creates a new record on the B\+T\+D\+E\+V\+I\+C\+E, B\+T\+D\+E\+V\+I\+C\+E\+E\+N\+C\+O\+U\+N\+T\+E\+R\+D\+U\+R\+A\+T\+I\+O\+N, B\+T\+D\+E\+V\+I\+C\+E\+A\+V\+E\+R\+A\+G\+E\+E\+N\+C\+O\+U\+N\+T\+E\+R\+D\+U\+R\+A\+T\+I\+O\+N, and B\+T\+D\+E\+V\+I\+C\+E\+S\+O\+C\+I\+A\+L\+W\+E\+I\+G\+H\+T tables, with the information passed as B\+T\+Device. 
+\begin{DoxyParams}{Parameters}
+{\em bt\+Dev} & The Bluetooth device information. \\
+\hline
+{\em duration} & The Bluetooth device information regarding the duration that the B\+T device is within communication range of others. \\
+\hline
+{\em average\+Duration} & The Bluetooth device information regarding the average duration of encounter between the B\+T device and other devices. \\
+\hline
+{\em social\+Weight} & The Bluetooth device information regarding the social weight of the B\+T device towards others. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classcs_1_1usense_1_1db_1_1_usense_data_source_a88dd2b18825241d4946ede0353b4fd26}{}\index{cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}!register\+New\+Sound\+Level@{register\+New\+Sound\+Level}}
+\index{register\+New\+Sound\+Level@{register\+New\+Sound\+Level}!cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}}
+\subsubsection[{register\+New\+Sound\+Level(\+Sound\+Level sl)}]{\setlength{\rightskip}{0pt plus 5cm}long cs.\+usense.\+db.\+Usense\+Data\+Source.\+register\+New\+Sound\+Level (
+\begin{DoxyParamCaption}
+\item[{{\bf Sound\+Level}}]{sl}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1db_1_1_usense_data_source_a88dd2b18825241d4946ede0353b4fd26}
+This method register the new entry into T\+A\+B\+L\+E\+\_\+\+S\+O\+U\+N\+D table 
+\begin{DoxyParams}{Parameters}
+{\em sl} & Sound level object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+number\+Of\+Rows number of rows are inserted in the table 
+\end{DoxyReturn}
+\hypertarget{classcs_1_1usense_1_1db_1_1_usense_data_source_a8b72c3ef4cce8d4535034fb5f7a3b6dc}{}\index{cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}!remove\+Location\+Entry@{remove\+Location\+Entry}}
+\index{remove\+Location\+Entry@{remove\+Location\+Entry}!cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}}
+\subsubsection[{remove\+Location\+Entry(\+Location\+Entry entry)}]{\setlength{\rightskip}{0pt plus 5cm}int cs.\+usense.\+db.\+Usense\+Data\+Source.\+remove\+Location\+Entry (
+\begin{DoxyParamCaption}
+\item[{{\bf Location\+Entry}}]{entry}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1db_1_1_usense_data_source_a8b72c3ef4cce8d4535034fb5f7a3b6dc}
+This method checks whether entry is removed from the location entry 
+\begin{DoxyParams}{Parameters}
+{\em entry} & Location Entry \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if successful 
+\end{DoxyReturn}
+\hypertarget{classcs_1_1usense_1_1db_1_1_usense_data_source_a1e9a9327d9a72b0f7ed92250ddf59908}{}\index{cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}!update\+Action\+Entry@{update\+Action\+Entry}}
+\index{update\+Action\+Entry@{update\+Action\+Entry}!cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}}
+\subsubsection[{update\+Action\+Entry(\+Actions\+Entry ae)}]{\setlength{\rightskip}{0pt plus 5cm}boolean cs.\+usense.\+db.\+Usense\+Data\+Source.\+update\+Action\+Entry (
+\begin{DoxyParamCaption}
+\item[{{\bf Actions\+Entry}}]{ae}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1db_1_1_usense_data_source_a1e9a9327d9a72b0f7ed92250ddf59908}
+This method update an Action\+Entry already registered by the application. This modifies the corresponding record to the Entry in the A\+C\+T\+I\+O\+N\+E\+N\+T\+R\+Y table. 
+\begin{DoxyParams}{Parameters}
+{\em ap} & action entry information. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if successful. 
+\end{DoxyReturn}
+\hypertarget{classcs_1_1usense_1_1db_1_1_usense_data_source_a69a781c3c921797e89e42598f6938929}{}\index{cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}!update\+B\+T\+Dev\+Avg\+Encounter\+Duration@{update\+B\+T\+Dev\+Avg\+Encounter\+Duration}}
+\index{update\+B\+T\+Dev\+Avg\+Encounter\+Duration@{update\+B\+T\+Dev\+Avg\+Encounter\+Duration}!cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}}
+\subsubsection[{update\+B\+T\+Dev\+Avg\+Encounter\+Duration(\+B\+T\+User\+Dev\+Average\+Encounter\+Duration average\+Duration)}]{\setlength{\rightskip}{0pt plus 5cm}void cs.\+usense.\+db.\+Usense\+Data\+Source.\+update\+B\+T\+Dev\+Avg\+Encounter\+Duration (
+\begin{DoxyParamCaption}
+\item[{{\bf B\+T\+User\+Dev\+Average\+Encounter\+Duration}}]{average\+Duration}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1db_1_1_usense_data_source_a69a781c3c921797e89e42598f6938929}
+This method updates a B\+T\+Device already registered by the application. This modifies the corresponding record to the B\+T\+Device in the B\+T\+D\+E\+V\+I\+C\+E\+A\+V\+E\+R\+A\+G\+E\+E\+N\+C\+O\+U\+N\+T\+E\+R\+D\+U\+R\+A\+T\+I\+O\+N table. 
+\begin{DoxyParams}{Parameters}
+{\em average\+Duration} & The Bluetooth device information regarding its average encounter duration. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classcs_1_1usense_1_1db_1_1_usense_data_source_a14742aad8c76e400fe56cd07321ac202}{}\index{cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}!update\+B\+T\+Device\+And\+Duration@{update\+B\+T\+Device\+And\+Duration}}
+\index{update\+B\+T\+Device\+And\+Duration@{update\+B\+T\+Device\+And\+Duration}!cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}}
+\subsubsection[{update\+B\+T\+Device\+And\+Duration(\+B\+T\+User\+Device bt\+Dev, B\+T\+User\+Dev\+Encounter\+Duration duration)}]{\setlength{\rightskip}{0pt plus 5cm}void cs.\+usense.\+db.\+Usense\+Data\+Source.\+update\+B\+T\+Device\+And\+Duration (
+\begin{DoxyParamCaption}
+\item[{{\bf B\+T\+User\+Device}}]{bt\+Dev, }
+\item[{{\bf B\+T\+User\+Dev\+Encounter\+Duration}}]{duration}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1db_1_1_usense_data_source_a14742aad8c76e400fe56cd07321ac202}
+This method updates a B\+T\+Device already registered by the application. This modifies the corresponding record to the B\+T\+Device in the B\+T\+D\+E\+V\+I\+C\+E, B\+T\+D\+E\+V\+I\+C\+E\+E\+N\+C\+O\+U\+N\+T\+E\+R\+D\+U\+R\+A\+T\+I\+O\+N, B\+T\+D\+E\+V\+I\+C\+E\+A\+V\+E\+R\+A\+G\+E\+E\+N\+C\+O\+U\+N\+T\+E\+R\+D\+U\+R\+A\+T\+I\+O\+N, and B\+T\+D\+E\+V\+I\+C\+E\+S\+O\+C\+I\+A\+L\+W\+E\+I\+G\+H\+T tables. 
+\begin{DoxyParams}{Parameters}
+{\em bt\+Dev} & The Bluetooth device information. \\
+\hline
+{\em duration} & The Bluetooth device information regarding the duration that the B\+T device is within communication range of others. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classcs_1_1usense_1_1db_1_1_usense_data_source_a3ded9bd1da6f82f8e6599b9d1ee5cfe6}{}\index{cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}!update\+B\+T\+Dev\+Social\+Weight@{update\+B\+T\+Dev\+Social\+Weight}}
+\index{update\+B\+T\+Dev\+Social\+Weight@{update\+B\+T\+Dev\+Social\+Weight}!cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}}
+\subsubsection[{update\+B\+T\+Dev\+Social\+Weight(\+B\+T\+User\+Dev\+Social\+Weight social\+Weight)}]{\setlength{\rightskip}{0pt plus 5cm}void cs.\+usense.\+db.\+Usense\+Data\+Source.\+update\+B\+T\+Dev\+Social\+Weight (
+\begin{DoxyParamCaption}
+\item[{{\bf B\+T\+User\+Dev\+Social\+Weight}}]{social\+Weight}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1db_1_1_usense_data_source_a3ded9bd1da6f82f8e6599b9d1ee5cfe6}
+This method updates a B\+T\+Device already registered by the application. This modifies the corresponding record to the B\+T\+Device in the B\+T\+D\+E\+V\+I\+C\+E\+S\+O\+C\+I\+A\+L\+W\+E\+I\+G\+H\+T table. 
+\begin{DoxyParams}{Parameters}
+{\em social\+Weight} & The Bluetooth device information regarding its social weight. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classcs_1_1usense_1_1db_1_1_usense_data_source_aec18fea380d682f4bd249a7c5e4d1679}{}\index{cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}!update\+Location\+Entry@{update\+Location\+Entry}}
+\index{update\+Location\+Entry@{update\+Location\+Entry}!cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}}
+\subsubsection[{update\+Location\+Entry(\+Location\+Entry entry)}]{\setlength{\rightskip}{0pt plus 5cm}boolean cs.\+usense.\+db.\+Usense\+Data\+Source.\+update\+Location\+Entry (
+\begin{DoxyParamCaption}
+\item[{{\bf Location\+Entry}}]{entry}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1db_1_1_usense_data_source_aec18fea380d682f4bd249a7c5e4d1679}
+This method update an Location Entry already registered by the application. This modifies the corresponding record to the Location Entry in the T\+A\+B\+L\+E\+\_\+\+L\+O\+C\+A\+T\+I\+O\+N table. 
+\begin{DoxyParams}{Parameters}
+{\em location} & Location Entry information. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if successful. 
+\end{DoxyReturn}
+\hypertarget{classcs_1_1usense_1_1db_1_1_usense_data_source_a079854050c01f42e4bc2dd03f659eba3}{}\index{cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}!update\+Sound\+Level@{update\+Sound\+Level}}
+\index{update\+Sound\+Level@{update\+Sound\+Level}!cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}}
+\subsubsection[{update\+Sound\+Level(\+Sound\+Level sl)}]{\setlength{\rightskip}{0pt plus 5cm}boolean cs.\+usense.\+db.\+Usense\+Data\+Source.\+update\+Sound\+Level (
+\begin{DoxyParamCaption}
+\item[{{\bf Sound\+Level}}]{sl}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1db_1_1_usense_data_source_a079854050c01f42e4bc2dd03f659eba3}
+This method update the sound level into T\+A\+B\+L\+E\+\_\+\+S\+O\+U\+N\+D table 
+\begin{DoxyParams}{Parameters}
+{\em sl} & Sound level object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true The number of rows are updated in the table 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classcs_1_1usense_1_1db_1_1_usense_data_source_a688543575d053c8e63be693eec2d31ef}{}\index{cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}!all\+Columns\+Actions\+Entry@{all\+Columns\+Actions\+Entry}}
+\index{all\+Columns\+Actions\+Entry@{all\+Columns\+Actions\+Entry}!cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}}
+\subsubsection[{all\+Columns\+Actions\+Entry}]{\setlength{\rightskip}{0pt plus 5cm}String \mbox{[}$\,$\mbox{]} cs.\+usense.\+db.\+Usense\+Data\+Source.\+all\+Columns\+Actions\+Entry\hspace{0.3cm}{\ttfamily [private]}}\label{classcs_1_1usense_1_1db_1_1_usense_data_source_a688543575d053c8e63be693eec2d31ef}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{ 
+            UsenseSQLiteHelper.COLUMN\_ACTIONTYPE,
+            UsenseSQLiteHelper.COLUMN\_TIMESTAMP,
+            UsenseSQLiteHelper.COLUMN\_ENDTIMESTAMP,
+            UsenseSQLiteHelper.COLUMN\_AVGDURATION,
+            UsenseSQLiteHelper.COLUMN\_HOUR,
+            UsenseSQLiteHelper.COLUMN\_ACTIONCOUNTER,
+            UsenseSQLiteHelper.COLUMN\_DAY,
+            UsenseSQLiteHelper.COLUMN\_TIMEFRAME
+    \}
+\end{DoxyCode}
+A\+C\+T\+I\+O\+N\+S T\+A\+B\+L\+E\+: This table stores information regarding A\+C\+T\+I\+O\+N\+S. The information stored is\+:
+\begin{DoxyItemize}
+\item A\+C\+T\+I\+O\+N\+T\+Y\+P\+E
+\item T\+I\+M\+E\+S\+T\+A\+M\+P
+\item D\+U\+R\+A\+T\+I\+O\+N
+\item L\+A\+S\+T\+A\+C\+T\+I\+O\+N
+\item A\+C\+T\+I\+O\+N\+T\+I\+M\+E\+G\+A\+P
+\item A\+C\+T\+I\+O\+N\+C\+O\+U\+N\+T\+E\+R List of all columns on the A\+C\+C\+E\+S\+S\+\_\+\+P\+O\+I\+N\+T\+S table. 
+\end{DoxyItemize}\hypertarget{classcs_1_1usense_1_1db_1_1_usense_data_source_a0b84e480cbc128dfd1931c07b46c98f6}{}\index{cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}!all\+Columns\+B\+T\+Device\+Average\+Encounter\+Duration@{all\+Columns\+B\+T\+Device\+Average\+Encounter\+Duration}}
+\index{all\+Columns\+B\+T\+Device\+Average\+Encounter\+Duration@{all\+Columns\+B\+T\+Device\+Average\+Encounter\+Duration}!cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}}
+\subsubsection[{all\+Columns\+B\+T\+Device\+Average\+Encounter\+Duration}]{\setlength{\rightskip}{0pt plus 5cm}String \mbox{[}$\,$\mbox{]} cs.\+usense.\+db.\+Usense\+Data\+Source.\+all\+Columns\+B\+T\+Device\+Average\+Encounter\+Duration\hspace{0.3cm}{\ttfamily [private]}}\label{classcs_1_1usense_1_1db_1_1_usense_data_source_a0b84e480cbc128dfd1931c07b46c98f6}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{ 
+            UsenseSQLiteHelper.COLUMN\_BTDEV\_MAC\_ADDRESS,
+            UsenseSQLiteHelper.COLUMN\_BTDEV\_AVGENCOUNTERDURATION\_SLOT1,
+            UsenseSQLiteHelper.COLUMN\_BTDEV\_AVGENCOUNTERDURATION\_SLOT2,
+            UsenseSQLiteHelper.COLUMN\_BTDEV\_AVGENCOUNTERDURATION\_SLOT3,
+            UsenseSQLiteHelper.COLUMN\_BTDEV\_AVGENCOUNTERDURATION\_SLOT4,
+            UsenseSQLiteHelper.COLUMN\_BTDEV\_AVGENCOUNTERDURATION\_SLOT5,
+            UsenseSQLiteHelper.COLUMN\_BTDEV\_AVGENCOUNTERDURATION\_SLOT6,
+            UsenseSQLiteHelper.COLUMN\_BTDEV\_AVGENCOUNTERDURATION\_SLOT7,
+            UsenseSQLiteHelper.COLUMN\_BTDEV\_AVGENCOUNTERDURATION\_SLOT8,
+            UsenseSQLiteHelper.COLUMN\_BTDEV\_AVGENCOUNTERDURATION\_SLOT9,
+            UsenseSQLiteHelper.COLUMN\_BTDEV\_AVGENCOUNTERDURATION\_SLOT10,
+            UsenseSQLiteHelper.COLUMN\_BTDEV\_AVGENCOUNTERDURATION\_SLOT11,
+            UsenseSQLiteHelper.COLUMN\_BTDEV\_AVGENCOUNTERDURATION\_SLOT12,
+            UsenseSQLiteHelper.COLUMN\_BTDEV\_AVGENCOUNTERDURATION\_SLOT13,
+            UsenseSQLiteHelper.COLUMN\_BTDEV\_AVGENCOUNTERDURATION\_SLOT14,
+            UsenseSQLiteHelper.COLUMN\_BTDEV\_AVGENCOUNTERDURATION\_SLOT15,
+            UsenseSQLiteHelper.COLUMN\_BTDEV\_AVGENCOUNTERDURATION\_SLOT16,
+            UsenseSQLiteHelper.COLUMN\_BTDEV\_AVGENCOUNTERDURATION\_SLOT17,
+            UsenseSQLiteHelper.COLUMN\_BTDEV\_AVGENCOUNTERDURATION\_SLOT18,
+            UsenseSQLiteHelper.COLUMN\_BTDEV\_AVGENCOUNTERDURATION\_SLOT19,
+            UsenseSQLiteHelper.COLUMN\_BTDEV\_AVGENCOUNTERDURATION\_SLOT20,
+            UsenseSQLiteHelper.COLUMN\_BTDEV\_AVGENCOUNTERDURATION\_SLOT21,
+            UsenseSQLiteHelper.COLUMN\_BTDEV\_AVGENCOUNTERDURATION\_SLOT22,
+            UsenseSQLiteHelper.COLUMN\_BTDEV\_AVGENCOUNTERDURATION\_SLOT23,
+            UsenseSQLiteHelper.COLUMN\_BTDEV\_AVGENCOUNTERDURATION\_SLOT24,
+    \}
+\end{DoxyCode}
+List of all columns on the B\+T\+D\+E\+V\+I\+C\+E\+A\+V\+E\+R\+A\+G\+E\+E\+N\+C\+O\+U\+N\+T\+E\+R\+D\+U\+R\+A\+T\+I\+O\+N table. \hypertarget{classcs_1_1usense_1_1db_1_1_usense_data_source_ae0da67fa4d853379fe723ec28a581de0}{}\index{cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}!all\+Columns\+B\+T\+Device\+Encounter\+Duration@{all\+Columns\+B\+T\+Device\+Encounter\+Duration}}
+\index{all\+Columns\+B\+T\+Device\+Encounter\+Duration@{all\+Columns\+B\+T\+Device\+Encounter\+Duration}!cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}}
+\subsubsection[{all\+Columns\+B\+T\+Device\+Encounter\+Duration}]{\setlength{\rightskip}{0pt plus 5cm}String \mbox{[}$\,$\mbox{]} cs.\+usense.\+db.\+Usense\+Data\+Source.\+all\+Columns\+B\+T\+Device\+Encounter\+Duration\hspace{0.3cm}{\ttfamily [private]}}\label{classcs_1_1usense_1_1db_1_1_usense_data_source_ae0da67fa4d853379fe723ec28a581de0}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{ 
+            UsenseSQLiteHelper.COLUMN\_BTDEV\_MAC\_ADDRESS,
+            UsenseSQLiteHelper.COLUMN\_BTDEV\_ENCOUNTERDURATION\_SLOT1,
+            UsenseSQLiteHelper.COLUMN\_BTDEV\_ENCOUNTERDURATION\_SLOT2,
+            UsenseSQLiteHelper.COLUMN\_BTDEV\_ENCOUNTERDURATION\_SLOT3,
+            UsenseSQLiteHelper.COLUMN\_BTDEV\_ENCOUNTERDURATION\_SLOT4,
+            UsenseSQLiteHelper.COLUMN\_BTDEV\_ENCOUNTERDURATION\_SLOT5,
+            UsenseSQLiteHelper.COLUMN\_BTDEV\_ENCOUNTERDURATION\_SLOT6,
+            UsenseSQLiteHelper.COLUMN\_BTDEV\_ENCOUNTERDURATION\_SLOT7,
+            UsenseSQLiteHelper.COLUMN\_BTDEV\_ENCOUNTERDURATION\_SLOT8,
+            UsenseSQLiteHelper.COLUMN\_BTDEV\_ENCOUNTERDURATION\_SLOT9,
+            UsenseSQLiteHelper.COLUMN\_BTDEV\_ENCOUNTERDURATION\_SLOT10,
+            UsenseSQLiteHelper.COLUMN\_BTDEV\_ENCOUNTERDURATION\_SLOT11,
+            UsenseSQLiteHelper.COLUMN\_BTDEV\_ENCOUNTERDURATION\_SLOT12,
+            UsenseSQLiteHelper.COLUMN\_BTDEV\_ENCOUNTERDURATION\_SLOT13,
+            UsenseSQLiteHelper.COLUMN\_BTDEV\_ENCOUNTERDURATION\_SLOT14,
+            UsenseSQLiteHelper.COLUMN\_BTDEV\_ENCOUNTERDURATION\_SLOT15,
+            UsenseSQLiteHelper.COLUMN\_BTDEV\_ENCOUNTERDURATION\_SLOT16,
+            UsenseSQLiteHelper.COLUMN\_BTDEV\_ENCOUNTERDURATION\_SLOT17,
+            UsenseSQLiteHelper.COLUMN\_BTDEV\_ENCOUNTERDURATION\_SLOT18,
+            UsenseSQLiteHelper.COLUMN\_BTDEV\_ENCOUNTERDURATION\_SLOT19,
+            UsenseSQLiteHelper.COLUMN\_BTDEV\_ENCOUNTERDURATION\_SLOT20,
+            UsenseSQLiteHelper.COLUMN\_BTDEV\_ENCOUNTERDURATION\_SLOT21,
+            UsenseSQLiteHelper.COLUMN\_BTDEV\_ENCOUNTERDURATION\_SLOT22,
+            UsenseSQLiteHelper.COLUMN\_BTDEV\_ENCOUNTERDURATION\_SLOT23,
+            UsenseSQLiteHelper.COLUMN\_BTDEV\_ENCOUNTERDURATION\_SLOT24,
+    \}
+\end{DoxyCode}
+List of all columns on the B\+T\+D\+E\+V\+I\+C\+E\+E\+N\+C\+O\+U\+N\+T\+E\+R\+D\+U\+R\+A\+T\+I\+O\+N table. \hypertarget{classcs_1_1usense_1_1db_1_1_usense_data_source_af5076f24e3994d5f0969f5ec40104f0f}{}\index{cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}!all\+Columns\+B\+T\+Devices@{all\+Columns\+B\+T\+Devices}}
+\index{all\+Columns\+B\+T\+Devices@{all\+Columns\+B\+T\+Devices}!cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}}
+\subsubsection[{all\+Columns\+B\+T\+Devices}]{\setlength{\rightskip}{0pt plus 5cm}String \mbox{[}$\,$\mbox{]} cs.\+usense.\+db.\+Usense\+Data\+Source.\+all\+Columns\+B\+T\+Devices\hspace{0.3cm}{\ttfamily [private]}}\label{classcs_1_1usense_1_1db_1_1_usense_data_source_af5076f24e3994d5f0969f5ec40104f0f}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{ 
+            UsenseSQLiteHelper.COLUMN\_BTDEV\_MAC\_ADDRESS,
+            UsenseSQLiteHelper.COLUMN\_BTDEV\_NAME,
+            UsenseSQLiteHelper.COLUMN\_BTDEV\_ENCOUNTERSTART,
+    \}
+\end{DoxyCode}
+Bluetooth pipeline B\+T\+D\+E\+V\+I\+C\+E T\+A\+B\+L\+E\+: This table stores information regarding B\+T\+D\+E\+V\+I\+C\+E\+S. The information stored is\+:
+\begin{DoxyItemize}
+\item B\+T\+D\+E\+V\+\_\+\+M\+A\+C\+\_\+\+A\+D\+D\+R\+E\+S\+S
+\item B\+T\+D\+E\+V\+\_\+\+N\+A\+M\+E
+\item B\+T\+D\+E\+V\+\_\+\+E\+N\+C\+O\+U\+N\+T\+E\+R\+T\+I\+M\+E
+\end{DoxyItemize}
+
+B\+T\+D\+E\+V\+I\+C\+E\+E\+N\+C\+O\+U\+N\+T\+E\+R\+D\+U\+R\+A\+T\+I\+O\+N T\+A\+B\+L\+E\+: This table stores information regarding the duration that found B\+T\+D\+E\+V\+I\+C\+E\+S are within communication range. The information stored is\+:
+\begin{DoxyItemize}
+\item B\+T\+D\+E\+V\+\_\+\+M\+A\+C\+\_\+\+A\+D\+D\+R\+E\+S\+S
+\item B\+T\+D\+E\+V\+\_\+\+E\+N\+C\+O\+U\+N\+T\+E\+R\+D\+U\+R\+A\+T\+I\+O\+N
+\end{DoxyItemize}
+
+B\+T\+D\+E\+V\+I\+C\+E\+A\+V\+E\+R\+A\+G\+E\+E\+N\+C\+O\+U\+N\+T\+E\+R\+D\+U\+R\+A\+T\+I\+O\+N T\+A\+B\+L\+E\+: This table stores information regarding the average duration of encounters towards found B\+T\+D\+E\+V\+I\+C\+E\+S. The information stored is\+:
+\begin{DoxyItemize}
+\item B\+T\+D\+E\+V\+\_\+\+M\+A\+C\+\_\+\+A\+D\+D\+R\+E\+S\+S
+\item B\+T\+D\+E\+V\+\_\+\+A\+V\+G\+E\+N\+C\+O\+U\+N\+T\+E\+R\+D\+U\+R\+A\+T\+I\+O\+N
+\end{DoxyItemize}
+
+B\+T\+D\+E\+V\+I\+C\+E\+S\+O\+C\+I\+A\+L\+W\+E\+I\+G\+H\+T T\+A\+B\+L\+E\+: This table stores information regarding the social weight towards found B\+T\+D\+E\+V\+I\+C\+E\+S. The information stored is\+:
+\begin{DoxyItemize}
+\item B\+T\+D\+E\+V\+\_\+\+M\+A\+C\+\_\+\+A\+D\+D\+R\+E\+S\+S
+\item B\+T\+D\+E\+V\+\_\+\+S\+O\+C\+I\+A\+L\+W\+E\+I\+G\+H\+T List of all columns on the B\+T\+D\+E\+V\+I\+C\+E table. 
+\end{DoxyItemize}\hypertarget{classcs_1_1usense_1_1db_1_1_usense_data_source_a9948c3c3b6014ecafccea0ce7fa0ba01}{}\index{cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}!all\+Columns\+B\+T\+Device\+Social\+Weight@{all\+Columns\+B\+T\+Device\+Social\+Weight}}
+\index{all\+Columns\+B\+T\+Device\+Social\+Weight@{all\+Columns\+B\+T\+Device\+Social\+Weight}!cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}}
+\subsubsection[{all\+Columns\+B\+T\+Device\+Social\+Weight}]{\setlength{\rightskip}{0pt plus 5cm}String \mbox{[}$\,$\mbox{]} cs.\+usense.\+db.\+Usense\+Data\+Source.\+all\+Columns\+B\+T\+Device\+Social\+Weight\hspace{0.3cm}{\ttfamily [private]}}\label{classcs_1_1usense_1_1db_1_1_usense_data_source_a9948c3c3b6014ecafccea0ce7fa0ba01}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{ 
+            UsenseSQLiteHelper.COLUMN\_BTDEV\_MAC\_ADDRESS,
+            UsenseSQLiteHelper.COLUMN\_BTDEV\_SOCIALWEIGHT\_SLOT1,
+            UsenseSQLiteHelper.COLUMN\_BTDEV\_SOCIALWEIGHT\_SLOT2,
+            UsenseSQLiteHelper.COLUMN\_BTDEV\_SOCIALWEIGHT\_SLOT3,
+            UsenseSQLiteHelper.COLUMN\_BTDEV\_SOCIALWEIGHT\_SLOT4,
+            UsenseSQLiteHelper.COLUMN\_BTDEV\_SOCIALWEIGHT\_SLOT5,
+            UsenseSQLiteHelper.COLUMN\_BTDEV\_SOCIALWEIGHT\_SLOT6,
+            UsenseSQLiteHelper.COLUMN\_BTDEV\_SOCIALWEIGHT\_SLOT7,
+            UsenseSQLiteHelper.COLUMN\_BTDEV\_SOCIALWEIGHT\_SLOT8,
+            UsenseSQLiteHelper.COLUMN\_BTDEV\_SOCIALWEIGHT\_SLOT9,
+            UsenseSQLiteHelper.COLUMN\_BTDEV\_SOCIALWEIGHT\_SLOT10,
+            UsenseSQLiteHelper.COLUMN\_BTDEV\_SOCIALWEIGHT\_SLOT11,
+            UsenseSQLiteHelper.COLUMN\_BTDEV\_SOCIALWEIGHT\_SLOT12,
+            UsenseSQLiteHelper.COLUMN\_BTDEV\_SOCIALWEIGHT\_SLOT13,
+            UsenseSQLiteHelper.COLUMN\_BTDEV\_SOCIALWEIGHT\_SLOT14,
+            UsenseSQLiteHelper.COLUMN\_BTDEV\_SOCIALWEIGHT\_SLOT15,
+            UsenseSQLiteHelper.COLUMN\_BTDEV\_SOCIALWEIGHT\_SLOT16,
+            UsenseSQLiteHelper.COLUMN\_BTDEV\_SOCIALWEIGHT\_SLOT17,
+            UsenseSQLiteHelper.COLUMN\_BTDEV\_SOCIALWEIGHT\_SLOT18,
+            UsenseSQLiteHelper.COLUMN\_BTDEV\_SOCIALWEIGHT\_SLOT19,
+            UsenseSQLiteHelper.COLUMN\_BTDEV\_SOCIALWEIGHT\_SLOT20,
+            UsenseSQLiteHelper.COLUMN\_BTDEV\_SOCIALWEIGHT\_SLOT21,
+            UsenseSQLiteHelper.COLUMN\_BTDEV\_SOCIALWEIGHT\_SLOT22,
+            UsenseSQLiteHelper.COLUMN\_BTDEV\_SOCIALWEIGHT\_SLOT23,
+            UsenseSQLiteHelper.COLUMN\_BTDEV\_SOCIALWEIGHT\_SLOT24,
+    \}
+\end{DoxyCode}
+List of all columns on the B\+T\+D\+E\+V\+I\+C\+E\+S\+O\+C\+I\+A\+L\+W\+E\+I\+G\+H\+T table. \hypertarget{classcs_1_1usense_1_1db_1_1_usense_data_source_a95178df715a8c412f84764ab9be54d81}{}\index{cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}!all\+Columns\+Location@{all\+Columns\+Location}}
+\index{all\+Columns\+Location@{all\+Columns\+Location}!cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}}
+\subsubsection[{all\+Columns\+Location}]{\setlength{\rightskip}{0pt plus 5cm}String \mbox{[}$\,$\mbox{]} cs.\+usense.\+db.\+Usense\+Data\+Source.\+all\+Columns\+Location\hspace{0.3cm}{\ttfamily [private]}}\label{classcs_1_1usense_1_1db_1_1_usense_data_source_a95178df715a8c412f84764ab9be54d81}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{ 
+            UsenseSQLiteHelper.COLUMN\_MAC\_ADDRESS,
+            UsenseSQLiteHelper.COLUMN\_DEVICE\_NAME,
+            UsenseSQLiteHelper.COLUMN\_DISTANCE,
+            UsenseSQLiteHelper.COLUMN\_LAST\_UPDATE
+    \}
+\end{DoxyCode}
+L\+O\+C\+A\+T\+I\+O\+N T\+A\+B\+L\+E\+: This table stores information regarding each access point visited in the past. The information stored is\+:
+\begin{DoxyItemize}
+\item B\+S\+S\+I\+D of the device
+\item Device Name
+\end{DoxyItemize}
+
+Distance
+\begin{DoxyItemize}
+\item Last update List of all columns on the A\+C\+C\+E\+S\+S\+\_\+\+P\+O\+I\+N\+T\+S table. 
+\end{DoxyItemize}\hypertarget{classcs_1_1usense_1_1db_1_1_usense_data_source_a974d57d1a21d3d3d4769d6ad8be5d15e}{}\index{cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}!all\+Columns\+Sound@{all\+Columns\+Sound}}
+\index{all\+Columns\+Sound@{all\+Columns\+Sound}!cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}}
+\subsubsection[{all\+Columns\+Sound}]{\setlength{\rightskip}{0pt plus 5cm}String \mbox{[}$\,$\mbox{]} cs.\+usense.\+db.\+Usense\+Data\+Source.\+all\+Columns\+Sound}\label{classcs_1_1usense_1_1db_1_1_usense_data_source_a974d57d1a21d3d3d4769d6ad8be5d15e}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{ 
+            UsenseSQLiteHelper.KEY\_ROWID,
+            UsenseSQLiteHelper.SOUND\_DATE ,
+            UsenseSQLiteHelper.QUIET\_MILLIS,
+            UsenseSQLiteHelper.NORMAL\_MILLIS,
+            UsenseSQLiteHelper.ALERT\_MILLIS,
+            UsenseSQLiteHelper.NOISE\_MILLIS
+    \}
+\end{DoxyCode}
+Sound S\+O\+U\+N\+D T\+A\+B\+L\+E\+: This table stores information regarding user\textquotesingle{}s pattern spent in each stste (quiet, normal/loud, noisy). The information stored is\+:
+\begin{DoxyItemize}
+\item Date
+\item Time spent in Queit
+\item Time spent in Normal
+\item Time spent in Alert
+\item Time spent in Noisy List of all columns on the Sound table. 
+\end{DoxyItemize}\hypertarget{classcs_1_1usense_1_1db_1_1_usense_data_source_abb7afa1a31cea70787b725a5e5e4efdd}{}\index{cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}!db@{db}}
+\index{db@{db}!cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}}
+\subsubsection[{db}]{\setlength{\rightskip}{0pt plus 5cm}S\+Q\+Lite\+Database cs.\+usense.\+db.\+Usense\+Data\+Source.\+db\hspace{0.3cm}{\ttfamily [private]}}\label{classcs_1_1usense_1_1db_1_1_usense_data_source_abb7afa1a31cea70787b725a5e5e4efdd}
+C\+O\+M\+M\+O\+N O\+P\+E\+R\+A\+T\+I\+O\+N\+S \hypertarget{classcs_1_1usense_1_1db_1_1_usense_data_source_aa008324e180fdd3b8a05df5592323953}{}\index{cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}!db\+Helper@{db\+Helper}}
+\index{db\+Helper@{db\+Helper}!cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}}
+\subsubsection[{db\+Helper}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Usense\+S\+Q\+Lite\+Helper} cs.\+usense.\+db.\+Usense\+Data\+Source.\+db\+Helper\hspace{0.3cm}{\ttfamily [private]}}\label{classcs_1_1usense_1_1db_1_1_usense_data_source_aa008324e180fdd3b8a05df5592323953}
+\hypertarget{classcs_1_1usense_1_1db_1_1_usense_data_source_a2f2c3e38590dacfb49c2d184ff6bd996}{}\index{cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}!is\+Db\+Open@{is\+Db\+Open}}
+\index{is\+Db\+Open@{is\+Db\+Open}!cs\+::usense\+::db\+::\+Usense\+Data\+Source@{cs\+::usense\+::db\+::\+Usense\+Data\+Source}}
+\subsubsection[{is\+Db\+Open}]{\setlength{\rightskip}{0pt plus 5cm}boolean cs.\+usense.\+db.\+Usense\+Data\+Source.\+is\+Db\+Open\hspace{0.3cm}{\ttfamily [private]}}\label{classcs_1_1usense_1_1db_1_1_usense_data_source_a2f2c3e38590dacfb49c2d184ff6bd996}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/cs/usense/db/\hyperlink{_usense_data_source_8java}{Usense\+Data\+Source.\+java}\end{DoxyCompactItemize}

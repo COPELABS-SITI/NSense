@@ -1,0 +1,167 @@
+\hypertarget{classcs_1_1usense_1_1location_1_1_relative_position_wi_fi_no_connection}{}\section{cs.\+usense.\+location.\+Relative\+Position\+Wi\+Fi\+No\+Connection Class Reference}
+\label{classcs_1_1usense_1_1location_1_1_relative_position_wi_fi_no_connection}\index{cs.\+usense.\+location.\+Relative\+Position\+Wi\+Fi\+No\+Connection@{cs.\+usense.\+location.\+Relative\+Position\+Wi\+Fi\+No\+Connection}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classcs_1_1usense_1_1location_1_1_relative_position_wi_fi_no_connection_1_1_usense_device}{Usense\+Device}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcs_1_1usense_1_1location_1_1_relative_position_wi_fi_no_connection_a31a736b7dec7b0204b89dea46bd6c23c}{Relative\+Position\+Wi\+Fi\+No\+Connection} ()
+\item 
+void \hyperlink{classcs_1_1usense_1_1location_1_1_relative_position_wi_fi_no_connection_a14446845fa199db8fa28b4e558e85aa4}{notify\+Data\+Base\+Change} ()
+\item 
+void \hyperlink{classcs_1_1usense_1_1location_1_1_relative_position_wi_fi_no_connection_a24e986c4e53725d787bda4ef3c2cc2dc}{restart\+Discover} ()
+\item 
+void \hyperlink{classcs_1_1usense_1_1location_1_1_relative_position_wi_fi_no_connection_a32e74b3ad72d081b90212b8fe6869797}{schedule\+Thread} ()
+\item 
+void \hyperlink{classcs_1_1usense_1_1location_1_1_relative_position_wi_fi_no_connection_a4aa26e6c5e3909b69f51008701be28a6}{close} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final String \hyperlink{classcs_1_1usense_1_1location_1_1_relative_position_wi_fi_no_connection_a78eb6cab0ee4a60280f77d69471d6181}{S\+E\+R\+V\+I\+C\+E\+\_\+\+T\+Y\+P\+E} = \char`\"{}\+\_\+location.\+\_\+tcp\char`\"{}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcs_1_1usense_1_1location_1_1_relative_position_wi_fi_no_connection_ae95f15fa826025909d2d034f312cfbaa}{Relative\+Position\+Wi\+Fi\+No\+Connection} (Context \hyperlink{classcs_1_1usense_1_1location_1_1_relative_position_wi_fi_no_connection_add84c01c61a954f796fb267069699226}{context}, \hyperlink{classcs_1_1usense_1_1db_1_1_usense_data_source}{Usense\+Data\+Source} \hyperlink{classcs_1_1usense_1_1location_1_1_relative_position_wi_fi_no_connection_aeac4d1f5b88ffbaf64b8cde82f789647}{data\+Source}, \hyperlink{classcs_1_1usense_1_1location_1_1_location_pipeline}{Location\+Pipeline} \hyperlink{classcs_1_1usense_1_1location_1_1_relative_position_wi_fi_no_connection_ae8388a2458d1b4ec4c9e1d200c4b6ff6}{callback})
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+String \hyperlink{classcs_1_1usense_1_1location_1_1_relative_position_wi_fi_no_connection_af9ae70af673210e1cc1a6c8e215b36a2}{T\+A\+G} = \char`\"{}Wi\+Fi\+Direct\+Broadcast\+Receiver\+No\+Connection\char`\"{}
+\item 
+Context \hyperlink{classcs_1_1usense_1_1location_1_1_relative_position_wi_fi_no_connection_add84c01c61a954f796fb267069699226}{context}
+\item 
+\hyperlink{classcs_1_1usense_1_1db_1_1_usense_data_source}{Usense\+Data\+Source} \hyperlink{classcs_1_1usense_1_1location_1_1_relative_position_wi_fi_no_connection_aeac4d1f5b88ffbaf64b8cde82f789647}{data\+Source}
+\item 
+\hyperlink{classcs_1_1usense_1_1location_1_1_location_pipeline}{Location\+Pipeline} \hyperlink{classcs_1_1usense_1_1location_1_1_relative_position_wi_fi_no_connection_ae8388a2458d1b4ec4c9e1d200c4b6ff6}{callback}
+\item 
+Handler \hyperlink{classcs_1_1usense_1_1location_1_1_relative_position_wi_fi_no_connection_a651d0eb8ab40a9aafc59a938acee143c}{handler\+Disc} = new Handler()
+\item 
+int \hyperlink{classcs_1_1usense_1_1location_1_1_relative_position_wi_fi_no_connection_a8d3612afa4159807065cacc3ac300ba9}{m\+Disc\+State} = 0
+\item 
+Random \hyperlink{classcs_1_1usense_1_1location_1_1_relative_position_wi_fi_no_connection_aba70fe571fbd9600ef45daeb6b8ff04a}{rand} = new Random()
+\item 
+Runnable \hyperlink{classcs_1_1usense_1_1location_1_1_relative_position_wi_fi_no_connection_ad2f797eb0aaa8e40db0ed90c3469d05d}{m\+Thread}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcs_1_1usense_1_1location_1_1_relative_position_wi_fi_no_connection_ae95f15fa826025909d2d034f312cfbaa}{}\index{cs\+::usense\+::location\+::\+Relative\+Position\+Wi\+Fi\+No\+Connection@{cs\+::usense\+::location\+::\+Relative\+Position\+Wi\+Fi\+No\+Connection}!Relative\+Position\+Wi\+Fi\+No\+Connection@{Relative\+Position\+Wi\+Fi\+No\+Connection}}
+\index{Relative\+Position\+Wi\+Fi\+No\+Connection@{Relative\+Position\+Wi\+Fi\+No\+Connection}!cs\+::usense\+::location\+::\+Relative\+Position\+Wi\+Fi\+No\+Connection@{cs\+::usense\+::location\+::\+Relative\+Position\+Wi\+Fi\+No\+Connection}}
+\subsubsection[{Relative\+Position\+Wi\+Fi\+No\+Connection(\+Context context, Usense\+Data\+Source data\+Source, Location\+Pipeline callback)}]{\setlength{\rightskip}{0pt plus 5cm}cs.\+usense.\+location.\+Relative\+Position\+Wi\+Fi\+No\+Connection.\+Relative\+Position\+Wi\+Fi\+No\+Connection (
+\begin{DoxyParamCaption}
+\item[{Context}]{context, }
+\item[{{\bf Usense\+Data\+Source}}]{data\+Source, }
+\item[{{\bf Location\+Pipeline}}]{callback}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classcs_1_1usense_1_1location_1_1_relative_position_wi_fi_no_connection_ae95f15fa826025909d2d034f312cfbaa}
+\hyperlink{classcs_1_1usense_1_1location_1_1_relative_position_wi_fi_no_connection}{Relative\+Position\+Wi\+Fi\+No\+Connection} constructor -\/ It initializes the \hyperlink{classcs_1_1usense_1_1location_1_1_wifi_service_searcher}{Wifi\+Service\+Searcher} and \hyperlink{classcs_1_1usense_1_1location_1_1_wifi_access_point}{Wifi\+Access\+Point} modules and creates a handler to switch between this two modules. 
+\begin{DoxyParams}{Parameters}
+{\em context} & -\/ Interface to global information about an application environment. \\
+\hline
+{\em data\+Source} & -\/ Usense data base. \\
+\hline
+{\em callback} & -\/ \hyperlink{classcs_1_1usense_1_1location_1_1_location_pipeline}{Location\+Pipeline} module \\
+\hline
+\end{DoxyParams}
+\hypertarget{classcs_1_1usense_1_1location_1_1_relative_position_wi_fi_no_connection_a31a736b7dec7b0204b89dea46bd6c23c}{}\index{cs\+::usense\+::location\+::\+Relative\+Position\+Wi\+Fi\+No\+Connection@{cs\+::usense\+::location\+::\+Relative\+Position\+Wi\+Fi\+No\+Connection}!Relative\+Position\+Wi\+Fi\+No\+Connection@{Relative\+Position\+Wi\+Fi\+No\+Connection}}
+\index{Relative\+Position\+Wi\+Fi\+No\+Connection@{Relative\+Position\+Wi\+Fi\+No\+Connection}!cs\+::usense\+::location\+::\+Relative\+Position\+Wi\+Fi\+No\+Connection@{cs\+::usense\+::location\+::\+Relative\+Position\+Wi\+Fi\+No\+Connection}}
+\subsubsection[{Relative\+Position\+Wi\+Fi\+No\+Connection()}]{\setlength{\rightskip}{0pt plus 5cm}cs.\+usense.\+location.\+Relative\+Position\+Wi\+Fi\+No\+Connection.\+Relative\+Position\+Wi\+Fi\+No\+Connection (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1location_1_1_relative_position_wi_fi_no_connection_a31a736b7dec7b0204b89dea46bd6c23c}
+\hyperlink{classcs_1_1usense_1_1location_1_1_relative_position_wi_fi_no_connection}{Relative\+Position\+Wi\+Fi\+No\+Connection} constructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classcs_1_1usense_1_1location_1_1_relative_position_wi_fi_no_connection_a4aa26e6c5e3909b69f51008701be28a6}{}\index{cs\+::usense\+::location\+::\+Relative\+Position\+Wi\+Fi\+No\+Connection@{cs\+::usense\+::location\+::\+Relative\+Position\+Wi\+Fi\+No\+Connection}!close@{close}}
+\index{close@{close}!cs\+::usense\+::location\+::\+Relative\+Position\+Wi\+Fi\+No\+Connection@{cs\+::usense\+::location\+::\+Relative\+Position\+Wi\+Fi\+No\+Connection}}
+\subsubsection[{close()}]{\setlength{\rightskip}{0pt plus 5cm}void cs.\+usense.\+location.\+Relative\+Position\+Wi\+Fi\+No\+Connection.\+close (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1location_1_1_relative_position_wi_fi_no_connection_a4aa26e6c5e3909b69f51008701be28a6}
+It stops \hyperlink{classcs_1_1usense_1_1location_1_1_wifi_service_searcher}{Wifi\+Service\+Searcher} and \hyperlink{classcs_1_1usense_1_1location_1_1_wifi_access_point}{Wifi\+Access\+Point} modules \hypertarget{classcs_1_1usense_1_1location_1_1_relative_position_wi_fi_no_connection_a14446845fa199db8fa28b4e558e85aa4}{}\index{cs\+::usense\+::location\+::\+Relative\+Position\+Wi\+Fi\+No\+Connection@{cs\+::usense\+::location\+::\+Relative\+Position\+Wi\+Fi\+No\+Connection}!notify\+Data\+Base\+Change@{notify\+Data\+Base\+Change}}
+\index{notify\+Data\+Base\+Change@{notify\+Data\+Base\+Change}!cs\+::usense\+::location\+::\+Relative\+Position\+Wi\+Fi\+No\+Connection@{cs\+::usense\+::location\+::\+Relative\+Position\+Wi\+Fi\+No\+Connection}}
+\subsubsection[{notify\+Data\+Base\+Change()}]{\setlength{\rightskip}{0pt plus 5cm}void cs.\+usense.\+location.\+Relative\+Position\+Wi\+Fi\+No\+Connection.\+notify\+Data\+Base\+Change (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1location_1_1_relative_position_wi_fi_no_connection_a14446845fa199db8fa28b4e558e85aa4}
+Notifies a database change to the listeners. \hypertarget{classcs_1_1usense_1_1location_1_1_relative_position_wi_fi_no_connection_a24e986c4e53725d787bda4ef3c2cc2dc}{}\index{cs\+::usense\+::location\+::\+Relative\+Position\+Wi\+Fi\+No\+Connection@{cs\+::usense\+::location\+::\+Relative\+Position\+Wi\+Fi\+No\+Connection}!restart\+Discover@{restart\+Discover}}
+\index{restart\+Discover@{restart\+Discover}!cs\+::usense\+::location\+::\+Relative\+Position\+Wi\+Fi\+No\+Connection@{cs\+::usense\+::location\+::\+Relative\+Position\+Wi\+Fi\+No\+Connection}}
+\subsubsection[{restart\+Discover()}]{\setlength{\rightskip}{0pt plus 5cm}void cs.\+usense.\+location.\+Relative\+Position\+Wi\+Fi\+No\+Connection.\+restart\+Discover (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1location_1_1_relative_position_wi_fi_no_connection_a24e986c4e53725d787bda4ef3c2cc2dc}
+It informs the m\+Wifi\+Service\+Searcher to restart the Wifi P2\+P. \hypertarget{classcs_1_1usense_1_1location_1_1_relative_position_wi_fi_no_connection_a32e74b3ad72d081b90212b8fe6869797}{}\index{cs\+::usense\+::location\+::\+Relative\+Position\+Wi\+Fi\+No\+Connection@{cs\+::usense\+::location\+::\+Relative\+Position\+Wi\+Fi\+No\+Connection}!schedule\+Thread@{schedule\+Thread}}
+\index{schedule\+Thread@{schedule\+Thread}!cs\+::usense\+::location\+::\+Relative\+Position\+Wi\+Fi\+No\+Connection@{cs\+::usense\+::location\+::\+Relative\+Position\+Wi\+Fi\+No\+Connection}}
+\subsubsection[{schedule\+Thread()}]{\setlength{\rightskip}{0pt plus 5cm}void cs.\+usense.\+location.\+Relative\+Position\+Wi\+Fi\+No\+Connection.\+schedule\+Thread (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1location_1_1_relative_position_wi_fi_no_connection_a32e74b3ad72d081b90212b8fe6869797}
+Used to schedule another thread 
+
+\subsection{Member Data Documentation}
+\hypertarget{classcs_1_1usense_1_1location_1_1_relative_position_wi_fi_no_connection_ae8388a2458d1b4ec4c9e1d200c4b6ff6}{}\index{cs\+::usense\+::location\+::\+Relative\+Position\+Wi\+Fi\+No\+Connection@{cs\+::usense\+::location\+::\+Relative\+Position\+Wi\+Fi\+No\+Connection}!callback@{callback}}
+\index{callback@{callback}!cs\+::usense\+::location\+::\+Relative\+Position\+Wi\+Fi\+No\+Connection@{cs\+::usense\+::location\+::\+Relative\+Position\+Wi\+Fi\+No\+Connection}}
+\subsubsection[{callback}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Location\+Pipeline} cs.\+usense.\+location.\+Relative\+Position\+Wi\+Fi\+No\+Connection.\+callback\hspace{0.3cm}{\ttfamily [private]}}\label{classcs_1_1usense_1_1location_1_1_relative_position_wi_fi_no_connection_ae8388a2458d1b4ec4c9e1d200c4b6ff6}
+\hypertarget{classcs_1_1usense_1_1location_1_1_relative_position_wi_fi_no_connection_add84c01c61a954f796fb267069699226}{}\index{cs\+::usense\+::location\+::\+Relative\+Position\+Wi\+Fi\+No\+Connection@{cs\+::usense\+::location\+::\+Relative\+Position\+Wi\+Fi\+No\+Connection}!context@{context}}
+\index{context@{context}!cs\+::usense\+::location\+::\+Relative\+Position\+Wi\+Fi\+No\+Connection@{cs\+::usense\+::location\+::\+Relative\+Position\+Wi\+Fi\+No\+Connection}}
+\subsubsection[{context}]{\setlength{\rightskip}{0pt plus 5cm}Context cs.\+usense.\+location.\+Relative\+Position\+Wi\+Fi\+No\+Connection.\+context\hspace{0.3cm}{\ttfamily [private]}}\label{classcs_1_1usense_1_1location_1_1_relative_position_wi_fi_no_connection_add84c01c61a954f796fb267069699226}
+\hypertarget{classcs_1_1usense_1_1location_1_1_relative_position_wi_fi_no_connection_aeac4d1f5b88ffbaf64b8cde82f789647}{}\index{cs\+::usense\+::location\+::\+Relative\+Position\+Wi\+Fi\+No\+Connection@{cs\+::usense\+::location\+::\+Relative\+Position\+Wi\+Fi\+No\+Connection}!data\+Source@{data\+Source}}
+\index{data\+Source@{data\+Source}!cs\+::usense\+::location\+::\+Relative\+Position\+Wi\+Fi\+No\+Connection@{cs\+::usense\+::location\+::\+Relative\+Position\+Wi\+Fi\+No\+Connection}}
+\subsubsection[{data\+Source}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Usense\+Data\+Source} cs.\+usense.\+location.\+Relative\+Position\+Wi\+Fi\+No\+Connection.\+data\+Source\hspace{0.3cm}{\ttfamily [private]}}\label{classcs_1_1usense_1_1location_1_1_relative_position_wi_fi_no_connection_aeac4d1f5b88ffbaf64b8cde82f789647}
+\hypertarget{classcs_1_1usense_1_1location_1_1_relative_position_wi_fi_no_connection_a651d0eb8ab40a9aafc59a938acee143c}{}\index{cs\+::usense\+::location\+::\+Relative\+Position\+Wi\+Fi\+No\+Connection@{cs\+::usense\+::location\+::\+Relative\+Position\+Wi\+Fi\+No\+Connection}!handler\+Disc@{handler\+Disc}}
+\index{handler\+Disc@{handler\+Disc}!cs\+::usense\+::location\+::\+Relative\+Position\+Wi\+Fi\+No\+Connection@{cs\+::usense\+::location\+::\+Relative\+Position\+Wi\+Fi\+No\+Connection}}
+\subsubsection[{handler\+Disc}]{\setlength{\rightskip}{0pt plus 5cm}Handler cs.\+usense.\+location.\+Relative\+Position\+Wi\+Fi\+No\+Connection.\+handler\+Disc = new Handler()\hspace{0.3cm}{\ttfamily [private]}}\label{classcs_1_1usense_1_1location_1_1_relative_position_wi_fi_no_connection_a651d0eb8ab40a9aafc59a938acee143c}
+\hypertarget{classcs_1_1usense_1_1location_1_1_relative_position_wi_fi_no_connection_a8d3612afa4159807065cacc3ac300ba9}{}\index{cs\+::usense\+::location\+::\+Relative\+Position\+Wi\+Fi\+No\+Connection@{cs\+::usense\+::location\+::\+Relative\+Position\+Wi\+Fi\+No\+Connection}!m\+Disc\+State@{m\+Disc\+State}}
+\index{m\+Disc\+State@{m\+Disc\+State}!cs\+::usense\+::location\+::\+Relative\+Position\+Wi\+Fi\+No\+Connection@{cs\+::usense\+::location\+::\+Relative\+Position\+Wi\+Fi\+No\+Connection}}
+\subsubsection[{m\+Disc\+State}]{\setlength{\rightskip}{0pt plus 5cm}int cs.\+usense.\+location.\+Relative\+Position\+Wi\+Fi\+No\+Connection.\+m\+Disc\+State = 0\hspace{0.3cm}{\ttfamily [private]}}\label{classcs_1_1usense_1_1location_1_1_relative_position_wi_fi_no_connection_a8d3612afa4159807065cacc3ac300ba9}
+\hypertarget{classcs_1_1usense_1_1location_1_1_relative_position_wi_fi_no_connection_ad2f797eb0aaa8e40db0ed90c3469d05d}{}\index{cs\+::usense\+::location\+::\+Relative\+Position\+Wi\+Fi\+No\+Connection@{cs\+::usense\+::location\+::\+Relative\+Position\+Wi\+Fi\+No\+Connection}!m\+Thread@{m\+Thread}}
+\index{m\+Thread@{m\+Thread}!cs\+::usense\+::location\+::\+Relative\+Position\+Wi\+Fi\+No\+Connection@{cs\+::usense\+::location\+::\+Relative\+Position\+Wi\+Fi\+No\+Connection}}
+\subsubsection[{m\+Thread}]{\setlength{\rightskip}{0pt plus 5cm}Runnable cs.\+usense.\+location.\+Relative\+Position\+Wi\+Fi\+No\+Connection.\+m\+Thread\hspace{0.3cm}{\ttfamily [private]}}\label{classcs_1_1usense_1_1location_1_1_relative_position_wi_fi_no_connection_ad2f797eb0aaa8e40db0ed90c3469d05d}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \textcolor{keyword}{new} Runnable()\{
+
+        @Override
+        \textcolor{keyword}{public} \textcolor{keywordtype}{void} run() \{
+            \textcolor{keywordflow}{if} (\hyperlink{classcs_1_1usense_1_1location_1_1_relative_position_wi_fi_no_connection_a8d3612afa4159807065cacc3ac300ba9}{mDiscState} == 0) \{
+                mWifiServiceSearcher.\hyperlink{classcs_1_1usense_1_1location_1_1_wifi_service_searcher_ae27d4b0c7e10b9557e9408520b42a784}{startServiceDiscovery}();
+                \hyperlink{classcs_1_1usense_1_1location_1_1_relative_position_wi_fi_no_connection_a8d3612afa4159807065cacc3ac300ba9}{mDiscState} = 1;
+                \hyperlink{classcs_1_1usense_1_1location_1_1_relative_position_wi_fi_no_connection_a651d0eb8ab40a9aafc59a938acee143c}{handlerDisc}.postDelayed(\textcolor{keyword}{this}, ((\hyperlink{classcs_1_1usense_1_1location_1_1_relative_position_wi_fi_no_connection_aba70fe571fbd9600ef45daeb6b8ff04a}{rand}.nextInt(20 - 19) + 19) * 1000));
+            \} \textcolor{keywordflow}{else}  \textcolor{keywordflow}{if} (\hyperlink{classcs_1_1usense_1_1location_1_1_relative_position_wi_fi_no_connection_a8d3612afa4159807065cacc3ac300ba9}{mDiscState} == 1) \{
+                mWifiAccessPoint.\hyperlink{classcs_1_1usense_1_1location_1_1_wifi_access_point_a49df2159322431dc978cca719e3700c1}{stopLocalServices}();
+                mWifiAccessPoint.\hyperlink{classcs_1_1usense_1_1location_1_1_wifi_access_point_a7afd9a125fb7bf6dbc21494896134bda}{createGroup}();
+                \hyperlink{classcs_1_1usense_1_1location_1_1_relative_position_wi_fi_no_connection_a8d3612afa4159807065cacc3ac300ba9}{mDiscState} = 2;
+                \hyperlink{classcs_1_1usense_1_1location_1_1_relative_position_wi_fi_no_connection_a651d0eb8ab40a9aafc59a938acee143c}{handlerDisc}.postDelayed(\textcolor{keyword}{this}, ((\hyperlink{classcs_1_1usense_1_1location_1_1_relative_position_wi_fi_no_connection_aba70fe571fbd9600ef45daeb6b8ff04a}{rand}.nextInt(40 - 20) + 20) * 1000));
+            \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\hyperlink{classcs_1_1usense_1_1location_1_1_relative_position_wi_fi_no_connection_a8d3612afa4159807065cacc3ac300ba9}{mDiscState} == 2) \{
+                mWifiAccessPoint.\hyperlink{classcs_1_1usense_1_1location_1_1_wifi_access_point_a78c51a45a27a22375d51105a5baf1a60}{removeGroup}();
+                mWifiServiceSearcher.\hyperlink{classcs_1_1usense_1_1location_1_1_wifi_service_searcher_a588de68bec82e44ae9da3db878a3548c}{stopDiscovery}();
+                \hyperlink{classcs_1_1usense_1_1location_1_1_relative_position_wi_fi_no_connection_a8d3612afa4159807065cacc3ac300ba9}{mDiscState} = 0;
+            \}
+        \}
+        
+    \}
+\end{DoxyCode}
+\hypertarget{classcs_1_1usense_1_1location_1_1_relative_position_wi_fi_no_connection_aba70fe571fbd9600ef45daeb6b8ff04a}{}\index{cs\+::usense\+::location\+::\+Relative\+Position\+Wi\+Fi\+No\+Connection@{cs\+::usense\+::location\+::\+Relative\+Position\+Wi\+Fi\+No\+Connection}!rand@{rand}}
+\index{rand@{rand}!cs\+::usense\+::location\+::\+Relative\+Position\+Wi\+Fi\+No\+Connection@{cs\+::usense\+::location\+::\+Relative\+Position\+Wi\+Fi\+No\+Connection}}
+\subsubsection[{rand}]{\setlength{\rightskip}{0pt plus 5cm}Random cs.\+usense.\+location.\+Relative\+Position\+Wi\+Fi\+No\+Connection.\+rand = new Random()\hspace{0.3cm}{\ttfamily [private]}}\label{classcs_1_1usense_1_1location_1_1_relative_position_wi_fi_no_connection_aba70fe571fbd9600ef45daeb6b8ff04a}
+\hypertarget{classcs_1_1usense_1_1location_1_1_relative_position_wi_fi_no_connection_a78eb6cab0ee4a60280f77d69471d6181}{}\index{cs\+::usense\+::location\+::\+Relative\+Position\+Wi\+Fi\+No\+Connection@{cs\+::usense\+::location\+::\+Relative\+Position\+Wi\+Fi\+No\+Connection}!S\+E\+R\+V\+I\+C\+E\+\_\+\+T\+Y\+P\+E@{S\+E\+R\+V\+I\+C\+E\+\_\+\+T\+Y\+P\+E}}
+\index{S\+E\+R\+V\+I\+C\+E\+\_\+\+T\+Y\+P\+E@{S\+E\+R\+V\+I\+C\+E\+\_\+\+T\+Y\+P\+E}!cs\+::usense\+::location\+::\+Relative\+Position\+Wi\+Fi\+No\+Connection@{cs\+::usense\+::location\+::\+Relative\+Position\+Wi\+Fi\+No\+Connection}}
+\subsubsection[{S\+E\+R\+V\+I\+C\+E\+\_\+\+T\+Y\+P\+E}]{\setlength{\rightskip}{0pt plus 5cm}final String cs.\+usense.\+location.\+Relative\+Position\+Wi\+Fi\+No\+Connection.\+S\+E\+R\+V\+I\+C\+E\+\_\+\+T\+Y\+P\+E = \char`\"{}\+\_\+location.\+\_\+tcp\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\label{classcs_1_1usense_1_1location_1_1_relative_position_wi_fi_no_connection_a78eb6cab0ee4a60280f77d69471d6181}
+Used by Wi\+Fi P2\+P to detect only Usense devices \hypertarget{classcs_1_1usense_1_1location_1_1_relative_position_wi_fi_no_connection_af9ae70af673210e1cc1a6c8e215b36a2}{}\index{cs\+::usense\+::location\+::\+Relative\+Position\+Wi\+Fi\+No\+Connection@{cs\+::usense\+::location\+::\+Relative\+Position\+Wi\+Fi\+No\+Connection}!T\+A\+G@{T\+A\+G}}
+\index{T\+A\+G@{T\+A\+G}!cs\+::usense\+::location\+::\+Relative\+Position\+Wi\+Fi\+No\+Connection@{cs\+::usense\+::location\+::\+Relative\+Position\+Wi\+Fi\+No\+Connection}}
+\subsubsection[{T\+A\+G}]{\setlength{\rightskip}{0pt plus 5cm}String cs.\+usense.\+location.\+Relative\+Position\+Wi\+Fi\+No\+Connection.\+T\+A\+G = \char`\"{}Wi\+Fi\+Direct\+Broadcast\+Receiver\+No\+Connection\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}\label{classcs_1_1usense_1_1location_1_1_relative_position_wi_fi_no_connection_af9ae70af673210e1cc1a6c8e215b36a2}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/cs/usense/location/\hyperlink{_relative_position_wi_fi_no_connection_8java}{Relative\+Position\+Wi\+Fi\+No\+Connection.\+java}\end{DoxyCompactItemize}

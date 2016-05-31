@@ -1,0 +1,249 @@
+\hypertarget{classcs_1_1usense_1_1accelerometer_1_1_accelerometer_pipeline}{}\section{cs.\+usense.\+accelerometer.\+Accelerometer\+Pipeline Class Reference}
+\label{classcs_1_1usense_1_1accelerometer_1_1_accelerometer_pipeline}\index{cs.\+usense.\+accelerometer.\+Accelerometer\+Pipeline@{cs.\+usense.\+accelerometer.\+Accelerometer\+Pipeline}}
+Inheritance diagram for cs.\+usense.\+accelerometer.\+Accelerometer\+Pipeline\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcs_1_1usense_1_1accelerometer_1_1_accelerometer_pipeline}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classcs_1_1usense_1_1accelerometer_1_1_accelerometer_pipeline_1_1_acc_listener}{Acc\+Listener}
+\item 
+class \hyperlink{classcs_1_1usense_1_1accelerometer_1_1_accelerometer_pipeline_1_1_activity_classification_task}{Activity\+Classification\+Task}
+\item 
+class \hyperlink{classcs_1_1usense_1_1accelerometer_1_1_accelerometer_pipeline_1_1_hour_change_alarm_receiver}{Hour\+Change\+Alarm\+Receiver}
+\item 
+class \hyperlink{classcs_1_1usense_1_1accelerometer_1_1_accelerometer_pipeline_1_1_previous_action}{Previous\+Action}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcs_1_1usense_1_1accelerometer_1_1_accelerometer_pipeline_a9bbc2abacfc59228d90ae9156acb905b}{Accelerometer\+Pipeline} (\hyperlink{classcs_1_1usense_1_1_usense_service}{Usense\+Service} \hyperlink{classcs_1_1usense_1_1accelerometer_1_1_accelerometer_pipeline_a2066e6ad6ad9c458c1a92ba3212618c9}{callback}, \hyperlink{classcs_1_1usense_1_1db_1_1_usense_data_source}{Usense\+Data\+Source} \hyperlink{classcs_1_1usense_1_1accelerometer_1_1_accelerometer_pipeline_a7eb5f78b5db36060e6b97578b6677162}{data\+Source})
+\item 
+void \hyperlink{classcs_1_1usense_1_1accelerometer_1_1_accelerometer_pipeline_abdebee197218ef4a7b7958dac92085f9}{close} (Context contect)
+\item 
+int \hyperlink{classcs_1_1usense_1_1accelerometer_1_1_accelerometer_pipeline_ad0603276881e7a9b8b658016715ac15d}{get\+Time\+Slot} ()
+\item 
+void \hyperlink{classcs_1_1usense_1_1accelerometer_1_1_accelerometer_pipeline_abd8f9d677e6f279bf28b3878f8a9d81b}{append\+Log} (String text, String start)
+\item 
+void \hyperlink{classcs_1_1usense_1_1accelerometer_1_1_accelerometer_pipeline_ad5bef064b0cbdb5a2ae6d451ac7c9964}{on\+Receive} (Context context, Intent intent)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int\mbox{[}$\,$\mbox{]} \hyperlink{classcs_1_1usense_1_1accelerometer_1_1_accelerometer_pipeline_ab62cd6d034dc44bdfebf698b5aaf67a3}{convert\+Integers} (List$<$ Integer $>$ integers)
+\item 
+static int \hyperlink{classcs_1_1usense_1_1accelerometer_1_1_accelerometer_pipeline_a2da1dfafb131b394de16cccbff2d7d25}{filter\+Activity} (int\mbox{[}$\,$\mbox{]} k1)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static String \hyperlink{classcs_1_1usense_1_1accelerometer_1_1_accelerometer_pipeline_a8dfa8f0337687436d1c9b67627160583}{mprevious\+Action\+Type} = \char`\"{}\char`\"{}
+\item 
+static double \hyperlink{classcs_1_1usense_1_1accelerometer_1_1_accelerometer_pipeline_ac81e903529c99657f1e278f2a7af5203}{mprevious\+Duration} = 0
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classcs_1_1usense_1_1accelerometer_1_1_accelerometer_pipeline_af1be6fde7ea76c3b837ce77768b5344c}{notify\+Data\+Base\+Change} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Context \hyperlink{classcs_1_1usense_1_1accelerometer_1_1_accelerometer_pipeline_a3d0a51bf9ee496afd2b54f730465d7d0}{m\+Context} = null
+\item 
+\hyperlink{classcs_1_1usense_1_1accelerometer_1_1_accelerometer_pipeline_1_1_activity_classification_task}{Activity\+Classification\+Task} \hyperlink{classcs_1_1usense_1_1accelerometer_1_1_accelerometer_pipeline_ac13ce7a2cbfab63d4c51e53494776cb4}{m\+Activity\+Classification\+Task}
+\item 
+\hyperlink{classcs_1_1usense_1_1accelerometer_1_1_acceler_sen_manager}{Acceler\+Sen\+Manager} \hyperlink{classcs_1_1usense_1_1accelerometer_1_1_accelerometer_pipeline_a749cd2213718d81a6216d08fe0743a13}{acceler\+Sen\+Manager}
+\item 
+\hyperlink{interfacecs_1_1usense_1_1accelerometer_1_1_accelerometer_listener}{Accelerometer\+Listener} \hyperlink{classcs_1_1usense_1_1accelerometer_1_1_accelerometer_pipeline_a2321f3214edbb08357ffd5c847697e81}{acceler\+Listener}
+\item 
+\hyperlink{classcs_1_1usense_1_1db_1_1_usense_data_source}{Usense\+Data\+Source} \hyperlink{classcs_1_1usense_1_1accelerometer_1_1_accelerometer_pipeline_a7eb5f78b5db36060e6b97578b6677162}{data\+Source}
+\item 
+\hyperlink{classcs_1_1usense_1_1_usense_service}{Usense\+Service} \hyperlink{classcs_1_1usense_1_1accelerometer_1_1_accelerometer_pipeline_a2066e6ad6ad9c458c1a92ba3212618c9}{callback} = null
+\item 
+Sensor\+Manager \hyperlink{classcs_1_1usense_1_1accelerometer_1_1_accelerometer_pipeline_acf371fb0c0f08ab072a1c4dcaf142467}{m\+Sensor\+Manager}
+\item 
+Array\+List$<$ \hyperlink{interfacecs_1_1usense_1_1db_1_1_data_base_change_listener}{Data\+Base\+Change\+Listener} $>$ \hyperlink{classcs_1_1usense_1_1accelerometer_1_1_accelerometer_pipeline_a53be507081832940272735b836637663}{listeners} = new Array\+List$<$\hyperlink{interfacecs_1_1usense_1_1db_1_1_data_base_change_listener}{Data\+Base\+Change\+Listener}$>$ ()
+\item 
+\hyperlink{classcs_1_1usense_1_1accelerometer_1_1_accelerometer_pipeline_1_1_previous_action}{Previous\+Action} \hyperlink{classcs_1_1usense_1_1accelerometer_1_1_accelerometer_pipeline_a86d5697845c1a5e4469c78de919cb6fe}{m\+Previous\+Action} = new \hyperlink{classcs_1_1usense_1_1accelerometer_1_1_accelerometer_pipeline_1_1_previous_action}{Previous\+Action}()
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final String \hyperlink{classcs_1_1usense_1_1accelerometer_1_1_accelerometer_pipeline_a9529f85cce0a73aef1acb8c643b470d7}{T\+A\+G} = \char`\"{}A\+C\+C\+E\+L\+E\+R\+O\+M\+E\+T\+E\+R\char`\"{}
+\item 
+static Array\+Blocking\+Queue$<$ Double $>$ \hyperlink{classcs_1_1usense_1_1accelerometer_1_1_accelerometer_pipeline_a2ca26caa30a7a702089708c1586147b1}{m\+Acc\+Buffer}
+\item 
+static String \hyperlink{classcs_1_1usense_1_1accelerometer_1_1_accelerometer_pipeline_a0e1f7822542dab0066358cb0b06906ba}{actiontype} = \char`\"{}\char`\"{}
+\item 
+static \hyperlink{classcs_1_1usense_1_1accelerometer_1_1_actions_entry}{Actions\+Entry} \hyperlink{classcs_1_1usense_1_1accelerometer_1_1_accelerometer_pipeline_a45bb974339a1e8c6f41a65cc4c1c29d3}{actual\+Action\+Entry} = null
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class provides various methods to provide Accelerometer sensor data 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcs_1_1usense_1_1accelerometer_1_1_accelerometer_pipeline_a9bbc2abacfc59228d90ae9156acb905b}{}\index{cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline@{cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline}!Accelerometer\+Pipeline@{Accelerometer\+Pipeline}}
+\index{Accelerometer\+Pipeline@{Accelerometer\+Pipeline}!cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline@{cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline}}
+\subsubsection[{Accelerometer\+Pipeline(\+Usense\+Service callback, Usense\+Data\+Source data\+Source)}]{\setlength{\rightskip}{0pt plus 5cm}cs.\+usense.\+accelerometer.\+Accelerometer\+Pipeline.\+Accelerometer\+Pipeline (
+\begin{DoxyParamCaption}
+\item[{{\bf Usense\+Service}}]{callback, }
+\item[{{\bf Usense\+Data\+Source}}]{data\+Source}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1accelerometer_1_1_accelerometer_pipeline_a9bbc2abacfc59228d90ae9156acb905b}
+This class instantiate the \hyperlink{classcs_1_1usense_1_1accelerometer_1_1_accelerometer_pipeline}{Accelerometer\+Pipeline} and initialize the listener and activity classification task 
+\begin{DoxyParams}{Parameters}
+{\em callback} & Supply functionality for \hyperlink{classcs_1_1usense_1_1_usense_activity}{Usense\+Activity} to use \\
+\hline
+{\em data\+Source} & Usense\+Data\+Source to access various methods and information of the U\+Sense Data base \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcs_1_1usense_1_1accelerometer_1_1_accelerometer_pipeline_abd8f9d677e6f279bf28b3878f8a9d81b}{}\index{cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline@{cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline}!append\+Log@{append\+Log}}
+\index{append\+Log@{append\+Log}!cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline@{cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline}}
+\subsubsection[{append\+Log(\+String text, String start)}]{\setlength{\rightskip}{0pt plus 5cm}void cs.\+usense.\+accelerometer.\+Accelerometer\+Pipeline.\+append\+Log (
+\begin{DoxyParamCaption}
+\item[{String}]{text, }
+\item[{String}]{start}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1accelerometer_1_1_accelerometer_pipeline_abd8f9d677e6f279bf28b3878f8a9d81b}
+This method store the logs into U\+Sense\+Activity.\+txt file 
+\begin{DoxyParams}{Parameters}
+{\em text} & Activity Type \\
+\hline
+{\em start} & Activity Start time \\
+\hline
+\end{DoxyParams}
+Buffered\+Writer for performance, true to set append to file flag \hypertarget{classcs_1_1usense_1_1accelerometer_1_1_accelerometer_pipeline_abdebee197218ef4a7b7958dac92085f9}{}\index{cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline@{cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline}!close@{close}}
+\index{close@{close}!cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline@{cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline}}
+\subsubsection[{close(\+Context contect)}]{\setlength{\rightskip}{0pt plus 5cm}void cs.\+usense.\+accelerometer.\+Accelerometer\+Pipeline.\+close (
+\begin{DoxyParamCaption}
+\item[{Context}]{contect}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1accelerometer_1_1_accelerometer_pipeline_abdebee197218ef4a7b7958dac92085f9}
+This method close the context 
+\begin{DoxyParams}{Parameters}
+{\em context} & Interface to global information about an application environment. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classcs_1_1usense_1_1accelerometer_1_1_accelerometer_pipeline_ab62cd6d034dc44bdfebf698b5aaf67a3}{}\index{cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline@{cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline}!convert\+Integers@{convert\+Integers}}
+\index{convert\+Integers@{convert\+Integers}!cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline@{cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline}}
+\subsubsection[{convert\+Integers(\+List$<$ Integer $>$ integers)}]{\setlength{\rightskip}{0pt plus 5cm}static int \mbox{[}$\,$\mbox{]} cs.\+usense.\+accelerometer.\+Accelerometer\+Pipeline.\+convert\+Integers (
+\begin{DoxyParamCaption}
+\item[{List$<$ Integer $>$}]{integers}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classcs_1_1usense_1_1accelerometer_1_1_accelerometer_pipeline_ab62cd6d034dc44bdfebf698b5aaf67a3}
+This method converts list of integers 
+\begin{DoxyParams}{Parameters}
+{\em integers} & list with integers \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ret list with integers 
+\end{DoxyReturn}
+\hypertarget{classcs_1_1usense_1_1accelerometer_1_1_accelerometer_pipeline_a2da1dfafb131b394de16cccbff2d7d25}{}\index{cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline@{cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline}!filter\+Activity@{filter\+Activity}}
+\index{filter\+Activity@{filter\+Activity}!cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline@{cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline}}
+\subsubsection[{filter\+Activity(int[] k1)}]{\setlength{\rightskip}{0pt plus 5cm}static int cs.\+usense.\+accelerometer.\+Accelerometer\+Pipeline.\+filter\+Activity (
+\begin{DoxyParamCaption}
+\item[{int\mbox{[}$\,$\mbox{]}}]{k1}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classcs_1_1usense_1_1accelerometer_1_1_accelerometer_pipeline_a2da1dfafb131b394de16cccbff2d7d25}
+This method to filter the activities to provide the confidence level 
+\begin{DoxyParams}{Parameters}
+{\em k1} & Number of activity instances \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+activity\+Type activity\+Type Type of the activity 
+\end{DoxyReturn}
+\hypertarget{classcs_1_1usense_1_1accelerometer_1_1_accelerometer_pipeline_ad0603276881e7a9b8b658016715ac15d}{}\index{cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline@{cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline}!get\+Time\+Slot@{get\+Time\+Slot}}
+\index{get\+Time\+Slot@{get\+Time\+Slot}!cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline@{cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline}}
+\subsubsection[{get\+Time\+Slot()}]{\setlength{\rightskip}{0pt plus 5cm}int cs.\+usense.\+accelerometer.\+Accelerometer\+Pipeline.\+get\+Time\+Slot (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1accelerometer_1_1_accelerometer_pipeline_ad0603276881e7a9b8b658016715ac15d}
+This method provides the current time slot \begin{DoxyReturn}{Returns}
+current\+Time\+Slot current time slot 
+\end{DoxyReturn}
+\hypertarget{classcs_1_1usense_1_1accelerometer_1_1_accelerometer_pipeline_af1be6fde7ea76c3b837ce77768b5344c}{}\index{cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline@{cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline}!notify\+Data\+Base\+Change@{notify\+Data\+Base\+Change}}
+\index{notify\+Data\+Base\+Change@{notify\+Data\+Base\+Change}!cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline@{cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline}}
+\subsubsection[{notify\+Data\+Base\+Change()}]{\setlength{\rightskip}{0pt plus 5cm}void cs.\+usense.\+accelerometer.\+Accelerometer\+Pipeline.\+notify\+Data\+Base\+Change (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{classcs_1_1usense_1_1accelerometer_1_1_accelerometer_pipeline_af1be6fde7ea76c3b837ce77768b5344c}
+This method provides the notifications when the database has new entries or updates \hypertarget{classcs_1_1usense_1_1accelerometer_1_1_accelerometer_pipeline_ad5bef064b0cbdb5a2ae6d451ac7c9964}{}\index{cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline@{cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline}!on\+Receive@{on\+Receive}}
+\index{on\+Receive@{on\+Receive}!cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline@{cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline}}
+\subsubsection[{on\+Receive(\+Context context, Intent intent)}]{\setlength{\rightskip}{0pt plus 5cm}void cs.\+usense.\+accelerometer.\+Accelerometer\+Pipeline.\+on\+Receive (
+\begin{DoxyParamCaption}
+\item[{Context}]{context, }
+\item[{Intent}]{intent}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1accelerometer_1_1_accelerometer_pipeline_ad5bef064b0cbdb5a2ae6d451ac7c9964}
+This method of the receiver is called by the Android system 
+\begin{DoxyParams}{Parameters}
+{\em context} & Interface to global information about an application environment. \\
+\hline
+{\em intent} & The intent. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classcs_1_1usense_1_1accelerometer_1_1_accelerometer_pipeline_a2321f3214edbb08357ffd5c847697e81}{}\index{cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline@{cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline}!acceler\+Listener@{acceler\+Listener}}
+\index{acceler\+Listener@{acceler\+Listener}!cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline@{cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline}}
+\subsubsection[{acceler\+Listener}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Accelerometer\+Listener} cs.\+usense.\+accelerometer.\+Accelerometer\+Pipeline.\+acceler\+Listener\hspace{0.3cm}{\ttfamily [private]}}\label{classcs_1_1usense_1_1accelerometer_1_1_accelerometer_pipeline_a2321f3214edbb08357ffd5c847697e81}
+This class is to access functionality of Accelerometer Listener \hypertarget{classcs_1_1usense_1_1accelerometer_1_1_accelerometer_pipeline_a749cd2213718d81a6216d08fe0743a13}{}\index{cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline@{cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline}!acceler\+Sen\+Manager@{acceler\+Sen\+Manager}}
+\index{acceler\+Sen\+Manager@{acceler\+Sen\+Manager}!cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline@{cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline}}
+\subsubsection[{acceler\+Sen\+Manager}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Acceler\+Sen\+Manager} cs.\+usense.\+accelerometer.\+Accelerometer\+Pipeline.\+acceler\+Sen\+Manager\hspace{0.3cm}{\ttfamily [private]}}\label{classcs_1_1usense_1_1accelerometer_1_1_accelerometer_pipeline_a749cd2213718d81a6216d08fe0743a13}
+This class is to access functionality of Sensor Manager \hypertarget{classcs_1_1usense_1_1accelerometer_1_1_accelerometer_pipeline_a0e1f7822542dab0066358cb0b06906ba}{}\index{cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline@{cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline}!actiontype@{actiontype}}
+\index{actiontype@{actiontype}!cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline@{cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline}}
+\subsubsection[{actiontype}]{\setlength{\rightskip}{0pt plus 5cm}String cs.\+usense.\+accelerometer.\+Accelerometer\+Pipeline.\+actiontype = \char`\"{}\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classcs_1_1usense_1_1accelerometer_1_1_accelerometer_pipeline_a0e1f7822542dab0066358cb0b06906ba}
+This variable is to store action type \hypertarget{classcs_1_1usense_1_1accelerometer_1_1_accelerometer_pipeline_a45bb974339a1e8c6f41a65cc4c1c29d3}{}\index{cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline@{cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline}!actual\+Action\+Entry@{actual\+Action\+Entry}}
+\index{actual\+Action\+Entry@{actual\+Action\+Entry}!cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline@{cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline}}
+\subsubsection[{actual\+Action\+Entry}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Actions\+Entry} cs.\+usense.\+accelerometer.\+Accelerometer\+Pipeline.\+actual\+Action\+Entry = null\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classcs_1_1usense_1_1accelerometer_1_1_accelerometer_pipeline_a45bb974339a1e8c6f41a65cc4c1c29d3}
+This variable is to get the action details \hypertarget{classcs_1_1usense_1_1accelerometer_1_1_accelerometer_pipeline_a2066e6ad6ad9c458c1a92ba3212618c9}{}\index{cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline@{cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline}!callback@{callback}}
+\index{callback@{callback}!cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline@{cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline}}
+\subsubsection[{callback}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Usense\+Service} cs.\+usense.\+accelerometer.\+Accelerometer\+Pipeline.\+callback = null\hspace{0.3cm}{\ttfamily [private]}}\label{classcs_1_1usense_1_1accelerometer_1_1_accelerometer_pipeline_a2066e6ad6ad9c458c1a92ba3212618c9}
+This class is to access the functionality of Usense Service \hypertarget{classcs_1_1usense_1_1accelerometer_1_1_accelerometer_pipeline_a7eb5f78b5db36060e6b97578b6677162}{}\index{cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline@{cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline}!data\+Source@{data\+Source}}
+\index{data\+Source@{data\+Source}!cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline@{cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline}}
+\subsubsection[{data\+Source}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Usense\+Data\+Source} cs.\+usense.\+accelerometer.\+Accelerometer\+Pipeline.\+data\+Source\hspace{0.3cm}{\ttfamily [private]}}\label{classcs_1_1usense_1_1accelerometer_1_1_accelerometer_pipeline_a7eb5f78b5db36060e6b97578b6677162}
+This class is to access functionality of Usense Data base \hypertarget{classcs_1_1usense_1_1accelerometer_1_1_accelerometer_pipeline_a53be507081832940272735b836637663}{}\index{cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline@{cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline}!listeners@{listeners}}
+\index{listeners@{listeners}!cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline@{cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline}}
+\subsubsection[{listeners}]{\setlength{\rightskip}{0pt plus 5cm}Array\+List$<${\bf Data\+Base\+Change\+Listener}$>$ cs.\+usense.\+accelerometer.\+Accelerometer\+Pipeline.\+listeners = new Array\+List$<${\bf Data\+Base\+Change\+Listener}$>$ ()\hspace{0.3cm}{\ttfamily [private]}}\label{classcs_1_1usense_1_1accelerometer_1_1_accelerometer_pipeline_a53be507081832940272735b836637663}
+This variable is to get the database listeners \hypertarget{classcs_1_1usense_1_1accelerometer_1_1_accelerometer_pipeline_a2ca26caa30a7a702089708c1586147b1}{}\index{cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline@{cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline}!m\+Acc\+Buffer@{m\+Acc\+Buffer}}
+\index{m\+Acc\+Buffer@{m\+Acc\+Buffer}!cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline@{cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline}}
+\subsubsection[{m\+Acc\+Buffer}]{\setlength{\rightskip}{0pt plus 5cm}Array\+Blocking\+Queue$<$Double$>$ cs.\+usense.\+accelerometer.\+Accelerometer\+Pipeline.\+m\+Acc\+Buffer\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classcs_1_1usense_1_1accelerometer_1_1_accelerometer_pipeline_a2ca26caa30a7a702089708c1586147b1}
+This variable is to store the Buffer \hypertarget{classcs_1_1usense_1_1accelerometer_1_1_accelerometer_pipeline_ac13ce7a2cbfab63d4c51e53494776cb4}{}\index{cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline@{cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline}!m\+Activity\+Classification\+Task@{m\+Activity\+Classification\+Task}}
+\index{m\+Activity\+Classification\+Task@{m\+Activity\+Classification\+Task}!cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline@{cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline}}
+\subsubsection[{m\+Activity\+Classification\+Task}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Activity\+Classification\+Task} cs.\+usense.\+accelerometer.\+Accelerometer\+Pipeline.\+m\+Activity\+Classification\+Task\hspace{0.3cm}{\ttfamily [private]}}\label{classcs_1_1usense_1_1accelerometer_1_1_accelerometer_pipeline_ac13ce7a2cbfab63d4c51e53494776cb4}
+This class is to access functionality from Activity Classification Task of accelerometer pipeline \hypertarget{classcs_1_1usense_1_1accelerometer_1_1_accelerometer_pipeline_a3d0a51bf9ee496afd2b54f730465d7d0}{}\index{cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline@{cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline}!m\+Context@{m\+Context}}
+\index{m\+Context@{m\+Context}!cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline@{cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline}}
+\subsubsection[{m\+Context}]{\setlength{\rightskip}{0pt plus 5cm}Context cs.\+usense.\+accelerometer.\+Accelerometer\+Pipeline.\+m\+Context = null\hspace{0.3cm}{\ttfamily [private]}}\label{classcs_1_1usense_1_1accelerometer_1_1_accelerometer_pipeline_a3d0a51bf9ee496afd2b54f730465d7d0}
+Interface to global information about an application environment. \hypertarget{classcs_1_1usense_1_1accelerometer_1_1_accelerometer_pipeline_a86d5697845c1a5e4469c78de919cb6fe}{}\index{cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline@{cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline}!m\+Previous\+Action@{m\+Previous\+Action}}
+\index{m\+Previous\+Action@{m\+Previous\+Action}!cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline@{cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline}}
+\subsubsection[{m\+Previous\+Action}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Previous\+Action} cs.\+usense.\+accelerometer.\+Accelerometer\+Pipeline.\+m\+Previous\+Action = new {\bf Previous\+Action}()\hspace{0.3cm}{\ttfamily [private]}}\label{classcs_1_1usense_1_1accelerometer_1_1_accelerometer_pipeline_a86d5697845c1a5e4469c78de919cb6fe}
+\hypertarget{classcs_1_1usense_1_1accelerometer_1_1_accelerometer_pipeline_a8dfa8f0337687436d1c9b67627160583}{}\index{cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline@{cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline}!mprevious\+Action\+Type@{mprevious\+Action\+Type}}
+\index{mprevious\+Action\+Type@{mprevious\+Action\+Type}!cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline@{cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline}}
+\subsubsection[{mprevious\+Action\+Type}]{\setlength{\rightskip}{0pt plus 5cm}String cs.\+usense.\+accelerometer.\+Accelerometer\+Pipeline.\+mprevious\+Action\+Type = \char`\"{}\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\label{classcs_1_1usense_1_1accelerometer_1_1_accelerometer_pipeline_a8dfa8f0337687436d1c9b67627160583}
+\hypertarget{classcs_1_1usense_1_1accelerometer_1_1_accelerometer_pipeline_ac81e903529c99657f1e278f2a7af5203}{}\index{cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline@{cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline}!mprevious\+Duration@{mprevious\+Duration}}
+\index{mprevious\+Duration@{mprevious\+Duration}!cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline@{cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline}}
+\subsubsection[{mprevious\+Duration}]{\setlength{\rightskip}{0pt plus 5cm}double cs.\+usense.\+accelerometer.\+Accelerometer\+Pipeline.\+mprevious\+Duration = 0\hspace{0.3cm}{\ttfamily [static]}}\label{classcs_1_1usense_1_1accelerometer_1_1_accelerometer_pipeline_ac81e903529c99657f1e278f2a7af5203}
+\hypertarget{classcs_1_1usense_1_1accelerometer_1_1_accelerometer_pipeline_acf371fb0c0f08ab072a1c4dcaf142467}{}\index{cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline@{cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline}!m\+Sensor\+Manager@{m\+Sensor\+Manager}}
+\index{m\+Sensor\+Manager@{m\+Sensor\+Manager}!cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline@{cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline}}
+\subsubsection[{m\+Sensor\+Manager}]{\setlength{\rightskip}{0pt plus 5cm}Sensor\+Manager cs.\+usense.\+accelerometer.\+Accelerometer\+Pipeline.\+m\+Sensor\+Manager\hspace{0.3cm}{\ttfamily [private]}}\label{classcs_1_1usense_1_1accelerometer_1_1_accelerometer_pipeline_acf371fb0c0f08ab072a1c4dcaf142467}
+This class is to access functionality of Sensor Manager \hypertarget{classcs_1_1usense_1_1accelerometer_1_1_accelerometer_pipeline_a9529f85cce0a73aef1acb8c643b470d7}{}\index{cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline@{cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline}!T\+A\+G@{T\+A\+G}}
+\index{T\+A\+G@{T\+A\+G}!cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline@{cs\+::usense\+::accelerometer\+::\+Accelerometer\+Pipeline}}
+\subsubsection[{T\+A\+G}]{\setlength{\rightskip}{0pt plus 5cm}final String cs.\+usense.\+accelerometer.\+Accelerometer\+Pipeline.\+T\+A\+G = \char`\"{}A\+C\+C\+E\+L\+E\+R\+O\+M\+E\+T\+E\+R\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classcs_1_1usense_1_1accelerometer_1_1_accelerometer_pipeline_a9529f85cce0a73aef1acb8c643b470d7}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/cs/usense/accelerometer/\hyperlink{_accelerometer_pipeline_8java}{Accelerometer\+Pipeline.\+java}\end{DoxyCompactItemize}

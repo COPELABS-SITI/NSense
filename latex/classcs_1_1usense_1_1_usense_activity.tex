@@ -1,0 +1,193 @@
+\hypertarget{classcs_1_1usense_1_1_usense_activity}{}\section{cs.\+usense.\+Usense\+Activity Class Reference}
+\label{classcs_1_1usense_1_1_usense_activity}\index{cs.\+usense.\+Usense\+Activity@{cs.\+usense.\+Usense\+Activity}}
+Inheritance diagram for cs.\+usense.\+Usense\+Activity\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcs_1_1usense_1_1_usense_activity}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classcs_1_1usense_1_1_usense_activity_1_1_custom_comparator}{Custom\+Comparator}
+\item 
+class \hyperlink{classcs_1_1usense_1_1_usense_activity_1_1_on_swipe_touch_listener}{On\+Swipe\+Touch\+Listener}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classcs_1_1usense_1_1_usense_activity_ad8212c2cb9b2fd90d7ee02358a7efa77}{on\+Back\+Pressed} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final String \hyperlink{classcs_1_1usense_1_1_usense_activity_aadee7e5d8c283dfae9005d3e2fd4fcd7}{P\+K\+G} = \char`\"{}cs.\+usense\char`\"{}
+\item 
+static String \hyperlink{classcs_1_1usense_1_1_usense_activity_ab6b1ca5ccc8b099baccc4bfd5bf7fed4}{action\+Message} = \char`\"{}\char`\"{}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classcs_1_1usense_1_1_usense_activity_adb84502149d9c19721a43fce52f1ed6c}{on\+Create} (Bundle saved\+Instance\+State)
+\item 
+void \hyperlink{classcs_1_1usense_1_1_usense_activity_a961bbbd053d9dd93f0d2be8aa33a85c7}{on\+Destroy} ()
+\item 
+void \hyperlink{classcs_1_1usense_1_1_usense_activity_a82341e86578c5e13427d73ab3ebac1d2}{on\+Start} ()
+\item 
+void \hyperlink{classcs_1_1usense_1_1_usense_activity_a6100693322a3f3ebc9b67072da076535}{on\+Stop} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+boolean \hyperlink{classcs_1_1usense_1_1_usense_activity_a866b80769c6c850d6d84f5cb7931266a}{is\+My\+Service\+Running} (Class$<$ \hyperlink{classcs_1_1usense_1_1_usense_service}{Usense\+Service} $>$ usense\+Service)
+\item 
+Array\+List$<$ \hyperlink{classcs_1_1usense_1_1_sensor_product}{Sensor\+Product} $>$ \hyperlink{classcs_1_1usense_1_1_usense_activity_a169269ab9c9714296c7e6fd33a3d52af}{parse\+X\+M\+L} (Xml\+Pull\+Parser parser)  throws Xml\+Pull\+Parser\+Exception, I\+O\+Exception 
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcs_1_1usense_1_1_usense_service}{Usense\+Service} \hyperlink{classcs_1_1usense_1_1_usense_activity_a85e4dfec4eebe7691d68175af0a102d7}{m\+Bound\+Service}
+\item 
+boolean \hyperlink{classcs_1_1usense_1_1_usense_activity_a752b7a320a71b54860083dcf3fa53ea2}{m\+Request\+To\+Bound} = false
+\item 
+boolean \hyperlink{classcs_1_1usense_1_1_usense_activity_afe23746678829a04aa6c82f7d8d6fa71}{m\+Is\+Service\+Bound}
+\item 
+String \hyperlink{classcs_1_1usense_1_1_usense_activity_a2a4b08f436f712dc28f9be7b02bf62e4}{sensorname}
+\item 
+String \hyperlink{classcs_1_1usense_1_1_usense_activity_a6e91a30c9cc22d7e63b4c0cbe68b3ee1}{sensorinterval}
+\item 
+List\+View \hyperlink{classcs_1_1usense_1_1_usense_activity_ad987a28aca979b8dddd792a94372ddae}{si\+List\+View}
+\item 
+\hyperlink{classcs_1_1usense_1_1_s_i_adapter}{S\+I\+Adapter} \hyperlink{classcs_1_1usense_1_1_usense_activity_a079434ad4693107f055651047a0dc9c8}{m\+S\+I\+Adapter}
+\item 
+Service\+Connection \hyperlink{classcs_1_1usense_1_1_usense_activity_ae27ad214010eea791ca67b2eff246e56}{m\+Connection}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final String \hyperlink{classcs_1_1usense_1_1_usense_activity_a9a9e8dd0e952822c0ba0f4f210e7bc4c}{T\+A\+G} = \char`\"{}U\+S\+E\+N\+S\+E\char`\"{}
+\item 
+static Array\+List$<$ \hyperlink{classcs_1_1usense_1_1inference_module_1_1_sociality_details}{Sociality\+Details} $>$ \hyperlink{classcs_1_1usense_1_1_usense_activity_a8597fab47ee590ad4420ad0a77aaaa24}{list\+History}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class provides the layout of U\+Sense application and initialize the U\+Sense Service 
+
+\subsection{Member Function Documentation}
+\hypertarget{classcs_1_1usense_1_1_usense_activity_a866b80769c6c850d6d84f5cb7931266a}{}\index{cs\+::usense\+::\+Usense\+Activity@{cs\+::usense\+::\+Usense\+Activity}!is\+My\+Service\+Running@{is\+My\+Service\+Running}}
+\index{is\+My\+Service\+Running@{is\+My\+Service\+Running}!cs\+::usense\+::\+Usense\+Activity@{cs\+::usense\+::\+Usense\+Activity}}
+\subsubsection[{is\+My\+Service\+Running(\+Class$<$ Usense\+Service $>$ usense\+Service)}]{\setlength{\rightskip}{0pt plus 5cm}boolean cs.\+usense.\+Usense\+Activity.\+is\+My\+Service\+Running (
+\begin{DoxyParamCaption}
+\item[{Class$<$ {\bf Usense\+Service} $>$}]{usense\+Service}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{classcs_1_1usense_1_1_usense_activity_a866b80769c6c850d6d84f5cb7931266a}
+This method returns True/false if the U\+Sense service is running/not 
+\begin{DoxyParams}{Parameters}
+{\em usense\+Service} & \hyperlink{classcs_1_1usense_1_1_usense_service}{Usense\+Service} class \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true/false 
+\end{DoxyReturn}
+\hypertarget{classcs_1_1usense_1_1_usense_activity_ad8212c2cb9b2fd90d7ee02358a7efa77}{}\index{cs\+::usense\+::\+Usense\+Activity@{cs\+::usense\+::\+Usense\+Activity}!on\+Back\+Pressed@{on\+Back\+Pressed}}
+\index{on\+Back\+Pressed@{on\+Back\+Pressed}!cs\+::usense\+::\+Usense\+Activity@{cs\+::usense\+::\+Usense\+Activity}}
+\subsubsection[{on\+Back\+Pressed()}]{\setlength{\rightskip}{0pt plus 5cm}void cs.\+usense.\+Usense\+Activity.\+on\+Back\+Pressed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classcs_1_1usense_1_1_usense_activity_ad8212c2cb9b2fd90d7ee02358a7efa77}
+\hypertarget{classcs_1_1usense_1_1_usense_activity_adb84502149d9c19721a43fce52f1ed6c}{}\index{cs\+::usense\+::\+Usense\+Activity@{cs\+::usense\+::\+Usense\+Activity}!on\+Create@{on\+Create}}
+\index{on\+Create@{on\+Create}!cs\+::usense\+::\+Usense\+Activity@{cs\+::usense\+::\+Usense\+Activity}}
+\subsubsection[{on\+Create(\+Bundle saved\+Instance\+State)}]{\setlength{\rightskip}{0pt plus 5cm}void cs.\+usense.\+Usense\+Activity.\+on\+Create (
+\begin{DoxyParamCaption}
+\item[{Bundle}]{saved\+Instance\+State}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classcs_1_1usense_1_1_usense_activity_adb84502149d9c19721a43fce52f1ed6c}
+Find the List\+View resource. \hypertarget{classcs_1_1usense_1_1_usense_activity_a961bbbd053d9dd93f0d2be8aa33a85c7}{}\index{cs\+::usense\+::\+Usense\+Activity@{cs\+::usense\+::\+Usense\+Activity}!on\+Destroy@{on\+Destroy}}
+\index{on\+Destroy@{on\+Destroy}!cs\+::usense\+::\+Usense\+Activity@{cs\+::usense\+::\+Usense\+Activity}}
+\subsubsection[{on\+Destroy()}]{\setlength{\rightskip}{0pt plus 5cm}void cs.\+usense.\+Usense\+Activity.\+on\+Destroy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classcs_1_1usense_1_1_usense_activity_a961bbbd053d9dd93f0d2be8aa33a85c7}
+This method close the U\+Sense service \hypertarget{classcs_1_1usense_1_1_usense_activity_a82341e86578c5e13427d73ab3ebac1d2}{}\index{cs\+::usense\+::\+Usense\+Activity@{cs\+::usense\+::\+Usense\+Activity}!on\+Start@{on\+Start}}
+\index{on\+Start@{on\+Start}!cs\+::usense\+::\+Usense\+Activity@{cs\+::usense\+::\+Usense\+Activity}}
+\subsubsection[{on\+Start()}]{\setlength{\rightskip}{0pt plus 5cm}void cs.\+usense.\+Usense\+Activity.\+on\+Start (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classcs_1_1usense_1_1_usense_activity_a82341e86578c5e13427d73ab3ebac1d2}
+This method start the U\+Sense activity \hypertarget{classcs_1_1usense_1_1_usense_activity_a6100693322a3f3ebc9b67072da076535}{}\index{cs\+::usense\+::\+Usense\+Activity@{cs\+::usense\+::\+Usense\+Activity}!on\+Stop@{on\+Stop}}
+\index{on\+Stop@{on\+Stop}!cs\+::usense\+::\+Usense\+Activity@{cs\+::usense\+::\+Usense\+Activity}}
+\subsubsection[{on\+Stop()}]{\setlength{\rightskip}{0pt plus 5cm}void cs.\+usense.\+Usense\+Activity.\+on\+Stop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classcs_1_1usense_1_1_usense_activity_a6100693322a3f3ebc9b67072da076535}
+This method stop the U\+Sense activity \hypertarget{classcs_1_1usense_1_1_usense_activity_a169269ab9c9714296c7e6fd33a3d52af}{}\index{cs\+::usense\+::\+Usense\+Activity@{cs\+::usense\+::\+Usense\+Activity}!parse\+X\+M\+L@{parse\+X\+M\+L}}
+\index{parse\+X\+M\+L@{parse\+X\+M\+L}!cs\+::usense\+::\+Usense\+Activity@{cs\+::usense\+::\+Usense\+Activity}}
+\subsubsection[{parse\+X\+M\+L(\+Xml\+Pull\+Parser parser)}]{\setlength{\rightskip}{0pt plus 5cm}Array\+List$<${\bf Sensor\+Product}$>$ cs.\+usense.\+Usense\+Activity.\+parse\+X\+M\+L (
+\begin{DoxyParamCaption}
+\item[{Xml\+Pull\+Parser}]{parser}
+\end{DoxyParamCaption}
+) throws Xml\+Pull\+Parser\+Exception, I\+O\+Exception\hspace{0.3cm}{\ttfamily [private]}}\label{classcs_1_1usense_1_1_usense_activity_a169269ab9c9714296c7e6fd33a3d52af}
+This method parse the X\+M\+L data 
+\begin{DoxyParams}{Parameters}
+{\em parser} & The Xml Pull Parser with list of sensors \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+products List of sensors from \hyperlink{classcs_1_1usense_1_1_sensor_product}{Sensor\+Product} 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Xml\+Pull\+Parser\+Exception} & Xml Pull Parser Exception \\
+\hline
+{\em I\+O\+Exception} & Input, Output Exception \\
+\hline
+\end{DoxyExceptions}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classcs_1_1usense_1_1_usense_activity_ab6b1ca5ccc8b099baccc4bfd5bf7fed4}{}\index{cs\+::usense\+::\+Usense\+Activity@{cs\+::usense\+::\+Usense\+Activity}!action\+Message@{action\+Message}}
+\index{action\+Message@{action\+Message}!cs\+::usense\+::\+Usense\+Activity@{cs\+::usense\+::\+Usense\+Activity}}
+\subsubsection[{action\+Message}]{\setlength{\rightskip}{0pt plus 5cm}String cs.\+usense.\+Usense\+Activity.\+action\+Message = \char`\"{}\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\label{classcs_1_1usense_1_1_usense_activity_ab6b1ca5ccc8b099baccc4bfd5bf7fed4}
+This variable is to store the action message \hypertarget{classcs_1_1usense_1_1_usense_activity_a8597fab47ee590ad4420ad0a77aaaa24}{}\index{cs\+::usense\+::\+Usense\+Activity@{cs\+::usense\+::\+Usense\+Activity}!list\+History@{list\+History}}
+\index{list\+History@{list\+History}!cs\+::usense\+::\+Usense\+Activity@{cs\+::usense\+::\+Usense\+Activity}}
+\subsubsection[{list\+History}]{\setlength{\rightskip}{0pt plus 5cm}Array\+List$<${\bf Sociality\+Details}$>$ cs.\+usense.\+Usense\+Activity.\+list\+History\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classcs_1_1usense_1_1_usense_activity_a8597fab47ee590ad4420ad0a77aaaa24}
+This list of Sociality\+Details objects to get the History list of Sociality\+Details \hypertarget{classcs_1_1usense_1_1_usense_activity_a85e4dfec4eebe7691d68175af0a102d7}{}\index{cs\+::usense\+::\+Usense\+Activity@{cs\+::usense\+::\+Usense\+Activity}!m\+Bound\+Service@{m\+Bound\+Service}}
+\index{m\+Bound\+Service@{m\+Bound\+Service}!cs\+::usense\+::\+Usense\+Activity@{cs\+::usense\+::\+Usense\+Activity}}
+\subsubsection[{m\+Bound\+Service}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Usense\+Service} cs.\+usense.\+Usense\+Activity.\+m\+Bound\+Service\hspace{0.3cm}{\ttfamily [private]}}\label{classcs_1_1usense_1_1_usense_activity_a85e4dfec4eebe7691d68175af0a102d7}
+This class provides the Usense Service to bound service \hypertarget{classcs_1_1usense_1_1_usense_activity_ae27ad214010eea791ca67b2eff246e56}{}\index{cs\+::usense\+::\+Usense\+Activity@{cs\+::usense\+::\+Usense\+Activity}!m\+Connection@{m\+Connection}}
+\index{m\+Connection@{m\+Connection}!cs\+::usense\+::\+Usense\+Activity@{cs\+::usense\+::\+Usense\+Activity}}
+\subsubsection[{m\+Connection}]{\setlength{\rightskip}{0pt plus 5cm}Service\+Connection cs.\+usense.\+Usense\+Activity.\+m\+Connection\hspace{0.3cm}{\ttfamily [private]}}\label{classcs_1_1usense_1_1_usense_activity_ae27ad214010eea791ca67b2eff246e56}
+This method creates the service connection, which can be used to bind the U\+Sense service \hypertarget{classcs_1_1usense_1_1_usense_activity_afe23746678829a04aa6c82f7d8d6fa71}{}\index{cs\+::usense\+::\+Usense\+Activity@{cs\+::usense\+::\+Usense\+Activity}!m\+Is\+Service\+Bound@{m\+Is\+Service\+Bound}}
+\index{m\+Is\+Service\+Bound@{m\+Is\+Service\+Bound}!cs\+::usense\+::\+Usense\+Activity@{cs\+::usense\+::\+Usense\+Activity}}
+\subsubsection[{m\+Is\+Service\+Bound}]{\setlength{\rightskip}{0pt plus 5cm}boolean cs.\+usense.\+Usense\+Activity.\+m\+Is\+Service\+Bound\hspace{0.3cm}{\ttfamily [private]}}\label{classcs_1_1usense_1_1_usense_activity_afe23746678829a04aa6c82f7d8d6fa71}
+This variable is request to bound service \hypertarget{classcs_1_1usense_1_1_usense_activity_a752b7a320a71b54860083dcf3fa53ea2}{}\index{cs\+::usense\+::\+Usense\+Activity@{cs\+::usense\+::\+Usense\+Activity}!m\+Request\+To\+Bound@{m\+Request\+To\+Bound}}
+\index{m\+Request\+To\+Bound@{m\+Request\+To\+Bound}!cs\+::usense\+::\+Usense\+Activity@{cs\+::usense\+::\+Usense\+Activity}}
+\subsubsection[{m\+Request\+To\+Bound}]{\setlength{\rightskip}{0pt plus 5cm}boolean cs.\+usense.\+Usense\+Activity.\+m\+Request\+To\+Bound = false\hspace{0.3cm}{\ttfamily [private]}}\label{classcs_1_1usense_1_1_usense_activity_a752b7a320a71b54860083dcf3fa53ea2}
+This variable is to bound request \hypertarget{classcs_1_1usense_1_1_usense_activity_a079434ad4693107f055651047a0dc9c8}{}\index{cs\+::usense\+::\+Usense\+Activity@{cs\+::usense\+::\+Usense\+Activity}!m\+S\+I\+Adapter@{m\+S\+I\+Adapter}}
+\index{m\+S\+I\+Adapter@{m\+S\+I\+Adapter}!cs\+::usense\+::\+Usense\+Activity@{cs\+::usense\+::\+Usense\+Activity}}
+\subsubsection[{m\+S\+I\+Adapter}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+I\+Adapter} cs.\+usense.\+Usense\+Activity.\+m\+S\+I\+Adapter\hspace{0.3cm}{\ttfamily [private]}}\label{classcs_1_1usense_1_1_usense_activity_a079434ad4693107f055651047a0dc9c8}
+This class is to get Sociality\+Details object \hypertarget{classcs_1_1usense_1_1_usense_activity_aadee7e5d8c283dfae9005d3e2fd4fcd7}{}\index{cs\+::usense\+::\+Usense\+Activity@{cs\+::usense\+::\+Usense\+Activity}!P\+K\+G@{P\+K\+G}}
+\index{P\+K\+G@{P\+K\+G}!cs\+::usense\+::\+Usense\+Activity@{cs\+::usense\+::\+Usense\+Activity}}
+\subsubsection[{P\+K\+G}]{\setlength{\rightskip}{0pt plus 5cm}final String cs.\+usense.\+Usense\+Activity.\+P\+K\+G = \char`\"{}cs.\+usense\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\label{classcs_1_1usense_1_1_usense_activity_aadee7e5d8c283dfae9005d3e2fd4fcd7}
+\hypertarget{classcs_1_1usense_1_1_usense_activity_a6e91a30c9cc22d7e63b4c0cbe68b3ee1}{}\index{cs\+::usense\+::\+Usense\+Activity@{cs\+::usense\+::\+Usense\+Activity}!sensorinterval@{sensorinterval}}
+\index{sensorinterval@{sensorinterval}!cs\+::usense\+::\+Usense\+Activity@{cs\+::usense\+::\+Usense\+Activity}}
+\subsubsection[{sensorinterval}]{\setlength{\rightskip}{0pt plus 5cm}String cs.\+usense.\+Usense\+Activity.\+sensorinterval\hspace{0.3cm}{\ttfamily [private]}}\label{classcs_1_1usense_1_1_usense_activity_a6e91a30c9cc22d7e63b4c0cbe68b3ee1}
+This variable is to provide sensor interval \hypertarget{classcs_1_1usense_1_1_usense_activity_a2a4b08f436f712dc28f9be7b02bf62e4}{}\index{cs\+::usense\+::\+Usense\+Activity@{cs\+::usense\+::\+Usense\+Activity}!sensorname@{sensorname}}
+\index{sensorname@{sensorname}!cs\+::usense\+::\+Usense\+Activity@{cs\+::usense\+::\+Usense\+Activity}}
+\subsubsection[{sensorname}]{\setlength{\rightskip}{0pt plus 5cm}String cs.\+usense.\+Usense\+Activity.\+sensorname\hspace{0.3cm}{\ttfamily [private]}}\label{classcs_1_1usense_1_1_usense_activity_a2a4b08f436f712dc28f9be7b02bf62e4}
+This variable is to provide the sensor name \hypertarget{classcs_1_1usense_1_1_usense_activity_ad987a28aca979b8dddd792a94372ddae}{}\index{cs\+::usense\+::\+Usense\+Activity@{cs\+::usense\+::\+Usense\+Activity}!si\+List\+View@{si\+List\+View}}
+\index{si\+List\+View@{si\+List\+View}!cs\+::usense\+::\+Usense\+Activity@{cs\+::usense\+::\+Usense\+Activity}}
+\subsubsection[{si\+List\+View}]{\setlength{\rightskip}{0pt plus 5cm}List\+View cs.\+usense.\+Usense\+Activity.\+si\+List\+View\hspace{0.3cm}{\ttfamily [private]}}\label{classcs_1_1usense_1_1_usense_activity_ad987a28aca979b8dddd792a94372ddae}
+This class is to provide List\+View \hypertarget{classcs_1_1usense_1_1_usense_activity_a9a9e8dd0e952822c0ba0f4f210e7bc4c}{}\index{cs\+::usense\+::\+Usense\+Activity@{cs\+::usense\+::\+Usense\+Activity}!T\+A\+G@{T\+A\+G}}
+\index{T\+A\+G@{T\+A\+G}!cs\+::usense\+::\+Usense\+Activity@{cs\+::usense\+::\+Usense\+Activity}}
+\subsubsection[{T\+A\+G}]{\setlength{\rightskip}{0pt plus 5cm}final String cs.\+usense.\+Usense\+Activity.\+T\+A\+G = \char`\"{}U\+S\+E\+N\+S\+E\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\label{classcs_1_1usense_1_1_usense_activity_a9a9e8dd0e952822c0ba0f4f210e7bc4c}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/cs/usense/\hyperlink{_usense_activity_8java}{Usense\+Activity.\+java}\end{DoxyCompactItemize}
