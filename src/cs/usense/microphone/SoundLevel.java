@@ -1,7 +1,7 @@
 /**
- * @version 1.2
+ * @version 1.3
  * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, date (e.g. 22-04-2016)
- * Class is part of the USense application. It provides support for Microphone pipeline and
+ * Class is part of the NSense application. It provides support for Microphone pipeline and
  * this class extracts the different sound levels such as Quite, Normal, Alert, and Noisy based on the sound frequency levels.
  * @author Reddy Pallavali (COPELABS/ULHT)
  */

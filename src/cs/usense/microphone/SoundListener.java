@@ -1,7 +1,7 @@
 /**
- * @version 1.2
+ * @version 1.3
  * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, date (e.g. 22-04-2016)
- * Class is part of the USense application. It provides support for Microphone pipeline and
+ * Class is part of the NSense application. It provides support for Microphone pipeline and
  * this class is the listener class to update sound levels in the application.
  * @author Reddy Pallavali (COPELABS/ULHT)
  */

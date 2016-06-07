@@ -1,7 +1,7 @@
 /**
- * @version 1.2
+ * @version 1.3
  * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, 16-11-2015
- * Class is part of the USense application.
+ * Class is part of the NSense application.
  * This class manage all the devices found at the WiFi p2p discover mechanism.
  * @author Luis Amaral Lopes (COPELABS/ULHT)
  */
@@ -9,8 +9,9 @@
 package cs.usense.location;
 
 import java.util.Map;
-import cs.usense.db.UsenseDataSource;
-import cs.usense.location.RelativePositionWiFiNoConnection.UsenseDevice;
+
+import cs.usense.db.NSenseDataSource;
+import cs.usense.location.RelativePositionWiFiNoConnection.NSenseDevice;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.net.wifi.p2p.WifiP2pDevice;
@@ -28,8 +29,8 @@ public class WifiServiceSearcher {
     private String TAG = "WifiServiceSearcher";
     /** Interface to global information about an application environment. */
     private Context mContext;
-    /** Usense Data base. */
-    private UsenseDataSource dataSource;
+    /** NSense Data base. */
+    private NSenseDataSource dataSource;
     /** This class provides the API for managing Wi-Fi peer-to-peer connectivity. */
     private WifiP2pManager p2p;
     /** A channel that connects the application to the Wifi p2p framework. */
@@ -49,9 +50,9 @@ public class WifiServiceSearcher {
      * WifiServiceSearcher constructor
      * @param Context - Interface to global information about an application environment.
      * @param callback - RelativePositionWiFiNoConnection module.
-     * @param dataSource - Usense data base.
+     * @param dataSource - NSense data base.
      */
-    public WifiServiceSearcher(Context Context, RelativePositionWiFiNoConnection callback, UsenseDataSource dataSource) {
+    public WifiServiceSearcher(Context Context, RelativePositionWiFiNoConnection callback, NSenseDataSource dataSource) {
         this.mContext = Context;
         this.callback = callback;
         this.dataSource = dataSource;
@@ -98,9 +99,9 @@ public class WifiServiceSearcher {
                     	/** update the UI and add the item the discovered */
                     	/** device. */ 
                 		boolean mDeviceFound = false;
-                		if (!callback.listUsenseDevices.isEmpty()) {
-                    		for (int i = 0; i < callback.listUsenseDevices.size(); i++) {
-                    			UsenseDevice mDevice = callback.listUsenseDevices.get(i);
+                		if (!callback.listNSenseDevices.isEmpty()) {
+                    		for (int i = 0; i < callback.listNSenseDevices.size(); i++) {
+                    			NSenseDevice mDevice = callback.listNSenseDevices.get(i);
                             	if (mDevice.mWiFiDirectMACAddress.equals(srcDevice.deviceAddress)) {
                             		mDeviceFound = true;
                             		if (mDevice.mSSID.equals(instanceName)) {
@@ -111,7 +112,7 @@ public class WifiServiceSearcher {
                             		Log.i(TAG,"Known Device Found added: " + srcDevice.deviceName);
                                 	Log.i(TAG, " Updating his SSID to " + instanceName);
                             		mDevice.mSSID = instanceName;
-                            		callback.listUsenseDevices.set(i, mDevice);
+                            		callback.listNSenseDevices.set(i, mDevice);
                             		break;
                             	}
                             }
@@ -119,7 +120,7 @@ public class WifiServiceSearcher {
                 		if (!mDeviceFound) {
                 			Log.i(TAG,"New Device Found added: " + srcDevice.deviceName);
                         	Log.i(TAG, " His SSID: " + instanceName);
-                        	UsenseDevice mNewDevice = new RelativePositionWiFiNoConnection().new UsenseDevice();
+                        	NSenseDevice mNewDevice = new RelativePositionWiFiNoConnection().new NSenseDevice();
                         	mNewDevice.mSSID = instanceName;
                         	mNewDevice.mWiFiDirectMACAddress = srcDevice.deviceAddress;
                         	mNewDevice.mDeviceName = srcDevice.deviceName;
@@ -129,7 +130,7 @@ public class WifiServiceSearcher {
                         		}
                         		mTxTInfoReceived = null;
                         	}
-                        	callback.listUsenseDevices.add(mNewDevice);
+                        	callback.listNSenseDevices.add(mNewDevice);
                 		}
                         Log.d(TAG, srcDevice.deviceName + " is " + srcDevice.deviceAddress);
                     	/** Save Distance into DB */

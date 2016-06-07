@@ -1,0 +1,151 @@
+\hypertarget{classcs_1_1nsense_1_1location_1_1_wifi_service_searcher}{\section{cs.\-nsense.\-location.\-Wifi\-Service\-Searcher Class Reference}
+\label{classcs_1_1nsense_1_1location_1_1_wifi_service_searcher}\index{cs.\-nsense.\-location.\-Wifi\-Service\-Searcher@{cs.\-nsense.\-location.\-Wifi\-Service\-Searcher}}
+}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Tx\-T\-Info\-Received}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcs_1_1nsense_1_1location_1_1_wifi_service_searcher_a02fc3ab25e48fed8560c222d84847d19}{Wifi\-Service\-Searcher} (Context Context, \hyperlink{classcs_1_1nsense_1_1location_1_1_relative_position_wi_fi_no_connection}{Relative\-Position\-Wi\-Fi\-No\-Connection} \hyperlink{classcs_1_1nsense_1_1location_1_1_wifi_service_searcher_aad31a938d8f3998424053d7da9ae0f60}{callback}, \hyperlink{classcs_1_1nsense_1_1db_1_1_n_sense_data_source}{N\-Sense\-Data\-Source} \hyperlink{classcs_1_1nsense_1_1location_1_1_wifi_service_searcher_aac635f7d18b5e3d913052ef023030f16}{data\-Source})
+\item 
+void \hyperlink{classcs_1_1nsense_1_1location_1_1_wifi_service_searcher_a9f23bd2acba295715ce48bb83019f0e4}{Start} ()
+\item 
+void \hyperlink{classcs_1_1nsense_1_1location_1_1_wifi_service_searcher_ada8315e2b15cf668d7b82508a608a437}{Stop} ()
+\item 
+void \hyperlink{classcs_1_1nsense_1_1location_1_1_wifi_service_searcher_acbba42ffb9d28def7f135003374c785d}{start\-Service\-Discovery} ()
+\item 
+void \hyperlink{classcs_1_1nsense_1_1location_1_1_wifi_service_searcher_a4a0181b9d0a4ef32ba3a1b77cd479812}{restart\-Wifi\-P2\-P} ()
+\item 
+void \hyperlink{classcs_1_1nsense_1_1location_1_1_wifi_service_searcher_a9f0fd191b41f9408a408fe274678d05e}{stop\-Discovery} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+String \hyperlink{classcs_1_1nsense_1_1location_1_1_wifi_service_searcher_af93ca1c31745948edca0ce6177fe0eb3}{T\-A\-G} = \char`\"{}Wifi\-Service\-Searcher\char`\"{}
+\item 
+Context \hyperlink{classcs_1_1nsense_1_1location_1_1_wifi_service_searcher_aa067e3bd1682b7cb95f671a19e662c42}{m\-Context}
+\item 
+\hyperlink{classcs_1_1nsense_1_1db_1_1_n_sense_data_source}{N\-Sense\-Data\-Source} \hyperlink{classcs_1_1nsense_1_1location_1_1_wifi_service_searcher_aac635f7d18b5e3d913052ef023030f16}{data\-Source}
+\item 
+Wifi\-P2p\-Manager \hyperlink{classcs_1_1nsense_1_1location_1_1_wifi_service_searcher_a4d7da832573db92080e064fe61068dc1}{p2p}
+\item 
+Wifi\-P2p\-Manager.\-Channel \hyperlink{classcs_1_1nsense_1_1location_1_1_wifi_service_searcher_a1f377051b70810f0b5c6f373e7c30f96}{channel}
+\item 
+Wifi\-P2p\-Dns\-Sd\-Service\-Request \hyperlink{classcs_1_1nsense_1_1location_1_1_wifi_service_searcher_ab2e780a9115f0114f5097bb277eb0293}{service\-Request}
+\item 
+\hyperlink{classcs_1_1nsense_1_1location_1_1_relative_position_wi_fi_no_connection}{Relative\-Position\-Wi\-Fi\-No\-Connection} \hyperlink{classcs_1_1nsense_1_1location_1_1_wifi_service_searcher_aad31a938d8f3998424053d7da9ae0f60}{callback}
+\item 
+Tx\-T\-Info\-Received \hyperlink{classcs_1_1nsense_1_1location_1_1_wifi_service_searcher_a208c19d0746aaf63777a00a65b8a5803}{m\-Tx\-T\-Info\-Received} = null
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcs_1_1nsense_1_1location_1_1_wifi_service_searcher_a02fc3ab25e48fed8560c222d84847d19}{\index{cs\-::nsense\-::location\-::\-Wifi\-Service\-Searcher@{cs\-::nsense\-::location\-::\-Wifi\-Service\-Searcher}!Wifi\-Service\-Searcher@{Wifi\-Service\-Searcher}}
+\index{Wifi\-Service\-Searcher@{Wifi\-Service\-Searcher}!cs::nsense::location::WifiServiceSearcher@{cs\-::nsense\-::location\-::\-Wifi\-Service\-Searcher}}
+\subsubsection[{Wifi\-Service\-Searcher}]{\setlength{\rightskip}{0pt plus 5cm}cs.\-nsense.\-location.\-Wifi\-Service\-Searcher.\-Wifi\-Service\-Searcher (
+\begin{DoxyParamCaption}
+\item[{Context}]{Context, }
+\item[{{\bf Relative\-Position\-Wi\-Fi\-No\-Connection}}]{callback, }
+\item[{{\bf N\-Sense\-Data\-Source}}]{data\-Source}
+\end{DoxyParamCaption}
+)}}\label{classcs_1_1nsense_1_1location_1_1_wifi_service_searcher_a02fc3ab25e48fed8560c222d84847d19}
+\hyperlink{classcs_1_1nsense_1_1location_1_1_wifi_service_searcher}{Wifi\-Service\-Searcher} constructor 
+\begin{DoxyParams}{Parameters}
+{\em Context} & -\/ Interface to global information about an application environment. \\
+\hline
+{\em callback} & -\/ \hyperlink{classcs_1_1nsense_1_1location_1_1_relative_position_wi_fi_no_connection}{Relative\-Position\-Wi\-Fi\-No\-Connection} module. \\
+\hline
+{\em data\-Source} & -\/ N\-Sense data base. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcs_1_1nsense_1_1location_1_1_wifi_service_searcher_a4a0181b9d0a4ef32ba3a1b77cd479812}{\index{cs\-::nsense\-::location\-::\-Wifi\-Service\-Searcher@{cs\-::nsense\-::location\-::\-Wifi\-Service\-Searcher}!restart\-Wifi\-P2\-P@{restart\-Wifi\-P2\-P}}
+\index{restart\-Wifi\-P2\-P@{restart\-Wifi\-P2\-P}!cs::nsense::location::WifiServiceSearcher@{cs\-::nsense\-::location\-::\-Wifi\-Service\-Searcher}}
+\subsubsection[{restart\-Wifi\-P2\-P}]{\setlength{\rightskip}{0pt plus 5cm}void cs.\-nsense.\-location.\-Wifi\-Service\-Searcher.\-restart\-Wifi\-P2\-P (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcs_1_1nsense_1_1location_1_1_wifi_service_searcher_a4a0181b9d0a4ef32ba3a1b77cd479812}
+Removes all services request and start a new service request. \hypertarget{classcs_1_1nsense_1_1location_1_1_wifi_service_searcher_a9f23bd2acba295715ce48bb83019f0e4}{\index{cs\-::nsense\-::location\-::\-Wifi\-Service\-Searcher@{cs\-::nsense\-::location\-::\-Wifi\-Service\-Searcher}!Start@{Start}}
+\index{Start@{Start}!cs::nsense::location::WifiServiceSearcher@{cs\-::nsense\-::location\-::\-Wifi\-Service\-Searcher}}
+\subsubsection[{Start}]{\setlength{\rightskip}{0pt plus 5cm}void cs.\-nsense.\-location.\-Wifi\-Service\-Searcher.\-Start (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcs_1_1nsense_1_1location_1_1_wifi_service_searcher_a9f23bd2acba295715ce48bb83019f0e4}
+It initializes the Wi\-Fi p2p and gets a channel. \hypertarget{classcs_1_1nsense_1_1location_1_1_wifi_service_searcher_acbba42ffb9d28def7f135003374c785d}{\index{cs\-::nsense\-::location\-::\-Wifi\-Service\-Searcher@{cs\-::nsense\-::location\-::\-Wifi\-Service\-Searcher}!start\-Service\-Discovery@{start\-Service\-Discovery}}
+\index{start\-Service\-Discovery@{start\-Service\-Discovery}!cs::nsense::location::WifiServiceSearcher@{cs\-::nsense\-::location\-::\-Wifi\-Service\-Searcher}}
+\subsubsection[{start\-Service\-Discovery}]{\setlength{\rightskip}{0pt plus 5cm}void cs.\-nsense.\-location.\-Wifi\-Service\-Searcher.\-start\-Service\-Discovery (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcs_1_1nsense_1_1location_1_1_wifi_service_searcher_acbba42ffb9d28def7f135003374c785d}
+Requests a service discovery. Register listeners for D\-N\-S-\/\-S\-D services. These are callbacks invoked by the system when a service is actually discovered.
+
+A service has been discovered. Is this our app?
+
+update the U\-I and add the item the discovered
+
+device.
+
+Known Device -\/ Just update the S\-S\-I\-D
+
+Save Distance into D\-B
+
+New Device
+
+A new T\-X\-T record is available. Pick up the advertised buddy name.
+
+After attaching listeners, create a service request and initiate
+
+discovery. \hypertarget{classcs_1_1nsense_1_1location_1_1_wifi_service_searcher_ada8315e2b15cf668d7b82508a608a437}{\index{cs\-::nsense\-::location\-::\-Wifi\-Service\-Searcher@{cs\-::nsense\-::location\-::\-Wifi\-Service\-Searcher}!Stop@{Stop}}
+\index{Stop@{Stop}!cs::nsense::location::WifiServiceSearcher@{cs\-::nsense\-::location\-::\-Wifi\-Service\-Searcher}}
+\subsubsection[{Stop}]{\setlength{\rightskip}{0pt plus 5cm}void cs.\-nsense.\-location.\-Wifi\-Service\-Searcher.\-Stop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcs_1_1nsense_1_1location_1_1_wifi_service_searcher_ada8315e2b15cf668d7b82508a608a437}
+Stops any discovery request running. \hypertarget{classcs_1_1nsense_1_1location_1_1_wifi_service_searcher_a9f0fd191b41f9408a408fe274678d05e}{\index{cs\-::nsense\-::location\-::\-Wifi\-Service\-Searcher@{cs\-::nsense\-::location\-::\-Wifi\-Service\-Searcher}!stop\-Discovery@{stop\-Discovery}}
+\index{stop\-Discovery@{stop\-Discovery}!cs::nsense::location::WifiServiceSearcher@{cs\-::nsense\-::location\-::\-Wifi\-Service\-Searcher}}
+\subsubsection[{stop\-Discovery}]{\setlength{\rightskip}{0pt plus 5cm}void cs.\-nsense.\-location.\-Wifi\-Service\-Searcher.\-stop\-Discovery (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcs_1_1nsense_1_1location_1_1_wifi_service_searcher_a9f0fd191b41f9408a408fe274678d05e}
+Stops any discovery request running. 
+
+\subsection{Member Data Documentation}
+\hypertarget{classcs_1_1nsense_1_1location_1_1_wifi_service_searcher_aad31a938d8f3998424053d7da9ae0f60}{\index{cs\-::nsense\-::location\-::\-Wifi\-Service\-Searcher@{cs\-::nsense\-::location\-::\-Wifi\-Service\-Searcher}!callback@{callback}}
+\index{callback@{callback}!cs::nsense::location::WifiServiceSearcher@{cs\-::nsense\-::location\-::\-Wifi\-Service\-Searcher}}
+\subsubsection[{callback}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Relative\-Position\-Wi\-Fi\-No\-Connection} cs.\-nsense.\-location.\-Wifi\-Service\-Searcher.\-callback\hspace{0.3cm}{\ttfamily [private]}}}\label{classcs_1_1nsense_1_1location_1_1_wifi_service_searcher_aad31a938d8f3998424053d7da9ae0f60}
+\hyperlink{classcs_1_1nsense_1_1location_1_1_relative_position_wi_fi_no_connection}{Relative\-Position\-Wi\-Fi\-No\-Connection} module. \hypertarget{classcs_1_1nsense_1_1location_1_1_wifi_service_searcher_a1f377051b70810f0b5c6f373e7c30f96}{\index{cs\-::nsense\-::location\-::\-Wifi\-Service\-Searcher@{cs\-::nsense\-::location\-::\-Wifi\-Service\-Searcher}!channel@{channel}}
+\index{channel@{channel}!cs::nsense::location::WifiServiceSearcher@{cs\-::nsense\-::location\-::\-Wifi\-Service\-Searcher}}
+\subsubsection[{channel}]{\setlength{\rightskip}{0pt plus 5cm}Wifi\-P2p\-Manager.\-Channel cs.\-nsense.\-location.\-Wifi\-Service\-Searcher.\-channel\hspace{0.3cm}{\ttfamily [private]}}}\label{classcs_1_1nsense_1_1location_1_1_wifi_service_searcher_a1f377051b70810f0b5c6f373e7c30f96}
+A channel that connects the application to the Wifi p2p framework. \hypertarget{classcs_1_1nsense_1_1location_1_1_wifi_service_searcher_aac635f7d18b5e3d913052ef023030f16}{\index{cs\-::nsense\-::location\-::\-Wifi\-Service\-Searcher@{cs\-::nsense\-::location\-::\-Wifi\-Service\-Searcher}!data\-Source@{data\-Source}}
+\index{data\-Source@{data\-Source}!cs::nsense::location::WifiServiceSearcher@{cs\-::nsense\-::location\-::\-Wifi\-Service\-Searcher}}
+\subsubsection[{data\-Source}]{\setlength{\rightskip}{0pt plus 5cm}{\bf N\-Sense\-Data\-Source} cs.\-nsense.\-location.\-Wifi\-Service\-Searcher.\-data\-Source\hspace{0.3cm}{\ttfamily [private]}}}\label{classcs_1_1nsense_1_1location_1_1_wifi_service_searcher_aac635f7d18b5e3d913052ef023030f16}
+N\-Sense Data base. \hypertarget{classcs_1_1nsense_1_1location_1_1_wifi_service_searcher_aa067e3bd1682b7cb95f671a19e662c42}{\index{cs\-::nsense\-::location\-::\-Wifi\-Service\-Searcher@{cs\-::nsense\-::location\-::\-Wifi\-Service\-Searcher}!m\-Context@{m\-Context}}
+\index{m\-Context@{m\-Context}!cs::nsense::location::WifiServiceSearcher@{cs\-::nsense\-::location\-::\-Wifi\-Service\-Searcher}}
+\subsubsection[{m\-Context}]{\setlength{\rightskip}{0pt plus 5cm}Context cs.\-nsense.\-location.\-Wifi\-Service\-Searcher.\-m\-Context\hspace{0.3cm}{\ttfamily [private]}}}\label{classcs_1_1nsense_1_1location_1_1_wifi_service_searcher_aa067e3bd1682b7cb95f671a19e662c42}
+Interface to global information about an application environment. \hypertarget{classcs_1_1nsense_1_1location_1_1_wifi_service_searcher_a208c19d0746aaf63777a00a65b8a5803}{\index{cs\-::nsense\-::location\-::\-Wifi\-Service\-Searcher@{cs\-::nsense\-::location\-::\-Wifi\-Service\-Searcher}!m\-Tx\-T\-Info\-Received@{m\-Tx\-T\-Info\-Received}}
+\index{m\-Tx\-T\-Info\-Received@{m\-Tx\-T\-Info\-Received}!cs::nsense::location::WifiServiceSearcher@{cs\-::nsense\-::location\-::\-Wifi\-Service\-Searcher}}
+\subsubsection[{m\-Tx\-T\-Info\-Received}]{\setlength{\rightskip}{0pt plus 5cm}Tx\-T\-Info\-Received cs.\-nsense.\-location.\-Wifi\-Service\-Searcher.\-m\-Tx\-T\-Info\-Received = null\hspace{0.3cm}{\ttfamily [private]}}}\label{classcs_1_1nsense_1_1location_1_1_wifi_service_searcher_a208c19d0746aaf63777a00a65b8a5803}
+Object that contains info from the T\-X\-T of the device found. \hypertarget{classcs_1_1nsense_1_1location_1_1_wifi_service_searcher_a4d7da832573db92080e064fe61068dc1}{\index{cs\-::nsense\-::location\-::\-Wifi\-Service\-Searcher@{cs\-::nsense\-::location\-::\-Wifi\-Service\-Searcher}!p2p@{p2p}}
+\index{p2p@{p2p}!cs::nsense::location::WifiServiceSearcher@{cs\-::nsense\-::location\-::\-Wifi\-Service\-Searcher}}
+\subsubsection[{p2p}]{\setlength{\rightskip}{0pt plus 5cm}Wifi\-P2p\-Manager cs.\-nsense.\-location.\-Wifi\-Service\-Searcher.\-p2p\hspace{0.3cm}{\ttfamily [private]}}}\label{classcs_1_1nsense_1_1location_1_1_wifi_service_searcher_a4d7da832573db92080e064fe61068dc1}
+This class provides the A\-P\-I for managing Wi-\/\-Fi peer-\/to-\/peer connectivity. \hypertarget{classcs_1_1nsense_1_1location_1_1_wifi_service_searcher_ab2e780a9115f0114f5097bb277eb0293}{\index{cs\-::nsense\-::location\-::\-Wifi\-Service\-Searcher@{cs\-::nsense\-::location\-::\-Wifi\-Service\-Searcher}!service\-Request@{service\-Request}}
+\index{service\-Request@{service\-Request}!cs::nsense::location::WifiServiceSearcher@{cs\-::nsense\-::location\-::\-Wifi\-Service\-Searcher}}
+\subsubsection[{service\-Request}]{\setlength{\rightskip}{0pt plus 5cm}Wifi\-P2p\-Dns\-Sd\-Service\-Request cs.\-nsense.\-location.\-Wifi\-Service\-Searcher.\-service\-Request\hspace{0.3cm}{\ttfamily [private]}}}\label{classcs_1_1nsense_1_1location_1_1_wifi_service_searcher_ab2e780a9115f0114f5097bb277eb0293}
+A class for creating a Bonjour service discovery request. \hypertarget{classcs_1_1nsense_1_1location_1_1_wifi_service_searcher_af93ca1c31745948edca0ce6177fe0eb3}{\index{cs\-::nsense\-::location\-::\-Wifi\-Service\-Searcher@{cs\-::nsense\-::location\-::\-Wifi\-Service\-Searcher}!T\-A\-G@{T\-A\-G}}
+\index{T\-A\-G@{T\-A\-G}!cs::nsense::location::WifiServiceSearcher@{cs\-::nsense\-::location\-::\-Wifi\-Service\-Searcher}}
+\subsubsection[{T\-A\-G}]{\setlength{\rightskip}{0pt plus 5cm}String cs.\-nsense.\-location.\-Wifi\-Service\-Searcher.\-T\-A\-G = \char`\"{}Wifi\-Service\-Searcher\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}}\label{classcs_1_1nsense_1_1location_1_1_wifi_service_searcher_af93ca1c31745948edca0ce6177fe0eb3}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+src/cs/nsense/location/\hyperlink{_wifi_service_searcher_8java}{Wifi\-Service\-Searcher.\-java}\end{DoxyCompactItemize}

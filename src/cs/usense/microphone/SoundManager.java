@@ -1,7 +1,7 @@
 /**
- * @version 1.2
+ * @version 1.3
  * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, date (e.g. 22-04-2016)
- * Class is part of the USense application. It provides support for Microphone pipeline.
+ * Class is part of the NSense application. It provides support for Microphone pipeline.
  * This class provides the core idealogy of sound process with microphone adapter.
  * @author Reddy Pallavali (COPELABS/ULHT)
  */
@@ -19,7 +19,7 @@ import android.content.pm.PackageManager;
 import android.media.MediaRecorder;
 import android.widget.Toast;
 import cs.usense.R;
-import cs.usense.UsenseService;
+import cs.usense.NSenseService;
 
 /**
  * This gives us the filtered sound frequency, and converion to amplitude.
@@ -75,9 +75,9 @@ public class SoundManager {
 
 	/**
 	 * This method construct the SoundManager
-	 * @param callback Supply functionality for UsenseActivity to use
+	 * @param callback Supply functionality for NSenseActivity to use
 	 */	
-	public SoundManager(UsenseService callback) {
+	public SoundManager(NSenseService callback) {
 
 	}
 

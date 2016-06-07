@@ -1,7 +1,7 @@
 /**
- * @version 1.2
+ * @version 1.3
  * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, 16-11-2015
- * Class is part of the USense application.
+ * Class is part of the NSense application.
  * This class is the entry point of Location Pipeline.
  * It initializes all necessary modules to compute the 
  * relative distance to other devices.
@@ -14,27 +14,27 @@ import java.util.ArrayList;
 import java.util.Timer;
 import java.util.TimerTask;
 
-import cs.usense.UsenseService;
-import cs.usense.db.UsenseDataSource;
+import cs.usense.NSenseService;
+import cs.usense.db.NSenseDataSource;
 import android.content.Context;
 
 public class LocationPipeline {
     /** Interface to global information about an application environment. */
 	private Context aContext = null;
-	/** Usense Service module */
-	private UsenseService callback = null;
-	/** Usense Data base */
-	private UsenseDataSource dataSource;
+	/** NSense Service module */
+	private NSenseService callback = null;
+	/** NSense Data base */
+	private NSenseDataSource dataSource;
 	/** Relative Position module - manage the WiFi P2P to compute the relative distance */
 	private static RelativePositionWiFiNoConnection mRelativePositionWiFiNoConnection = null;
 	
 	/**
 	 * Location Pipeline constructor - It initializes the Relative Position module 
 	 * and a Timer to remove old entries
-	 * @param callback Usense Service module
-	 * @param dataSource Usense Data base
+	 * @param callback NSense Service module
+	 * @param dataSource NSense Data base
 	 */
-	public LocationPipeline(UsenseService callback, UsenseDataSource dataSource) {
+	public LocationPipeline(NSenseService callback, NSenseDataSource dataSource) {
         this.callback = callback;
         this.aContext = callback.getApplicationContext();
         this.dataSource = dataSource;

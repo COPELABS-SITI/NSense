@@ -1,7 +1,7 @@
 /**
- * @version 1.2
+ * @version 1.3
  * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, 06-04-2016
- * Class is part of the USense application.
+ * Class is part of the NSense application.
  * This class is responsible for computing the social weight among users.
  * @author Waldir Moreira (COPELABS/ULHT)
  */
@@ -18,15 +18,15 @@ import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
 import cs.usense.db.DataBaseChangeListener;
-import cs.usense.db.UsenseDataSource;
+import cs.usense.db.NSenseDataSource;
 
 /**
  * This class provides the computing updates for Social weights among users on hourly basis
  * */
 public class OnNewHourUpdate extends BroadcastReceiver{
 	
-	/** This class is to access functionality of Usense Data base */
-	private UsenseDataSource datasource;
+	/** This class is to access functionality of NSense Data base */
+	private NSenseDataSource datasource;
 	
 	/** This variable is to provide the day */
 	public static int day = 1;
@@ -37,9 +37,9 @@ public class OnNewHourUpdate extends BroadcastReceiver{
 
 	/**
 	 * This method is the constructor for OnNewHourUpdate.
-	 * @param datasource2 UsenseDataSource to access various methods and information of the USense Data base.
+	 * @param datasource2 NSenseDataSource to access various methods and information of the NSense Data base.
 	 **/
-	public OnNewHourUpdate(UsenseDataSource datasource2) {
+	public OnNewHourUpdate(NSenseDataSource datasource2) {
 		datasource = datasource2;
 	}
 

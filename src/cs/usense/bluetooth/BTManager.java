@@ -1,7 +1,7 @@
 /**
- * @version 1.2
+ * @version 1.3
  * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, 06-04-2016
- * Class is part of the USense application.
+ * Class is part of the NSense application.
  * This class provides some methods to provide extended
  * functionality to the android BluetoothAdapter.
  * @author Waldir Moreira (COPELABS/ULHT)
@@ -44,7 +44,7 @@ public class BTManager {
 	/** This class is to access functionality of Bluetooth Adapter */
 	private BluetoothAdapter androidBTAdapter;
 
-	/** Used to identify USense! devices */
+	/** Used to identify NSense! devices */
 	private BluetoothServerSocket socket;
 	private UUID uuid = UUID.fromString("10101010-0101-0101-0101-010101010101");
 	
@@ -118,9 +118,9 @@ public class BTManager {
 	public BTManager(Context c) {
 		androidBTAdapter = BluetoothAdapter.getDefaultAdapter();
 
-		/** Advertised UUID to let peer node knows that current node runs usense! */
+		/** Advertised UUID to let peer node knows that current node runs nsense! */
 		try {
-			socket = androidBTAdapter.listenUsingInsecureRfcommWithServiceRecord("usense", uuid);
+			socket = androidBTAdapter.listenUsingInsecureRfcommWithServiceRecord("nsense", uuid);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

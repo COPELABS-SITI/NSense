@@ -1,7 +1,7 @@
 /**
- * @version 1.2
+ * @version 1.3
  * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, date (e.g. 22-04-2016)
- * Class is part of the USense application. It provides support for accelerometer pipeline.
+ * Class is part of the NSense application. It provides support for accelerometer pipeline.
  * @author Saeik Firdose (COPELABS/ULHT)
  */
 
@@ -31,9 +31,9 @@ import android.os.Environment;
 import android.os.Handler;
 import android.text.format.DateFormat;
 import android.util.Log;
-import cs.usense.UsenseService;
+import cs.usense.NSenseService;
 import cs.usense.db.DataBaseChangeListener;
-import cs.usense.db.UsenseDataSource;
+import cs.usense.db.NSenseDataSource;
 
 /**
  * This class provides various methods to provide Accelerometer sensor data 
@@ -54,11 +54,11 @@ public class AccelerometerPipeline extends BroadcastReceiver{
 	/** This class is to access functionality of Accelerometer Listener */
 	private AccelerometerListener accelerListener;
 	
-	/** This class is to access functionality of Usense Data base */
-	private UsenseDataSource dataSource;
+	/** This class is to access functionality of NSense Data base */
+	private NSenseDataSource dataSource;
 	
-	/** This class is to access the functionality of Usense Service */
-	private UsenseService callback = null;
+	/** This class is to access the functionality of NSense Service */
+	private NSenseService callback = null;
 	
 	/** This class is to access functionality of Sensor Manager */
 	private SensorManager mSensorManager;
@@ -100,10 +100,10 @@ public class AccelerometerPipeline extends BroadcastReceiver{
 
 	/**
 	 * This class instantiate the AccelerometerPipeline and initialize the listener and activity classification task
-	 * @param callback Supply functionality for UsenseActivity to use
-	 * @param dataSource UsenseDataSource to access various methods and information of the USense Data base
+	 * @param callback Supply functionality for NSenseActivity to use
+	 * @param dataSource NSenseDataSource to access various methods and information of the NSense Data base
 	 */
-	public AccelerometerPipeline(UsenseService callback, UsenseDataSource dataSource) {
+	public AccelerometerPipeline(NSenseService callback, NSenseDataSource dataSource) {
 		Log.i(TAG,"Inside the AccelerometerPipeline constructor");
 		this.callback = callback;
 		this.mContext = callback.getBaseContext();
@@ -465,7 +465,7 @@ public class AccelerometerPipeline extends BroadcastReceiver{
 	public class AccListener implements AccelerometerListener {
 
 		/* (non-Javadoc)
-		 * @see cs.usense.accelerometer.AccelerometerListener#updateBuffer(float, float, float)
+		 * @see cs.nsense.accelerometer.AccelerometerListener#updateBuffer(float, float, float)
 		 */
 		public void updateBuffer(float x, float y, float z) {
 			double m = Math.sqrt(x * x + y * y + z* z);
@@ -572,13 +572,13 @@ public class AccelerometerPipeline extends BroadcastReceiver{
 
 
 	/**
-	 * This method store the logs into USenseActivity.txt file  
+	 * This method store the logs into NSenseActivity.txt file  
 	 * @param text Activity Type
 	 * @param start Activity Start time
 	 */
 	public void appendLog(String text, String start)
 	{       
-		File logFile = new File(Environment.getExternalStorageDirectory()+File.separator+"Experiment","USenseActivity.txt");
+		File logFile = new File(Environment.getExternalStorageDirectory()+File.separator+"Experiment","NSenseActivity.txt");
 		if (!logFile.exists())
 		{
 			try

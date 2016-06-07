@@ -1,0 +1,178 @@
+\hypertarget{classcs_1_1nsense_1_1accelerometer_1_1_acceler_sen_manager}{\section{cs.\-nsense.\-accelerometer.\-Acceler\-Sen\-Manager Class Reference}
+\label{classcs_1_1nsense_1_1accelerometer_1_1_acceler_sen_manager}\index{cs.\-nsense.\-accelerometer.\-Acceler\-Sen\-Manager@{cs.\-nsense.\-accelerometer.\-Acceler\-Sen\-Manager}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcs_1_1nsense_1_1accelerometer_1_1_acceler_sen_manager_afb84340fe02a6ce5db5bb8cfa4d15a02}{Acceler\-Sen\-Manager} (Context context)
+\item 
+void \hyperlink{classcs_1_1nsense_1_1accelerometer_1_1_acceler_sen_manager_abda03508323591b2b88d0084f4c2e5c0}{close} ()
+\item 
+void \hyperlink{classcs_1_1nsense_1_1accelerometer_1_1_acceler_sen_manager_ace3c45b938c77765fbff9d011998a3ea}{set\-Acceler\-Listener} (\hyperlink{interfacecs_1_1nsense_1_1accelerometer_1_1_accelerometer_listener}{Accelerometer\-Listener} \hyperlink{classcs_1_1nsense_1_1accelerometer_1_1_acceler_sen_manager_a5ffa2f553d7ceb1ff3f0d14d55498aee}{listener})
+\item 
+void \hyperlink{classcs_1_1nsense_1_1accelerometer_1_1_acceler_sen_manager_a7b610683e1365950e70a8872b070b8cf}{stop\-Listening} ()
+\item 
+void \hyperlink{classcs_1_1nsense_1_1accelerometer_1_1_acceler_sen_manager_a58196f11332c55d9d5c4c2b60dc6e38f}{start\-Listening} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static boolean \hyperlink{classcs_1_1nsense_1_1accelerometer_1_1_acceler_sen_manager_a36b14ec3ca271e1d579d976d3cab6d0a}{is\-Listening} ()
+\item 
+static boolean \hyperlink{classcs_1_1nsense_1_1accelerometer_1_1_acceler_sen_manager_a19ae2641c9c8e55337b04065f8cac526}{is\-Supported} (Context context)
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final String \hyperlink{classcs_1_1nsense_1_1accelerometer_1_1_acceler_sen_manager_ad669f18249fb29b582aa9c4850feb496}{T\-A\-G} = \char`\"{}A\-C\-C\-E\-L\-E\-R\-O\-M\-E\-T\-E\-R\char`\"{}
+\item 
+static Context \hyperlink{classcs_1_1nsense_1_1accelerometer_1_1_acceler_sen_manager_ab69ade607ca050ba47e3ef89a316606a}{a\-Context} = null
+\item 
+static Sensor \hyperlink{classcs_1_1nsense_1_1accelerometer_1_1_acceler_sen_manager_a5f78f1b0c5d973a82f6c26d3980cbf96}{sensor}
+\item 
+static Sensor\-Manager \hyperlink{classcs_1_1nsense_1_1accelerometer_1_1_acceler_sen_manager_a7a38912fd6f45a8d2ae42711505a1191}{sensor\-Manager}
+\item 
+static \hyperlink{interfacecs_1_1nsense_1_1accelerometer_1_1_accelerometer_listener}{Accelerometer\-Listener} \hyperlink{classcs_1_1nsense_1_1accelerometer_1_1_acceler_sen_manager_a5ffa2f553d7ceb1ff3f0d14d55498aee}{listener}
+\item 
+static Boolean \hyperlink{classcs_1_1nsense_1_1accelerometer_1_1_acceler_sen_manager_a9c170f7b3bb6edb7f36540f22e815229}{supported}
+\item 
+static boolean \hyperlink{classcs_1_1nsense_1_1accelerometer_1_1_acceler_sen_manager_a6f293390a67a02d2c126a71e162349b4}{running} = false
+\item 
+static Sensor\-Event\-Listener \hyperlink{classcs_1_1nsense_1_1accelerometer_1_1_acceler_sen_manager_a2af5da27f9dc2f2ed4bf2ba1f55f1a77}{sensor\-Event\-Listener}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class provides some methods to provide the actions to the \hyperlink{classcs_1_1nsense_1_1_n_sense_service}{N\-Sense\-Service} 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcs_1_1nsense_1_1accelerometer_1_1_acceler_sen_manager_afb84340fe02a6ce5db5bb8cfa4d15a02}{\index{cs\-::nsense\-::accelerometer\-::\-Acceler\-Sen\-Manager@{cs\-::nsense\-::accelerometer\-::\-Acceler\-Sen\-Manager}!Acceler\-Sen\-Manager@{Acceler\-Sen\-Manager}}
+\index{Acceler\-Sen\-Manager@{Acceler\-Sen\-Manager}!cs::nsense::accelerometer::AccelerSenManager@{cs\-::nsense\-::accelerometer\-::\-Acceler\-Sen\-Manager}}
+\subsubsection[{Acceler\-Sen\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}cs.\-nsense.\-accelerometer.\-Acceler\-Sen\-Manager.\-Acceler\-Sen\-Manager (
+\begin{DoxyParamCaption}
+\item[{Context}]{context}
+\end{DoxyParamCaption}
+)}}\label{classcs_1_1nsense_1_1accelerometer_1_1_acceler_sen_manager_afb84340fe02a6ce5db5bb8cfa4d15a02}
+This method start listening to the accelerometer sensor changes 
+\begin{DoxyParams}{Parameters}
+{\em context} & Interface to global information about an application environment. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcs_1_1nsense_1_1accelerometer_1_1_acceler_sen_manager_abda03508323591b2b88d0084f4c2e5c0}{\index{cs\-::nsense\-::accelerometer\-::\-Acceler\-Sen\-Manager@{cs\-::nsense\-::accelerometer\-::\-Acceler\-Sen\-Manager}!close@{close}}
+\index{close@{close}!cs::nsense::accelerometer::AccelerSenManager@{cs\-::nsense\-::accelerometer\-::\-Acceler\-Sen\-Manager}}
+\subsubsection[{close}]{\setlength{\rightskip}{0pt plus 5cm}void cs.\-nsense.\-accelerometer.\-Acceler\-Sen\-Manager.\-close (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcs_1_1nsense_1_1accelerometer_1_1_acceler_sen_manager_abda03508323591b2b88d0084f4c2e5c0}
+This method close the listener if it is not listening \hypertarget{classcs_1_1nsense_1_1accelerometer_1_1_acceler_sen_manager_a36b14ec3ca271e1d579d976d3cab6d0a}{\index{cs\-::nsense\-::accelerometer\-::\-Acceler\-Sen\-Manager@{cs\-::nsense\-::accelerometer\-::\-Acceler\-Sen\-Manager}!is\-Listening@{is\-Listening}}
+\index{is\-Listening@{is\-Listening}!cs::nsense::accelerometer::AccelerSenManager@{cs\-::nsense\-::accelerometer\-::\-Acceler\-Sen\-Manager}}
+\subsubsection[{is\-Listening}]{\setlength{\rightskip}{0pt plus 5cm}static boolean cs.\-nsense.\-accelerometer.\-Acceler\-Sen\-Manager.\-is\-Listening (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcs_1_1nsense_1_1accelerometer_1_1_acceler_sen_manager_a36b14ec3ca271e1d579d976d3cab6d0a}
+This method to checck whether sensor manager class is listening to orientation changes \begin{DoxyReturn}{Returns}
+running true if the manager is listening to orientation changes 
+\end{DoxyReturn}
+\hypertarget{classcs_1_1nsense_1_1accelerometer_1_1_acceler_sen_manager_a19ae2641c9c8e55337b04065f8cac526}{\index{cs\-::nsense\-::accelerometer\-::\-Acceler\-Sen\-Manager@{cs\-::nsense\-::accelerometer\-::\-Acceler\-Sen\-Manager}!is\-Supported@{is\-Supported}}
+\index{is\-Supported@{is\-Supported}!cs::nsense::accelerometer::AccelerSenManager@{cs\-::nsense\-::accelerometer\-::\-Acceler\-Sen\-Manager}}
+\subsubsection[{is\-Supported}]{\setlength{\rightskip}{0pt plus 5cm}static boolean cs.\-nsense.\-accelerometer.\-Acceler\-Sen\-Manager.\-is\-Supported (
+\begin{DoxyParamCaption}
+\item[{Context}]{context}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcs_1_1nsense_1_1accelerometer_1_1_acceler_sen_manager_a19ae2641c9c8e55337b04065f8cac526}
+This method returns true if at least one Accelerometer sensor is available 
+\begin{DoxyParams}{Parameters}
+{\em context} & Interface to global information about an application environment. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if Accelerometer sensor is available 
+\end{DoxyReturn}
+\hypertarget{classcs_1_1nsense_1_1accelerometer_1_1_acceler_sen_manager_ace3c45b938c77765fbff9d011998a3ea}{\index{cs\-::nsense\-::accelerometer\-::\-Acceler\-Sen\-Manager@{cs\-::nsense\-::accelerometer\-::\-Acceler\-Sen\-Manager}!set\-Acceler\-Listener@{set\-Acceler\-Listener}}
+\index{set\-Acceler\-Listener@{set\-Acceler\-Listener}!cs::nsense::accelerometer::AccelerSenManager@{cs\-::nsense\-::accelerometer\-::\-Acceler\-Sen\-Manager}}
+\subsubsection[{set\-Acceler\-Listener}]{\setlength{\rightskip}{0pt plus 5cm}void cs.\-nsense.\-accelerometer.\-Acceler\-Sen\-Manager.\-set\-Acceler\-Listener (
+\begin{DoxyParamCaption}
+\item[{{\bf Accelerometer\-Listener}}]{listener}
+\end{DoxyParamCaption}
+)}}\label{classcs_1_1nsense_1_1accelerometer_1_1_acceler_sen_manager_ace3c45b938c77765fbff9d011998a3ea}
+This method set the listener 
+\begin{DoxyParams}{Parameters}
+{\em listener} & To listen the accelerometer sensor orientation changes \\
+\hline
+\end{DoxyParams}
+\hypertarget{classcs_1_1nsense_1_1accelerometer_1_1_acceler_sen_manager_a58196f11332c55d9d5c4c2b60dc6e38f}{\index{cs\-::nsense\-::accelerometer\-::\-Acceler\-Sen\-Manager@{cs\-::nsense\-::accelerometer\-::\-Acceler\-Sen\-Manager}!start\-Listening@{start\-Listening}}
+\index{start\-Listening@{start\-Listening}!cs::nsense::accelerometer::AccelerSenManager@{cs\-::nsense\-::accelerometer\-::\-Acceler\-Sen\-Manager}}
+\subsubsection[{start\-Listening}]{\setlength{\rightskip}{0pt plus 5cm}void cs.\-nsense.\-accelerometer.\-Acceler\-Sen\-Manager.\-start\-Listening (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcs_1_1nsense_1_1accelerometer_1_1_acceler_sen_manager_a58196f11332c55d9d5c4c2b60dc6e38f}
+This method registers a listener and start listening \begin{DoxyReturn}{Returns}
+running accelerometer\-Listener callback for accelerometer events 
+\end{DoxyReturn}
+\hypertarget{classcs_1_1nsense_1_1accelerometer_1_1_acceler_sen_manager_a7b610683e1365950e70a8872b070b8cf}{\index{cs\-::nsense\-::accelerometer\-::\-Acceler\-Sen\-Manager@{cs\-::nsense\-::accelerometer\-::\-Acceler\-Sen\-Manager}!stop\-Listening@{stop\-Listening}}
+\index{stop\-Listening@{stop\-Listening}!cs::nsense::accelerometer::AccelerSenManager@{cs\-::nsense\-::accelerometer\-::\-Acceler\-Sen\-Manager}}
+\subsubsection[{stop\-Listening}]{\setlength{\rightskip}{0pt plus 5cm}void cs.\-nsense.\-accelerometer.\-Acceler\-Sen\-Manager.\-stop\-Listening (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcs_1_1nsense_1_1accelerometer_1_1_acceler_sen_manager_a7b610683e1365950e70a8872b070b8cf}
+This method Unregisters listeners 
+
+\subsection{Member Data Documentation}
+\hypertarget{classcs_1_1nsense_1_1accelerometer_1_1_acceler_sen_manager_ab69ade607ca050ba47e3ef89a316606a}{\index{cs\-::nsense\-::accelerometer\-::\-Acceler\-Sen\-Manager@{cs\-::nsense\-::accelerometer\-::\-Acceler\-Sen\-Manager}!a\-Context@{a\-Context}}
+\index{a\-Context@{a\-Context}!cs::nsense::accelerometer::AccelerSenManager@{cs\-::nsense\-::accelerometer\-::\-Acceler\-Sen\-Manager}}
+\subsubsection[{a\-Context}]{\setlength{\rightskip}{0pt plus 5cm}Context cs.\-nsense.\-accelerometer.\-Acceler\-Sen\-Manager.\-a\-Context = null\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classcs_1_1nsense_1_1accelerometer_1_1_acceler_sen_manager_ab69ade607ca050ba47e3ef89a316606a}
+Interface to global information about an application environment. \hypertarget{classcs_1_1nsense_1_1accelerometer_1_1_acceler_sen_manager_a5ffa2f553d7ceb1ff3f0d14d55498aee}{\index{cs\-::nsense\-::accelerometer\-::\-Acceler\-Sen\-Manager@{cs\-::nsense\-::accelerometer\-::\-Acceler\-Sen\-Manager}!listener@{listener}}
+\index{listener@{listener}!cs::nsense::accelerometer::AccelerSenManager@{cs\-::nsense\-::accelerometer\-::\-Acceler\-Sen\-Manager}}
+\subsubsection[{listener}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Accelerometer\-Listener} cs.\-nsense.\-accelerometer.\-Acceler\-Sen\-Manager.\-listener\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classcs_1_1nsense_1_1accelerometer_1_1_acceler_sen_manager_a5ffa2f553d7ceb1ff3f0d14d55498aee}
+you could use an Orientation\-Listener array instead if you plans to use more than one listener \hypertarget{classcs_1_1nsense_1_1accelerometer_1_1_acceler_sen_manager_a6f293390a67a02d2c126a71e162349b4}{\index{cs\-::nsense\-::accelerometer\-::\-Acceler\-Sen\-Manager@{cs\-::nsense\-::accelerometer\-::\-Acceler\-Sen\-Manager}!running@{running}}
+\index{running@{running}!cs::nsense::accelerometer::AccelerSenManager@{cs\-::nsense\-::accelerometer\-::\-Acceler\-Sen\-Manager}}
+\subsubsection[{running}]{\setlength{\rightskip}{0pt plus 5cm}boolean cs.\-nsense.\-accelerometer.\-Acceler\-Sen\-Manager.\-running = false\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classcs_1_1nsense_1_1accelerometer_1_1_acceler_sen_manager_a6f293390a67a02d2c126a71e162349b4}
+indicates whether or not Accelerometer Sensor is running \hypertarget{classcs_1_1nsense_1_1accelerometer_1_1_acceler_sen_manager_a5f78f1b0c5d973a82f6c26d3980cbf96}{\index{cs\-::nsense\-::accelerometer\-::\-Acceler\-Sen\-Manager@{cs\-::nsense\-::accelerometer\-::\-Acceler\-Sen\-Manager}!sensor@{sensor}}
+\index{sensor@{sensor}!cs::nsense::accelerometer::AccelerSenManager@{cs\-::nsense\-::accelerometer\-::\-Acceler\-Sen\-Manager}}
+\subsubsection[{sensor}]{\setlength{\rightskip}{0pt plus 5cm}Sensor cs.\-nsense.\-accelerometer.\-Acceler\-Sen\-Manager.\-sensor\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classcs_1_1nsense_1_1accelerometer_1_1_acceler_sen_manager_a5f78f1b0c5d973a82f6c26d3980cbf96}
+This class is to check the type of sensor \hypertarget{classcs_1_1nsense_1_1accelerometer_1_1_acceler_sen_manager_a2af5da27f9dc2f2ed4bf2ba1f55f1a77}{\index{cs\-::nsense\-::accelerometer\-::\-Acceler\-Sen\-Manager@{cs\-::nsense\-::accelerometer\-::\-Acceler\-Sen\-Manager}!sensor\-Event\-Listener@{sensor\-Event\-Listener}}
+\index{sensor\-Event\-Listener@{sensor\-Event\-Listener}!cs::nsense::accelerometer::AccelerSenManager@{cs\-::nsense\-::accelerometer\-::\-Acceler\-Sen\-Manager}}
+\subsubsection[{sensor\-Event\-Listener}]{\setlength{\rightskip}{0pt plus 5cm}Sensor\-Event\-Listener cs.\-nsense.\-accelerometer.\-Acceler\-Sen\-Manager.\-sensor\-Event\-Listener\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classcs_1_1nsense_1_1accelerometer_1_1_acceler_sen_manager_a2af5da27f9dc2f2ed4bf2ba1f55f1a77}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+=
+            \textcolor{keyword}{new} SensorEventListener() \{
+
+        \textcolor{keyword}{private} \textcolor{keywordtype}{float} x = 0;
+        \textcolor{keyword}{private} \textcolor{keywordtype}{float} y = 0;
+        \textcolor{keyword}{private} \textcolor{keywordtype}{float} z = 0;
+
+        \textcolor{keyword}{public} \textcolor{keywordtype}{void} onAccuracyChanged(Sensor \hyperlink{classcs_1_1nsense_1_1accelerometer_1_1_acceler_sen_manager_a5f78f1b0c5d973a82f6c26d3980cbf96}{sensor}, \textcolor{keywordtype}{int} accuracy) \{\}
+
+        \textcolor{keyword}{public} \textcolor{keywordtype}{void} onSensorChanged(SensorEvent event) \{
+
+            x = event.values[0];
+            y = event.values[1];
+            z = event.values[2];
+
+            listener.updateBuffer(x, y, z);
+        \}
+
+    \}
+\end{DoxyCode}
+This method listen to events from the accelerometer listener \hypertarget{classcs_1_1nsense_1_1accelerometer_1_1_acceler_sen_manager_a7a38912fd6f45a8d2ae42711505a1191}{\index{cs\-::nsense\-::accelerometer\-::\-Acceler\-Sen\-Manager@{cs\-::nsense\-::accelerometer\-::\-Acceler\-Sen\-Manager}!sensor\-Manager@{sensor\-Manager}}
+\index{sensor\-Manager@{sensor\-Manager}!cs::nsense::accelerometer::AccelerSenManager@{cs\-::nsense\-::accelerometer\-::\-Acceler\-Sen\-Manager}}
+\subsubsection[{sensor\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}Sensor\-Manager cs.\-nsense.\-accelerometer.\-Acceler\-Sen\-Manager.\-sensor\-Manager\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classcs_1_1nsense_1_1accelerometer_1_1_acceler_sen_manager_a7a38912fd6f45a8d2ae42711505a1191}
+This class is to access functionality of Sensor Manager \hypertarget{classcs_1_1nsense_1_1accelerometer_1_1_acceler_sen_manager_a9c170f7b3bb6edb7f36540f22e815229}{\index{cs\-::nsense\-::accelerometer\-::\-Acceler\-Sen\-Manager@{cs\-::nsense\-::accelerometer\-::\-Acceler\-Sen\-Manager}!supported@{supported}}
+\index{supported@{supported}!cs::nsense::accelerometer::AccelerSenManager@{cs\-::nsense\-::accelerometer\-::\-Acceler\-Sen\-Manager}}
+\subsubsection[{supported}]{\setlength{\rightskip}{0pt plus 5cm}Boolean cs.\-nsense.\-accelerometer.\-Acceler\-Sen\-Manager.\-supported\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classcs_1_1nsense_1_1accelerometer_1_1_acceler_sen_manager_a9c170f7b3bb6edb7f36540f22e815229}
+indicates whether or not Accelerometer Sensor is supported \hypertarget{classcs_1_1nsense_1_1accelerometer_1_1_acceler_sen_manager_ad669f18249fb29b582aa9c4850feb496}{\index{cs\-::nsense\-::accelerometer\-::\-Acceler\-Sen\-Manager@{cs\-::nsense\-::accelerometer\-::\-Acceler\-Sen\-Manager}!T\-A\-G@{T\-A\-G}}
+\index{T\-A\-G@{T\-A\-G}!cs::nsense::accelerometer::AccelerSenManager@{cs\-::nsense\-::accelerometer\-::\-Acceler\-Sen\-Manager}}
+\subsubsection[{T\-A\-G}]{\setlength{\rightskip}{0pt plus 5cm}final String cs.\-nsense.\-accelerometer.\-Acceler\-Sen\-Manager.\-T\-A\-G = \char`\"{}A\-C\-C\-E\-L\-E\-R\-O\-M\-E\-T\-E\-R\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classcs_1_1nsense_1_1accelerometer_1_1_acceler_sen_manager_ad669f18249fb29b582aa9c4850feb496}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+src/cs/nsense/accelerometer/\hyperlink{_acceler_sen_manager_8java}{Acceler\-Sen\-Manager.\-java}\end{DoxyCompactItemize}

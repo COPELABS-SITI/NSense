@@ -1,7 +1,7 @@
 /**
- * @version 1.2
+ * @version 1.3
  * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, 16-11-2015
- * Class is part of the USense application.
+ * Class is part of the NSense application.
  * It manages the Wi-Fi and also the Wi-Fi P2P to compute 
  * the relative distance to others devices.
  * @author Luis Amaral Lopes (COPELABS/ULHT)
@@ -25,24 +25,24 @@ package cs.usense.location;
 import java.util.ArrayList;
 import java.util.Random;
 
-import cs.usense.db.UsenseDataSource;
 import android.content.Context;
 import android.os.Handler;
 import android.util.Log;
+import cs.usense.db.NSenseDataSource;
 
 public class RelativePositionWiFiNoConnection {
 	
 	private String TAG = "WiFiDirectBroadcastReceiverNoConnection";
 	
-	/** Used by WiFi P2P to detect only Usense devices */
+	/** Used by WiFi P2P to detect only NSense devices */
 	public static final String SERVICE_TYPE = "_location._tcp";
-	/** It uses the WiFi P2P to search for usense devices and to get their info */
+	/** It uses the WiFi P2P to search for nsense devices and to get their info */
     WifiServiceSearcher    mWifiServiceSearcher = null;
     /** It uses the WiFi to scan for available APs, based on the info computed by the WifiServiceSearcher*/
     WifiAccessPoint        mWifiAccessPoint = null;
    
     private Context context;
-    private UsenseDataSource dataSource;
+    private NSenseDataSource dataSource;
     private LocationPipeline callback;
     
     private Handler handlerDisc = new Handler();
@@ -70,15 +70,15 @@ public class RelativePositionWiFiNoConnection {
     	
     };
     
-    /** List with all usense devices found by the WiFi P2P */
-    ArrayList<UsenseDevice> listUsenseDevices = new ArrayList<UsenseDevice>();
+    /** List with all nsense devices found by the WiFi P2P */
+    ArrayList<NSenseDevice> listNSenseDevices = new ArrayList<NSenseDevice>();
 
     /**
      * Class that holds all the information about a device found by the WiFi P2P
      * @author Luis Amaral Lopes (COPELABS/ULHT)
      *
      */
-    public class UsenseDevice {
+    public class NSenseDevice {
     	/** MAC address received from the discover process (Wi-Fi Direct) */
     	public String mWiFiDirectMACAddress;
     	/** MAC address from the AP received from the wifi manager */
@@ -95,10 +95,10 @@ public class RelativePositionWiFiNoConnection {
      * RelativePositionWiFiNoConnection constructor - It initializes the WifiServiceSearcher and WifiAccessPoint modules
      * and creates a handler to switch between this two modules.
      * @param context - Interface to global information about an application environment.
-     * @param dataSource - Usense data base.
+     * @param dataSource - NSense data base.
      * @param callback - LocationPipeline module
      */
-    protected RelativePositionWiFiNoConnection(Context context, UsenseDataSource dataSource, LocationPipeline callback) {
+    protected RelativePositionWiFiNoConnection(Context context, NSenseDataSource dataSource, LocationPipeline callback) {
         this.context = context;
         this.dataSource = dataSource;
         this.callback = callback;

@@ -1,7 +1,7 @@
 /**
- * @version 1.2
+ * @version 1.3
  * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, date (e.g. 22-04-2016)
- * Class is part of the USense application. It provides support for accelerometer pipeline.
+ * Class is part of the NSense application. It provides support for accelerometer pipeline.
  * @author Saeik Firdose (COPELABS/ULHT)
  */
 package cs.usense.accelerometer;

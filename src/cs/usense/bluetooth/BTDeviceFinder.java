@@ -1,7 +1,7 @@
 /**
- * @version 1.2
+ * @version 1.3
  * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, 06-04-2016
- * Class is part of the USense application. 
+ * Class is part of the NSense application. 
  * It provides the interface between BTManager and BluetoothCore.
  * @author Waldir Moreira (COPELABS/ULHT)
  */

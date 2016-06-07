@@ -1,7 +1,7 @@
 /**
- * @version 1.2
+ * @version 1.3
  * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, 16-11-2015
- * Class is part of the USense application.
+ * Class is part of the NSense application.
  * This class represents a entry from the location table.
  * @author Luis Amaral Lopes (COPELABS/ULHT)
  */

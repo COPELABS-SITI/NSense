@@ -1,0 +1,232 @@
+\hypertarget{classcs_1_1nsense_1_1microphone_1_1_microphone_pipeline}{\section{cs.\-nsense.\-microphone.\-Microphone\-Pipeline Class Reference}
+\label{classcs_1_1nsense_1_1microphone_1_1_microphone_pipeline}\index{cs.\-nsense.\-microphone.\-Microphone\-Pipeline@{cs.\-nsense.\-microphone.\-Microphone\-Pipeline}}
+}
+Inheritance diagram for cs.\-nsense.\-microphone.\-Microphone\-Pipeline\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcs_1_1nsense_1_1microphone_1_1_microphone_pipeline}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcs_1_1nsense_1_1microphone_1_1_microphone_pipeline_a05bf73670250bafb29eb0b9ed4ae65cb}{Microphone\-Pipeline} (\hyperlink{classcs_1_1nsense_1_1_n_sense_service}{N\-Sense\-Service} callback, \hyperlink{classcs_1_1nsense_1_1db_1_1_n_sense_data_source}{N\-Sense\-Data\-Source} data\-Source)
+\item 
+void \hyperlink{classcs_1_1nsense_1_1microphone_1_1_microphone_pipeline_a2f0eb313888ffc58ea006985fe811ccd}{close} (Context contect)
+\item 
+void \hyperlink{classcs_1_1nsense_1_1microphone_1_1_microphone_pipeline_a966d05867237f38060ebd45ab2a01632}{update\-Sound\-Level} (double \hyperlink{classcs_1_1nsense_1_1microphone_1_1_microphone_pipeline_a925023c3a2910aaf80f77ed11ba60bfa}{sound\-D\-B})
+\item 
+String \hyperlink{classcs_1_1nsense_1_1microphone_1_1_microphone_pipeline_ad02858cc1d810d7bfd7f5f31f9f364bf}{get\-Duration} (long milliseconds)
+\item 
+void \hyperlink{classcs_1_1nsense_1_1microphone_1_1_microphone_pipeline_a41594debaaa940d6250014174b45a596}{update\-Sound\-Level} (\hyperlink{classcs_1_1nsense_1_1microphone_1_1_sound_level}{Sound\-Level} sound\-Level)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static String \hyperlink{classcs_1_1nsense_1_1microphone_1_1_microphone_pipeline_a95dbdadaa744d09652abf51d9347af9d}{m\-Environmental\-Sound} = \char`\"{}\char`\"{}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \hyperlink{classcs_1_1nsense_1_1microphone_1_1_sound_level}{Sound\-Level} $>$ \hyperlink{classcs_1_1nsense_1_1microphone_1_1_microphone_pipeline_af6184b2952e8aa482ac8a15f829843d3}{get\-Data} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{classcs_1_1nsense_1_1microphone_1_1_microphone_pipeline_a26ed15d758ad9baf9818b32da84c2983}{avgd\-B}
+\item 
+double \hyperlink{classcs_1_1nsense_1_1microphone_1_1_microphone_pipeline_a925023c3a2910aaf80f77ed11ba60bfa}{sound\-D\-B}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+long \hyperlink{classcs_1_1nsense_1_1microphone_1_1_microphone_pipeline_a7ac9d6a6a6a640b42e44f625c778b8ac}{get\-Today\-Millis} ()
+\item 
+void \hyperlink{classcs_1_1nsense_1_1microphone_1_1_microphone_pipeline_a11aaba65afc7a8e67281417ee951726b}{start} ()
+\item 
+void \hyperlink{classcs_1_1nsense_1_1microphone_1_1_microphone_pipeline_ae3b5d86b47e0da31c3f5ccb06b582c1e}{notify\-Data\-Base\-Change} ()
+\item 
+void \hyperlink{classcs_1_1nsense_1_1microphone_1_1_microphone_pipeline_a0474c673c1c9abf1ca758f30141d7617}{Soundstorage} (String \hyperlink{classcs_1_1nsense_1_1microphone_1_1_microphone_pipeline_adc2543723923db8f92bce32562db8439}{env\-Sound}, String date)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcs_1_1nsense_1_1microphone_1_1_sound_manager}{Sound\-Manager} \hyperlink{classcs_1_1nsense_1_1microphone_1_1_microphone_pipeline_a60aecbf21d53efec2168b78b945eaca1}{sound\-Manager}
+\item 
+Array\-List$<$ \hyperlink{interfacecs_1_1nsense_1_1db_1_1_data_base_change_listener}{Data\-Base\-Change\-Listener} $>$ \hyperlink{classcs_1_1nsense_1_1microphone_1_1_microphone_pipeline_a803c737599414c167d0e32fe9b74e08e}{listeners} = new Array\-List$<$\hyperlink{interfacecs_1_1nsense_1_1db_1_1_data_base_change_listener}{Data\-Base\-Change\-Listener}$>$ ()
+\item 
+boolean \hyperlink{classcs_1_1nsense_1_1microphone_1_1_microphone_pipeline_ae65a18cc5a3690fa0eba3b32409610b1}{mic\-Present} =true
+\item 
+\hyperlink{classcs_1_1nsense_1_1microphone_1_1_sound_level}{Sound\-Level} \hyperlink{classcs_1_1nsense_1_1microphone_1_1_microphone_pipeline_ab1333d6f5735373cbacef07ca8d7a775}{soundlevel}
+\item 
+Handler \hyperlink{classcs_1_1nsense_1_1microphone_1_1_microphone_pipeline_a6485be60175a2b783a508711d6e5414a}{m\-Handler} = new Handler()
+\item 
+\hyperlink{classcs_1_1nsense_1_1_n_sense_service}{N\-Sense\-Service} \hyperlink{classcs_1_1nsense_1_1microphone_1_1_microphone_pipeline_a9b4ae85f6ec3eae60e6bf9487e4f273a}{scallback} = null
+\item 
+String \hyperlink{classcs_1_1nsense_1_1microphone_1_1_microphone_pipeline_adc2543723923db8f92bce32562db8439}{env\-Sound} = \char`\"{}\char`\"{}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classcs_1_1nsense_1_1microphone_1_1_sound_level}{Sound\-Level} \hyperlink{classcs_1_1nsense_1_1microphone_1_1_microphone_pipeline_a34eddb30f49a7969352214be554d413a}{m\-Sound\-Level} = new \hyperlink{classcs_1_1nsense_1_1microphone_1_1_sound_level}{Sound\-Level}()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class is contains the core functionalities of the application relating to Microphone. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcs_1_1nsense_1_1microphone_1_1_microphone_pipeline_a05bf73670250bafb29eb0b9ed4ae65cb}{\index{cs\-::nsense\-::microphone\-::\-Microphone\-Pipeline@{cs\-::nsense\-::microphone\-::\-Microphone\-Pipeline}!Microphone\-Pipeline@{Microphone\-Pipeline}}
+\index{Microphone\-Pipeline@{Microphone\-Pipeline}!cs::nsense::microphone::MicrophonePipeline@{cs\-::nsense\-::microphone\-::\-Microphone\-Pipeline}}
+\subsubsection[{Microphone\-Pipeline}]{\setlength{\rightskip}{0pt plus 5cm}cs.\-nsense.\-microphone.\-Microphone\-Pipeline.\-Microphone\-Pipeline (
+\begin{DoxyParamCaption}
+\item[{{\bf N\-Sense\-Service}}]{callback, }
+\item[{{\bf N\-Sense\-Data\-Source}}]{data\-Source}
+\end{DoxyParamCaption}
+)}}\label{classcs_1_1nsense_1_1microphone_1_1_microphone_pipeline_a05bf73670250bafb29eb0b9ed4ae65cb}
+This method constructs the \hyperlink{classcs_1_1nsense_1_1microphone_1_1_microphone_pipeline}{Microphone\-Pipeline} 
+\begin{DoxyParams}{Parameters}
+{\em callback} & Supply \hyperlink{classcs_1_1nsense_1_1_n_sense_service}{N\-Sense\-Service} object for \hyperlink{classcs_1_1nsense_1_1_n_sense_activity}{N\-Sense\-Activity} to use \\
+\hline
+{\em data\-Source} & N\-Sense\-Data\-Source to access various methods and information of the N\-Sense Data base \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcs_1_1nsense_1_1microphone_1_1_microphone_pipeline_a2f0eb313888ffc58ea006985fe811ccd}{\index{cs\-::nsense\-::microphone\-::\-Microphone\-Pipeline@{cs\-::nsense\-::microphone\-::\-Microphone\-Pipeline}!close@{close}}
+\index{close@{close}!cs::nsense::microphone::MicrophonePipeline@{cs\-::nsense\-::microphone\-::\-Microphone\-Pipeline}}
+\subsubsection[{close}]{\setlength{\rightskip}{0pt plus 5cm}void cs.\-nsense.\-microphone.\-Microphone\-Pipeline.\-close (
+\begin{DoxyParamCaption}
+\item[{Context}]{contect}
+\end{DoxyParamCaption}
+)}}\label{classcs_1_1nsense_1_1microphone_1_1_microphone_pipeline_a2f0eb313888ffc58ea006985fe811ccd}
+This method close the context 
+\begin{DoxyParams}{Parameters}
+{\em contect} & Interface to global information about an application environment. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classcs_1_1nsense_1_1microphone_1_1_microphone_pipeline_af6184b2952e8aa482ac8a15f829843d3}{\index{cs\-::nsense\-::microphone\-::\-Microphone\-Pipeline@{cs\-::nsense\-::microphone\-::\-Microphone\-Pipeline}!get\-Data@{get\-Data}}
+\index{get\-Data@{get\-Data}!cs::nsense::microphone::MicrophonePipeline@{cs\-::nsense\-::microphone\-::\-Microphone\-Pipeline}}
+\subsubsection[{get\-Data}]{\setlength{\rightskip}{0pt plus 5cm}List$<${\bf Sound\-Level}$>$ cs.\-nsense.\-microphone.\-Microphone\-Pipeline.\-get\-Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcs_1_1nsense_1_1microphone_1_1_microphone_pipeline_af6184b2952e8aa482ac8a15f829843d3}
+This method provides the sound level data from the database \begin{DoxyReturn}{Returns}
+soundlevel Array list of \hyperlink{classcs_1_1nsense_1_1microphone_1_1_sound_level}{Sound\-Level} objects from the database 
+\end{DoxyReturn}
+\hypertarget{classcs_1_1nsense_1_1microphone_1_1_microphone_pipeline_ad02858cc1d810d7bfd7f5f31f9f364bf}{\index{cs\-::nsense\-::microphone\-::\-Microphone\-Pipeline@{cs\-::nsense\-::microphone\-::\-Microphone\-Pipeline}!get\-Duration@{get\-Duration}}
+\index{get\-Duration@{get\-Duration}!cs::nsense::microphone::MicrophonePipeline@{cs\-::nsense\-::microphone\-::\-Microphone\-Pipeline}}
+\subsubsection[{get\-Duration}]{\setlength{\rightskip}{0pt plus 5cm}String cs.\-nsense.\-microphone.\-Microphone\-Pipeline.\-get\-Duration (
+\begin{DoxyParamCaption}
+\item[{long}]{milliseconds}
+\end{DoxyParamCaption}
+)}}\label{classcs_1_1nsense_1_1microphone_1_1_microphone_pipeline_ad02858cc1d810d7bfd7f5f31f9f364bf}
+This method calculates the duration 
+\begin{DoxyParams}{Parameters}
+{\em milliseconds} & Time in milliseconds \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the time duration in hours, minutes and seconds 
+\end{DoxyReturn}
+\hypertarget{classcs_1_1nsense_1_1microphone_1_1_microphone_pipeline_a7ac9d6a6a6a640b42e44f625c778b8ac}{\index{cs\-::nsense\-::microphone\-::\-Microphone\-Pipeline@{cs\-::nsense\-::microphone\-::\-Microphone\-Pipeline}!get\-Today\-Millis@{get\-Today\-Millis}}
+\index{get\-Today\-Millis@{get\-Today\-Millis}!cs::nsense::microphone::MicrophonePipeline@{cs\-::nsense\-::microphone\-::\-Microphone\-Pipeline}}
+\subsubsection[{get\-Today\-Millis}]{\setlength{\rightskip}{0pt plus 5cm}long cs.\-nsense.\-microphone.\-Microphone\-Pipeline.\-get\-Today\-Millis (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classcs_1_1nsense_1_1microphone_1_1_microphone_pipeline_a7ac9d6a6a6a640b42e44f625c778b8ac}
+This method provides current date, hours, minutes, seconds and milliseconds of the system \begin{DoxyReturn}{Returns}
+current date and time of the system 
+\end{DoxyReturn}
+\hypertarget{classcs_1_1nsense_1_1microphone_1_1_microphone_pipeline_ae3b5d86b47e0da31c3f5ccb06b582c1e}{\index{cs\-::nsense\-::microphone\-::\-Microphone\-Pipeline@{cs\-::nsense\-::microphone\-::\-Microphone\-Pipeline}!notify\-Data\-Base\-Change@{notify\-Data\-Base\-Change}}
+\index{notify\-Data\-Base\-Change@{notify\-Data\-Base\-Change}!cs::nsense::microphone::MicrophonePipeline@{cs\-::nsense\-::microphone\-::\-Microphone\-Pipeline}}
+\subsubsection[{notify\-Data\-Base\-Change}]{\setlength{\rightskip}{0pt plus 5cm}void cs.\-nsense.\-microphone.\-Microphone\-Pipeline.\-notify\-Data\-Base\-Change (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classcs_1_1nsense_1_1microphone_1_1_microphone_pipeline_ae3b5d86b47e0da31c3f5ccb06b582c1e}
+This method notifies a database change to the listeners. \hypertarget{classcs_1_1nsense_1_1microphone_1_1_microphone_pipeline_a0474c673c1c9abf1ca758f30141d7617}{\index{cs\-::nsense\-::microphone\-::\-Microphone\-Pipeline@{cs\-::nsense\-::microphone\-::\-Microphone\-Pipeline}!Soundstorage@{Soundstorage}}
+\index{Soundstorage@{Soundstorage}!cs::nsense::microphone::MicrophonePipeline@{cs\-::nsense\-::microphone\-::\-Microphone\-Pipeline}}
+\subsubsection[{Soundstorage}]{\setlength{\rightskip}{0pt plus 5cm}void cs.\-nsense.\-microphone.\-Microphone\-Pipeline.\-Soundstorage (
+\begin{DoxyParamCaption}
+\item[{String}]{env\-Sound, }
+\item[{String}]{date}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classcs_1_1nsense_1_1microphone_1_1_microphone_pipeline_a0474c673c1c9abf1ca758f30141d7617}
+This method writes a file for Microphone pipeline Buffered\-Writer for performance, true to set append to file flag \hypertarget{classcs_1_1nsense_1_1microphone_1_1_microphone_pipeline_a11aaba65afc7a8e67281417ee951726b}{\index{cs\-::nsense\-::microphone\-::\-Microphone\-Pipeline@{cs\-::nsense\-::microphone\-::\-Microphone\-Pipeline}!start@{start}}
+\index{start@{start}!cs::nsense::microphone::MicrophonePipeline@{cs\-::nsense\-::microphone\-::\-Microphone\-Pipeline}}
+\subsubsection[{start}]{\setlength{\rightskip}{0pt plus 5cm}void cs.\-nsense.\-microphone.\-Microphone\-Pipeline.\-start (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classcs_1_1nsense_1_1microphone_1_1_microphone_pipeline_a11aaba65afc7a8e67281417ee951726b}
+This method initialize the sound manager class which Start Capturing sound waves from microphone adapter. \hypertarget{classcs_1_1nsense_1_1microphone_1_1_microphone_pipeline_a966d05867237f38060ebd45ab2a01632}{\index{cs\-::nsense\-::microphone\-::\-Microphone\-Pipeline@{cs\-::nsense\-::microphone\-::\-Microphone\-Pipeline}!update\-Sound\-Level@{update\-Sound\-Level}}
+\index{update\-Sound\-Level@{update\-Sound\-Level}!cs::nsense::microphone::MicrophonePipeline@{cs\-::nsense\-::microphone\-::\-Microphone\-Pipeline}}
+\subsubsection[{update\-Sound\-Level}]{\setlength{\rightskip}{0pt plus 5cm}void cs.\-nsense.\-microphone.\-Microphone\-Pipeline.\-update\-Sound\-Level (
+\begin{DoxyParamCaption}
+\item[{double}]{sound\-D\-B}
+\end{DoxyParamCaption}
+)}}\label{classcs_1_1nsense_1_1microphone_1_1_microphone_pipeline_a966d05867237f38060ebd45ab2a01632}
+This method provides four different levels of sound and their duration Based on the captured sound decibels 
+\begin{DoxyParams}{Parameters}
+{\em sound\-D\-B} & sound\-Level in decibels \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Quite, Normal, Alert, Noisy and Time duration in each state 
+\end{DoxyReturn}
+set object Date \hypertarget{classcs_1_1nsense_1_1microphone_1_1_microphone_pipeline_a41594debaaa940d6250014174b45a596}{\index{cs\-::nsense\-::microphone\-::\-Microphone\-Pipeline@{cs\-::nsense\-::microphone\-::\-Microphone\-Pipeline}!update\-Sound\-Level@{update\-Sound\-Level}}
+\index{update\-Sound\-Level@{update\-Sound\-Level}!cs::nsense::microphone::MicrophonePipeline@{cs\-::nsense\-::microphone\-::\-Microphone\-Pipeline}}
+\subsubsection[{update\-Sound\-Level}]{\setlength{\rightskip}{0pt plus 5cm}void cs.\-nsense.\-microphone.\-Microphone\-Pipeline.\-update\-Sound\-Level (
+\begin{DoxyParamCaption}
+\item[{{\bf Sound\-Level}}]{sound\-Level}
+\end{DoxyParamCaption}
+)}}\label{classcs_1_1nsense_1_1microphone_1_1_microphone_pipeline_a41594debaaa940d6250014174b45a596}
+This method update the sound level 
+
+Implements \hyperlink{interfacecs_1_1nsense_1_1microphone_1_1_sound_listener_a4805f7c35514efbcb6ee9b756d1aab35}{cs.\-nsense.\-microphone.\-Sound\-Listener}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classcs_1_1nsense_1_1microphone_1_1_microphone_pipeline_a26ed15d758ad9baf9818b32da84c2983}{\index{cs\-::nsense\-::microphone\-::\-Microphone\-Pipeline@{cs\-::nsense\-::microphone\-::\-Microphone\-Pipeline}!avgd\-B@{avgd\-B}}
+\index{avgd\-B@{avgd\-B}!cs::nsense::microphone::MicrophonePipeline@{cs\-::nsense\-::microphone\-::\-Microphone\-Pipeline}}
+\subsubsection[{avgd\-B}]{\setlength{\rightskip}{0pt plus 5cm}double cs.\-nsense.\-microphone.\-Microphone\-Pipeline.\-avgd\-B\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcs_1_1nsense_1_1microphone_1_1_microphone_pipeline_a26ed15d758ad9baf9818b32da84c2983}
+This variable is used to access the average decibels \hypertarget{classcs_1_1nsense_1_1microphone_1_1_microphone_pipeline_adc2543723923db8f92bce32562db8439}{\index{cs\-::nsense\-::microphone\-::\-Microphone\-Pipeline@{cs\-::nsense\-::microphone\-::\-Microphone\-Pipeline}!env\-Sound@{env\-Sound}}
+\index{env\-Sound@{env\-Sound}!cs::nsense::microphone::MicrophonePipeline@{cs\-::nsense\-::microphone\-::\-Microphone\-Pipeline}}
+\subsubsection[{env\-Sound}]{\setlength{\rightskip}{0pt plus 5cm}String cs.\-nsense.\-microphone.\-Microphone\-Pipeline.\-env\-Sound = \char`\"{}\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}}\label{classcs_1_1nsense_1_1microphone_1_1_microphone_pipeline_adc2543723923db8f92bce32562db8439}
+This variable is used to access the environment sound \hypertarget{classcs_1_1nsense_1_1microphone_1_1_microphone_pipeline_a803c737599414c167d0e32fe9b74e08e}{\index{cs\-::nsense\-::microphone\-::\-Microphone\-Pipeline@{cs\-::nsense\-::microphone\-::\-Microphone\-Pipeline}!listeners@{listeners}}
+\index{listeners@{listeners}!cs::nsense::microphone::MicrophonePipeline@{cs\-::nsense\-::microphone\-::\-Microphone\-Pipeline}}
+\subsubsection[{listeners}]{\setlength{\rightskip}{0pt plus 5cm}Array\-List$<${\bf Data\-Base\-Change\-Listener}$>$ cs.\-nsense.\-microphone.\-Microphone\-Pipeline.\-listeners = new Array\-List$<${\bf Data\-Base\-Change\-Listener}$>$ ()\hspace{0.3cm}{\ttfamily [private]}}}\label{classcs_1_1nsense_1_1microphone_1_1_microphone_pipeline_a803c737599414c167d0e32fe9b74e08e}
+This variable is used to access the listeners \hypertarget{classcs_1_1nsense_1_1microphone_1_1_microphone_pipeline_a95dbdadaa744d09652abf51d9347af9d}{\index{cs\-::nsense\-::microphone\-::\-Microphone\-Pipeline@{cs\-::nsense\-::microphone\-::\-Microphone\-Pipeline}!m\-Environmental\-Sound@{m\-Environmental\-Sound}}
+\index{m\-Environmental\-Sound@{m\-Environmental\-Sound}!cs::nsense::microphone::MicrophonePipeline@{cs\-::nsense\-::microphone\-::\-Microphone\-Pipeline}}
+\subsubsection[{m\-Environmental\-Sound}]{\setlength{\rightskip}{0pt plus 5cm}String cs.\-nsense.\-microphone.\-Microphone\-Pipeline.\-m\-Environmental\-Sound = \char`\"{}\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}}\label{classcs_1_1nsense_1_1microphone_1_1_microphone_pipeline_a95dbdadaa744d09652abf51d9347af9d}
+This variable is used to access Environment sound \hypertarget{classcs_1_1nsense_1_1microphone_1_1_microphone_pipeline_a6485be60175a2b783a508711d6e5414a}{\index{cs\-::nsense\-::microphone\-::\-Microphone\-Pipeline@{cs\-::nsense\-::microphone\-::\-Microphone\-Pipeline}!m\-Handler@{m\-Handler}}
+\index{m\-Handler@{m\-Handler}!cs::nsense::microphone::MicrophonePipeline@{cs\-::nsense\-::microphone\-::\-Microphone\-Pipeline}}
+\subsubsection[{m\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}Handler cs.\-nsense.\-microphone.\-Microphone\-Pipeline.\-m\-Handler = new Handler()\hspace{0.3cm}{\ttfamily [private]}}}\label{classcs_1_1nsense_1_1microphone_1_1_microphone_pipeline_a6485be60175a2b783a508711d6e5414a}
+This class is to use send or process message \hypertarget{classcs_1_1nsense_1_1microphone_1_1_microphone_pipeline_ae65a18cc5a3690fa0eba3b32409610b1}{\index{cs\-::nsense\-::microphone\-::\-Microphone\-Pipeline@{cs\-::nsense\-::microphone\-::\-Microphone\-Pipeline}!mic\-Present@{mic\-Present}}
+\index{mic\-Present@{mic\-Present}!cs::nsense::microphone::MicrophonePipeline@{cs\-::nsense\-::microphone\-::\-Microphone\-Pipeline}}
+\subsubsection[{mic\-Present}]{\setlength{\rightskip}{0pt plus 5cm}boolean cs.\-nsense.\-microphone.\-Microphone\-Pipeline.\-mic\-Present =true\hspace{0.3cm}{\ttfamily [private]}}}\label{classcs_1_1nsense_1_1microphone_1_1_microphone_pipeline_ae65a18cc5a3690fa0eba3b32409610b1}
+This variable is used to check whether microphone is available or not \hypertarget{classcs_1_1nsense_1_1microphone_1_1_microphone_pipeline_a34eddb30f49a7969352214be554d413a}{\index{cs\-::nsense\-::microphone\-::\-Microphone\-Pipeline@{cs\-::nsense\-::microphone\-::\-Microphone\-Pipeline}!m\-Sound\-Level@{m\-Sound\-Level}}
+\index{m\-Sound\-Level@{m\-Sound\-Level}!cs::nsense::microphone::MicrophonePipeline@{cs\-::nsense\-::microphone\-::\-Microphone\-Pipeline}}
+\subsubsection[{m\-Sound\-Level}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sound\-Level} cs.\-nsense.\-microphone.\-Microphone\-Pipeline.\-m\-Sound\-Level = new {\bf Sound\-Level}()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classcs_1_1nsense_1_1microphone_1_1_microphone_pipeline_a34eddb30f49a7969352214be554d413a}
+This class is to access Sound Level \hypertarget{classcs_1_1nsense_1_1microphone_1_1_microphone_pipeline_a9b4ae85f6ec3eae60e6bf9487e4f273a}{\index{cs\-::nsense\-::microphone\-::\-Microphone\-Pipeline@{cs\-::nsense\-::microphone\-::\-Microphone\-Pipeline}!scallback@{scallback}}
+\index{scallback@{scallback}!cs::nsense::microphone::MicrophonePipeline@{cs\-::nsense\-::microphone\-::\-Microphone\-Pipeline}}
+\subsubsection[{scallback}]{\setlength{\rightskip}{0pt plus 5cm}{\bf N\-Sense\-Service} cs.\-nsense.\-microphone.\-Microphone\-Pipeline.\-scallback = null\hspace{0.3cm}{\ttfamily [private]}}}\label{classcs_1_1nsense_1_1microphone_1_1_microphone_pipeline_a9b4ae85f6ec3eae60e6bf9487e4f273a}
+This class is to access the functionality of N\-Sense Service \hypertarget{classcs_1_1nsense_1_1microphone_1_1_microphone_pipeline_a925023c3a2910aaf80f77ed11ba60bfa}{\index{cs\-::nsense\-::microphone\-::\-Microphone\-Pipeline@{cs\-::nsense\-::microphone\-::\-Microphone\-Pipeline}!sound\-D\-B@{sound\-D\-B}}
+\index{sound\-D\-B@{sound\-D\-B}!cs::nsense::microphone::MicrophonePipeline@{cs\-::nsense\-::microphone\-::\-Microphone\-Pipeline}}
+\subsubsection[{sound\-D\-B}]{\setlength{\rightskip}{0pt plus 5cm}double cs.\-nsense.\-microphone.\-Microphone\-Pipeline.\-sound\-D\-B\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcs_1_1nsense_1_1microphone_1_1_microphone_pipeline_a925023c3a2910aaf80f77ed11ba60bfa}
+This variable is used to access the sound in decibels \hypertarget{classcs_1_1nsense_1_1microphone_1_1_microphone_pipeline_ab1333d6f5735373cbacef07ca8d7a775}{\index{cs\-::nsense\-::microphone\-::\-Microphone\-Pipeline@{cs\-::nsense\-::microphone\-::\-Microphone\-Pipeline}!soundlevel@{soundlevel}}
+\index{soundlevel@{soundlevel}!cs::nsense::microphone::MicrophonePipeline@{cs\-::nsense\-::microphone\-::\-Microphone\-Pipeline}}
+\subsubsection[{soundlevel}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sound\-Level} cs.\-nsense.\-microphone.\-Microphone\-Pipeline.\-soundlevel\hspace{0.3cm}{\ttfamily [private]}}}\label{classcs_1_1nsense_1_1microphone_1_1_microphone_pipeline_ab1333d6f5735373cbacef07ca8d7a775}
+This variable is used to access the sound level \hypertarget{classcs_1_1nsense_1_1microphone_1_1_microphone_pipeline_a60aecbf21d53efec2168b78b945eaca1}{\index{cs\-::nsense\-::microphone\-::\-Microphone\-Pipeline@{cs\-::nsense\-::microphone\-::\-Microphone\-Pipeline}!sound\-Manager@{sound\-Manager}}
+\index{sound\-Manager@{sound\-Manager}!cs::nsense::microphone::MicrophonePipeline@{cs\-::nsense\-::microphone\-::\-Microphone\-Pipeline}}
+\subsubsection[{sound\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sound\-Manager} cs.\-nsense.\-microphone.\-Microphone\-Pipeline.\-sound\-Manager\hspace{0.3cm}{\ttfamily [private]}}}\label{classcs_1_1nsense_1_1microphone_1_1_microphone_pipeline_a60aecbf21d53efec2168b78b945eaca1}
+This class is to access functionality of Sensor Manager from accelerometer pipeline 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+src/cs/nsense/microphone/\hyperlink{_microphone_pipeline_8java}{Microphone\-Pipeline.\-java}\end{DoxyCompactItemize}

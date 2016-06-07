@@ -1,7 +1,7 @@
 /**
- * @version 1.2
+ * @version 1.3
  * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, date (e.g. 22-04-2016)
- * Class is part of the USense application. It provides support for Microphone pipeline.
+ * Class is part of the NSense application. It provides support for Microphone pipeline.
  * This class is contains the core functionalities of
  * the application relating to Microphone. The SoundManager provides all the information from 
  * Microphone adapter so this class can perform the analysis over Environmental Sound prior to
@@ -24,9 +24,9 @@ import android.content.Context;
 import android.os.Environment;
 import android.os.Handler;
 import android.text.format.DateFormat;
-import cs.usense.UsenseService;
+import cs.usense.NSenseService;
 import cs.usense.db.DataBaseChangeListener;
-import cs.usense.db.UsenseDataSource;
+import cs.usense.db.NSenseDataSource;
 
 /**
  * This class is contains the core functionalities of the application relating to Microphone. 
@@ -36,8 +36,8 @@ public class MicrophonePipeline implements SoundListener{
 	/** This class is to access functionality of Sensor Manager from accelerometer pipeline */
 	private SoundManager soundManager;
 	
-	/** This class is to access functionality of Usense Data base */
-	UsenseDataSource dataSource;
+	/** This class is to access functionality of NSense Data base */
+	NSenseDataSource dataSource;
 	
 	/** This class is to access Sound Level */
 	private static SoundLevel mSoundLevel = new SoundLevel();
@@ -63,8 +63,8 @@ public class MicrophonePipeline implements SoundListener{
 	/** This class is to use send or process message */
 	private Handler mHandler = new Handler();
 	
-	/** This class is to access the functionality of Usense Service */
-	private UsenseService scallback = null;
+	/** This class is to access the functionality of NSense Service */
+	private NSenseService scallback = null;
 	
 	/** This variable is used to access the environment sound  */
 	private String envSound = "";
@@ -80,10 +80,10 @@ public class MicrophonePipeline implements SoundListener{
 
 	/**
 	 * This method constructs the MicrophonePipeline
-	 * @param callback Supply UsenseService object for UsenseActivity to use
-	 * @param dataSource UsenseDataSource to access various methods and information of the USense Data base
+	 * @param callback Supply NSenseService object for NSenseActivity to use
+	 * @param dataSource NSenseDataSource to access various methods and information of the USense Data base
 	 */
-	public MicrophonePipeline(UsenseService callback, UsenseDataSource dataSource) {
+	public MicrophonePipeline(NSenseService callback, NSenseDataSource dataSource) {
 		callback.getApplicationContext();
 		this.dataSource = dataSource;
 		this.scallback = callback;

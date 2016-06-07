@@ -1,0 +1,129 @@
+\hypertarget{interfacecs_1_1nsense_1_1_change_listener}{\section{cs.\-nsense.\-Change\-Listener Interface Reference}
+\label{interfacecs_1_1nsense_1_1_change_listener}\index{cs.\-nsense.\-Change\-Listener@{cs.\-nsense.\-Change\-Listener}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{interfacecs_1_1nsense_1_1_change_listener_aa565ab45a08f7a5d77f9478a206ba589}{on\-Location\-Outdoor\-Change} (String new\-Message)
+\item 
+void \hyperlink{interfacecs_1_1nsense_1_1_change_listener_a2881331c9a4b6b0c31aa3a52c3b0ae8f}{on\-Location\-Indoor\-Change} (List$<$ \hyperlink{classcs_1_1nsense_1_1location_1_1_location_entry}{Location\-Entry} $>$ ap\-Entries)
+\item 
+void \hyperlink{interfacecs_1_1nsense_1_1_change_listener_ae4b01cb3c4aab517f5c0752cdfb9882d}{on\-Action\-Change} (String new\-Message)
+\item 
+void \hyperlink{interfacecs_1_1nsense_1_1_change_listener_a04304593cd317eb80c6b4fbd8f8ee490}{on\-Social\-Weight\-Change} (Array\-List$<$ \hyperlink{classcs_1_1nsense_1_1bluetooth_1_1_bluetooth_core_1_1social_weight}{social\-Weight} $>$ array\-List)
+\item 
+void \hyperlink{interfacecs_1_1nsense_1_1_change_listener_afea10e550c775578f19a65b81ee44b64}{on\-Sound\-Level\-Change} (String new\-Sound)
+\item 
+void \hyperlink{interfacecs_1_1nsense_1_1_change_listener_a950164669dd0350e20d5baf14c46d3c9}{on\-Social\-Interaction\-Change} (double social\-Int)
+\item 
+void \hyperlink{interfacecs_1_1nsense_1_1_change_listener_a82b3519f8f730a9e5b003ff55687a58d}{on\-Propinquity\-Change} (double prop\-In)
+\item 
+void \hyperlink{interfacecs_1_1nsense_1_1_change_listener_a222a1629d871c23ba2966ada8be5308f}{on\-Get\-Sociability\-Change} (Array\-List$<$ \hyperlink{classcs_1_1nsense_1_1inference_module_1_1_sociality_details}{Sociality\-Details} $>$ new\-Social)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class provides an interface to update pipeline information 
+
+\subsection{Member Function Documentation}
+\hypertarget{interfacecs_1_1nsense_1_1_change_listener_ae4b01cb3c4aab517f5c0752cdfb9882d}{\index{cs\-::nsense\-::\-Change\-Listener@{cs\-::nsense\-::\-Change\-Listener}!on\-Action\-Change@{on\-Action\-Change}}
+\index{on\-Action\-Change@{on\-Action\-Change}!cs::nsense::ChangeListener@{cs\-::nsense\-::\-Change\-Listener}}
+\subsubsection[{on\-Action\-Change}]{\setlength{\rightskip}{0pt plus 5cm}void cs.\-nsense.\-Change\-Listener.\-on\-Action\-Change (
+\begin{DoxyParamCaption}
+\item[{String}]{new\-Message}
+\end{DoxyParamCaption}
+)}}\label{interfacecs_1_1nsense_1_1_change_listener_ae4b01cb3c4aab517f5c0752cdfb9882d}
+This method called when Action information has been changed 
+\begin{DoxyParams}{Parameters}
+{\em new\-Message} & Action Type information \\
+\hline
+\end{DoxyParams}
+\hypertarget{interfacecs_1_1nsense_1_1_change_listener_a222a1629d871c23ba2966ada8be5308f}{\index{cs\-::nsense\-::\-Change\-Listener@{cs\-::nsense\-::\-Change\-Listener}!on\-Get\-Sociability\-Change@{on\-Get\-Sociability\-Change}}
+\index{on\-Get\-Sociability\-Change@{on\-Get\-Sociability\-Change}!cs::nsense::ChangeListener@{cs\-::nsense\-::\-Change\-Listener}}
+\subsubsection[{on\-Get\-Sociability\-Change}]{\setlength{\rightskip}{0pt plus 5cm}void cs.\-nsense.\-Change\-Listener.\-on\-Get\-Sociability\-Change (
+\begin{DoxyParamCaption}
+\item[{Array\-List$<$ {\bf Sociality\-Details} $>$}]{new\-Social}
+\end{DoxyParamCaption}
+)}}\label{interfacecs_1_1nsense_1_1_change_listener_a222a1629d871c23ba2966ada8be5308f}
+This method called when Sociality\-Details information has been changed 
+\begin{DoxyParams}{Parameters}
+{\em new\-Social} & List of Sociality\-Details objects \\
+\hline
+\end{DoxyParams}
+\hypertarget{interfacecs_1_1nsense_1_1_change_listener_a2881331c9a4b6b0c31aa3a52c3b0ae8f}{\index{cs\-::nsense\-::\-Change\-Listener@{cs\-::nsense\-::\-Change\-Listener}!on\-Location\-Indoor\-Change@{on\-Location\-Indoor\-Change}}
+\index{on\-Location\-Indoor\-Change@{on\-Location\-Indoor\-Change}!cs::nsense::ChangeListener@{cs\-::nsense\-::\-Change\-Listener}}
+\subsubsection[{on\-Location\-Indoor\-Change}]{\setlength{\rightskip}{0pt plus 5cm}void cs.\-nsense.\-Change\-Listener.\-on\-Location\-Indoor\-Change (
+\begin{DoxyParamCaption}
+\item[{List$<$ {\bf Location\-Entry} $>$}]{ap\-Entries}
+\end{DoxyParamCaption}
+)}}\label{interfacecs_1_1nsense_1_1_change_listener_a2881331c9a4b6b0c31aa3a52c3b0ae8f}
+This method called when Location Indoor table has been changed in the database 
+\begin{DoxyParams}{Parameters}
+{\em ap\-Entries} & List of Location\-Entry objects \\
+\hline
+\end{DoxyParams}
+\hypertarget{interfacecs_1_1nsense_1_1_change_listener_aa565ab45a08f7a5d77f9478a206ba589}{\index{cs\-::nsense\-::\-Change\-Listener@{cs\-::nsense\-::\-Change\-Listener}!on\-Location\-Outdoor\-Change@{on\-Location\-Outdoor\-Change}}
+\index{on\-Location\-Outdoor\-Change@{on\-Location\-Outdoor\-Change}!cs::nsense::ChangeListener@{cs\-::nsense\-::\-Change\-Listener}}
+\subsubsection[{on\-Location\-Outdoor\-Change}]{\setlength{\rightskip}{0pt plus 5cm}void cs.\-nsense.\-Change\-Listener.\-on\-Location\-Outdoor\-Change (
+\begin{DoxyParamCaption}
+\item[{String}]{new\-Message}
+\end{DoxyParamCaption}
+)}}\label{interfacecs_1_1nsense_1_1_change_listener_aa565ab45a08f7a5d77f9478a206ba589}
+This method called when Location Outdoor table has been changed in the database 
+\begin{DoxyParams}{Parameters}
+{\em new\-Message} & Out door location information \\
+\hline
+\end{DoxyParams}
+\hypertarget{interfacecs_1_1nsense_1_1_change_listener_a82b3519f8f730a9e5b003ff55687a58d}{\index{cs\-::nsense\-::\-Change\-Listener@{cs\-::nsense\-::\-Change\-Listener}!on\-Propinquity\-Change@{on\-Propinquity\-Change}}
+\index{on\-Propinquity\-Change@{on\-Propinquity\-Change}!cs::nsense::ChangeListener@{cs\-::nsense\-::\-Change\-Listener}}
+\subsubsection[{on\-Propinquity\-Change}]{\setlength{\rightskip}{0pt plus 5cm}void cs.\-nsense.\-Change\-Listener.\-on\-Propinquity\-Change (
+\begin{DoxyParamCaption}
+\item[{double}]{prop\-In}
+\end{DoxyParamCaption}
+)}}\label{interfacecs_1_1nsense_1_1_change_listener_a82b3519f8f730a9e5b003ff55687a58d}
+This method called when Propinquity information has been changed 
+\begin{DoxyParams}{Parameters}
+{\em prop\-In} & Propinquity information \\
+\hline
+\end{DoxyParams}
+\hypertarget{interfacecs_1_1nsense_1_1_change_listener_a950164669dd0350e20d5baf14c46d3c9}{\index{cs\-::nsense\-::\-Change\-Listener@{cs\-::nsense\-::\-Change\-Listener}!on\-Social\-Interaction\-Change@{on\-Social\-Interaction\-Change}}
+\index{on\-Social\-Interaction\-Change@{on\-Social\-Interaction\-Change}!cs::nsense::ChangeListener@{cs\-::nsense\-::\-Change\-Listener}}
+\subsubsection[{on\-Social\-Interaction\-Change}]{\setlength{\rightskip}{0pt plus 5cm}void cs.\-nsense.\-Change\-Listener.\-on\-Social\-Interaction\-Change (
+\begin{DoxyParamCaption}
+\item[{double}]{social\-Int}
+\end{DoxyParamCaption}
+)}}\label{interfacecs_1_1nsense_1_1_change_listener_a950164669dd0350e20d5baf14c46d3c9}
+This method called when Social Interaction information has been changed 
+\begin{DoxyParams}{Parameters}
+{\em social\-Int} & Social Interaction information \\
+\hline
+\end{DoxyParams}
+\hypertarget{interfacecs_1_1nsense_1_1_change_listener_a04304593cd317eb80c6b4fbd8f8ee490}{\index{cs\-::nsense\-::\-Change\-Listener@{cs\-::nsense\-::\-Change\-Listener}!on\-Social\-Weight\-Change@{on\-Social\-Weight\-Change}}
+\index{on\-Social\-Weight\-Change@{on\-Social\-Weight\-Change}!cs::nsense::ChangeListener@{cs\-::nsense\-::\-Change\-Listener}}
+\subsubsection[{on\-Social\-Weight\-Change}]{\setlength{\rightskip}{0pt plus 5cm}void cs.\-nsense.\-Change\-Listener.\-on\-Social\-Weight\-Change (
+\begin{DoxyParamCaption}
+\item[{Array\-List$<$ {\bf social\-Weight} $>$}]{array\-List}
+\end{DoxyParamCaption}
+)}}\label{interfacecs_1_1nsense_1_1_change_listener_a04304593cd317eb80c6b4fbd8f8ee490}
+This method called when social Weight table has been changed 
+\begin{DoxyParams}{Parameters}
+{\em array\-List} & List of social\-Weight objects \\
+\hline
+\end{DoxyParams}
+\hypertarget{interfacecs_1_1nsense_1_1_change_listener_afea10e550c775578f19a65b81ee44b64}{\index{cs\-::nsense\-::\-Change\-Listener@{cs\-::nsense\-::\-Change\-Listener}!on\-Sound\-Level\-Change@{on\-Sound\-Level\-Change}}
+\index{on\-Sound\-Level\-Change@{on\-Sound\-Level\-Change}!cs::nsense::ChangeListener@{cs\-::nsense\-::\-Change\-Listener}}
+\subsubsection[{on\-Sound\-Level\-Change}]{\setlength{\rightskip}{0pt plus 5cm}void cs.\-nsense.\-Change\-Listener.\-on\-Sound\-Level\-Change (
+\begin{DoxyParamCaption}
+\item[{String}]{new\-Sound}
+\end{DoxyParamCaption}
+)}}\label{interfacecs_1_1nsense_1_1_change_listener_afea10e550c775578f19a65b81ee44b64}
+This method called when Sound Level has been changed 
+\begin{DoxyParams}{Parameters}
+{\em new\-Sound} & Sound level information \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this interface was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+src/cs/nsense/\hyperlink{_change_listener_8java}{Change\-Listener.\-java}\end{DoxyCompactItemize}

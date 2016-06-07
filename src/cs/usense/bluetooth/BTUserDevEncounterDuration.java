@@ -1,7 +1,7 @@
 /**
- * @version 1.2
+ * @version 1.3
  * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, 06-04-2016
- * Class is part of the USense application.
+ * Class is part of the NSense application.
  *  This class holds the encounter duration between a peer and the user device in specific time slots.
  *  The information kept are device MAC address and time spent in the vicinity (i.e., total time within communication range).
  * @author Waldir Moreira (COPELABS/ULHT)

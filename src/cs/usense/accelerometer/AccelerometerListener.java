@@ -1,7 +1,7 @@
 /**
- * @version 1.2
+ * @version 1.3
  * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, date (e.g. 22-04-2016)
- * Class is part of the USense application. This class provides support for accelerometer pipeline, and 
+ * Class is part of the NSense application. This class provides support for accelerometer pipeline, and 
  * it used to listen the accelerometer sensor orientation changes.
  * @author Saeik Firdose (COPELABS/ULHT)
  *

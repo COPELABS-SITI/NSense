@@ -1,7 +1,7 @@
 /**
- * @version 1.2
+ * @version 1.3
  * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, 06-04-2016
- * Class is part of the USense application.
+ * Class is part of the NSense application.
  * This class is contains the core functionalities of the application. 
  * The BTManager provides all the information from Bluetooth adapter so this class can 
  * perform the social context analysis prior to storing the required information in the database.
@@ -23,9 +23,9 @@ import android.bluetooth.BluetoothDevice;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
-import cs.usense.UsenseService;
+import cs.usense.NSenseService;
 import cs.usense.db.DataBaseChangeListener;
-import cs.usense.db.UsenseDataSource;
+import cs.usense.db.NSenseDataSource;
 
 public class BluetoothCore {
 
@@ -44,11 +44,11 @@ public class BluetoothCore {
 	/** This class is to access functionality of OnNewHourUpdate */
 	private OnNewHourUpdate newHour;
 	
-	/** This class is to access functionality of Usense Data base */
-	private UsenseDataSource datasource;
+	/** This class is to access functionality of NSense Data base */
+	private NSenseDataSource datasource;
 	
-	/** This class is to access the functionality of Usense Service */
-	private UsenseService callback = null;
+	/** This class is to access the functionality of NSense Service */
+	private NSenseService callback = null;
 
 	/** This variable is to check the null counter */
 	int devNameNullCounter = 0;
@@ -92,11 +92,11 @@ public class BluetoothCore {
 
 	/**
 	 * This method is the constructor for BluetoothCore.
-	 * @param callback Supply UsenseService object for UsenseActivity to use
+	 * @param callback Supply NSenseService object for NSenseActivity to use
 	 * @param context Interface to global information about an application environment. 
-	 * @param datasource UsenseDataSource to access various methods and information of the USense Data base
+	 * @param datasource NSenseDataSource to access various methods and information of the NSense Data base
 	 **/
-	public BluetoothCore(UsenseService callback, Context context, UsenseDataSource datasource) {
+	public BluetoothCore(NSenseService callback, Context context, NSenseDataSource datasource) {
 		this.callback = callback;
 		this.datasource = datasource;
 		myBTManager = new BTManager(context);

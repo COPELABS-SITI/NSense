@@ -1,7 +1,7 @@
 /**
- * @version 1.2
+ * @version 1.3
  * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, date (e.g. 22-04-2016)
- * Class is part of the USense application. It provides support for Inference module, USense activity and 
+ * Class is part of the NSense application. It provides support for Inference module, NSense activity and 
  * provides the functionality to update the SocialityDetails.
  * @author Saeik Firdose (COPELABS/ULHT)
  * @author Luis Lopes (COPELABS/ULHT)
@@ -19,10 +19,11 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+import cs.usense.R;
 import cs.usense.inferenceModule.SocialityDetails;
 
 /**
- * This class provides methods to instantly update the SocialityDetails in the Usense activity
+ * This class provides methods to instantly update the SocialityDetails in the NSense activity
  */
 public class SIAdapter extends ArrayAdapter<SocialityDetails>{
 
@@ -37,17 +38,17 @@ public class SIAdapter extends ArrayAdapter<SocialityDetails>{
 	/** Defining SocialityDetails List object */
 	List<SocialityDetails> data = null;
 	
-	/** Usense Activity module */
-	UsenseActivity callback = null;
+	/** NSense Activity module */
+	NSenseActivity callback = null;
 
 	/**
 	 * This method constructs the Social Interaction Adapter from the context and by providing SocialityDetails object, layout and activity information
 	 * @param context Interface to global information about an application environment. 
 	 * @param data List with SocialityDetails
 	 * @param layoutResourceId Layout of the SocialityDetails
-	 * @param listActivity UsenseActivity
+	 * @param listActivity NSenseActivity
 	 */
-	public SIAdapter(Context context, List<SocialityDetails> data, int layoutResourceId,  UsenseActivity listActivity) {
+	public SIAdapter(Context context, List<SocialityDetails> data, int layoutResourceId,  NSenseActivity listActivity) {
 		super(context, layoutResourceId, data);
 		this.layoutResourceId = layoutResourceId;
 		this.context = context;

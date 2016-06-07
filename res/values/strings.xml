@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Usense</string>
+    <string name="app_name">NSense</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="default_config">DefaultConfiguration</string>
@@ -31,7 +31,7 @@
     <string name="wifi_unknown">Wifi state unknown</string>
    	<string name="foreGroundService">ForeGround Service</string>
     
-    <string name="Button">Usense Details</string>
+    <string name="Button">NSense Details</string>
     <string name="ActivityDetails">Current Action</string>
     <string name="Action">Current Action</string>
 	<string name="SocialInteraction">Social Interaction</string>
@@ -43,10 +43,10 @@
 	<string name="Normal">Normal</string>
 	<string name="Alert">Alert</string>
 	<string name="GetSociability">Neighbourhood</string>
-	<string name="UsenseContext">Sociability</string>
+	<string name="NSenseContext">Sociability</string>
 	<string name="Poweredby">Powered By</string>
-	<string name="UsenseHistory">Sociability History</string>	
-	<string name="UsenseActivityHistory">Sociability History</string>
+	<string name="NSenseHistory">Sociability History</string>	
+	<string name="NSenseActivityHistory">Sociability History</string>
 	<!-- Location ListView -->
 	<string name="distance">Distance: </string>
 		

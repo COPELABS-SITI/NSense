@@ -1,0 +1,108 @@
+\hypertarget{classcs_1_1nsense_1_1bluetooth_1_1_b_t_user_dev_average_encounter_duration}{\section{cs.\-nsense.\-bluetooth.\-B\-T\-User\-Dev\-Average\-Encounter\-Duration Class Reference}
+\label{classcs_1_1nsense_1_1bluetooth_1_1_b_t_user_dev_average_encounter_duration}\index{cs.\-nsense.\-bluetooth.\-B\-T\-User\-Dev\-Average\-Encounter\-Duration@{cs.\-nsense.\-bluetooth.\-B\-T\-User\-Dev\-Average\-Encounter\-Duration}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \hyperlink{classcs_1_1nsense_1_1bluetooth_1_1_b_t_user_dev_average_encounter_duration_a9154fc2f824a67734a02f7a7ea594482}{get\-Dev\-Add} ()
+\item 
+double \hyperlink{classcs_1_1nsense_1_1bluetooth_1_1_b_t_user_dev_average_encounter_duration_a499fac82a22295b16bd094eceef255c9}{get\-Average\-Encounter\-Duration} (int time\-Slot)
+\item 
+void \hyperlink{classcs_1_1nsense_1_1bluetooth_1_1_b_t_user_dev_average_encounter_duration_aeeedffcff8c10d5ec6570b97e317d8ee}{set\-Dev\-Add} (String Dev\-Add)
+\item 
+void \hyperlink{classcs_1_1nsense_1_1bluetooth_1_1_b_t_user_dev_average_encounter_duration_a08d743abdc7a9c316fa4510b51c7a08f}{set\-Average\-Encounter\-Duration} (int time\-Slot, double avg\-Encounter\-Duration)
+\item 
+\hyperlink{classcs_1_1nsense_1_1bluetooth_1_1_b_t_user_dev_average_encounter_duration_a275e63f11d6f4749c7a3d2c0de9e02bc}{B\-T\-User\-Dev\-Average\-Encounter\-Duration} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+String \hyperlink{classcs_1_1nsense_1_1bluetooth_1_1_b_t_user_dev_average_encounter_duration_a305c3c34715193b2ca317cc953c29adf}{device\-Add}
+\item 
+double\mbox{[}$\,$\mbox{]} \hyperlink{classcs_1_1nsense_1_1bluetooth_1_1_b_t_user_dev_average_encounter_duration_a7104edf8ee60767ca5637105fab2882d}{average\-Encounter\-Duration} = new double \mbox{[}24\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class provides the average duration of encounter between a peer and the user device in specific time slots \begin{DoxyAuthor}{Author}
+Waldir Moreira (C\-O\-P\-E\-L\-A\-B\-S/\-U\-L\-H\-T) 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcs_1_1nsense_1_1bluetooth_1_1_b_t_user_dev_average_encounter_duration_a275e63f11d6f4749c7a3d2c0de9e02bc}{\index{cs\-::nsense\-::bluetooth\-::\-B\-T\-User\-Dev\-Average\-Encounter\-Duration@{cs\-::nsense\-::bluetooth\-::\-B\-T\-User\-Dev\-Average\-Encounter\-Duration}!B\-T\-User\-Dev\-Average\-Encounter\-Duration@{B\-T\-User\-Dev\-Average\-Encounter\-Duration}}
+\index{B\-T\-User\-Dev\-Average\-Encounter\-Duration@{B\-T\-User\-Dev\-Average\-Encounter\-Duration}!cs::nsense::bluetooth::BTUserDevAverageEncounterDuration@{cs\-::nsense\-::bluetooth\-::\-B\-T\-User\-Dev\-Average\-Encounter\-Duration}}
+\subsubsection[{B\-T\-User\-Dev\-Average\-Encounter\-Duration}]{\setlength{\rightskip}{0pt plus 5cm}cs.\-nsense.\-bluetooth.\-B\-T\-User\-Dev\-Average\-Encounter\-Duration.\-B\-T\-User\-Dev\-Average\-Encounter\-Duration (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcs_1_1nsense_1_1bluetooth_1_1_b_t_user_dev_average_encounter_duration_a275e63f11d6f4749c7a3d2c0de9e02bc}
+B\-T User Device Average Encounter Duration Constructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classcs_1_1nsense_1_1bluetooth_1_1_b_t_user_dev_average_encounter_duration_a499fac82a22295b16bd094eceef255c9}{\index{cs\-::nsense\-::bluetooth\-::\-B\-T\-User\-Dev\-Average\-Encounter\-Duration@{cs\-::nsense\-::bluetooth\-::\-B\-T\-User\-Dev\-Average\-Encounter\-Duration}!get\-Average\-Encounter\-Duration@{get\-Average\-Encounter\-Duration}}
+\index{get\-Average\-Encounter\-Duration@{get\-Average\-Encounter\-Duration}!cs::nsense::bluetooth::BTUserDevAverageEncounterDuration@{cs\-::nsense\-::bluetooth\-::\-B\-T\-User\-Dev\-Average\-Encounter\-Duration}}
+\subsubsection[{get\-Average\-Encounter\-Duration}]{\setlength{\rightskip}{0pt plus 5cm}double cs.\-nsense.\-bluetooth.\-B\-T\-User\-Dev\-Average\-Encounter\-Duration.\-get\-Average\-Encounter\-Duration (
+\begin{DoxyParamCaption}
+\item[{int}]{time\-Slot}
+\end{DoxyParamCaption}
+)}}\label{classcs_1_1nsense_1_1bluetooth_1_1_b_t_user_dev_average_encounter_duration_a499fac82a22295b16bd094eceef255c9}
+This method gets the average encounter duration that the B\-T device is within communication range. 
+\begin{DoxyParams}{Parameters}
+{\em time\-Slot} & The specific time slot. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The average encounter duration in the given slot. 
+\end{DoxyReturn}
+\hypertarget{classcs_1_1nsense_1_1bluetooth_1_1_b_t_user_dev_average_encounter_duration_a9154fc2f824a67734a02f7a7ea594482}{\index{cs\-::nsense\-::bluetooth\-::\-B\-T\-User\-Dev\-Average\-Encounter\-Duration@{cs\-::nsense\-::bluetooth\-::\-B\-T\-User\-Dev\-Average\-Encounter\-Duration}!get\-Dev\-Add@{get\-Dev\-Add}}
+\index{get\-Dev\-Add@{get\-Dev\-Add}!cs::nsense::bluetooth::BTUserDevAverageEncounterDuration@{cs\-::nsense\-::bluetooth\-::\-B\-T\-User\-Dev\-Average\-Encounter\-Duration}}
+\subsubsection[{get\-Dev\-Add}]{\setlength{\rightskip}{0pt plus 5cm}String cs.\-nsense.\-bluetooth.\-B\-T\-User\-Dev\-Average\-Encounter\-Duration.\-get\-Dev\-Add (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcs_1_1nsense_1_1bluetooth_1_1_b_t_user_dev_average_encounter_duration_a9154fc2f824a67734a02f7a7ea594482}
+This method gets the M\-A\-C address of this Bluetooth device. \begin{DoxyReturn}{Returns}
+device\-Add The device address to be used as key. 
+\end{DoxyReturn}
+\hypertarget{classcs_1_1nsense_1_1bluetooth_1_1_b_t_user_dev_average_encounter_duration_a08d743abdc7a9c316fa4510b51c7a08f}{\index{cs\-::nsense\-::bluetooth\-::\-B\-T\-User\-Dev\-Average\-Encounter\-Duration@{cs\-::nsense\-::bluetooth\-::\-B\-T\-User\-Dev\-Average\-Encounter\-Duration}!set\-Average\-Encounter\-Duration@{set\-Average\-Encounter\-Duration}}
+\index{set\-Average\-Encounter\-Duration@{set\-Average\-Encounter\-Duration}!cs::nsense::bluetooth::BTUserDevAverageEncounterDuration@{cs\-::nsense\-::bluetooth\-::\-B\-T\-User\-Dev\-Average\-Encounter\-Duration}}
+\subsubsection[{set\-Average\-Encounter\-Duration}]{\setlength{\rightskip}{0pt plus 5cm}void cs.\-nsense.\-bluetooth.\-B\-T\-User\-Dev\-Average\-Encounter\-Duration.\-set\-Average\-Encounter\-Duration (
+\begin{DoxyParamCaption}
+\item[{int}]{time\-Slot, }
+\item[{double}]{avg\-Encounter\-Duration}
+\end{DoxyParamCaption}
+)}}\label{classcs_1_1nsense_1_1bluetooth_1_1_b_t_user_dev_average_encounter_duration_a08d743abdc7a9c316fa4510b51c7a08f}
+This method sets the average duration that the B\-T device is within communication range. 
+\begin{DoxyParams}{Parameters}
+{\em time\-Slot} & The specific time slot. \\
+\hline
+{\em avg\-Encounter\-Duration} & The average duration of encounter. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classcs_1_1nsense_1_1bluetooth_1_1_b_t_user_dev_average_encounter_duration_aeeedffcff8c10d5ec6570b97e317d8ee}{\index{cs\-::nsense\-::bluetooth\-::\-B\-T\-User\-Dev\-Average\-Encounter\-Duration@{cs\-::nsense\-::bluetooth\-::\-B\-T\-User\-Dev\-Average\-Encounter\-Duration}!set\-Dev\-Add@{set\-Dev\-Add}}
+\index{set\-Dev\-Add@{set\-Dev\-Add}!cs::nsense::bluetooth::BTUserDevAverageEncounterDuration@{cs\-::nsense\-::bluetooth\-::\-B\-T\-User\-Dev\-Average\-Encounter\-Duration}}
+\subsubsection[{set\-Dev\-Add}]{\setlength{\rightskip}{0pt plus 5cm}void cs.\-nsense.\-bluetooth.\-B\-T\-User\-Dev\-Average\-Encounter\-Duration.\-set\-Dev\-Add (
+\begin{DoxyParamCaption}
+\item[{String}]{Dev\-Add}
+\end{DoxyParamCaption}
+)}}\label{classcs_1_1nsense_1_1bluetooth_1_1_b_t_user_dev_average_encounter_duration_aeeedffcff8c10d5ec6570b97e317d8ee}
+This method sets the I\-D of this Bluetooth device. 
+\begin{DoxyParams}{Parameters}
+{\em Dev\-Add} & The M\-A\-C address of device to set. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classcs_1_1nsense_1_1bluetooth_1_1_b_t_user_dev_average_encounter_duration_a7104edf8ee60767ca5637105fab2882d}{\index{cs\-::nsense\-::bluetooth\-::\-B\-T\-User\-Dev\-Average\-Encounter\-Duration@{cs\-::nsense\-::bluetooth\-::\-B\-T\-User\-Dev\-Average\-Encounter\-Duration}!average\-Encounter\-Duration@{average\-Encounter\-Duration}}
+\index{average\-Encounter\-Duration@{average\-Encounter\-Duration}!cs::nsense::bluetooth::BTUserDevAverageEncounterDuration@{cs\-::nsense\-::bluetooth\-::\-B\-T\-User\-Dev\-Average\-Encounter\-Duration}}
+\subsubsection[{average\-Encounter\-Duration}]{\setlength{\rightskip}{0pt plus 5cm}double \mbox{[}$\,$\mbox{]} cs.\-nsense.\-bluetooth.\-B\-T\-User\-Dev\-Average\-Encounter\-Duration.\-average\-Encounter\-Duration = new double \mbox{[}24\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}}\label{classcs_1_1nsense_1_1bluetooth_1_1_b_t_user_dev_average_encounter_duration_a7104edf8ee60767ca5637105fab2882d}
+This variable is to get the device average duration in specific time slots \hypertarget{classcs_1_1nsense_1_1bluetooth_1_1_b_t_user_dev_average_encounter_duration_a305c3c34715193b2ca317cc953c29adf}{\index{cs\-::nsense\-::bluetooth\-::\-B\-T\-User\-Dev\-Average\-Encounter\-Duration@{cs\-::nsense\-::bluetooth\-::\-B\-T\-User\-Dev\-Average\-Encounter\-Duration}!device\-Add@{device\-Add}}
+\index{device\-Add@{device\-Add}!cs::nsense::bluetooth::BTUserDevAverageEncounterDuration@{cs\-::nsense\-::bluetooth\-::\-B\-T\-User\-Dev\-Average\-Encounter\-Duration}}
+\subsubsection[{device\-Add}]{\setlength{\rightskip}{0pt plus 5cm}String cs.\-nsense.\-bluetooth.\-B\-T\-User\-Dev\-Average\-Encounter\-Duration.\-device\-Add\hspace{0.3cm}{\ttfamily [private]}}}\label{classcs_1_1nsense_1_1bluetooth_1_1_b_t_user_dev_average_encounter_duration_a305c3c34715193b2ca317cc953c29adf}
+This variable is to get the address of device 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+src/cs/nsense/bluetooth/\hyperlink{_b_t_user_dev_average_encounter_duration_8java}{B\-T\-User\-Dev\-Average\-Encounter\-Duration.\-java}\end{DoxyCompactItemize}

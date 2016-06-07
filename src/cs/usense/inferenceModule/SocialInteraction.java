@@ -1,8 +1,8 @@
 /**
- * @version 1.2
+ * @version 1.3
  * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, date (e.g. 22-04-2016)
- * Class is part of the USense application. It provides support for UsenseService and 
- * USenseActivity classes to compute Social Interaction and Propinquity.
+ * Class is part of the NSense application. It provides support for NSenseService and 
+ * NSenseActivity classes to compute Social Interaction and Propinquity.
  * @author Saeik Firdose (COPELABS/ULHT)
  * @author @author Waldir Moreira (COPELABS/ULHT)
  */
@@ -18,14 +18,14 @@ import java.util.Map;
 import android.content.Context;
 import android.os.Handler;
 import android.util.Log;
-import cs.usense.UsenseService;
+import cs.usense.NSenseService;
 import cs.usense.accelerometer.AccelerometerPipeline;
 import cs.usense.bluetooth.BTUserDevAverageEncounterDuration;
 import cs.usense.bluetooth.BTUserDevEncounterDuration;
 import cs.usense.bluetooth.BTUserDevice;
 import cs.usense.bluetooth.BluetoothCore;
 import cs.usense.bluetooth.OnNewHourUpdate;
-import cs.usense.db.UsenseDataSource;
+import cs.usense.db.NSenseDataSource;
 import cs.usense.location.LocationEntry;
 import cs.usense.microphone.MicrophonePipeline;
 
@@ -36,8 +36,8 @@ public class SocialInteraction {
 
 	private static final String TAG = "SOCIALInteraction";
 	
-	/** This class is to access functionality of Usense Data base */
-	private UsenseDataSource dataSource;
+	/** This class is to access functionality of NSense Data base */
+	private NSenseDataSource dataSource;
 	
 	/** This class is to access core functionality of Bluetooth pipeline */
 	private BluetoothCore mBluetoothCore;
@@ -189,13 +189,13 @@ public class SocialInteraction {
 
 	/**
 	 * This class construct the SocialInteraction 
-	 * @param callback Supply UsenseService object for UsenseActivity to use
+	 * @param callback Supply NSenseService object for NSenseActivity to use
 	 * @param mBluetoothCore It contains the core functionalities of the application and 
 	 * 						 can support to perform the social context analysis prior to storing the required information in the database.
 	 * @param mAccelerometerPipeline It provides various methods to provide Accelerometer sensor data
-	 * @param dataSource UsenseDataSource to access various methods and information of the USenseDataSource
+	 * @param dataSource NSenseDataSource to access various methods and information of the NSenseDataSource
 	 */
-	public SocialInteraction(final UsenseService callback, BluetoothCore mBluetoothCore, AccelerometerPipeline mAccelerometerPipeline, UsenseDataSource dataSource){
+	public SocialInteraction(final NSenseService callback, BluetoothCore mBluetoothCore, AccelerometerPipeline mAccelerometerPipeline, NSenseDataSource dataSource){
 		callback.getApplicationContext();
 		this.dataSource = dataSource;
 		this.mBluetoothCore = mBluetoothCore;

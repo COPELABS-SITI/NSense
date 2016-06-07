@@ -1,7 +1,7 @@
 /**
- * @version 1.2
+ * @version 1.3
  * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, date (e.g. 22-04-2016)
- * Class is part of the USense application. It provides support for USenseActivity class 
+ * Class is part of the NSense application. It provides support for NSenseActivity class 
  * and provides custom-view for displaying the SocialInteraction and Propinquity level.
  * @author Saeik Firdose (COPELABS/ULHT)
  * @author Philipp Jahoda

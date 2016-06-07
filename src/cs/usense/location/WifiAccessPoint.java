@@ -1,9 +1,9 @@
 /**
- * @version 1.2
+ * @version 1.3
  * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, 16-11-2015
- * Class is part of the USense application.
+ * Class is part of the NSense application.
  * This class is the entry point of Location Pipeline.
- * When there are usense devices near (provided by WifiServiceSearcher) it performs a
+ * When there are nsense devices near (provided by WifiServiceSearcher) it performs a
  * WiFi scan to detect this devices a to compute the respective relative distance.
  * @author Luis Amaral Lopes (COPELABS/ULHT)
  */
@@ -34,8 +34,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import cs.usense.db.UsenseDataSource;
-import cs.usense.location.RelativePositionWiFiNoConnection.UsenseDevice;
+import cs.usense.db.NSenseDataSource;
+import cs.usense.location.RelativePositionWiFiNoConnection.NSenseDevice;
+
 import static android.net.wifi.p2p.WifiP2pManager.WIFI_P2P_CONNECTION_CHANGED_ACTION;
 import static android.net.wifi.p2p.WifiP2pManager.WIFI_P2P_STATE_CHANGED_ACTION;
 
@@ -47,8 +48,8 @@ public class WifiAccessPoint implements WifiP2pManager.ConnectionInfoListener,Wi
     private WifiAccessPoint that = this;
     /** Interface to global information about an application environment. */
     private Context context;
-    /** Usense Data base */
-    private UsenseDataSource dataSource;
+    /** NSense Data base */
+    private NSenseDataSource dataSource;
     /** Android WiFi P2P Manager */
     private WifiP2pManager p2p;
     /** A channel that connects the application to the Wifi p2p framework. */
@@ -78,9 +79,9 @@ public class WifiAccessPoint implements WifiP2pManager.ConnectionInfoListener,Wi
      * WifiAccessPoint constructor
      * @param Context -Interface to global information about an application environment.
      * @param callback - RelativePositionWiFiNoConnection module.
-     * @param dataSource - Usense data base.
+     * @param dataSource - NSense data base.
      */
-    public WifiAccessPoint(Context Context, RelativePositionWiFiNoConnection callback, UsenseDataSource dataSource) {
+    public WifiAccessPoint(Context Context, RelativePositionWiFiNoConnection callback, NSenseDataSource dataSource) {
         this.context = Context;
         this.callback = callback;
         this.dataSource = dataSource;
@@ -318,7 +319,7 @@ public class WifiAccessPoint implements WifiP2pManager.ConnectionInfoListener,Wi
                     Log.i(TAG,"We are DIS-connected");
                    
                     if (toScan) {
-                    	if (!callback.listUsenseDevices.isEmpty())
+                    	if (!callback.listNSenseDevices.isEmpty())
                     		doScan();
                     	else
                     		callback.scheduleThread();
@@ -342,15 +343,15 @@ public class WifiAccessPoint implements WifiP2pManager.ConnectionInfoListener,Wi
 			List<ScanResult> wifiScanList = wifiManager.getScanResults();
 			boolean mSomethingFound = false;
 			Log.i(TAG, "SCAN RESULTS");
-			for (UsenseDevice teste: callback.listUsenseDevices) {
+			for (NSenseDevice teste: callback.listNSenseDevices) {
 				Log.i(TAG,teste.mSSID + " " + teste.mDeviceName +" MACWIFIDIRECT: " + teste.mWiFiDirectMACAddress + " MACAP: "+ teste.mWiFiAPMACAddress);
 			}
-			if (!callback.listUsenseDevices.isEmpty()) {
+			if (!callback.listNSenseDevices.isEmpty()) {
 				
 				ArrayList<Integer> devicesLost = new ArrayList<Integer>();
 				
-				for (int j = 0; j < callback.listUsenseDevices.size(); j++) {
-					UsenseDevice mDevice = callback.listUsenseDevices.get(j);
+				for (int j = 0; j < callback.listNSenseDevices.size(); j++) {
+					NSenseDevice mDevice = callback.listNSenseDevices.get(j);
 					boolean mFound = false; 
 					for (int i = 0; i < wifiScanList.size(); i++) {
 						Log.w(TAG, "SCAN RESULT: " + wifiScanList.get(i).SSID + " " + wifiScanList.get(i).BSSID);
@@ -365,7 +366,7 @@ public class WifiAccessPoint implements WifiP2pManager.ConnectionInfoListener,Wi
 		            	mFound = true;
 		            	mDevice.mCountNotFound = 0;
 		            	mDevice.mWiFiAPMACAddress = wifiScanList.get(i).BSSID;
-		            	callback.listUsenseDevices.set(j, mDevice);
+		            	callback.listNSenseDevices.set(j, mDevice);
 		            	/** Get the SSID */
 		                String ssid = wifiScanList.get(i).SSID; 
 		                Double mDistance = calculateDistance(wifiScanList.get(i).level, wifiScanList.get(i).frequency);

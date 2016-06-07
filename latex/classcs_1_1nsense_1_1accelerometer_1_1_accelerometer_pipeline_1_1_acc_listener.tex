@@ -1,0 +1,47 @@
+\hypertarget{classcs_1_1nsense_1_1accelerometer_1_1_accelerometer_pipeline_1_1_acc_listener}{\section{cs.\-nsense.\-accelerometer.\-Accelerometer\-Pipeline.\-Acc\-Listener Class Reference}
+\label{classcs_1_1nsense_1_1accelerometer_1_1_accelerometer_pipeline_1_1_acc_listener}\index{cs.\-nsense.\-accelerometer.\-Accelerometer\-Pipeline.\-Acc\-Listener@{cs.\-nsense.\-accelerometer.\-Accelerometer\-Pipeline.\-Acc\-Listener}}
+}
+Inheritance diagram for cs.\-nsense.\-accelerometer.\-Accelerometer\-Pipeline.\-Acc\-Listener\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcs_1_1nsense_1_1accelerometer_1_1_accelerometer_pipeline_1_1_acc_listener}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classcs_1_1nsense_1_1accelerometer_1_1_accelerometer_pipeline_1_1_acc_listener_a9efa0a736cc4a91fcc0b839bc5e12041}{update\-Buffer} (float x, float y, float z)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class provide the method to listen the accelerometer changes 
+
+\subsection{Member Function Documentation}
+\hypertarget{classcs_1_1nsense_1_1accelerometer_1_1_accelerometer_pipeline_1_1_acc_listener_a9efa0a736cc4a91fcc0b839bc5e12041}{\index{cs\-::nsense\-::accelerometer\-::\-Accelerometer\-Pipeline\-::\-Acc\-Listener@{cs\-::nsense\-::accelerometer\-::\-Accelerometer\-Pipeline\-::\-Acc\-Listener}!update\-Buffer@{update\-Buffer}}
+\index{update\-Buffer@{update\-Buffer}!cs::nsense::accelerometer::AccelerometerPipeline::AccListener@{cs\-::nsense\-::accelerometer\-::\-Accelerometer\-Pipeline\-::\-Acc\-Listener}}
+\subsubsection[{update\-Buffer}]{\setlength{\rightskip}{0pt plus 5cm}void cs.\-nsense.\-accelerometer.\-Accelerometer\-Pipeline.\-Acc\-Listener.\-update\-Buffer (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{float}]{y, }
+\item[{float}]{z}
+\end{DoxyParamCaption}
+)}}\label{classcs_1_1nsense_1_1accelerometer_1_1_accelerometer_pipeline_1_1_acc_listener_a9efa0a736cc4a91fcc0b839bc5e12041}
+This method update\-Buffer when accelerometer sensor orientation changes 
+\begin{DoxyParams}{Parameters}
+{\em x} & X-\/axis represent tilting the phone from left -\/ right and vice versa \\
+\hline
+{\em y} & Y-\/axis represent tilting the phone upside down and vice versa \\
+\hline
+{\em z} & Z-\/axis represent lifting the phone screen side up and down \\
+\hline
+\end{DoxyParams}
+Exception happens when reach the capacity. Doubling the buffer. List\-Blocking\-Queue has no such issue, But generally has worse performance
+
+Implements \hyperlink{interfacecs_1_1nsense_1_1accelerometer_1_1_accelerometer_listener_a52f610202485456b046ff95cffbb72e4}{cs.\-nsense.\-accelerometer.\-Accelerometer\-Listener}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+src/cs/nsense/accelerometer/\hyperlink{_accelerometer_pipeline_8java}{Accelerometer\-Pipeline.\-java}\end{DoxyCompactItemize}

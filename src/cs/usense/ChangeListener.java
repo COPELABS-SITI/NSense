@@ -1,8 +1,8 @@
 /**
- * @version 1.2
+ * @version 1.3
  * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, date (e.g. 22-04-2016)
- * Class is part of the USense application. This class provides an interface to update pipeline information and 
- * provides the information to USenseService class, and USenseActivity class.
+ * Class is part of the NSense application. This class provides an interface to update pipeline information and 
+ * provides the information to NSenseService class, and NSenseActivity class.
  * @author Saeik Firdose (COPELABS/ULHT),
  * @author Luis Lopes (COPELABS/ULHT), 
  * @author Waldir Moreira (COPELABS/ULHT)

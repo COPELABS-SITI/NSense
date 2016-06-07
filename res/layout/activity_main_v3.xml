@@ -27,7 +27,7 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:padding="5dp"
-            android:text="@string/UsenseContext"
+            android:text="@string/NSenseContext"
             android:textSize="25sp"
             android:textStyle="bold" />
 
@@ -113,24 +113,24 @@
             android:id="@+id/SociabilityListView"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_above="@+id/city_logo"
+            android:layout_above="@+id/copelabs_logo"
             android:layout_alignParentLeft="true"
             android:layout_below="@+id/sensor_1" >
         </ListView>
 
         <ImageView
-            android:id="@+id/city_logo"
+            android:id="@+id/copelabs_logo"
             android:layout_width="278dp"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            android:src="@drawable/citysense_logo" />
+            android:src="@drawable/copelabs_logo" />
 
         <TextView
             android:id="@+id/dur_title_txtview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignRight="@+id/city_logo"
+            android:layout_alignRight="@+id/copelabs_logo"
             android:layout_below="@+id/header"
             android:padding="10dp"
             android:text="@string/PropinquityDetails"

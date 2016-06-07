@@ -1,0 +1,195 @@
+\hypertarget{classcs_1_1nsense_1_1_n_sense_activity}{\section{cs.\-nsense.\-N\-Sense\-Activity Class Reference}
+\label{classcs_1_1nsense_1_1_n_sense_activity}\index{cs.\-nsense.\-N\-Sense\-Activity@{cs.\-nsense.\-N\-Sense\-Activity}}
+}
+Inheritance diagram for cs.\-nsense.\-N\-Sense\-Activity\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcs_1_1nsense_1_1_n_sense_activity}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classcs_1_1nsense_1_1_n_sense_activity_1_1_custom_comparator}{Custom\-Comparator}
+\item 
+class \hyperlink{classcs_1_1nsense_1_1_n_sense_activity_1_1_on_swipe_touch_listener}{On\-Swipe\-Touch\-Listener}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classcs_1_1nsense_1_1_n_sense_activity_a8db90e69da81505e450f49985383bd50}{on\-Back\-Pressed} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final String \hyperlink{classcs_1_1nsense_1_1_n_sense_activity_a26d527c7425b807ab6eda661541fac0d}{P\-K\-G} = \char`\"{}cs.\-nsense\char`\"{}
+\item 
+static String \hyperlink{classcs_1_1nsense_1_1_n_sense_activity_ad46d4e3f2db1f93c16851a0eb596974b}{action\-Message} = \char`\"{}\char`\"{}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classcs_1_1nsense_1_1_n_sense_activity_a9498fcc20a88df36bfc2c153145a168a}{on\-Create} (Bundle saved\-Instance\-State)
+\item 
+void \hyperlink{classcs_1_1nsense_1_1_n_sense_activity_a7392c5201bad2bcba25377de450ef44b}{on\-Destroy} ()
+\item 
+void \hyperlink{classcs_1_1nsense_1_1_n_sense_activity_ab9380d590b6620e85ed8f69955ed4899}{on\-Start} ()
+\item 
+void \hyperlink{classcs_1_1nsense_1_1_n_sense_activity_ab7d1da1de925b5fd60b6331ff17a2459}{on\-Stop} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+boolean \hyperlink{classcs_1_1nsense_1_1_n_sense_activity_a713e6c68963c897dcdc6d5b392dc35a7}{is\-My\-Service\-Running} (Class$<$ \hyperlink{classcs_1_1nsense_1_1_n_sense_service}{N\-Sense\-Service} $>$ nsense\-Service)
+\item 
+Array\-List$<$ \hyperlink{classcs_1_1nsense_1_1_sensor_product}{Sensor\-Product} $>$ \hyperlink{classcs_1_1nsense_1_1_n_sense_activity_a713e4122af820d5be1ecf126ce499a5e}{parse\-X\-M\-L} (Xml\-Pull\-Parser parser)  throws Xml\-Pull\-Parser\-Exception, I\-O\-Exception 
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcs_1_1nsense_1_1_n_sense_service}{N\-Sense\-Service} \hyperlink{classcs_1_1nsense_1_1_n_sense_activity_a6a48a71c3cd0c5da40bd62196d5ff07b}{m\-Bound\-Service}
+\item 
+boolean \hyperlink{classcs_1_1nsense_1_1_n_sense_activity_a434e53ab6841f0f85cbaec01bbf99811}{m\-Request\-To\-Bound} = false
+\item 
+boolean \hyperlink{classcs_1_1nsense_1_1_n_sense_activity_a9c152811e5c46167941994003e30ffe1}{m\-Is\-Service\-Bound}
+\item 
+String \hyperlink{classcs_1_1nsense_1_1_n_sense_activity_a634d40b37a27c90ebeac668d4cc3a809}{sensorname}
+\item 
+String \hyperlink{classcs_1_1nsense_1_1_n_sense_activity_a72e35d65f34da9bd3a1b34ad3208c0b6}{sensorinterval}
+\item 
+List\-View \hyperlink{classcs_1_1nsense_1_1_n_sense_activity_aca33368b7b96f27d8ca7a445264bdca9}{si\-List\-View}
+\item 
+\hyperlink{classcs_1_1nsense_1_1_s_i_adapter}{S\-I\-Adapter} \hyperlink{classcs_1_1nsense_1_1_n_sense_activity_a3a2e7482cff1bcc969c39b9b672cec60}{m\-S\-I\-Adapter}
+\item 
+Service\-Connection \hyperlink{classcs_1_1nsense_1_1_n_sense_activity_aa8df1068177c5acdb37d8aac72263297}{m\-Connection}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final String \hyperlink{classcs_1_1nsense_1_1_n_sense_activity_a30a12082155068187f1dbd5ef495c923}{T\-A\-G} = \char`\"{}N\-S\-E\-N\-S\-E\char`\"{}
+\item 
+static Array\-List\\*
+$<$ \hyperlink{classcs_1_1nsense_1_1inference_module_1_1_sociality_details}{Sociality\-Details} $>$ \hyperlink{classcs_1_1nsense_1_1_n_sense_activity_ad32b6b007a685bd0a3aa74ae80f5bec6}{list\-History}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class provides the layout of N\-Sense application and initialize the N\-Sense Service 
+
+\subsection{Member Function Documentation}
+\hypertarget{classcs_1_1nsense_1_1_n_sense_activity_a713e6c68963c897dcdc6d5b392dc35a7}{\index{cs\-::nsense\-::\-N\-Sense\-Activity@{cs\-::nsense\-::\-N\-Sense\-Activity}!is\-My\-Service\-Running@{is\-My\-Service\-Running}}
+\index{is\-My\-Service\-Running@{is\-My\-Service\-Running}!cs::nsense::NSenseActivity@{cs\-::nsense\-::\-N\-Sense\-Activity}}
+\subsubsection[{is\-My\-Service\-Running}]{\setlength{\rightskip}{0pt plus 5cm}boolean cs.\-nsense.\-N\-Sense\-Activity.\-is\-My\-Service\-Running (
+\begin{DoxyParamCaption}
+\item[{Class$<$ {\bf N\-Sense\-Service} $>$}]{nsense\-Service}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classcs_1_1nsense_1_1_n_sense_activity_a713e6c68963c897dcdc6d5b392dc35a7}
+This method returns True/false if the N\-Sense service is running/not 
+\begin{DoxyParams}{Parameters}
+{\em nsense\-Service} & \hyperlink{classcs_1_1nsense_1_1_n_sense_service}{N\-Sense\-Service} class \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true/false 
+\end{DoxyReturn}
+\hypertarget{classcs_1_1nsense_1_1_n_sense_activity_a8db90e69da81505e450f49985383bd50}{\index{cs\-::nsense\-::\-N\-Sense\-Activity@{cs\-::nsense\-::\-N\-Sense\-Activity}!on\-Back\-Pressed@{on\-Back\-Pressed}}
+\index{on\-Back\-Pressed@{on\-Back\-Pressed}!cs::nsense::NSenseActivity@{cs\-::nsense\-::\-N\-Sense\-Activity}}
+\subsubsection[{on\-Back\-Pressed}]{\setlength{\rightskip}{0pt plus 5cm}void cs.\-nsense.\-N\-Sense\-Activity.\-on\-Back\-Pressed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcs_1_1nsense_1_1_n_sense_activity_a8db90e69da81505e450f49985383bd50}
+\hypertarget{classcs_1_1nsense_1_1_n_sense_activity_a9498fcc20a88df36bfc2c153145a168a}{\index{cs\-::nsense\-::\-N\-Sense\-Activity@{cs\-::nsense\-::\-N\-Sense\-Activity}!on\-Create@{on\-Create}}
+\index{on\-Create@{on\-Create}!cs::nsense::NSenseActivity@{cs\-::nsense\-::\-N\-Sense\-Activity}}
+\subsubsection[{on\-Create}]{\setlength{\rightskip}{0pt plus 5cm}void cs.\-nsense.\-N\-Sense\-Activity.\-on\-Create (
+\begin{DoxyParamCaption}
+\item[{Bundle}]{saved\-Instance\-State}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcs_1_1nsense_1_1_n_sense_activity_a9498fcc20a88df36bfc2c153145a168a}
+Find the List\-View resource. \hypertarget{classcs_1_1nsense_1_1_n_sense_activity_a7392c5201bad2bcba25377de450ef44b}{\index{cs\-::nsense\-::\-N\-Sense\-Activity@{cs\-::nsense\-::\-N\-Sense\-Activity}!on\-Destroy@{on\-Destroy}}
+\index{on\-Destroy@{on\-Destroy}!cs::nsense::NSenseActivity@{cs\-::nsense\-::\-N\-Sense\-Activity}}
+\subsubsection[{on\-Destroy}]{\setlength{\rightskip}{0pt plus 5cm}void cs.\-nsense.\-N\-Sense\-Activity.\-on\-Destroy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcs_1_1nsense_1_1_n_sense_activity_a7392c5201bad2bcba25377de450ef44b}
+This method close the N\-Sense service \hypertarget{classcs_1_1nsense_1_1_n_sense_activity_ab9380d590b6620e85ed8f69955ed4899}{\index{cs\-::nsense\-::\-N\-Sense\-Activity@{cs\-::nsense\-::\-N\-Sense\-Activity}!on\-Start@{on\-Start}}
+\index{on\-Start@{on\-Start}!cs::nsense::NSenseActivity@{cs\-::nsense\-::\-N\-Sense\-Activity}}
+\subsubsection[{on\-Start}]{\setlength{\rightskip}{0pt plus 5cm}void cs.\-nsense.\-N\-Sense\-Activity.\-on\-Start (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcs_1_1nsense_1_1_n_sense_activity_ab9380d590b6620e85ed8f69955ed4899}
+This method start the N\-Sense activity \hypertarget{classcs_1_1nsense_1_1_n_sense_activity_ab7d1da1de925b5fd60b6331ff17a2459}{\index{cs\-::nsense\-::\-N\-Sense\-Activity@{cs\-::nsense\-::\-N\-Sense\-Activity}!on\-Stop@{on\-Stop}}
+\index{on\-Stop@{on\-Stop}!cs::nsense::NSenseActivity@{cs\-::nsense\-::\-N\-Sense\-Activity}}
+\subsubsection[{on\-Stop}]{\setlength{\rightskip}{0pt plus 5cm}void cs.\-nsense.\-N\-Sense\-Activity.\-on\-Stop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcs_1_1nsense_1_1_n_sense_activity_ab7d1da1de925b5fd60b6331ff17a2459}
+This method stop the N\-Sense activity \hypertarget{classcs_1_1nsense_1_1_n_sense_activity_a713e4122af820d5be1ecf126ce499a5e}{\index{cs\-::nsense\-::\-N\-Sense\-Activity@{cs\-::nsense\-::\-N\-Sense\-Activity}!parse\-X\-M\-L@{parse\-X\-M\-L}}
+\index{parse\-X\-M\-L@{parse\-X\-M\-L}!cs::nsense::NSenseActivity@{cs\-::nsense\-::\-N\-Sense\-Activity}}
+\subsubsection[{parse\-X\-M\-L}]{\setlength{\rightskip}{0pt plus 5cm}Array\-List$<${\bf Sensor\-Product}$>$ cs.\-nsense.\-N\-Sense\-Activity.\-parse\-X\-M\-L (
+\begin{DoxyParamCaption}
+\item[{Xml\-Pull\-Parser}]{parser}
+\end{DoxyParamCaption}
+) throws Xml\-Pull\-Parser\-Exception, I\-O\-Exception\hspace{0.3cm}{\ttfamily [private]}}}\label{classcs_1_1nsense_1_1_n_sense_activity_a713e4122af820d5be1ecf126ce499a5e}
+This method parse the X\-M\-L data 
+\begin{DoxyParams}{Parameters}
+{\em parser} & The Xml Pull Parser with list of sensors \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+products List of sensors from \hyperlink{classcs_1_1nsense_1_1_sensor_product}{Sensor\-Product} 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Xml\-Pull\-Parser\-Exception} & Xml Pull Parser Exception \\
+\hline
+{\em I\-O\-Exception} & Input, Output Exception \\
+\hline
+\end{DoxyExceptions}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classcs_1_1nsense_1_1_n_sense_activity_ad46d4e3f2db1f93c16851a0eb596974b}{\index{cs\-::nsense\-::\-N\-Sense\-Activity@{cs\-::nsense\-::\-N\-Sense\-Activity}!action\-Message@{action\-Message}}
+\index{action\-Message@{action\-Message}!cs::nsense::NSenseActivity@{cs\-::nsense\-::\-N\-Sense\-Activity}}
+\subsubsection[{action\-Message}]{\setlength{\rightskip}{0pt plus 5cm}String cs.\-nsense.\-N\-Sense\-Activity.\-action\-Message = \char`\"{}\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}}\label{classcs_1_1nsense_1_1_n_sense_activity_ad46d4e3f2db1f93c16851a0eb596974b}
+This variable is to store the action message \hypertarget{classcs_1_1nsense_1_1_n_sense_activity_ad32b6b007a685bd0a3aa74ae80f5bec6}{\index{cs\-::nsense\-::\-N\-Sense\-Activity@{cs\-::nsense\-::\-N\-Sense\-Activity}!list\-History@{list\-History}}
+\index{list\-History@{list\-History}!cs::nsense::NSenseActivity@{cs\-::nsense\-::\-N\-Sense\-Activity}}
+\subsubsection[{list\-History}]{\setlength{\rightskip}{0pt plus 5cm}Array\-List$<${\bf Sociality\-Details}$>$ cs.\-nsense.\-N\-Sense\-Activity.\-list\-History\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classcs_1_1nsense_1_1_n_sense_activity_ad32b6b007a685bd0a3aa74ae80f5bec6}
+This list of Sociality\-Details objects to get the History list of Sociality\-Details \hypertarget{classcs_1_1nsense_1_1_n_sense_activity_a6a48a71c3cd0c5da40bd62196d5ff07b}{\index{cs\-::nsense\-::\-N\-Sense\-Activity@{cs\-::nsense\-::\-N\-Sense\-Activity}!m\-Bound\-Service@{m\-Bound\-Service}}
+\index{m\-Bound\-Service@{m\-Bound\-Service}!cs::nsense::NSenseActivity@{cs\-::nsense\-::\-N\-Sense\-Activity}}
+\subsubsection[{m\-Bound\-Service}]{\setlength{\rightskip}{0pt plus 5cm}{\bf N\-Sense\-Service} cs.\-nsense.\-N\-Sense\-Activity.\-m\-Bound\-Service\hspace{0.3cm}{\ttfamily [private]}}}\label{classcs_1_1nsense_1_1_n_sense_activity_a6a48a71c3cd0c5da40bd62196d5ff07b}
+This class provides the N\-Sense Service to bound service \hypertarget{classcs_1_1nsense_1_1_n_sense_activity_aa8df1068177c5acdb37d8aac72263297}{\index{cs\-::nsense\-::\-N\-Sense\-Activity@{cs\-::nsense\-::\-N\-Sense\-Activity}!m\-Connection@{m\-Connection}}
+\index{m\-Connection@{m\-Connection}!cs::nsense::NSenseActivity@{cs\-::nsense\-::\-N\-Sense\-Activity}}
+\subsubsection[{m\-Connection}]{\setlength{\rightskip}{0pt plus 5cm}Service\-Connection cs.\-nsense.\-N\-Sense\-Activity.\-m\-Connection\hspace{0.3cm}{\ttfamily [private]}}}\label{classcs_1_1nsense_1_1_n_sense_activity_aa8df1068177c5acdb37d8aac72263297}
+This method creates the service connection, which can be used to bind the N\-Sense service \hypertarget{classcs_1_1nsense_1_1_n_sense_activity_a9c152811e5c46167941994003e30ffe1}{\index{cs\-::nsense\-::\-N\-Sense\-Activity@{cs\-::nsense\-::\-N\-Sense\-Activity}!m\-Is\-Service\-Bound@{m\-Is\-Service\-Bound}}
+\index{m\-Is\-Service\-Bound@{m\-Is\-Service\-Bound}!cs::nsense::NSenseActivity@{cs\-::nsense\-::\-N\-Sense\-Activity}}
+\subsubsection[{m\-Is\-Service\-Bound}]{\setlength{\rightskip}{0pt plus 5cm}boolean cs.\-nsense.\-N\-Sense\-Activity.\-m\-Is\-Service\-Bound\hspace{0.3cm}{\ttfamily [private]}}}\label{classcs_1_1nsense_1_1_n_sense_activity_a9c152811e5c46167941994003e30ffe1}
+This variable is request to bound service \hypertarget{classcs_1_1nsense_1_1_n_sense_activity_a434e53ab6841f0f85cbaec01bbf99811}{\index{cs\-::nsense\-::\-N\-Sense\-Activity@{cs\-::nsense\-::\-N\-Sense\-Activity}!m\-Request\-To\-Bound@{m\-Request\-To\-Bound}}
+\index{m\-Request\-To\-Bound@{m\-Request\-To\-Bound}!cs::nsense::NSenseActivity@{cs\-::nsense\-::\-N\-Sense\-Activity}}
+\subsubsection[{m\-Request\-To\-Bound}]{\setlength{\rightskip}{0pt plus 5cm}boolean cs.\-nsense.\-N\-Sense\-Activity.\-m\-Request\-To\-Bound = false\hspace{0.3cm}{\ttfamily [private]}}}\label{classcs_1_1nsense_1_1_n_sense_activity_a434e53ab6841f0f85cbaec01bbf99811}
+This variable is to bound request \hypertarget{classcs_1_1nsense_1_1_n_sense_activity_a3a2e7482cff1bcc969c39b9b672cec60}{\index{cs\-::nsense\-::\-N\-Sense\-Activity@{cs\-::nsense\-::\-N\-Sense\-Activity}!m\-S\-I\-Adapter@{m\-S\-I\-Adapter}}
+\index{m\-S\-I\-Adapter@{m\-S\-I\-Adapter}!cs::nsense::NSenseActivity@{cs\-::nsense\-::\-N\-Sense\-Activity}}
+\subsubsection[{m\-S\-I\-Adapter}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\-I\-Adapter} cs.\-nsense.\-N\-Sense\-Activity.\-m\-S\-I\-Adapter\hspace{0.3cm}{\ttfamily [private]}}}\label{classcs_1_1nsense_1_1_n_sense_activity_a3a2e7482cff1bcc969c39b9b672cec60}
+This class is to get Sociality\-Details object \hypertarget{classcs_1_1nsense_1_1_n_sense_activity_a26d527c7425b807ab6eda661541fac0d}{\index{cs\-::nsense\-::\-N\-Sense\-Activity@{cs\-::nsense\-::\-N\-Sense\-Activity}!P\-K\-G@{P\-K\-G}}
+\index{P\-K\-G@{P\-K\-G}!cs::nsense::NSenseActivity@{cs\-::nsense\-::\-N\-Sense\-Activity}}
+\subsubsection[{P\-K\-G}]{\setlength{\rightskip}{0pt plus 5cm}final String cs.\-nsense.\-N\-Sense\-Activity.\-P\-K\-G = \char`\"{}cs.\-nsense\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}}\label{classcs_1_1nsense_1_1_n_sense_activity_a26d527c7425b807ab6eda661541fac0d}
+\hypertarget{classcs_1_1nsense_1_1_n_sense_activity_a72e35d65f34da9bd3a1b34ad3208c0b6}{\index{cs\-::nsense\-::\-N\-Sense\-Activity@{cs\-::nsense\-::\-N\-Sense\-Activity}!sensorinterval@{sensorinterval}}
+\index{sensorinterval@{sensorinterval}!cs::nsense::NSenseActivity@{cs\-::nsense\-::\-N\-Sense\-Activity}}
+\subsubsection[{sensorinterval}]{\setlength{\rightskip}{0pt plus 5cm}String cs.\-nsense.\-N\-Sense\-Activity.\-sensorinterval\hspace{0.3cm}{\ttfamily [private]}}}\label{classcs_1_1nsense_1_1_n_sense_activity_a72e35d65f34da9bd3a1b34ad3208c0b6}
+This variable is to provide sensor interval \hypertarget{classcs_1_1nsense_1_1_n_sense_activity_a634d40b37a27c90ebeac668d4cc3a809}{\index{cs\-::nsense\-::\-N\-Sense\-Activity@{cs\-::nsense\-::\-N\-Sense\-Activity}!sensorname@{sensorname}}
+\index{sensorname@{sensorname}!cs::nsense::NSenseActivity@{cs\-::nsense\-::\-N\-Sense\-Activity}}
+\subsubsection[{sensorname}]{\setlength{\rightskip}{0pt plus 5cm}String cs.\-nsense.\-N\-Sense\-Activity.\-sensorname\hspace{0.3cm}{\ttfamily [private]}}}\label{classcs_1_1nsense_1_1_n_sense_activity_a634d40b37a27c90ebeac668d4cc3a809}
+This variable is to provide the sensor name \hypertarget{classcs_1_1nsense_1_1_n_sense_activity_aca33368b7b96f27d8ca7a445264bdca9}{\index{cs\-::nsense\-::\-N\-Sense\-Activity@{cs\-::nsense\-::\-N\-Sense\-Activity}!si\-List\-View@{si\-List\-View}}
+\index{si\-List\-View@{si\-List\-View}!cs::nsense::NSenseActivity@{cs\-::nsense\-::\-N\-Sense\-Activity}}
+\subsubsection[{si\-List\-View}]{\setlength{\rightskip}{0pt plus 5cm}List\-View cs.\-nsense.\-N\-Sense\-Activity.\-si\-List\-View\hspace{0.3cm}{\ttfamily [private]}}}\label{classcs_1_1nsense_1_1_n_sense_activity_aca33368b7b96f27d8ca7a445264bdca9}
+This class is to provide List\-View \hypertarget{classcs_1_1nsense_1_1_n_sense_activity_a30a12082155068187f1dbd5ef495c923}{\index{cs\-::nsense\-::\-N\-Sense\-Activity@{cs\-::nsense\-::\-N\-Sense\-Activity}!T\-A\-G@{T\-A\-G}}
+\index{T\-A\-G@{T\-A\-G}!cs::nsense::NSenseActivity@{cs\-::nsense\-::\-N\-Sense\-Activity}}
+\subsubsection[{T\-A\-G}]{\setlength{\rightskip}{0pt plus 5cm}final String cs.\-nsense.\-N\-Sense\-Activity.\-T\-A\-G = \char`\"{}N\-S\-E\-N\-S\-E\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classcs_1_1nsense_1_1_n_sense_activity_a30a12082155068187f1dbd5ef495c923}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+src/cs/nsense/\hyperlink{_n_sense_activity_8java}{N\-Sense\-Activity.\-java}\end{DoxyCompactItemize}

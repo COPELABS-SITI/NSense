@@ -1,7 +1,7 @@
 /**
- * @version 1.2
+ * @version 1.3
  * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, 06-04-2016
- * Class is part of the USense application.
+ * Class is part of the NSense application.
  * This class holds the social weight between a peer and the user device in specific time slots.
  * The information kept are device MAC address and social weight.
  * @author Waldir Moreira (COPELABS/ULHT)

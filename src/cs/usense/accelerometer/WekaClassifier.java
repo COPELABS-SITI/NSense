@@ -1,7 +1,7 @@
 /**
- * @version 1.2
+ * @version 1.3
  * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, date (e.g. 22-04-2016)
- * Class is part of the USense application. This class is provided as input the classify the the activities in real time.
+ * Class is part of the NSense application. This class is provided as input the classify the the activities in real time.
  * @author Saeik Firdose (COPELABS/ULHT)
  */
 package cs.usense.accelerometer;
