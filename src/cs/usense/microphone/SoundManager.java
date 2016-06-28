@@ -39,11 +39,17 @@ public class SoundManager {
 	/** This variable to set the High pass filter */
 	private double hPF = 0.0;
 	
+	/** This variable to set the last amplitude */
+	private static double lastAmp = 0.0;
+	
 	/** This variable to set the Amplitude */
 	public static final double AMP = 1.0;
 	
 	/** This variable to check the Feature is not available */
 	private static final String FEATURE_NOT_AVAILBLE = null;
+	
+	/** This variable to set the number of sound samples */
+	private static final int NUMBER_OF_SAMPLES = 20;
 	
 	/** This variable to set the poll interval */
 	private static final int POLL_INTERVAL = 300;
@@ -124,30 +130,6 @@ public class SoundManager {
 	}
 
 	/**
-	 * This method intialise the Media recorder. Media Recorder is used to start microhphone activity by collecting sound samples captured dynamically.
-	 * The process takes place in the temporary file of the users device.
-	 */
-	public void start() {
-		if (mRecorder == null) {
-
-			mRecorder = new MediaRecorder();
-			mRecorder.setAudioSource(MediaRecorder.AudioSource.MIC);
-			mRecorder.setOutputFormat(MediaRecorder.OutputFormat.THREE_GPP);
-			mRecorder.setAudioEncoder(MediaRecorder.AudioEncoder.AMR_NB);
-			mRecorder.setOutputFile("/dev/null");
-
-			try {
-				mRecorder.prepare();
-				mRecorder.start();
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-			
-			hPF = 0.0;
-		}
-	}
-
-	/**
 	 * This method stop the media recorder
 	 */
 
@@ -173,12 +155,28 @@ public class SoundManager {
 	 * @return getMaxAmplitude null or maximum amplitude of captured sound wave 
 	 */
 	public double getMaxAmplitude() {
-		if (mRecorder != null){
-			return mRecorder.getMaxAmplitude();
+		double maxAmplitude = 0;
+		double avgAmp = 0;
+		mRecorder = new MediaRecorder();
+		try {
+			mRecorder.setAudioSource(MediaRecorder.AudioSource.MIC);
+			mRecorder.setOutputFormat(MediaRecorder.OutputFormat.THREE_GPP);
+			mRecorder.setAudioEncoder(MediaRecorder.AudioEncoder.AMR_NB);
+			mRecorder.setOutputFile("/dev/null");
+			mRecorder.prepare();
+			mRecorder.start();
+			for(int i = 0; i < NUMBER_OF_SAMPLES;) {
+				maxAmplitude = mRecorder.getMaxAmplitude();
+				if(maxAmplitude != 0) {
+					avgAmp += maxAmplitude;
+					i++;
+				}
+			}
+			mRecorder.stop();			
+		} catch (IOException e) {
+			e.printStackTrace();
 		}
-		else{
-			return 0;
-		}
+		return avgAmp / NUMBER_OF_SAMPLES;
 	}
 
 	/**
@@ -194,11 +192,13 @@ public class SoundManager {
 	 * @return hpf Highpass Pre-emphasizing Filter
 	 */
 	public double getAmplitudeHPF() {
-		double amp = getMaxAmplitude();
-		hPF = amp - HPF_FILTER * hPF; 
-		
+		double amp = getMaxAmplitude();		
+		hPF = amp - HPF_FILTER * lastAmp;
+		lastAmp = amp;
+		if (hPF < 0) {
+			hPF = amp * HPF_FILTER;
+		}
 		return hPF;
-
 	}
 
 

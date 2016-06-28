@@ -24,6 +24,7 @@ import android.content.Context;
 import android.os.Environment;
 import android.os.Handler;
 import android.text.format.DateFormat;
+import android.util.Log;
 import cs.usense.NSenseService;
 import cs.usense.db.DataBaseChangeListener;
 import cs.usense.db.NSenseDataSource;
@@ -47,9 +48,6 @@ public class MicrophonePipeline implements SoundListener{
 	
 	/** This class is to use send or process message */
 	Handler soundHandler = new Handler();
-	
-	/** This variable is used to access the average decibels */
-	protected double avgdB;
 	
 	/** This variable is used to check whether microphone is available or not */
 	private boolean micPresent=true;
@@ -95,16 +93,12 @@ public class MicrophonePipeline implements SoundListener{
 
 			@Override
 			public void run() {
-				soundDB =soundManager.soundDb();
+				soundDB = soundManager.soundDb();
 				updateSoundLevel(soundDB);
-				for (numberOfsamples=0; numberOfsamples <=10; ++numberOfsamples) {
-					avgdB += soundManager.soundDb();
-				}
-				db=avgdB/numberOfsamples;
-				mHandler.postDelayed(this, 3000);
+				mHandler.postDelayed(this, 4000);
 			}
 		};
-		mHandler.postDelayed(repeatTask, 3000);
+		mHandler.postDelayed(repeatTask, 4000);
 
 	}
 
@@ -121,8 +115,7 @@ public class MicrophonePipeline implements SoundListener{
 	 * @param soundDB soundLevel in decibels 
 	 * @return Quite, Normal, Alert, Noisy and Time duration in each state
 	 */
-	public void updateSoundLevel(double soundDB) {
-		avgdB+=soundDB;	       
+	public void updateSoundLevel(Double soundDB) {
 		long startTime = System.currentTimeMillis();
 		long endTime   = 0l;
 		long quietSoundDuration=0l;
@@ -130,8 +123,8 @@ public class MicrophonePipeline implements SoundListener{
 		long alertSoundDuration=01;
 		long noisySoundDuration=0l;
 
-		if (db > 50) {
-			if(db>89){
+		if (soundDB > 50) {
+			if(soundDB > 89){
 				endTime=System.currentTimeMillis();
 				noisySoundDuration=endTime-startTime;
 				mSoundLevel.setNoiseTime(noisySoundDuration);
@@ -139,7 +132,7 @@ public class MicrophonePipeline implements SoundListener{
 				mSoundLevel.setNormalTime(normalSoundDuration);
 				mSoundLevel.setAlertTime(alertSoundDuration);
 				envSound = "NOISY";
-			}else if(db<89) {
+			}else if(soundDB < 89) {
 				endTime=System.currentTimeMillis();
 				alertSoundDuration=endTime-startTime;
 				mSoundLevel.setAlertTime(alertSoundDuration);
@@ -149,7 +142,7 @@ public class MicrophonePipeline implements SoundListener{
 				envSound = "ALERT";
 			} 
 		}else{
-			if (db < 20){
+			if (soundDB < 20){
 				endTime   = System.currentTimeMillis();
 				quietSoundDuration=endTime-startTime;
 				mSoundLevel.setQuietTime(quietSoundDuration);
@@ -157,7 +150,7 @@ public class MicrophonePipeline implements SoundListener{
 				mSoundLevel.setAlertTime(alertSoundDuration);
 				mSoundLevel.setNoiseTime(noisySoundDuration);
 				envSound = "QUIET"; 
-			} else if(db <49){
+			} else if(soundDB <49){
 				endTime=System.currentTimeMillis();
 				normalSoundDuration=endTime-startTime;
 				mSoundLevel.setNormalTime(normalSoundDuration);
@@ -191,8 +184,6 @@ public class MicrophonePipeline implements SoundListener{
 			sound.setNoiseTime(noisySoundDuration);
 			dataSource.registerNewSoundLevel(mSoundLevel);
 		}
-
-		avgdB=0;
 
 		String currentTime = (String) DateFormat.format("dd/MM - HH:mm:ss.sss", Calendar.getInstance().getTime());
 
@@ -230,7 +221,6 @@ public class MicrophonePipeline implements SoundListener{
 	 */
 	private void start() {
 		if (micPresent) {
-			soundManager.start();
 			long todayMillis=getTodayMillis();
 			if(soundlevel==null){
 				soundlevel=dataSource.getSoundLevel(todayMillis);

@@ -385,7 +385,21 @@ public class WifiAccessPoint implements WifiP2pManager.ConnectionInfoListener,Wi
 							mDevice.mCountNotFound = 0;
 						}
 					}	
-	            }		
+	            }
+				
+				if (!devicesLost.isEmpty()) {
+					mSomethingFound = true;
+					Log.w(TAG, "Nothing Found - Try Later");
+				}
+				
+				/* remove devices that by 3 times never appear in Wifi scan results */
+				int index = 0;
+				for (int device : devicesLost) {
+					index++;
+					Log.w(TAG, "Nothing Found - Try Later");
+					/* when a device is removed and no others devices were found, then no scan should be done, instead the AP should be created.*/
+					mSomethingFound = true;
+				}					
 			}
             
             try {
