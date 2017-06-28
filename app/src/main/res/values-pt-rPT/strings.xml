@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Layout -->
+    <!-- AndroidManifest.xml -->
+    <string name="google_maps_key">AIzaSyCkIQh0ZQSWCcdIq3uG0lr4LcEenD0-gRs</string>
+    <string name="Around_You">Interesses semelhantes à sua volta</string>
+    <string name="Sociability_History">Histórico social</string>
+
+    <!-- Layout -->
+    <!-- activity_about.xml -->
+    <string name="About">Acerca</string>
+    <string name="version">Versão %1$s </string>
+
+    <!-- Layout -->
+    <!-- activity_interests.xml -->
+    <string name="My_Categories">Os meus interesses</string>
+    <string name="My_Ratings">As minhas classificações</string>
+    <string name="Interests_not_available">Não há interesses a apresentar</string>
+    <string name="music">Música</string>
+    <string name="business_and_economics">Negócios e Economia</string>
+    <string name="food">Comida</string>
+    <string name="community">Comunidades</string>
+    <string name="art">Arte</string>
+    <string name="movies">Filmes e Multimédia</string>
+    <string name="sport">Desporto</string>
+    <string name="health_and_fitness">Saúde</string>
+    <string name="science">Ciência e Tecnologia</string>
+    <string name="travel">Viagens</string>
+    <string name="solidarity_and_causes">Caridade</string>
+    <string name="spirituality">Espiritualidade</string>
+    <string name="family">Família e Educação</string>
+    <string name="vacation">Férias</string>
+    <string name="government">Governamental</string>
+    <string name="fashion">Moda</string>
+    <string name="home">Casa e Estilo de Vida</string>
+    <string name="cars">Carros</string>
+    <string name="hobby">Passatempos</string>
+    <string name="pets">Animais de Estimação</string>
+    <string name="others">Outros</string>
+    <string name="choose_interests">Escolha pelo menos 5 interesses</string>
+
+    <!-- Layout -->
+    <!-- menu_main.xml -->
+    <string name="Save">Guardar</string>
+    <string name="Sociability">Sociabilidade</string>
+    <string name="Mobility">Mobilidade</string>
+    <string name="Settings">Definições</string>
+    <string name="Turn_Off">Desligar</string>
+
+    <!-- Class -->
+    <!-- CategoriesActivity -->
+    <string name="Interests_saved">Os seus interesses foram guardados com sucesso</string>
+
+    <!-- Class -->
+    <!-- SettingsActivity -->
+    <string-array name="settings_titles">
+        <item>Os meus interesses</item>
+        <item>Os meus alertas</item>
+        <item>Relatórios</item>
+        <item>Acerca</item>
+    </string-array>
+
+    <!-- Class -->
+    <!-- ReportsClass -->
+    <string name="Reports">Relatórios</string>
+    <string name="Social_Report">Relatório Social</string>
+    <string name="Interests_Report">Relatório de Interesses</string>
+    <string name="Merged_Report">Relatório Social com interesses</string>
+
+    <!-- Class -->
+    <!-- DeviceCategoriesActivity -->
+    <string name="user_interests">Interesses de %1$s</string>
+
+    <!-- Class -->
+    <!-- AlertManager -->
+    <string name="friends_around_you">Existem pessoas nas proximidades</string>
+    <string name="click_to_check_it">Clique aqui para ver.</string>
+    <string name="with_same_interests_as_you">com interesses semelhantes aos seus.</string>
+
+    <!-- Class -->
+    <!-- MainActivity -->
+    <string name="set_your_interests_to_proceed">Escolha no mínimo cinco interesses para prosseguir</string>
+
+    <!-- Class -->
+    <!-- SociabilityActivity -->
+    <string name="Social_Interaction">Interação Social</string>
+    <string name="Propinquity">Probabilidade de Interação</string>
+
+    <!-- Class -->
+    <!-- SocialReport -->
+    <string name="social_report_success">O relatório social foi gerado com sucesso</string>
+
+    <!-- Class -->
+    <!-- InterestsReport -->
+    <string name="interests_report_success">O relatório de interesses foi gerado com sucesso</string>
+
+    <!-- Class -->
+    <!-- BackgroundTask -->
+    <string name="building_your_report">A gerar o seu relatório</string>
+    <string name="report_success">O seu relatório foi gerado com sucesso</string>
+
+    <!-- Class -->
+    <!-- ReportsActivity -->
+    <string name="set_email_report_message">Email para onde o relatório será enviado</string>
+    <string name="email_not_valid">"Este email não é válido"</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancelar</string>
+
+    <!-- Class -->
+    <!-- activity_mobility.xml -->
+    <string name="coming_soon">Disponível brevemente</string>
+
+    <!-- Class -->
+    <!-- Utils -->
+    <string name="users_report">%1$s de %2$s</string>
+    <string name="hi_here_is_your_report">Olá, \nAqui está o relatório.</string>
+    <string name="send_report_by_email">Enviar relatório por email&#8230;</string>
+    <string name="send_report_by_email_success">O seu relatório foi enviado com sucesso</string>
+    <string name="send_report_by_email_error">Tem de definir o endereço de email onde o relatório será recebido</string>
+
+    <!-- xml -->
+    <!-- settings.xml -->
+    <string name="Alerts">Os meus alertas</string>
+    <string name="Alert_friends_around">Alerta de pessoas ao seu redor</string>
+    <string name="Alert_same_interests_around">Alerta de pessoas com interesses semelhantes</string>
+    <string name="Option_1">Se o nível de interação for baixo e existirem pessoas nas proximidades</string>
+    <string name="Option_2">Se existirem pessoas nas proximidades com interesses semelhantes</string>
+    <string name="Vibrate">Vibração</string>
+    <string name="Alerts_Frequency">Frequência dos alertas</string>
+    <string name="vibrate">Vibrar</string>
+    <string name="Set_the_alerts_frequency">Definir a frequência dos alertas</string>
+    <string name="Reports_email">Email onde o relatório será recebido</string>
+
+    <!-- xml -->
+    <!-- activity_reports.xml -->
+    <string name="email_report">Email onde os relatórios serão entregues</string>
+
+    <!-- xml -->
+    <!-- activity_categories.xml -->
+    <string name="view_more">Ver Mais</string>
+    <string name="finish">Terminar</string>
+
+    <!-- xml -->
+    <!-- arrays.xml -->
+    <string name="on_demand">No momento</string>
+    <string name="once_a_hour">Por hora</string>
+    <string name="once_a_day">Por dia</string>
+    <string name="minute">60000</string>
+    <string name="day">3600000</string>
+    <string name="hour">86400000</string>
+
+    <!--
+    <string name="sub_categories"></string>
+    -->
+
+    <string name="low">Baixo</string>
+    <string name="average">Médio</string>
+    <string name="high">Alto</string>
+
+
+</resources>

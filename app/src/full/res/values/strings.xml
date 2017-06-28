@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Layout -->
+    <!-- AndroidManifest.xml -->
+    <string name="app_name">NSense</string>
+    <string name="Map_Information">Map Information</string>
+    <string name="User_Information">User Information</string>
+
+    <!-- Layout -->
+    <!-- activity_nsense_map.xml -->
+    <string name="NSense_Service">NSense Service</string>
+    <string name="waiting_for_your_location">Waiting for your location…</string>
+
+    <!-- Layout -->
+    <!-- activity_about.xml -->
+        <string name="about_info">
+        NSense is a tool that collects data about your
+        interaction towards devices around, via Bluetooth.
+        Among other aspects, it detects: number of devices
+        around; time of contact; relative distance; your “social
+        strength” towards others; your motion pattern;
+        surrounding sound.
+    </string>
+
+    <!-- Layout -->
+    <!-- menu_main.xml -->
+    <string name="Map">Map</string>
+
+    <!-- Class -->
+    <!-- activity_information.xml -->
+    <string name="Intimate_Range">Intimate</string>
+    <string name="Personal_Range">Personal</string>
+    <string name="Social_Range">Social</string>
+    <string name="Public_Range">Public</string>
+    <string name="Sensing_Range">Sensing Range</string>
+
+    <!-- Class -->
+    <!-- MapManager -->
+    <string name="you_are_here">You are here</string>
+
+    <string name="reports">Reports</string>
+    <string name="please_send_your_reports">Please don\'t forget to send your reports</string>
+
+</resources>

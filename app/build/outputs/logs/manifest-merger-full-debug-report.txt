@@ -1,0 +1,332 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:2:1-120:12
+	package
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:3:5-24
+		INJECTED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml
+		INJECTED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml
+		INJECTED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:2:11-69
+	android:versionCode
+		INJECTED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml
+		INJECTED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:6:5-81
+	android:name
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:6:22-78
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:7:5-79
+	android:name
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:7:22-76
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:8:5-76
+	android:name
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:8:22-73
+uses-permission#android.permission.CHANGE_WIFI_STATE
+ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:9:5-76
+	android:name
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:9:22-73
+uses-permission#android.permission.WAKE_LOCK
+ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:10:5-68
+	android:name
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:10:22-65
+uses-permission#android.permission.BLUETOOTH
+ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:11:5-68
+	android:name
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:11:22-65
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:12:5-74
+	android:name
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:12:22-71
+uses-permission#android.permission.WRITE_INTERNAL_STORAGE
+ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:13:5-81
+	android:name
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:13:22-78
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:14:5-80
+	android:name
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:14:22-78
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:15:5-80
+	android:name
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:15:22-77
+uses-permission#android.permission.BATTERY_STATS
+ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:16:5-72
+	android:name
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:16:22-69
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:17:5-71
+	android:name
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:17:22-68
+uses-permission#android.permission.CHANGE_NETWORK_STATE
+ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:18:5-79
+	android:name
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:18:22-76
+uses-permission#android.permission.INTERNET
+ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:19:5-67
+MERGED from [com.google.android.gms:play-services-maps:11.0.1] /home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/11.0.1/AndroidManifest.xml:20:5-66
+	android:name
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:19:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:20:5-79
+MERGED from [com.google.android.gms:play-services-maps:11.0.1] /home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/11.0.1/AndroidManifest.xml:19:5-78
+	android:name
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:20:22-76
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:21:5-75
+	android:name
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:21:22-72
+uses-permission#android.permission.VIBRATE
+ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:22:5-66
+	android:name
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:22:22-63
+uses-permission#android.permission.READ_LOGS
+ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:23:5-68
+	android:name
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:23:22-65
+uses-feature#android.hardware.wifi.direct
+ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:26:5-89
+	android:required
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:26:63-86
+	android:name
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:26:19-62
+uses-feature#android.hardware.bluetooth
+ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:27:5-87
+	android:required
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:27:61-84
+	android:name
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:27:19-60
+application
+ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:29:5-118:19
+MERGED from [com.google.android.gms:play-services-maps:11.0.1] /home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/11.0.1/AndroidManifest.xml:24:5-19
+MERGED from [com.google.android.gms:play-services-base:11.0.1] /home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.1/AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.android.gms:play-services-basement:11.0.1] /home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/11.0.1/AndroidManifest.xml:19:5-21:19
+MERGED from [com.android.support:support-v4:25.2.0] /home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.2.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:25.2.0] /home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.2.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.2.0] /home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.2.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:25.2.0] /home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.2.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:25.2.0] /home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.2.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:25.2.0] /home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.2.0/AndroidManifest.xml:25:5-20
+MERGED from [com.google.android.gms:play-services-tasks:11.0.1] /home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/11.0.1/AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-location:11.0.1] /home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/11.0.1/AndroidManifest.xml:4:5-19
+MERGED from [com.yarolegovich:lovely-dialog:1.0.4] /home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.yarolegovich/lovely-dialog/1.0.4/AndroidManifest.xml:11:5-52
+MERGED from [com.android.support:appcompat-v7:23.4.0] /home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] /home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
+MERGED from [com.github.bluejamesbond:textjustify-android:2.1.6] /home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.github.bluejamesbond/textjustify-android/2.1.6/AndroidManifest.xml:40:5-20
+	android:label
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:33:9-41
+	android:allowBackup
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:31:9-35
+	android:icon
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:32:9-45
+	android:theme
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:35:9-40
+	android:logo
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:34:9-43
+	android:name
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:30:9-40
+activity#cs.usense.activities.SplashActivity
+ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:36:9-45:20
+	android:screenOrientation
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:39:13-49
+	android:configChanges
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:38:13-74
+	android:name
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:37:13-54
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:40:13-44:29
+action#android.intent.action.MAIN
+ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:41:17-69
+	android:name
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:41:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:43:17-77
+	android:name
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:43:27-74
+activity#cs.usense.activities.MainActivity
+ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:46:9-50:20
+	android:screenOrientation
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:49:13-49
+	android:configChanges
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:48:13-74
+	android:name
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:47:13-52
+activity#cs.usense.activities.CategoriesActivity
+ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:51:9-54:52
+	android:screenOrientation
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:54:13-49
+	android:configChanges
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:53:13-74
+	android:name
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:52:13-58
+activity#cs.usense.activities.RatingsActivity
+ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:55:9-58:52
+	android:screenOrientation
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:58:13-49
+	android:configChanges
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:57:13-74
+	android:name
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:56:13-55
+activity#cs.usense.activities.SettingsActivity
+ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:59:9-62:52
+	android:screenOrientation
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:62:13-49
+	android:configChanges
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:61:13-74
+	android:name
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:60:13-56
+activity#cs.usense.activities.AboutActivity
+ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:63:9-66:52
+	android:screenOrientation
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:66:13-49
+	android:configChanges
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:65:13-74
+	android:name
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:64:13-53
+activity#cs.usense.activities.AlertsActivity
+ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:67:9-70:52
+	android:screenOrientation
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:70:13-49
+	android:configChanges
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:69:13-74
+	android:name
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:68:13-54
+activity#cs.usense.activities.DeviceCategoriesActivity
+ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:71:9-75:51
+	android:screenOrientation
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:74:13-49
+	android:configChanges
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:73:13-74
+	android:theme
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:75:13-48
+	android:name
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:72:13-64
+activity#cs.usense.activities.DeviceRatingsActivity
+ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:76:9-80:51
+	android:screenOrientation
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:79:13-49
+	android:configChanges
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:78:13-74
+	android:theme
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:80:13-48
+	android:name
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:77:13-61
+activity#cs.usense.activities.MapInformationActivity
+ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:81:9-85:51
+	android:screenOrientation
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:84:13-49
+	android:configChanges
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:83:13-74
+	android:theme
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:85:13-48
+	android:name
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:82:13-62
+activity#cs.usense.activities.AlertInterestsActivity
+ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:86:9-89:51
+	android:label
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:88:13-47
+	android:theme
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:89:13-48
+	android:name
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:87:13-62
+activity#cs.usense.activities.SociabilityDetailActivity
+ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:90:9-92:51
+	android:theme
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:92:13-48
+	android:name
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:91:13-65
+activity#cs.usense.activities.SociabilityActivity
+ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:93:9-96:52
+	android:screenOrientation
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:96:13-49
+	android:configChanges
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:95:13-74
+	android:name
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:94:13-59
+activity#cs.usense.activities.ReportsActivity
+ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:97:9-100:52
+	android:screenOrientation
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:100:13-49
+	android:configChanges
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:99:13-74
+	android:name
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:98:13-55
+activity#cs.usense.activities.MobilityActivity
+ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:101:9-104:52
+	android:screenOrientation
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:104:13-49
+	android:configChanges
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:103:13-74
+	android:name
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:102:13-56
+service#cs.usense.services.NSenseService
+ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:106:9-59
+	android:name
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:106:18-56
+service#cs.usense.energy.NSenseIntentService
+ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:107:9-63
+	android:name
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:107:18-60
+receiver#cs.usense.energy.WakeFullReceiver
+ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:109:9-61
+	android:name
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:109:19-58
+meta-data#com.google.android.geo.API_KEY
+ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:111:9-113:55
+	android:value
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:113:13-52
+	android:name
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:112:13-58
+meta-data#com.google.android.gms.version
+ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:114:9-116:69
+MERGED from [com.google.android.gms:play-services-basement:11.0.1] /home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/11.0.1/AndroidManifest.xml:20:9-121
+	android:value
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:116:13-66
+	android:name
+		ADDED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml:115:13-58
+uses-sdk
+INJECTED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:multidex:1.0.1] /home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/multidex/1.0.1/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-maps:11.0.1] /home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/11.0.1/AndroidManifest.xml:23:5-43
+MERGED from [com.google.android.gms:play-services-base:11.0.1] /home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.1/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-basement:11.0.1] /home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/11.0.1/AndroidManifest.xml:17:5-43
+MERGED from [com.android.support:support-v4:25.2.0] /home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.2.0/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-compat:25.2.0] /home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.2.0/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-media-compat:25.2.0] /home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.2.0/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-utils:25.2.0] /home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.2.0/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-ui:25.2.0] /home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.2.0/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-fragment:25.2.0] /home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.2.0/AndroidManifest.xml:21:5-23:60
+MERGED from [com.google.android.gms:play-services-tasks:11.0.1] /home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/11.0.1/AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-location:11.0.1] /home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/11.0.1/AndroidManifest.xml:3:5-43
+MERGED from [com.yarolegovich:lovely-dialog:1.0.4] /home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.yarolegovich/lovely-dialog/1.0.4/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:23.4.0] /home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] /home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:5:5-43
+MERGED from [com.github.bluejamesbond:textjustify-android:2.1.6] /home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.github.bluejamesbond/textjustify-android/2.1.6/AndroidManifest.xml:36:5-38:41
+MERGED from [com.jakewharton:butterknife:8.6.0] /home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.jakewharton/butterknife/8.6.0/AndroidManifest.xml:5:5-43
+	tools:overrideLibrary
+		ADDED from [com.android.support:support-v4:25.2.0] /home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.2.0/AndroidManifest.xml:23:9-51
+	android:targetSdkVersion
+		INJECTED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml
+		INJECTED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml
+		INJECTED from /home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/AndroidManifest.xml
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:11.0.1] /home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/11.0.1/AndroidManifest.xml:21:5-77
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:11.0.1] /home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/11.0.1/AndroidManifest.xml:21:19-51
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:11.0.1] /home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/11.0.1/AndroidManifest.xml:21:52-75
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:11.0.1] /home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.1/AndroidManifest.xml:19:9-172
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:11.0.1] /home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.1/AndroidManifest.xml:19:146-170
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:11.0.1] /home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.1/AndroidManifest.xml:19:86-145
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:11.0.1] /home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.1/AndroidManifest.xml:19:19-85

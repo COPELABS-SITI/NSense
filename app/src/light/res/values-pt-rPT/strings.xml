@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Layout -->
+    <!-- AndroidManifest.xml -->
+    <string name="app_name">NSense Light</string>
+
+    <!-- Layout -->
+    <!-- activity_home.xml -->
+    <string name="NSense_Service">NSense Light Service</string>
+    <string name="nsense_is_collecting_your_data">O NSense está a recolher os seus dados…</string>
+
+    <!-- Layout -->
+    <!-- activity_about.xml -->
+    <string name="about_info">
+        O NSense Light é uma ferramenta que recolhe os dados sobre
+        a sua interação com os dispositivos ao redor.
+        Entre outros aspetos, deteta os equipamentos à sua volta,
+        correlaciona o tempo de contato, a distância, a intensidade
+        da sua relação, o seu padrão de movimento e som para com
+        estas pessoas.
+    </string>
+
+    <!-- Layout -->
+    <!-- menu_main.xml -->
+    <string name="Home">Ínicio</string>
+
+</resources>

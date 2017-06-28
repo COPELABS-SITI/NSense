@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ld_textInputError">#F44336</color>
+    <dimen name="ld_side_cb_margin">16dp</dimen>
+    <dimen name="ld_side_margin">22dp</dimen>
+    <item name="ld_color_area" type="id"/>
+    <item name="ld_icon" type="id"/>
+    <item name="ld_message" type="id"/>
+    <item name="ld_title" type="id"/>
+    <string name="dont_show_again">Don\'t show again</string>
+    <string name="ex_msg_dialog_choice_confirm">Confirm button is only for multi choice lists. You must call setMultiChoiceItems first</string>
+    <string name="ex_msg_dialog_view_not_set">You must call method setView before calling configureView.</string>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar"/>
+    <style name="DialogButton">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">?android:selectableItemBackground</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:paddingLeft">@dimen/ld_side_margin</item>
+        <item name="android:paddingRight">@dimen/ld_side_margin</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+    </style>
+</resources>

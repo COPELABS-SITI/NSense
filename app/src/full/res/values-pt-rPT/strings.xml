@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Layout -->
+    <!-- AndroidManifest.xml -->
+    <string name="app_name">NSense</string>
+    <string name="Map_Information">Informação do mapa</string>
+    <string name="User_Information">Informação do utilizador</string>
+
+    <!-- Layout -->
+    <!-- activity_nsense_map.xml -->
+    <string name="NSense_Service">NSense Service</string>
+    <string name="waiting_for_your_location">A aguardar pela sua localização…</string>
+
+    <!-- Layout -->
+    <!-- activity_about.xml -->
+    <string name="about_info">
+        O NSense é uma ferramenta que recolhe os dados sobre
+        a sua interação com os dispositivos ao redor.
+        Entre outros aspetos, deteta os equipamentos à sua volta,
+        correlaciona o tempo de contato, a distância, a intensidade
+        da sua relação, o seu padrão de movimento e som para com
+        estas pessoas.
+    </string>
+
+    <!-- Layout -->
+    <!-- menu_main.xml -->
+    <string name="Map">Mapa</string>
+
+    <!-- Class -->
+    <!-- activity_information.xml -->
+    <string name="Intimate_Range">Íntima</string>
+    <string name="Personal_Range">Pessoal</string>
+    <string name="Social_Range">Social</string>
+    <string name="Public_Range">Pública</string>
+    <string name="Sensing_Range">Raio de alcance</string>
+
+    <!-- Class -->
+    <!-- MapManager -->
+    <string name="you_are_here">Você está aqui</string>
+
+    <string name="reports">Relatórios</string>
+    <string name="please_send_your_reports">Por favor, não se esqueça de enviar os seus relatórios</string>
+
+</resources>

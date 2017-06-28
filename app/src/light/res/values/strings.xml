@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Layout -->
+    <!-- AndroidManifest.xml -->
+    <string name="app_name">NSense Light</string>
+
+    <!-- Layout -->
+    <!-- activity_home.xml -->
+    <string name="NSense_Service">NSense Light Service</string>
+    <string name="nsense_is_collecting_your_data">NSense is collecting your data…</string>
+
+    <!-- Layout -->
+    <!-- activity_about.xml -->
+    <string name="about_info">
+        NSense Light is a tool that collects data about your
+        interaction towards devices around, via Bluetooth.
+        Among other aspects, it detects: number of devices
+        around; time of contact; relative distance; your “social
+        strength” towards others; your motion pattern;
+        surrounding sound.
+    </string>
+
+    <!-- Layout -->
+    <!-- menu_main.xml -->
+    <string name="Home">Home</string>
+
+</resources>

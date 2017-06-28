@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string-array name="settings_titles">
+        <item>Os meus interesses</item>
+        <item>Os meus alertas</item>
+        <item>Relatórios</item>
+        <item>Acerca</item>
+    </string-array>
+    <string name="About">Acerca</string>
+    <string name="Alert_friends_around">Alerta de pessoas ao seu redor</string>
+    <string name="Alert_same_interests_around">Alerta de pessoas com interesses semelhantes</string>
+    <string name="Alerts">Os meus alertas</string>
+    <string name="Alerts_Frequency">Frequência dos alertas</string>
+    <string name="Around_You">Interesses semelhantes à sua volta</string>
+    <string name="Interests_Report">Relatório de Interesses</string>
+    <string name="Interests_not_available">Não há interesses a apresentar</string>
+    <string name="Interests_saved">Os seus interesses foram guardados com sucesso</string>
+    <string name="Intimate_Range">Íntima</string>
+    <string name="Map">Mapa</string>
+    <string name="Map_Information">Informação do mapa</string>
+    <string name="Merged_Report">Relatório Social com interesses</string>
+    <string name="Mobility">Mobilidade</string>
+    <string name="My_Categories">Os meus interesses</string>
+    <string name="My_Ratings">As minhas classificações</string>
+    <string name="NSense_Service">NSense Service</string>
+    <string name="Option_1">Se o nível de interação for baixo e existirem pessoas nas proximidades</string>
+    <string name="Option_2">Se existirem pessoas nas proximidades com interesses semelhantes</string>
+    <string name="Personal_Range">Pessoal</string>
+    <string name="Propinquity">Probabilidade de Interação</string>
+    <string name="Public_Range">Pública</string>
+    <string name="Reports">Relatórios</string>
+    <string name="Reports_email">Email onde o relatório será recebido</string>
+    <string name="Save">Guardar</string>
+    <string name="Sensing_Range">Raio de alcance</string>
+    <string name="Set_the_alerts_frequency">Definir a frequência dos alertas</string>
+    <string name="Settings">Definições</string>
+    <string name="Sociability">Sociabilidade</string>
+    <string name="Sociability_History">Histórico social</string>
+    <string name="Social_Interaction">Interação Social</string>
+    <string name="Social_Range">Social</string>
+    <string name="Social_Report">Relatório Social</string>
+    <string name="Turn_Off">Desligar</string>
+    <string name="User_Information">Informação do utilizador</string>
+    <string name="Vibrate">Vibração</string>
+    <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Navegar para a página inicial"</string>
+    <string msgid="1397052879051804371" name="abc_action_bar_home_description_format">"%1$s, %2$s"</string>
+    <string msgid="6623331958280229229" name="abc_action_bar_home_subtitle_description_format">"%1$s, %2$s, %3$s"</string>
+    <string msgid="1594238315039666878" name="abc_action_bar_up_description">"Navegar para cima"</string>
+    <string msgid="3588849162933574182" name="abc_action_menu_overflow_description">"Mais opções"</string>
+    <string msgid="4076576682505996667" name="abc_action_mode_done">"Concluído"</string>
+    <string msgid="7468859129482906941" name="abc_activity_chooser_view_see_all">"Ver tudo"</string>
+    <string msgid="2031811694353399454" name="abc_activitychooserview_choose_application">"Escolher uma aplicação"</string>
+    <string msgid="121134116657445385" name="abc_capital_off">"DESATIVADO"</string>
+    <string msgid="3405795526292276155" name="abc_capital_on">"ATIVADO"</string>
+    <string msgid="7723749260725869598" name="abc_search_hint">"Pesquisar..."</string>
+    <string msgid="3691816814315814921" name="abc_searchview_description_clear">"Limpar consulta"</string>
+    <string msgid="2550479030709304392" name="abc_searchview_description_query">"Consulta de pesquisa"</string>
+    <string msgid="8264924765203268293" name="abc_searchview_description_search">"Pesquisar"</string>
+    <string msgid="8928215447528550784" name="abc_searchview_description_submit">"Enviar consulta"</string>
+    <string msgid="893419373245838918" name="abc_searchview_description_voice">"Pesquisa por voz"</string>
+    <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Partilhar com"</string>
+    <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Partilhar com %s"</string>
+    <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Reduzir"</string>
+    <string name="about_info">
+        O NSense é uma ferramenta que recolhe os dados sobre
+        a sua interação com os dispositivos ao redor.
+        Entre outros aspetos, deteta os equipamentos à sua volta,
+        correlaciona o tempo de contato, a distância, a intensidade
+        da sua relação, o seu padrão de movimento e som para com
+        estas pessoas.
+    </string>
+    <string name="app_name">NSense</string>
+    <string name="art">Arte</string>
+    <string name="average">Médio</string>
+    <string name="building_your_report">A gerar o seu relatório</string>
+    <string name="business_and_economics">Negócios e Economia</string>
+    <string name="cancel">Cancelar</string>
+    <string name="cars">Carros</string>
+    <string name="choose_interests">Escolha pelo menos 5 interesses</string>
+    <string name="click_to_check_it">Clique aqui para ver.</string>
+    <string name="coming_soon">Disponível brevemente</string>
+    <string msgid="8585111718777012708" name="common_google_play_services_enable_button">"Ativar"</string>
+    <string msgid="7045129128108380659" name="common_google_play_services_enable_text">"O <ns1:g id="APP_NAME">%1$s</ns1:g> não funciona enquanto não ativar os serviços do Google Play."</string>
+    <string msgid="3147157405986503375" name="common_google_play_services_enable_title">"Ativar serviços do Google Play"</string>
+    <string msgid="9115728400623041681" name="common_google_play_services_install_button">"Instalar"</string>
+    <string msgid="8179894293032530091" name="common_google_play_services_install_text">"O <ns1:g id="APP_NAME">%1$s</ns1:g> não é executado sem os Serviços do Google Play, os quais estão em falta no seu dispositivo."</string>
+    <string msgid="7442193194585196676" name="common_google_play_services_install_title">"Obter serviços do Google Play"</string>
+    <string msgid="180394615667698242" name="common_google_play_services_notification_ticker">"Erro dos Serviços do Google Play"</string>
+    <string msgid="2518680582564677258" name="common_google_play_services_unknown_issue">"<ns1:g id="APP_NAME">%1$s</ns1:g> está a ter problemas com os Serviços do Google Play. Tente novamente."</string>
+    <string msgid="5501187292256987189" name="common_google_play_services_unsupported_text">"Não é possível executar o <ns1:g id="APP_NAME">%1$s</ns1:g> sem os Serviços do Google Play, os quais não são compatíveis com o seu dispositivo."</string>
+    <string msgid="8172070149091615356" name="common_google_play_services_update_button">"Atualizar"</string>
+    <string msgid="7773943415006962566" name="common_google_play_services_update_text">"O <ns1:g id="APP_NAME">%1$s</ns1:g> não é executado enquanto não atualizar os serviços do Google Play."</string>
+    <string msgid="8706675115216073244" name="common_google_play_services_update_title">"Atualizar serviços do Google Play"</string>
+    <string msgid="7894275749778928941" name="common_google_play_services_updating_text">"O <ns1:g id="APP_NAME">%1$s</ns1:g> não é executado sem os serviços do Google Play, os quais estão a ser atualizados."</string>
+    <string msgid="2804989272736383918" name="common_google_play_services_wear_update_text">"É necessária uma nova versão dos serviços do Google Play. Esta será atualizada automaticamente em breve."</string>
+    <string msgid="5201977337835724196" name="common_open_on_phone">"Abrir no telemóvel"</string>
+    <string msgid="3441753203274453993" name="common_signin_button_text">"Iniciar sessão"</string>
+    <string msgid="669893613918351210" name="common_signin_button_text_long">"Iniciar sessão com o Google"</string>
+    <string name="community">Comunidades</string>
+    <string name="day">3600000</string>
+    <string name="email_not_valid">"Este email não é válido"</string>
+    <string name="email_report">Email onde os relatórios serão entregues</string>
+    <string name="family">Família e Educação</string>
+    <string name="fashion">Moda</string>
+    <string name="finish">Terminar</string>
+    <string name="food">Comida</string>
+    <string name="friends_around_you">Existem pessoas nas proximidades</string>
+    <string name="google_maps_key">AIzaSyCkIQh0ZQSWCcdIq3uG0lr4LcEenD0-gRs</string>
+    <string name="government">Governamental</string>
+    <string name="health_and_fitness">Saúde</string>
+    <string name="hi_here_is_your_report">Olá, \nAqui está o relatório.</string>
+    <string name="high">Alto</string>
+    <string name="hobby">Passatempos</string>
+    <string name="home">Casa e Estilo de Vida</string>
+    <string name="hour">86400000</string>
+    <string name="interests_report_success">O relatório de interesses foi gerado com sucesso</string>
+    <string name="low">Baixo</string>
+    <string name="minute">60000</string>
+    <string name="movies">Filmes e Multimédia</string>
+    <string name="music">Música</string>
+    <string name="ok">OK</string>
+    <string name="on_demand">No momento</string>
+    <string name="once_a_day">Por dia</string>
+    <string name="once_a_hour">Por hora</string>
+    <string name="others">Outros</string>
+    <string name="pets">Animais de Estimação</string>
+    <string name="please_send_your_reports">Por favor, não se esqueça de enviar os seus relatórios</string>
+    <string name="report_success">O seu relatório foi gerado com sucesso</string>
+    <string name="reports">Relatórios</string>
+    <string name="science">Ciência e Tecnologia</string>
+    <string name="send_report_by_email">Enviar relatório por email…</string>
+    <string name="send_report_by_email_error">Tem de definir o endereço de email onde o relatório será recebido</string>
+    <string name="send_report_by_email_success">O seu relatório foi enviado com sucesso</string>
+    <string name="set_email_report_message">Email para onde o relatório será enviado</string>
+    <string name="set_your_interests_to_proceed">Escolha no mínimo cinco interesses para prosseguir</string>
+    <string name="social_report_success">O relatório social foi gerado com sucesso</string>
+    <string name="solidarity_and_causes">Caridade</string>
+    <string name="spirituality">Espiritualidade</string>
+    <string name="sport">Desporto</string>
+    <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"+999"</string>
+    <string name="travel">Viagens</string>
+    <string name="user_interests">Interesses de %1$s</string>
+    <string name="users_report">%1$s de %2$s</string>
+    <string name="vacation">Férias</string>
+    <string name="version">Versão %1$s </string>
+    <string name="vibrate">Vibrar</string>
+    <string name="view_more">Ver Mais</string>
+    <string name="waiting_for_your_location">A aguardar pela sua localização…</string>
+    <string name="with_same_interests_as_you">com interesses semelhantes aos seus.</string>
+    <string name="you_are_here">Você está aqui</string>
+</resources>

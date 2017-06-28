@@ -1,0 +1,43 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/done"
+        app:showAsAction="always"
+        android:title="@string/Save" >
+    </item>
+
+    <item
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/btn_options"
+        android:title="@string/Mobility">
+        <menu>
+            <item
+                android:id="@+id/activity_main"
+                android:icon="@drawable/ic_home"
+                android:title="@string/Home" >
+            </item>
+            <item
+                android:id="@+id/activity_mobility"
+                android:icon="@drawable/ic_mobility"
+                android:title="@string/Mobility" >
+            </item>
+            <item
+                android:id="@+id/activity_sociability"
+                android:icon="@drawable/ic_sociability"
+                android:title="@string/Sociability">
+            </item>
+            <item
+                android:id="@+id/activity_settings"
+                android:icon="@drawable/ic_settings"
+                android:title="@string/Settings">
+            </item>
+            <item
+                android:id="@+id/turn_off"
+                android:icon="@drawable/ic_turn_off"
+                android:title="@string/Turn_Off">
+            </item>
+        </menu>
+    </item>
+
+</menu>

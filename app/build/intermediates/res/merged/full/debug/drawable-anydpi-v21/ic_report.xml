@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:viewportWidth="512"
+    android:viewportHeight="512"
+    android:width="24dp"
+    android:height="24dp">
+    <group
+        android:scaleX="0.1"
+        android:scaleY="-0.1"
+        android:translateY="512">
+        <path
+            android:pathData="M469 5106C321 5051 227 4944 200 4801 186 4727 186 393 200 319 223 195 305 90 420 36l65 -31 2075 0 2075 0 65 31c115 54 197 159 220 283 14 74 14 4408 0 4482 -23 124 -105 229 -220 283l-65 31 -2065 2c-1684 1 -2072 -1 -2101 -11zm4051 -2546l0 -2160 -1960 0 -1960 0 0 2160 0 2160 1960 0 1960 0 0 -2160z"
+            android:fillColor="#000000" />
+        <path
+            android:pathData="M1180 3545l0 -205 200 0 200 0 0 205 0 205 -200 0 -200 0 0 -205z"
+            android:fillColor="#000000" />
+        <path
+            android:pathData="M1960 3545l0 -205 990 0 990 0 0 205 0 205 -990 0 -990 0 0 -205z"
+            android:fillColor="#000000" />
+        <path
+            android:pathData="M1180 2560l0 -200 200 0 200 0 0 200 0 200 -200 0 -200 0 0 -200z"
+            android:fillColor="#000000" />
+        <path
+            android:pathData="M1960 2560l0 -200 990 0 990 0 0 200 0 200 -990 0 -990 0 0 -200z"
+            android:fillColor="#000000" />
+        <path
+            android:pathData="M1180 1575l0 -205 200 0 200 0 0 205 0 205 -200 0 -200 0 0 -205z"
+            android:fillColor="#000000" />
+        <path
+            android:pathData="M1960 1575l0 -205 990 0 990 0 0 205 0 205 -990 0 -990 0 0 -205z"
+            android:fillColor="#000000" />
+    </group>
+</vector>

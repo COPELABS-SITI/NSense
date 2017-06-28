@@ -1,0 +1,53 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.jakewharton.butterknife'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '23.0.3'
+    defaultConfig {
+        applicationId "cs.usense"
+        minSdkVersion 18
+        targetSdkVersion 22
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+        light {
+            applicationId 'cs.usense.light'
+            versionCode 3
+            versionName '1.0'
+        }
+        full {
+            applicationId 'cs.usense'
+            versionCode 9
+            versionName '2.0'
+        }
+    }
+
+}
+
+repositories {
+    maven { url "https://mint.splunk.com/gradle/" }
+    maven { url 'https://jitpack.io' }
+}
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:23.+'
+    compile 'com.splunk.mint:mint:5.0.0'
+    compile 'com.google.android.gms:play-services-maps:+'
+    compile 'com.google.android.gms:play-services-location:+'
+    compile 'com.yarolegovich:lovely-dialog:1.0.4'
+    compile 'com.jakewharton:butterknife:8.1.0'
+    compile 'com.github.bluejamesbond:textjustify-android:2.1.6'
+
+    compile 'com.jakewharton:butterknife:8.6.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.6.0'
+
+}

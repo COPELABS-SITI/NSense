@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/home/miguel/.android/build-cache/2a16288acd4d97d26e2a1681ca1710538955d604/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6003d64df88a6ce5e961fa2bad7f1b9b97689ac1">
+        <dex dex="/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/transforms/dex/full/debug/folders/1000/10/classes_7e4c7ef2631d2617fd90459777d6a54ec99c1a29/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/incremental-runtime-classes/full/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="510aa6efc159983dfbffa676a0dae37568c0a46f">
+        <dex dex="/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/transforms/dex/full/debug/folders/1000/10000/instant-run_2fc6bb9100f182b56e5c680c767c20ca659b3577/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/miguel/.android/build-cache/81265f11a5fc7d8d8080b0b53e13625dc61c7249/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="736afb22391a31d5fb14d282179c06c5649c46fe">
+        <dex dex="/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/transforms/dex/full/debug/folders/1000/10/classes_b1b0175a91837a2fc223c4b9ab1981fdeacd159b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/miguel/AndroidStudioProjects/NSense_V2.0/app/libs/mint-5.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f14f9b3710797b729b5c95ad81f5f95987cbd184">
+        <dex dex="/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/transforms/dex/full/debug/folders/1000/2/mint-5.2.1_eeb49f0e2178b1f3e4d2cc42bfe8ad3613a7731b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/miguel/.android/build-cache/c1d89a482ed43c35d65c92594c3c77b9298f46be/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/transforms/dex/full/debug/folders/1000/10/classes_5bfbd2a8085ac53493e1daa062efa316dd655489/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/miguel/.android/build-cache/1dfe7a32c4404f37d50bd32070efe76acfcec227/output/jars/libs/internal_impl-24.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="fcaf463e10e69c1923ccf1edeba3b4196d239e00">
+        <dex dex="/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/transforms/dex/full/debug/folders/1000/10/internal_impl-24.0.0_fbc1b8ca0436f9f8e9a198a67d803135df790984/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/miguel/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/25.1.0/support-annotations-25.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="64cb6b229a8bdfd907bc8dd46839a0053e4c018d">
+        <dex dex="/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/transforms/dex/full/debug/folders/1000/10/support-annotations-25.1.0_2905a6a9a372fcb6010934685c467d839fd0dc25/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/miguel/.android/build-cache/70a2db29f8267d819bbdfa3593f4f075a9426896/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="19696dc358ac668e341f28c41e3387d61ccdb81d">
+        <dex dex="/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/transforms/dex/full/debug/folders/1000/10/classes_5071261e93dc94216d84cba8ad8132e9993243b2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/miguel/.android/build-cache/be41e7c42cf56734e299ceafcdc5369ff79f02b6/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="bb115a110992b254f767f337da233071f6f940b8">
+        <dex dex="/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/transforms/dex/full/debug/folders/1000/10/classes_3356d043d3a0972159521d5d2643e1d6b4b14c8f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/miguel/.android/build-cache/e3ab8221a9d91cfc59f89036b3937f199b2a45a1/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c7626a9aa507bbbdc16188bc9a9f9bf3370c1ddd">
+        <dex dex="/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/transforms/dex/full/debug/folders/1000/10/classes_cdd9357d0ecdd718eab43574f312f65928a1ce99/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/miguel/.android/build-cache/1dfe7a32c4404f37d50bd32070efe76acfcec227/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="2f7e6e2dad1bccaf68a8820820adc6c0d5b96d37">
+        <dex dex="/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/transforms/dex/full/debug/folders/1000/10/classes_180bb86cb7236174ed347e05999ba727b0271f7d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/miguel/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife-annotations/8.5.1/bb67dad90bab7cd77a8f7f1b8442b47e3a2326bc/butterknife-annotations-8.5.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="bb67dad90bab7cd77a8f7f1b8442b47e3a2326bc">
+        <dex dex="/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/transforms/dex/full/debug/folders/1000/10/butterknife-annotations-8.5.1_a71ad42c1ed1724d5f6a46eb77bca7c01e55a26f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/miguel/.android/build-cache/2af83803814d6f035ee6959df16ed3a69d6ad42a/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="19f281a785ca0eb5f6799fc7bf7ca199a9ca1e8b">
+        <dex dex="/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/transforms/dex/full/debug/folders/1000/10/classes_5cd9b50ae0990422d8e890d8b5477339232fd6f3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/miguel/.android/build-cache/42345696d581f315a74b6832cb5338ae452d47b8/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
+        <dex dex="/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/transforms/dex/full/debug/folders/1000/10/classes_17b82b5348df94c527c50456283b6b6608ac4e64/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/incremental-classes/full/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ae6de1a029875bed93f645d7fdec3f3ec7213881">
+        <dex dex="/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/transforms/dex/full/debug/folders/1000/10000/instant-run-bootstrap_feabea269dec2c0941f22d6b29061853aa271448/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/miguel/AndroidStudioProjects/NSense_V2.0/app/libs/mpandroidchartlibrary-2-1-4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="952d6628da280edb2bbb66a0848f8d79d3587df5">
+        <dex dex="/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/transforms/dex/full/debug/folders/1000/2/mpandroidchartlibrary-2-1-4_0533a66d585419cab346702c7f4072f34cc82189/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/miguel/.android/build-cache/48399b7cd1181eb8ffea785ef1124d2a87db7483/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="bdcc2a9572f18b8c90a3a157cab6cdfc97c6c736">
+        <dex dex="/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/transforms/dex/full/debug/folders/1000/10/classes_822add7a2919ca3b08972c4eea170dccd45988d0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/miguel/.android/build-cache/4df1020d2dc288187b64109dc8cb867b43c85e9e/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/transforms/dex/full/debug/folders/1000/10/classes_6eb6fc8f24691a664c1b1903cef9d0c0acd5d971/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/miguel/.android/build-cache/e20b7c9196394ed77bf2de2107c8c691e834337b/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/transforms/dex/full/debug/folders/1000/10/classes_9e7b052959792c351f9f3398420050c9123b3a45/classes.dex" />
+    </item>
+
+</items>

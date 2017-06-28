@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Layout -->
+    <!-- AndroidManifest.xml -->
+    <string name="google_maps_key">AIzaSyCkIQh0ZQSWCcdIq3uG0lr4LcEenD0-gRs</string>
+    <string name="Around_You">Same interests around you</string>
+    <string name="Sociability_History">Sociability History</string>
+
+    <!-- Layout -->
+    <!-- activity_about.xml -->
+    <string name="About">About</string>
+    <string name="version">Version %1$s </string>
+
+    <!-- Layout -->
+    <!-- activity_interests.xml -->
+    <string name="My_Categories">My Categories</string>
+    <string name="My_Ratings">My Ratings</string>
+    <string name="Interests_not_available">Interests not available</string>
+    <string name="music">Music</string>
+    <string name="business_and_economics">Business and Economics</string>
+    <string name="food">Food</string>
+    <string name="community">Community</string>
+    <string name="art">Art</string>
+    <string name="movies">Movies and Multimedia</string>
+    <string name="sport">Sport</string>
+    <string name="health_and_fitness">Health and Fitness</string>
+    <string name="science">Science and Technology</string>
+    <string name="travel">Travel and Outdoor</string>
+    <string name="solidarity_and_causes">Solidarity and Causes</string>
+    <string name="spirituality">Spirituality</string>
+    <string name="family">Family and Education</string>
+    <string name="vacation">Vacation</string>
+    <string name="government">Government</string>
+    <string name="fashion">Fashion</string>
+    <string name="home">Home and Lifestyle</string>
+    <string name="cars">Cars</string>
+    <string name="hobby">Hobby</string>
+    <string name="pets">Pets</string>
+    <string name="others">Others</string>
+    <string name="choose_interests">Choose at least 5 favorite interests</string>
+
+    <!-- Layout -->
+    <!-- menu_main.xml -->
+    <string name="Save">Save</string>
+    <string name="Sociability">Sociability</string>
+    <string name="Mobility">Mobility</string>
+    <string name="Settings">Settings</string>
+    <string name="Turn_Off">Turn Off</string>
+
+    <!-- Class -->
+    <!-- SubCategoriesActivity -->
+    <string name="Interests_saved">Your interests have been saved.</string>
+
+    <!-- Class -->
+    <!-- SettingsActivity -->
+    <string-array name="settings_titles">
+        <item>My Interests</item>
+        <item>My Alerts</item>
+        <item>Reports</item>
+        <item>About</item>
+    </string-array>
+
+    <!-- Class -->
+    <!-- ReportsClass -->
+    <string name="Reports">Reports</string>
+    <string name="Social_Report">Social Report</string>
+    <string name="Interests_Report">Interests Report</string>
+    <string name="Merged_Report">Social Report with Interests</string>
+
+    <!-- Class -->
+    <!-- DeviceCategoriesActivity -->
+    <string name="user_interests">%1$s interests</string>
+
+    <!-- Class -->
+    <!-- AlertManager -->
+    <string name="friends_around_you">There are friends around you</string>
+    <string name="click_to_check_it">Click to check it.</string>
+    <string name="with_same_interests_as_you">with the same interests as you.</string>
+
+    <!-- Class -->
+    <!-- MainActivity -->
+    <string name="set_your_interests_to_proceed">You have to set at least five interests to proceed</string>
+
+    <!-- Class -->
+    <!-- SociabilityActivity -->
+    <string name="Social_Interaction">Social Interaction</string>
+    <string name="Propinquity">Propinquity</string>
+
+    <!-- Class -->
+    <!-- SocialReport -->
+    <string name="social_report_success">Social report was generated with success</string>
+
+    <!-- Class -->
+    <!-- InterestsReport -->
+    <string name="interests_report_success">Interests report was generated with success</string>
+
+    <!-- Class -->
+    <!-- BackgroundTask -->
+    <string name="building_your_report">Building your report</string>
+    <string name="report_success">Report was built with success</string>
+
+    <!-- Class -->
+    <!-- ReportsActivity -->
+    <string name="set_email_report_message">Set email where reports will be delivered</string>
+    <string name="email_not_valid">"This email is not valid"</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+
+    <!-- Class -->
+    <!-- ActivityMobility -->
+    <string name="coming_soon">Coming Soon</string>
+
+    <!-- Class -->
+    <!-- Utils -->
+    <string name="users_report">%1$s of %2$s</string>
+    <string name="hi_here_is_your_report">Hi, \nHere is your report.</string>
+    <string name="send_report_by_email">Send report by email&#8230;</string>
+    <string name="send_report_by_email_success">Your report was sent with success</string>
+    <string name="send_report_by_email_error">You must define on settings the email where the report will be receipt</string>
+
+    <!-- xml -->
+    <!-- settings.xml -->
+    <string name="Alerts">My Alerts</string>
+    <string name="Alert_friends_around">Alert friends around</string>
+    <string name="Alert_same_interests_around">Alert same interests around</string>
+    <string name="Option_1">If interaction is low, and yet friends are around</string>
+    <string name="Option_2">Getting information from people with similar interests around</string>
+    <string name="Vibrate">Vibrate</string>
+    <string name="Alerts_Frequency">Alerts Frequency</string>
+    <string name="vibrate">Vibrate</string>
+    <string name="Set_the_alerts_frequency">Set the alerts frequency</string>
+    <string name="Reports_email">Email where reports will be sent</string>
+
+    <!-- xml -->
+    <!-- activity_categories.xml -->
+    <string name="view_more">View More</string>
+    <string name="finish">Finish</string>
+
+    <!-- xml -->
+    <!-- activity_reports.xml -->
+    <string name="email_report">Email to deliver reports</string>
+
+    <!-- xml -->
+    <!-- arrays.xml -->
+    <string name="on_demand">On Demand</string>
+    <string name="once_a_hour">Once a Hour</string>
+    <string name="once_a_day">Once a Day</string>
+    <string name="minute">60000</string>
+    <string name="day">3600000</string>
+    <string name="hour">86400000</string>
+
+    <!-- xml -->
+    <!-- arrays.xml -->
+    <string name="low">Low</string>
+    <string name="average">Average</string>
+    <string name="high">High</string>
+
+</resources>

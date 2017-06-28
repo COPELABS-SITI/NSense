@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer-array name="settings_icons">
+        <item>@drawable/ic_favorite</item>
+        <item>@drawable/ic_alerts</item>
+        <item>@drawable/ic_reporting</item>
+        <item>@drawable/ic_about</item>
+    </integer-array>
+
+    <string-array name="alertsFrequency">
+        <item name="0">@string/on_demand</item>
+        <item name="1">@string/once_a_hour</item>
+        <item name="24">@string/once_a_day</item>
+    </string-array>
+
+    <string-array name="alertsFrequencyValues">
+        <item name="0">@string/minute</item>
+        <item name="1">@string/hour</item>
+        <item name="24">@string/day</item>
+    </string-array>
+
+    <string-array name="reports_titles">
+        <item>@string/Social_Report</item>
+        <item>@string/Interests_Report</item>
+        <item>@string/Merged_Report</item>
+    </string-array>
+
+    <string-array name="categories">
+        <item>@string/music</item>
+        <item>@string/business_and_economics</item>
+        <item>@string/food</item>
+        <item>@string/community</item>
+        <item>@string/art</item>
+        <item>@string/movies</item>
+        <item>@string/sport</item>
+        <item>@string/health_and_fitness</item>
+        <item>@string/science</item>
+        <item>@string/travel</item>
+        <item>@string/solidarity_and_causes</item>
+        <item>@string/spirituality</item>
+        <item>@string/family</item>
+        <item>@string/vacation</item>
+        <item>@string/government</item>
+        <item>@string/fashion</item>
+        <item>@string/home</item>
+        <item>@string/cars</item>
+        <item>@string/hobby</item>
+        <item>@string/pets</item>
+    </string-array>
+
+    <integer-array name="categories_icons">
+        <item>@drawable/ic_interest_music</item>
+        <item>@drawable/ic_interest_business</item>
+        <item>@drawable/ic_interest_food</item>
+        <item>@drawable/ic_interest_community</item>
+        <item>@drawable/ic_interest_art</item>
+        <item>@drawable/ic_interest_movies</item>
+        <item>@drawable/ic_interest_sport</item>
+        <item>@drawable/ic_interest_health</item>
+        <item>@drawable/ic_interest_science</item>
+        <item>@drawable/ic_interest_travel</item>
+        <item>@drawable/ic_interest_charities</item>
+        <item>@drawable/ic_interest_spirituality</item>
+        <item>@drawable/ic_interest_family</item>
+        <item>@drawable/ic_interest_vacation</item>
+        <item>@drawable/ic_interest_government</item>
+        <item>@drawable/ic_interest_fashion</item>
+        <item>@drawable/ic_interest_home</item>
+        <item>@drawable/ic_interest_cars</item>
+        <item>@drawable/ic_interest_hobby</item>
+        <item>@drawable/ic_interest_pets</item>
+    </integer-array>
+
+    <string-array name="ratings">
+        <item>@string/low</item>
+        <item>@string/average</item>
+        <item>@string/high</item>
+    </string-array>
+
+</resources>

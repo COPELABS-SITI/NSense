@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/lollipop_green" />
+
+    <ImageView
+        android:layout_gravity="center"
+        android:backgroundTint="@color/white"
+        android:tint="@color/white"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:scaleType="fitXY"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/top_bar_image" />
+
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+        <CheckBoxPreference
+            android:title="@string/Alert_friends_around"
+            android:defaultValue="true"
+            android:key="prefFriendsAround"
+            android:summary="@string/Option_1" >
+        </CheckBoxPreference>
+
+        <CheckBoxPreference
+            android:title="@string/Alert_same_interests_around"
+            android:defaultValue="true"
+            android:key="prefSameInterestsAround"
+            android:summary="@string/Option_2" >
+        </CheckBoxPreference>
+
+        <ListPreference
+            android:title="@string/Alerts_Frequency"
+            android:defaultValue="60000"
+            android:key="prefAlertsFrequency"
+            android:entries="@array/alertsFrequency"
+            android:entryValues="@array/alertsFrequencyValues"
+            android:summary="@string/Set_the_alerts_frequency" >
+        </ListPreference>
+
+        <CheckBoxPreference
+            android:title="@string/vibrate"
+            android:defaultValue="true"
+            android:key="prefVibrate" >
+        </CheckBoxPreference>
+
+</PreferenceScreen>
