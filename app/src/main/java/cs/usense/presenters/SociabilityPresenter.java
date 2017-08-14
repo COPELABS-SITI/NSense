@@ -1,3 +1,8 @@
+/*
+ * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, 2017/06/05.
+ * Class is part of the NSense application.
+ */
+
 package cs.usense.presenters;
 
 
@@ -17,16 +22,34 @@ import cs.usense.models.SociabilityDetailItem;
 import cs.usense.models.SociabilityGraphItem;
 
 
+/**
+ * This class is used to implement MVP design pattern.
+ * Receives requests from the view and treat them.
+ * @author Miguel Tavares (COPELABS/ULHT)
+ * @version 1.0, 2017
+ */
 public class SociabilityPresenter implements SociabilityInterfaces.Presenter {
 
+    /** This list contains the data to be loaded on the chart */
     private ArrayList<SociabilityGraphItem> mChartData;
 
+    /** This object is used to establish communication with the view */
     private SociabilityInterfaces.View mView;
 
+
+    /**
+     * This method is the SociabilityPresenter constructor
+     * @param view view interface to communicate with the view
+     */
     public SociabilityPresenter(SociabilityInterfaces.View view) {
         mView = view;
     }
 
+    /**
+     * This method returns the data to load on the chart
+     * @param context application context
+     * @return data to be loaded on the chart
+     */
     private ArrayList<SociabilityGraphItem> getChartData(Context context) {
         if(mChartData == null) {
             mChartData = (NSenseDataSource.getInstance(context)).getStarsAvgValues();
@@ -34,6 +57,12 @@ public class SociabilityPresenter implements SociabilityInterfaces.Presenter {
         return mChartData;
     }
 
+    /**
+     * This method is responsible to manage the user's interactions with the chart
+     * @param context application context
+     * @param xIndex selected column index
+     * @param dataSetIndex data index, 2 columns per day
+     */
     @Override
     public void onBarClick(Context context, int xIndex, int dataSetIndex) {
         String selectedDate = getChartData(context).get(xIndex).getDate();
@@ -42,15 +71,22 @@ public class SociabilityPresenter implements SociabilityInterfaces.Presenter {
 
     }
 
+    /**
+     * This method checks which option the user chosen.
+     * If dataSetIndex == 0 user chosen social interaction
+     * If not, the user chosen propinquity
+     * @param context application context
+     * @param dataSetIndex data index
+     * @return string with what the user chosen
+     */
     private String socialInformationType(Context context, int dataSetIndex) {
-        if(dataSetIndex == 0) {
-            return context.getString(R.string.Social_Interaction);
-        } else {
-            return context.getString(R.string.Propinquity);
-        }
+        return dataSetIndex == 0 ? context.getString(R.string.Social_Interaction) : context.getString(R.string.Propinquity);
     }
 
-    /** This method is responsible to load data on bar chart format */
+    /**
+     * This method is responsible to load data on bar chart format
+     * @param context application context
+     */
     @Override
     public void onLoadBarDataSet(Context context) {
         ArrayList<BarEntry> siVData = new ArrayList<>();
@@ -81,6 +117,11 @@ public class SociabilityPresenter implements SociabilityInterfaces.Presenter {
         BarDataSet dataSet = new BarDataSet(data, context.getString(label));
         dataSet.setColor(context.getResources().getColor(color));
         return dataSet;
+    }
+
+    @Override
+    public void onDestroy() {
+        mView = null;
     }
 
 }

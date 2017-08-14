@@ -1,9 +1,6 @@
-/**
- * @version 2.0
- * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, 06-04-2016
- * Class is part of the NSense application.
- * This class is responsible for computing the social weight among users.
- * @author Waldir Moreira (COPELABS/ULHT)
+/*
+ * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, 2016/04/06.
+ * Class is part of the NSense application. It provides support for proximity pipeline.
  */
 
 package cs.usense.pipelines.proximity;
@@ -30,7 +27,9 @@ import cs.usense.preferences.GeneralPreferences;
 
 /**
  * This class provides the computing updates for Social weights among users on hourly basis
- * */
+ * @author Waldir Moreira (COPELABS/ULHT)
+ * @version 2.0, 2016
+ */
 public class OnNewHourUpdate extends BroadcastReceiver{
 
 	/** This class is to access functionality of NSense Data base */
@@ -46,8 +45,7 @@ public class OnNewHourUpdate extends BroadcastReceiver{
 	private boolean debug = true;
 
 	/** This variable is to get the new hour */
-	public static final String NEW_HOUR =
-			"android.intent.action.NEWHOUR";
+	public static final String NEW_HOUR = "android.intent.action.NEWHOUR";
 
 	/**
 	 * This method is the constructor for OnNewHourUpdate.

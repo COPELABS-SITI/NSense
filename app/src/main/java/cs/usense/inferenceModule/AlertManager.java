@@ -1,10 +1,8 @@
-/**
- * @version 2.0
- * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, 16-11-2015
+/*
+ * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, 2016/11/25.
  * Class is part of the NSense application.
- * This class manage and trigger the alerts.
- * @author Miguel Tavares (COPELABS/ULHT)
  */
+
 
 package cs.usense.inferenceModule;
 
@@ -20,14 +18,19 @@ import android.util.Log;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.HashMap;
 
 import cs.usense.R;
 import cs.usense.activities.AlertInterestsActivity;
 import cs.usense.preferences.InterestsPreferences;
 
-class AlertManager {
+
+/**
+ * This class manage and trigger the alerts.
+ * @author Miguel Tavares (COPELABS/ULHT)
+ * @version 1.0, 2016
+ */
+class AlertManager implements Runnable {
 
     /** This variable is used to debug AlertManager class */
     private static final String TAG = "AlertManager";
@@ -35,27 +38,23 @@ class AlertManager {
     /** This variable is used to schedule a handler */
     private static final int ONE_MINUTE_IN_MILISEC = 60 * 1000;
 
+    /** This variable stores the si percentage that triggers the alert */
+    private static final double SI_PERCENTAGE_ALERT = 0.4;
+
+    /** This variable stores the prop percentage that triggers the alert */
+    private static final double PROP_PERCENTAGE_ALERT = 0.2;
+
     /** This variable is used to store users interests */
     private ArrayList<SocialDetail> mSocialDetails;
 
     /** This variable is used to store my interests */
     private ArrayList<String> mMyInterests;
 
-    /** This variable is used to store the application context */
-    private Context mContext;
-
     /** This handler is used to schedule the alerts trigger */
     private Handler mAlertHandler = new Handler();
 
-    /** This thread is used to trigger de alerts */
-    private Runnable mAlertThread = new Runnable() {
-
-        @Override
-        public void run() {
-            checkAlerts(new ArrayList<>(SocialInteraction.getCurrentSocialInformation()));
-            mAlertHandler.postDelayed(this, ONE_MINUTE_IN_MILISEC);
-        }
-    };
+    /** This variable is used to store the application context */
+    private Context mContext;
 
 
     /**
@@ -64,7 +63,14 @@ class AlertManager {
      */
     AlertManager(Context context) {
         mContext = context;
-        mAlertHandler.post(mAlertThread);
+        mAlertHandler.post(this);
+    }
+
+    /** This thread is used to trigger de alerts */
+    @Override
+    public void run() {
+        checkAlerts(new ArrayList<>(SocialInteraction.getCurrentSocialInformation()));
+        mAlertHandler.postDelayed(this, ONE_MINUTE_IN_MILISEC);
     }
 
     /**
@@ -74,12 +80,12 @@ class AlertManager {
     private void checkAlerts(ArrayList<SocialDetail> socialDetails) {
         Log.i(TAG, "social detail is: " + socialDetails.toString());
 
-        /** Alert 1 */
+        /* Alert 1 */
         if(InterestsPreferences.isFriendsAroundAlertEnabled(mContext) && checkSocialSituation()) {
             alertPeersAroundMe(socialDetails);
         }
 
-        /** Alert 2 */
+        /* Alert 2 */
         if(InterestsPreferences.isInterestsAroundAlertEnabled(mContext)) {
             alertSameInterestsAroundMe(socialDetails);
         }
@@ -91,12 +97,8 @@ class AlertManager {
      * @return true to trigger alert 1
      */
     private boolean checkSocialSituation() {
-        boolean result = false;
-        if((SocialDetail.getSiPercentage() < SocialDetail.getAvgSiPercentage() * 0.4) &&
-                (SocialDetail.getPropPercentage() < SocialDetail.getAvgPropPercentage() * 0.2)) {
-            result = true;
-        }
-        return result;
+        return SocialDetail.isSiLowerThanSiAvg(SI_PERCENTAGE_ALERT)
+                && SocialDetail.isPropLowerThanPropAvg(PROP_PERCENTAGE_ALERT);
     }
 
     /**
@@ -255,7 +257,7 @@ class AlertManager {
         builder.setLargeIcon(BitmapFactory.decodeResource(mContext.getResources(), R.drawable.ic_nsense));
         builder.setAutoCancel(true);
 
-        /** Checks if vibration feature is enabled */
+        /* Checks if vibration feature is enabled */
         if(InterestsPreferences.isVibrationEnabled(mContext)) {
             builder.setVibrate(new long[] { 1000, 1000, 1000, 1000, 1000 });
         }
@@ -268,7 +270,7 @@ class AlertManager {
      * This method finalize the features implemented on this class
      */
     void close() {
-        mAlertHandler.removeCallbacks(mAlertThread);
+        mAlertHandler.removeCallbacks(this);
     }
 
 }

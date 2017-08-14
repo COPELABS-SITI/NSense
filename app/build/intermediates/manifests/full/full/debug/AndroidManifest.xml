@@ -59,8 +59,7 @@
         <activity
             android:name="cs.usense.activities.MainActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name="cs.usense.activities.CategoriesActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
@@ -115,6 +114,11 @@
             android:name="cs.usense.activities.MobilityActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
             android:screenOrientation="portrait" />
+        <activity
+            android:name="cs.usense.activities.SensorNotFoundActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomDialog" />
 
         <service android:name="cs.usense.services.NSenseService" />
         <service android:name="cs.usense.energy.NSenseIntentService" />

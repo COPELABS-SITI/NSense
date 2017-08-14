@@ -1,11 +1,8 @@
-/**
- * @version 2.0
- * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, 06-04-2016
- * Class is part of the NSense application.
- * This class provides some methods to provide extended
- * functionality to the android BluetoothAdapter.
- * @author Waldir Moreira (COPELABS/ULHT)
+/*
+ * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, 2016/04/06.
+ * Class is part of the NSense application. It provides support for proximity pipeline.
  */
+
 
 package cs.usense.pipelines.proximity;
 
@@ -31,7 +28,15 @@ import java.util.List;
 import java.util.Map;
 import java.util.UUID;
 
+
+/**
+ * This class provides some methods to provide extended
+ * functionality to the android BluetoothAdapter.
+ * @author Waldir Moreira (COPELABS/ULHT)
+ * @version 2.0, 2016
+ */
 public class BTManager {
+
 	/** check how long BT scan is !!!!!! */
 	//public static int DISCOVER_INTERVAL = 3 * 60 * 1000;
 	public static int DISCOVER_INTERVAL = 1 * 60 * 1000;
@@ -131,6 +136,7 @@ public class BTManager {
 	public BTManager(Context mContext) {
 		this.mContext = mContext;
 		messageToTurnOnBluetooth(mContext);
+
 		androidBTAdapter = BluetoothAdapter.getDefaultAdapter();
 
 		startAnnouncingUUID(uuid);

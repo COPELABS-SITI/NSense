@@ -15,37 +15,42 @@ import java.util.Date;
 
 public abstract class DateUtils {
 
-    private static final SimpleDateFormat sdfDayMonth = new SimpleDateFormat("dd/MM");
+    private static final SimpleDateFormat SDF_DAY_MONTH = new SimpleDateFormat("dd/MM");
 
-    private static final SimpleDateFormat sdfDate = new SimpleDateFormat("dd/MM/yyyy");
+    private static final SimpleDateFormat SDF_DATE = new SimpleDateFormat("dd/MM/yyyy");
 
-    private static final SimpleDateFormat sdfTimeSecond = new SimpleDateFormat("dd/MM - HH:mm:ss");
+    private static final SimpleDateFormat SDF_TIME_SECOND = new SimpleDateFormat("dd/MM - HH:mm:ss");
 
-    private static final SimpleDateFormat sdfTime = new SimpleDateFormat("dd/MM - HH:mm");
+    private static final SimpleDateFormat SDF_TIME = new SimpleDateFormat("dd/MM - HH:mm");
 
-    private static final SimpleDateFormat sdfTime2 = new SimpleDateFormat("dd-MM - HH:mm");
+    private static final SimpleDateFormat SDF_TIME_2 = new SimpleDateFormat("dd-MM - HH:mm");
+
+    private static final SimpleDateFormat TIME_SERIES_ANALYSIS = new SimpleDateFormat("ddMMMyy:HH:mm:ss");
 
 
     public static String getTodaysDayOfMonth() {
-        return sdfDayMonth.format(Calendar.getInstance().getTime());
+        return SDF_DAY_MONTH.format(Calendar.getInstance().getTime());
     }
 
     public static String getTodaysDate() {
-        return sdfDate.format(Calendar.getInstance().getTime());
+        return SDF_DATE.format(Calendar.getInstance().getTime());
     }
 
     public static String getTimeNowAsStringSecond() {
-        return sdfTimeSecond.format(Calendar.getInstance().getTime());
+        return SDF_TIME_SECOND.format(Calendar.getInstance().getTime());
     }
 
     public static String getTimeNowAsString() {
-        return sdfTime.format(Calendar.getInstance().getTime());
+        return SDF_TIME.format(Calendar.getInstance().getTime());
     }
 
     public static String getTimeNowFileNameFormatted() {
-        return sdfTime2.format(Calendar.getInstance().getTime());
+        return SDF_TIME_2.format(Calendar.getInstance().getTime());
     }
 
+    public static String getTimeNowTimeSeriesFormat() {
+        return TIME_SERIES_ANALYSIS.format(Calendar.getInstance().getTime());
+    }
 
     public static long getTimeNowAsLong() {
         return Calendar.getInstance().getTime().getTime();

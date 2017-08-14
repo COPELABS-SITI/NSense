@@ -65,7 +65,7 @@ public class NSenseDataSource {
 	 */
 	private NSenseDataSource (Context context) {
 		dbHelper = new NSenseSQLiteHelper(context);
-		isDbOpen = false;
+		openDB(true);
 	}
 
 
@@ -89,6 +89,7 @@ public class NSenseDataSource {
 	 */
 	public void closeDB() {
 		dbHelper.close();
+		mInstance = null;
 		isDbOpen = false;
 	}
 
@@ -418,22 +419,22 @@ public class NSenseDataSource {
 	}
 
 	public void insertDevice(NSenseDevice nSenseDevice) {
-		if(nSenseDevice.getBtMACAddress() != null && !(nSenseDevice.getBtMACAddress().isEmpty())) {
+		if(nSenseDevice.getBtMac() != null && !(nSenseDevice.getBtMac().isEmpty())) {
 
 			BTUserDevice btDev = new BTUserDevice();
-			btDev.setDevAdd(nSenseDevice.getBtMACAddress());
+			btDev.setDevAdd(nSenseDevice.getBtMac());
 			btDev.setDevName(nSenseDevice.getDeviceName());
 			btDev.setInterests(nSenseDevice.getInterests());
 			btDev.setEncounterTime(System.nanoTime());
 
 			BTUserDevEncounterDuration btUserDevEncounterDuration = new BTUserDevEncounterDuration();
-			btUserDevEncounterDuration.setDevAdd(nSenseDevice.getBtMACAddress());
+			btUserDevEncounterDuration.setDevAdd(nSenseDevice.getBtMac());
 
 			BTUserDevAverageEncounterDuration btUserDevAverageEncounterDuration = new BTUserDevAverageEncounterDuration();
-			btUserDevAverageEncounterDuration.setDevAdd(nSenseDevice.getBtMACAddress());
+			btUserDevAverageEncounterDuration.setDevAdd(nSenseDevice.getBtMac());
 
 			BTUserDevSocialWeight btUserDevSocialWeight = new BTUserDevSocialWeight();
-			btUserDevSocialWeight.setDevAdd(nSenseDevice.getBtMACAddress());
+			btUserDevSocialWeight.setDevAdd(nSenseDevice.getBtMac());
 
 			registerNewBTDevice(
 					btDev,
@@ -442,21 +443,14 @@ public class NSenseDataSource {
 					btUserDevSocialWeight
 			);
 
-			/*
-			values.put(NSenseSQLiteHelper.COLUMN_BTDEV_MAC_ADDRESS, nSenseDevice.getBtMACAddress());
-			values.put(NSenseSQLiteHelper.COLUMN_BTDEV_NAME, nSenseDevice.getDeviceName());
-			values.put(NSenseSQLiteHelper.COLUMN_INTERESTS, nSenseDevice.getInterests());
-            values.put(NSenseSQLiteHelper.COLUMN_BTDEV_ENCOUNTERSTART, System.nanoTime());
-			db.insert(NSenseSQLiteHelper.TABLE_BTDEVICE, null, values);
-			*/
 		}
 	}
 
 	public void updateInterests(NSenseDevice nSenseDevice) {
-		if(nSenseDevice.getBtMACAddress() == null || nSenseDevice.getBtMACAddress().isEmpty()) {
+		if(nSenseDevice.getBtMac() == null || nSenseDevice.getBtMac().isEmpty()) {
 			updateInterestsByDeviceName(nSenseDevice.getDeviceName(), nSenseDevice.getInterests());
 		} else {
-			updateInterestsByBtMacAddress(nSenseDevice.getBtMACAddress(), nSenseDevice.getInterests());
+			updateInterestsByBtMacAddress(nSenseDevice.getBtMac(), nSenseDevice.getInterests());
 		}
 	}
 
@@ -797,10 +791,10 @@ public class NSenseDataSource {
 
 	public boolean hasBTDevice(NSenseDevice nSenseDevice) {
 		boolean result;
-		if(nSenseDevice.getBtMACAddress() == null || nSenseDevice.getBtMACAddress().isEmpty()) {
+		if(nSenseDevice.getBtMac() == null || nSenseDevice.getBtMac().isEmpty()) {
 			result = hasBTDeviceByName(nSenseDevice.getDeviceName());
 		} else {
-			result = (hasBTDeviceByName(nSenseDevice.getDeviceName()) || hasBTDeviceByMac(nSenseDevice.getBtMACAddress()));
+			result = (hasBTDeviceByName(nSenseDevice.getDeviceName()) || hasBTDeviceByMac(nSenseDevice.getBtMac()));
 		}
 		return result;
 	}
@@ -913,7 +907,8 @@ public class NSenseDataSource {
 			NSenseSQLiteHelper.COLUMN_BT_MAC_ADDRESS,
 			NSenseSQLiteHelper.COLUMN_DEVICE_NAME,
 			NSenseSQLiteHelper.COLUMN_DISTANCE,
-			NSenseSQLiteHelper.COLUMN_LAST_UPDATE
+			NSenseSQLiteHelper.COLUMN_LAST_UPDATE,
+			NSenseSQLiteHelper.COLUMN_WIFI_UPDATE
 	};
 
 	/**
@@ -922,7 +917,31 @@ public class NSenseDataSource {
 	 * @return entry the LocationEntry object
 	 */
 	private LocationEntry cursorToLocation(Cursor cursor) {
-		return new LocationEntry(cursor.getString(2), cursor.getString(0), cursor.getLong(4), cursor.getDouble(3), cursor.getString(1));
+		return new LocationEntry(cursor.getString(2), cursor.getString(0), cursor.getLong(4), cursor.getDouble(3), cursor.getString(1), cursor.getInt(5));
+	}
+
+	public void updateDeviceStatus(String deviceName, String btMac, int deviceStatus) {
+		if(btMac == null || btMac.isEmpty()) {
+			updateDeviceStatusByBtMacAddress(btMac, deviceStatus);
+		} else {
+			updateDeviceStatusByDeviceName(deviceName, deviceStatus);
+		}
+	}
+
+	private void updateDeviceStatusByDeviceName(String deviceName, int deviceStatus) {
+		String identifier = NSenseSQLiteHelper.COLUMN_BTDEV_NAME + "='" + deviceName + "'";
+		storeDeviceStatus(identifier, deviceStatus);
+	}
+
+	private void updateDeviceStatusByBtMacAddress(String btMacAddress, int deviceStatus) {
+		String identifier = NSenseSQLiteHelper.COLUMN_BTDEV_MAC_ADDRESS + "='" + btMacAddress + "'";
+		storeDeviceStatus(identifier, deviceStatus);
+	}
+
+	private void storeDeviceStatus(String identifier, int deviceStatus) {
+		ContentValues values = new ContentValues();
+		values.put(NSenseSQLiteHelper.COLUMN_ACTIVE_DEVICE, deviceStatus);
+		db.update(NSenseSQLiteHelper.TABLE_BTDEVICE, values, identifier, null);
 	}
 
 	/**
@@ -931,10 +950,11 @@ public class NSenseDataSource {
 	 * @param entry LocationPipeline Entry information.
 	 * @return rowID of the newly inserted row, or -1 if an error occurred.
 	 */
-	public long registerLocationEntry (LocationEntry entry) {
+	public long registerLocationEntry(LocationEntry entry) {
+		updateDeviceStatus(entry.getDeviceName(), entry.getBtMac(), 1);
 		ContentValues values = new ContentValues();
-		values.put(NSenseSQLiteHelper.COLUMN_MAC_ADDRESS, entry.getBSSID());
-		values.put(NSenseSQLiteHelper.COLUMN_BT_MAC_ADDRESS, entry.getBTMACAddress());
+		values.put(NSenseSQLiteHelper.COLUMN_MAC_ADDRESS, entry.getBssid());
+		values.put(NSenseSQLiteHelper.COLUMN_BT_MAC_ADDRESS, entry.getBtMac());
 		values.put(NSenseSQLiteHelper.COLUMN_DEVICE_NAME, entry.getDeviceName());
 		values.put(NSenseSQLiteHelper.COLUMN_DISTANCE, entry.getDistance());
 		values.put(NSenseSQLiteHelper.COLUMN_LAST_UPDATE, entry.getLastUpdate());
@@ -947,14 +967,24 @@ public class NSenseDataSource {
 	 * @param location LocationPipeline Entry information.
 	 * @return true if successful.
 	 */
-	public boolean updateLocationEntry(LocationEntry entry) {
-		String identifier = NSenseSQLiteHelper.COLUMN_MAC_ADDRESS + "='" + entry.getBSSID() + "'";
+
+	private boolean updateLocationEntry(NSenseDevice device) {
+		updateDeviceStatus(device.getDeviceName(), device.getBtMac(), 1);
+		String identifier = NSenseSQLiteHelper.COLUMN_DEVICE_NAME + "='" + device.getDeviceName() + "'";
 		ContentValues values = new ContentValues();
-		values.put(NSenseSQLiteHelper.COLUMN_MAC_ADDRESS, entry.getBSSID());
-		values.put(NSenseSQLiteHelper.COLUMN_BT_MAC_ADDRESS, entry.getBTMACAddress());
-		values.put(NSenseSQLiteHelper.COLUMN_DEVICE_NAME, entry.getDeviceName());
-		values.put(NSenseSQLiteHelper.COLUMN_DISTANCE, entry.getDistance());
-		values.put(NSenseSQLiteHelper.COLUMN_LAST_UPDATE, entry.getLastUpdate());
+		values.put(NSenseSQLiteHelper.COLUMN_MAC_ADDRESS, device.getWifiDirectMac());
+		int rows = db.update(NSenseSQLiteHelper.TABLE_LOCATION, values, identifier, null);
+		return ((rows != 0));
+	}
+
+	public boolean updateLocationEntry(String deviceName, String btMac, double distance, int isWifiUpdate) {
+		updateDeviceStatus(deviceName, btMac, 1);
+		String identifier = NSenseSQLiteHelper.COLUMN_DEVICE_NAME + "='" + deviceName + "'";
+		ContentValues values = new ContentValues();
+		values.put(NSenseSQLiteHelper.COLUMN_BT_MAC_ADDRESS, btMac);
+		values.put(NSenseSQLiteHelper.COLUMN_DISTANCE, distance);
+		values.put(NSenseSQLiteHelper.COLUMN_LAST_UPDATE, SystemClock.elapsedRealtime());
+		values.put(NSenseSQLiteHelper.COLUMN_WIFI_UPDATE, isWifiUpdate);
 		int rows = db.update(NSenseSQLiteHelper.TABLE_LOCATION, values, identifier, null);
 		return ((rows != 0));
 	}
@@ -965,7 +995,8 @@ public class NSenseDataSource {
 	 * @return true if successful
 	 */
 	public int removeLocationEntry(LocationEntry entry) {
-		String identifier = NSenseSQLiteHelper.COLUMN_MAC_ADDRESS + "='" + entry.getBSSID() + "'";
+		updateDeviceStatus(entry.getDeviceName(), entry.getBtMac(), 0);
+		String identifier = NSenseSQLiteHelper.COLUMN_MAC_ADDRESS + "='" + entry.getBssid() + "'";
 		return db.delete(NSenseSQLiteHelper.TABLE_LOCATION, identifier, null);
 	}
 
@@ -1009,9 +1040,9 @@ public class NSenseDataSource {
 		return b1 || b2 || b3;
 	}
 
-	public boolean updateDistanceExpired(String mac, String deviceName) {
+	public boolean updateDistanceExpired(String mac, String deviceName, int flag) {
 		LocationEntry entry = getLocationEntry(mac, deviceName);
-		return ((SystemClock.elapsedRealtime() - entry.getLastUpdate()) > 140000);
+		return ((SystemClock.elapsedRealtime() - entry.getLastUpdate()) > 140000) || entry.checkFlagUpdate(flag);
 	}
 
 	/**
@@ -1026,7 +1057,7 @@ public class NSenseDataSource {
 
 		while (!cursor.isAfterLast()) {
 			LocationEntry entry = cursorToLocation(cursor);
-			mLocationMap.put(entry.getBSSID(), entry);
+			mLocationMap.put(entry.getDeviceName(), entry);
 			cursor.moveToNext();
 		}
 
@@ -1224,6 +1255,28 @@ public class NSenseDataSource {
 		sb.append(NSenseSQLiteHelper.TABLE_INTERESTS_REPORT).append(".");
 		sb.append(NSenseSQLiteHelper.TABLE_INTERESTS_REPORT_COLUMN_DEVICE_NAME).append(";");
 		return sb.toString();
+	}
+
+
+	public void updateDevice(NSenseDevice device) {
+		updateDeviceOnLocationTable(device);
+		updateDeviceOnBtTable(device);
+	}
+
+	private void updateDeviceOnLocationTable(NSenseDevice device) {
+		if (!hasLocationEntry(device.getWifiDirectMac(), device.getDeviceName())) {
+			registerLocationEntry(new LocationEntry(device.getDeviceName(), device.getWifiDirectMac()));
+		} else {
+			updateLocationEntry(device);
+		}
+	}
+
+	private void updateDeviceOnBtTable(NSenseDevice device) {
+		if(hasBTDevice(device)) {
+			updateInterests(device);
+		} else {
+			insertDevice(device);
+		}
 	}
 
 	/**

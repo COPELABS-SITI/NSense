@@ -1,17 +1,15 @@
-/**
- * @version 2.0
- * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, 06-04-2016
- * Class is part of the NSense application.
- *  This class holds the average duration of encounter between a peer and the user device in specific time slots.
- *  The information kept are device MAC address and average encounter duration.
- * @author Waldir Moreira (COPELABS/ULHT)
+/*
+ * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, 2016/04/06.
+ * Class is part of the NSense application. It provides support for proximity pipeline.
  */
+
 package cs.usense.pipelines.proximity;
 
 /**
- * This class provides the average duration of encounter between a peer and the user device in specific time slots
+ * This class provides the average duration of encounter between a peer
+ * and the user device in specific time slots
  * @author Waldir Moreira (COPELABS/ULHT)
- *
+ * @version 2.0, 2016
  */
 public class BTUserDevAverageEncounterDuration {
 	
@@ -20,7 +18,6 @@ public class BTUserDevAverageEncounterDuration {
 	
 	/** This variable is to get the device average duration in specific time slots */
 	private double[] averageEncounterDuration = new double [24];
-	
 	
 	/**
      * This method gets the MAC address of this Bluetooth device.
@@ -54,13 +51,6 @@ public class BTUserDevAverageEncounterDuration {
 	 */
 	public void setAverageEncounterDuration(int timeSlot, double avgEncounterDuration) {
 		this.averageEncounterDuration[timeSlot] = avgEncounterDuration;
-	}
-
-    /**
-     * BT User Device Average Encounter Duration Constructor
-     */
-	public BTUserDevAverageEncounterDuration() {
-		super();
 	}
 
 }

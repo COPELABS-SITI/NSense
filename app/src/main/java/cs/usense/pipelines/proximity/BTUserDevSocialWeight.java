@@ -1,18 +1,18 @@
-/**
- * @version 2.0
- * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, 06-04-2016
- * Class is part of the NSense application.
- * This class holds the social weight between a peer and the user device in specific time slots.
- * The information kept are device MAC address and social weight.
- * @author Waldir Moreira (COPELABS/ULHT)
+/*
+ * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, 2016/04/06.
+ * Class is part of the NSense application. It provides support for proximity pipeline.
  */
+
 
 package cs.usense.pipelines.proximity;
 
-/**
- * This class Provides the social weight between a peer and the user device in specific time slots.
- * */
 
+/**
+ * This class holds the social weight between a peer and the user device in specific time slots.
+ * The information kept are device MAC address and social weight.
+ * @author Waldir Moreira (COPELABS/ULHT)
+ * @version 2.0, 2016
+ */
 public class BTUserDevSocialWeight {
 	
 	/** This variable is to get the address of device */
@@ -53,13 +53,6 @@ public class BTUserDevSocialWeight {
 	 */
 	public void setSocialWeight(int timeSlot, double socialWeight) {
 		this.socialWeight[timeSlot] = socialWeight;
-	}
-
-    /**
-     * BT User Device Social Weight Constructor
-     */
-	public BTUserDevSocialWeight() {
-		super();
 	}
 
 }

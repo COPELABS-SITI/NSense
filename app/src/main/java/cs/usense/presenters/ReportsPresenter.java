@@ -1,3 +1,8 @@
+/*
+ * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, 2017/06/05.
+ * Class is part of the NSense application.
+ */
+
 package cs.usense.presenters;
 
 
@@ -13,11 +18,23 @@ import cs.usense.reports.MergedReport;
 import cs.usense.reports.SocialReport;
 import cs.usense.utilities.Utils;
 
+
+/**
+ * This class is used to implement MVP design pattern.
+ * Receives requests from the view and treat them.
+ * @author Miguel Tavares (COPELABS/ULHT)
+ * @version 1.0, 2017
+ */
 public class ReportsPresenter implements ReportsInterfaces.Presenter, LovelyTextInputDialog.TextFilter,
         LovelyTextInputDialog.OnTextInputConfirmListener {
 
+    /** This object is used to establish communication with the view */
     private ReportsInterfaces.View mView;
 
+    /**
+     * This method is the ReportsPresenter constructor
+     * @param view view interface to communicate with the view
+     */
     public ReportsPresenter(ReportsInterfaces.View view) {
         mView = view;
     }
@@ -58,6 +75,11 @@ public class ReportsPresenter implements ReportsInterfaces.Presenter, LovelyText
     @Override
     public void onResume(Context context) {
         mView.onReportsListReady(context.getResources().getStringArray(R.array.reports_titles));
+    }
+
+    @Override
+    public void onDestroy() {
+        mView = null;
     }
 
 }

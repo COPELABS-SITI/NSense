@@ -1,10 +1,6 @@
-/**
- * @version 2.0
- * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, date (e.g. 22-04-2016)
- * Class is part of the NSense application. It provides support for Microphone pipeline.
- * This class provides the core idealogy of sound process with microphone adapter.
- * @author Reddy Pallavali (COPELABS/ULHT),
- * @author Miguel Tavares (COPELABS/ULHT)
+/*
+ * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, 2015/5/26.
+ * Class is part of the NSense application. It provides support for sound pipeline.
  */
 
 package cs.usense.pipelines.sound;
@@ -17,12 +13,14 @@ import android.media.MediaRecorder;
 import android.os.AsyncTask;
 import android.util.Log;
 
-import java.util.ArrayList;
-
 
 /**
- * This gives us the filtered sound frequency, and converion to amplitude.
+ * This class provides the core idealogy of sound process with microphone adapter.
+ * This class gives us the filtered sound frequency, and convertion to amplitude.
  * In this class we implement two filters which are EMA and HPF filters.
+ * @author Reddy Pallavali (COPELABS/ULHT),
+ * @author Miguel Tavares (COPELABS/ULHT)
+ * @version 2.0, 2016
  */
 class SoundManager {
 
@@ -46,7 +44,6 @@ class SoundManager {
 
 	/** This object is used to notify SoundPipeline */
 	private SoundManagerListener mSoundManagerListener;
-	//private static ArrayList<SoundManagerListener> listeners = new ArrayList<>();
 
 	/** This object is used to record the environment sound */
 	private AudioRecord mAudioRecord;
@@ -54,7 +51,11 @@ class SoundManager {
 	/** This object is used to check if the microphone is available to start recording */
 	private AudioManager mAudioManager;
 
-
+	/**
+	 * This method is the constructor of SoundManager class
+	 * @param soundPipeline callback to notify with data related with the record sound
+	 * @param context application context
+	 */
 	SoundManager(SoundPipeline soundPipeline, Context context) {
 		mSoundManagerListener = soundPipeline;
 		mAudioManager = (AudioManager) context.getSystemService(Context.AUDIO_SERVICE);
@@ -75,10 +76,7 @@ class SoundManager {
 	 */
 	private int bufferSize(int sampleRateInHz, int channelConfig, int audioFormat) {
 		int buffSize = AudioRecord.getMinBufferSize(sampleRateInHz, channelConfig, audioFormat);
-		if (buffSize < sampleRateInHz) {
-			buffSize = sampleRateInHz;
-		}
-		return buffSize;
+		return buffSize < sampleRateInHz ? sampleRateInHz : buffSize;
 	}
 
 	/** This method is used to record the environment sounds and notifies the pipeline with db's */
@@ -92,7 +90,6 @@ class SoundManager {
 				if(isMicrophoneAvailable()) {
 					Log.i(TAG, "Microphone is available. I will start recording.");
 					resume();
-					//teste(getSoundSample());
 					mSoundManagerListener.onReceiveSound(getSoundSample());
 					pause();
 				} else {
@@ -102,18 +99,6 @@ class SoundManager {
 			}
 		}.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
 	}
-
-
-	/*
-	public static void add(SoundManagerListener soundManagerListener) {
-		//listeners.add(soundManagerListener);
-	}
-
-	private void teste(long sample) {
-		for(SoundManagerListener listener : listeners)
-			listener.onReceiveSound(sample);
-	}
-	*/
 
 	/**
 	 * This method returns the max value of read samples
@@ -147,13 +132,7 @@ class SoundManager {
 	 * @return hpf Highpass Pre-emphasizing Filter
 	 */
 	private double soundFilter(double lastSound, double soundAverage) {
-		double result;
-		if(lastSound > 0) {
-			result = lastSound * HPF_FILTER + (1 - HPF_FILTER) * soundAverage;
-		} else {
-			result = soundAverage;
-		}
-		return result;
+		return lastSound > 0 ? lastSound * HPF_FILTER + (1 - HPF_FILTER) * soundAverage : soundAverage;
 	}
 
 	/**

@@ -1,11 +1,6 @@
-/**
- * @version 2.0
- * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, date (e.g. 22-04-2016)
- * Class is part of the NSense application. It provides support for NSenseService and 
- * MapActivity classes to compute Social Interaction and Propinquity.
- * @author Saeik Firdose (COPELABS/ULHT),
- * @author Waldir Moreira (COPELABS/ULHT),
- * @author Miguel Tavares (COPELABS/ULHT)
+/*
+ * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, 2015/11/25.
+ * Class is part of the NSense application.
  */
 
 package cs.usense.inferenceModule;
@@ -31,8 +26,14 @@ import cs.usense.services.NSenseService;
 import cs.usense.utilities.DateUtils;
 import cs.usense.utilities.Utils;
 
+
 /**
- * This class computes the social Interaction and propinquity
+ * It provides support for NSenseService and MapActivity
+ * classes to compute Social Interaction and Propinquity.
+ * @author Saeik Firdose (COPELABS/ULHT),
+ * @author Waldir Moreira (COPELABS/ULHT),
+ * @author Miguel Tavares (COPELABS/ULHT)
+ * @version 2.0, 2016
  */
 public class SocialInteraction {
 
@@ -122,7 +123,7 @@ public class SocialInteraction {
 					SocialDetail.setSIPercentage(computeSocialPercentageValue("getSocialInteraction", SocialDetail.SI_STARS_FACTOR));
 					SocialDetail.setPropPercentage(computeSocialPercentageValue("getPropinquity", SocialDetail.PROP_STARS_FACTOR));
 					SocialDetail.setAvgSIPercentage(computeSocialPercentageValue("getSocialInteractionEMA", SocialDetail.SI_STARS_FACTOR));
-					SocialDetail.setAvgPropPercentage(computeSocialPercentageValue("getPropinquityEMA", SocialDetail.PROP_STARS_FACTOR));
+					SocialDetail.setAvgPropPercentage(computeSocialPercentageValue("getmPropinquityEMA", SocialDetail.PROP_STARS_FACTOR));
 					storeStarsInDataBase();
 					storeDeviceInfo();
 					filterInactiveDevices();
@@ -287,7 +288,7 @@ public class SocialInteraction {
 					break;
 				}
 			}
-			/** I will add this device to the list. */
+			/* I will add this device to the list. */
 			if (!found) {
 				sListSocialDetails.add(socialDetail);
 			}
@@ -318,9 +319,9 @@ public class SocialInteraction {
 	 */
 	private void computeEMA() {
 		for (SocialDetail entry : sListSocialDetails) {
-			if (entry.getDistance() > 0.0 && entry.getPropinquityEMA() > 0.0) {
+			if (entry.getDistance() > 0.0 && entry.getmPropinquityEMA() > 0.0) {
 				entry.setSocialInteractionEMA(Utils.computeEMA(entry.getSocialInteractionEMA(), entry.getSocialInteraction(), FACTOR));
-				entry.setPropinquityEMA(Utils.computeEMA(entry.getPropinquityEMA(), entry.getPropinquity(), FACTOR));
+				entry.setPropinquityEMA(Utils.computeEMA(entry.getmPropinquityEMA(), entry.getPropinquity(), FACTOR));
 			} else {
 				entry.setSocialInteractionEMA(entry.getSocialInteraction());
 				entry.setPropinquityEMA(entry.getPropinquity());
@@ -364,7 +365,7 @@ public class SocialInteraction {
 					Log.i(TAG, "avgEncDuration_old: " + avgEncDuration_old);
 					Log.i(TAG, "avgEncDuration_now: " + avgEncDuration_now);
 
-					/** Compute current social weight */
+					/* Compute current social weight */
 					double sw_now = computeSocialWeight(averageDuration, avgEncDuration_now);
 					mDataSource.updateSW(btDevice.getDevAdd(), sw_now);
 					Log.i(TAG, "sw_now: " + sw_now);
@@ -372,8 +373,8 @@ public class SocialInteraction {
 					SocialDetail socialDetail = new SocialDetail(btDevice.getDevName(), btDevice.getDevAdd(),
 							sw_now, encDuration_now, btDevice.getInterests());
 					for (LocationEntry entry : mLocationList) {
-						if (entry.getBTMACAddress() != null) {
-							if (entry.getBTMACAddress().contains(btDevice.getDevAdd())) {
+						if (entry.getBtMac() != null) {
+							if (entry.getBtMac().contains(btDevice.getDevAdd())) {
 								socialDetail.setDistance(entry.getDistance());
 							}
 						}

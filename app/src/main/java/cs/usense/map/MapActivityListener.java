@@ -1,12 +1,6 @@
-/**
- * @version 2.0
- * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, date (e.g. 22-04-2016)
- * Class is part of the NSense application. This class provides an interface to update pipeline information and 
- * provides the information to NSenseService class, and MainActivity class.
- * @author Saeik Firdose (COPELABS/ULHT),
- * @author Luis Lopes (COPELABS/ULHT), 
- * @author Waldir Moreira (COPELABS/ULHT),
- * @author Miguel Tavares (COPELABS/ULHT)
+/*
+ * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, 2015/11/25.
+ * Class is part of the NSense application.
  */
 
 package cs.usense.map;
@@ -17,8 +11,14 @@ import java.util.ArrayList;
 
 import cs.usense.inferenceModule.SocialDetail;
 
+
 /**
- * This class provides an interface to update pipeline information 
+ * This interface provides some methods that updates the MainActivity
+ * @author Saeik Firdose (COPELABS/ULHT),
+ * @author Luis Lopes (COPELABS/ULHT),
+ * @author Waldir Moreira (COPELABS/ULHT),
+ * @author Miguel Tavares (COPELABS/ULHT)
+ * @version 2.0, 2016
  */
 public interface MapActivityListener {
 

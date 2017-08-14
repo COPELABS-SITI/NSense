@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/interests"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="5dp"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_below="@id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/activity_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/header_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/hard_grey"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_marginTop="5dp" />
+
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/interests_device_table"
+        android:layout_below="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal">
+
+            <RelativeLayout
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp" >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
+                    <TextView
+                        android:id="@+id/main_title_0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:gravity="center" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"
+                android:clickable="true" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
+                    <TextView
+                        android:id="@+id/main_title_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:gravity="center" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
+                    <TextView
+                        android:id="@+id/main_title_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:gravity="center" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="70dp"
+                android:layout_height="35dp" >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
+                    <TextView
+                        android:id="@+id/main_title_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:gravity="center" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal">
+
+            <cs.usense.views.InformationView
+                android:id="@+id/info_0"
+                android:tag="0"
+                android:onClick="onClickRating"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_height="70dp"
+                android:layout_width="70dp">
+            </cs.usense.views.InformationView>
+
+            <cs.usense.views.InformationView
+                android:id="@+id/info_1"
+                android:tag="1"
+                android:onClick="onClickRating"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_height="70dp"
+                android:layout_width="70dp">
+            </cs.usense.views.InformationView>
+
+            <cs.usense.views.InformationView
+                android:id="@+id/info_2"
+                android:tag="2"
+                android:onClick="onClickRating"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_height="70dp"
+                android:layout_width="70dp">
+            </cs.usense.views.InformationView>
+
+            <cs.usense.views.InformationView
+                android:id="@+id/info_3"
+                android:tag="3"
+                android:onClick="onClickRating"
+                android:layout_height="70dp"
+                android:layout_width="70dp">
+            </cs.usense.views.InformationView>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <cs.usense.views.InformationView
+                android:id="@+id/info_4"
+                android:tag="0"
+                android:onClick="onClickRating"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_height="70dp"
+                android:layout_width="70dp">
+            </cs.usense.views.InformationView>
+
+            <cs.usense.views.InformationView
+                android:id="@+id/info_5"
+                android:tag="1"
+                android:onClick="onClickRating"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_height="70dp"
+                android:layout_width="70dp">
+            </cs.usense.views.InformationView>
+
+            <cs.usense.views.InformationView
+                android:id="@+id/info_6"
+                android:tag="2"
+                android:onClick="onClickRating"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_height="70dp"
+                android:layout_width="70dp">
+            </cs.usense.views.InformationView>
+
+            <cs.usense.views.InformationView
+                android:id="@+id/info_7"
+                android:tag="3"
+                android:onClick="onClickRating"
+                android:layout_height="70dp"
+                android:layout_width="70dp">
+            </cs.usense.views.InformationView>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <cs.usense.views.InformationView
+                android:id="@+id/info_8"
+                android:tag="0"
+                android:onClick="onClickRating"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_height="70dp"
+                android:layout_width="70dp">
+            </cs.usense.views.InformationView>
+
+            <cs.usense.views.InformationView
+                android:id="@+id/info_9"
+                android:tag="1"
+                android:onClick="onClickRating"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_height="70dp"
+                android:layout_width="70dp">
+            </cs.usense.views.InformationView>
+
+            <cs.usense.views.InformationView
+                android:id="@+id/info_10"
+                android:tag="2"
+                android:onClick="onClickRating"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_height="70dp"
+                android:layout_width="70dp">
+            </cs.usense.views.InformationView>
+
+            <cs.usense.views.InformationView
+                android:id="@+id/info_11"
+                android:tag="3"
+                android:onClick="onClickRating"
+                android:layout_height="70dp"
+                android:layout_width="70dp">
+            </cs.usense.views.InformationView>
+
+        </TableRow>
+
+
+
+    </TableLayout>
+
+    <LinearLayout
+        android:id="@+id/view_more"
+        android:background="@drawable/shape_rounded_rectangle_black"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/interests_device_table"
+        android:gravity="center"
+        android:padding="10dp"
+        android:onClick="onClickViewMore">
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginRight="5dp"
+            android:drawingCacheQuality="high"
+            android:src="@drawable/ic_double_arrow"
+            android:tint="@color/white"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/next_btn"
+            android:text="@string/view_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:gravity="center" />
+    </LinearLayout>
+
+</RelativeLayout>

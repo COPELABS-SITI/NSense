@@ -1,9 +1,6 @@
-/**
- * @version 2.0
- * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, date (e.g. 22-04-2016)
- * Class is part of the NSense application. This class instantiates an activity that allows user
- * set his own interests.
- * @author Miguel Tavares (COPELABS/ULHT)
+/*
+ * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, 2016/11/25.
+ * Class is part of the NSense application.
  */
 
 package cs.usense.activities;
@@ -14,7 +11,6 @@ import android.content.res.TypedArray;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -23,21 +19,28 @@ import android.widget.Toast;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import cs.usense.views.InformationView;
 import cs.usense.R;
 import cs.usense.interfaces.CategoriesInterfaces;
 import cs.usense.presenters.CategoriesPresenter;
 
 
+/**
+ * This class instantiates an activity that allows the user to set his own interests.
+ * @author Miguel Tavares (COPELABS/ULHT)
+ * @version 1.0, 2016
+ */
 @SuppressWarnings("ConstantConditions")
 public class CategoriesActivity extends ActionBarActivity implements CategoriesInterfaces.View {
 
     /** This variable is used to debug CategoriesActivity class */
     private static final String TAG = "CategoriesActivity";
 
-    private CategoriesInterfaces.Presenter mPresenter;
-
     /** This ProgressBar increases and decreases with quantity of user's interests */
-    @BindView(R.id.progressBarInterests) ProgressBar mProgressBar;
+    @BindView(R.id.progressBarInterests) ProgressBar progressBar;
+
+    /** This object is the presenter of this activity */
+    private CategoriesInterfaces.Presenter mPresenter;
 
 
     @Override
@@ -47,7 +50,9 @@ public class CategoriesActivity extends ActionBarActivity implements CategoriesI
         setup();
     }
 
-    /** This method initialize everything needed in this activity */
+    /**
+     *  This method initialize everything needed in this activity
+     */
     private void setup() {
         ButterKnife.bind(this);
         mPresenter = new CategoriesPresenter(this);
@@ -56,26 +61,31 @@ public class CategoriesActivity extends ActionBarActivity implements CategoriesI
         loadCategories();
     }
 
-    /** This method set the action bar layout, activity title and it's description */
+    /**
+     * This method set the action bar layout, activity title and it's description
+     */
     private void setActivityTitle() {
         ((TextView) findViewById(R.id.activity_title)).setText(getString(R.string.My_Categories));
         ((TextView) findViewById(R.id.header_description)).setText(getString(R.string.choose_interests));
         setActionBarTitle(getString(R.string.My_Categories));
     }
 
-    /** This method initialize the matrix with categories and it's images */
+    /**
+     * This method initialize the matrix with categories and it's images
+     */
     private void loadMatrix() {
         String[] categories = getResources().getStringArray(R.array.categories);
         TypedArray categories_icons = getResources().obtainTypedArray(R.array.categories_icons);
         for(int i = 0; i < categories.length; i++) {
-            TextView title = (TextView) findViewById(getResources().getIdentifier("title_" + i, "id", getPackageName()));
-            ImageView icon = (ImageView) findViewById(getResources().getIdentifier("image_" + i, "id", getPackageName()));
-            title.setText(categories[i]);
-            icon.setImageResource(categories_icons.getResourceId(i, -1));
+            InformationView infoView = (InformationView) findViewById(getResources().getIdentifier("info_" + i, "id", getPackageName()));
+            infoView.setImageAndTitle(categories_icons.getResourceId(i, -1), categories[i]);
         }
+        categories_icons.recycle();
     }
 
-    /** This method load on matrix user's interests */
+    /**
+     * This method load on matrix user's interests
+     */
     private void loadCategories() {
         mPresenter.onLoadCategories(this, (RelativeLayout) findViewById(R.id.interests));
     }
@@ -84,7 +94,9 @@ public class CategoriesActivity extends ActionBarActivity implements CategoriesI
         mPresenter.onClickCategory(this, view);
     }
 
-    /** This method initialize the button which allow the user's to choose they subcategories */
+    /**
+     * This method initialize the button which allow the user's to choose they subcategories
+     */
     @OnClick(R.id.view_more)
     public void onClickViewMore(View view) {
         if(mPresenter.onValidation(this)) {
@@ -94,20 +106,9 @@ public class CategoriesActivity extends ActionBarActivity implements CategoriesI
     }
 
     @Override
-    public void onUpdateCategory(View view, int tag, int primaryColor, int secondaryColor, Object state) {
-        Log.i(TAG, "onUpdateCategory-> tag:" + tag);
-        view.setTag(R.id.interests, state);
-        view.setBackgroundColor(getResources().getColor(primaryColor));
-        TextView title = (TextView) findViewById(getResources().getIdentifier("title_" + tag, "id", getPackageName()));
-        ImageView icon = (ImageView) findViewById(getResources().getIdentifier("image_" + tag, "id", getPackageName()));
-        title.setTextColor(getResources().getColor(secondaryColor));
-        icon.setColorFilter(getResources().getColor(secondaryColor));
-    }
-
-    @Override
     public void onUpdateProgressBar(int progress) {
         Log.i(TAG, "onUpdateProgressBar-> progress:" + progress);
-        mProgressBar.setProgress(progress);
+        progressBar.setProgress(progress);
     }
 
     @Override
@@ -122,6 +123,12 @@ public class CategoriesActivity extends ActionBarActivity implements CategoriesI
             startActivity(new Intent(this, SettingsActivity.class));
             finish();
         }
+    }
+
+    @Override
+    public void onDestroy() {
+        mPresenter.onDestroy();
+        super.onDestroy();
     }
 
 }

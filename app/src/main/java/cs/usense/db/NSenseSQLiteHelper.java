@@ -130,6 +130,7 @@ public class NSenseSQLiteHelper extends SQLiteOpenHelper{
 	public static final String COLUMN_SI = "si";
 	public static final String COLUMN_PROP = "prop";
 	public static final String COLUMN_EMA_CD = "ema_cd";
+	public static final String COLUMN_ACTIVE_DEVICE = "active_device";
 
 	/**	Encounter Duration */
 	public static final String COLUMN_BTDEV_ENCOUNTERDURATION_SLOT1= "devEncounterDuration_slot1";
@@ -215,6 +216,7 @@ public class NSenseSQLiteHelper extends SQLiteOpenHelper{
 	public static final String COLUMN_DEVICE_NAME = "name";
 	public static final String COLUMN_DISTANCE = "distance";
 	public static final String COLUMN_LAST_UPDATE = "lastupdate";
+	public static final String COLUMN_WIFI_UPDATE = "isWifiUpdate";
 
 	/** Outdoor LocationPipeline Table */
 	public static final String COLUMN_LATITUDE = "lat";
@@ -302,7 +304,8 @@ public class NSenseSQLiteHelper extends SQLiteOpenHelper{
 			+ COLUMN_SW_NOW + " text default 0.0, "
 			+ COLUMN_SI + " text default 0.0, "
 			+ COLUMN_PROP + " text default 0.0, "
-			+ COLUMN_EMA_CD + " text default 0.0 "
+			+ COLUMN_EMA_CD + " text default 0.0, "
+			+ COLUMN_ACTIVE_DEVICE + " integer default 1 "
 			+ ");";
 
 	private static final String CREATE_BTDEVICEENCOUNTERDURATION_TABLE = "create table "
@@ -441,11 +444,12 @@ public class NSenseSQLiteHelper extends SQLiteOpenHelper{
 	private static final String CREATE_LOCATION_TABLE = "create table "
 			+ TABLE_LOCATION + "("
 			+ COLUMN_ID + " integer primary key autoincrement, "
-			+ COLUMN_MAC_ADDRESS + " text not null unique, "
+			+ COLUMN_MAC_ADDRESS + " text, "
 			+ COLUMN_BT_MAC_ADDRESS + " text, "
 			+ COLUMN_DEVICE_NAME + " text not null, "
 			+ COLUMN_DISTANCE + " double not null, "
-			+ COLUMN_LAST_UPDATE + " text not null default 0"
+			+ COLUMN_LAST_UPDATE + " text not null default 0,"
+			+ COLUMN_WIFI_UPDATE + " text not null default 1"
 			+ ");";
 
 	/** Microphone table */

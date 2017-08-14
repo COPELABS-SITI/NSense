@@ -1,8 +1,6 @@
-/**
- * @version 2.0
- * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, date (e.g. 22-04-2016)
- * Class is part of the NSense application. This class is used to store device name and interests in common
- * @author Miguel Tavares (COPELABS/ULHT)
+/*
+ * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, 2016/11/25.
+ * Class is part of the NSense application.
  */
 
 package cs.usense.models;
@@ -10,13 +8,19 @@ package cs.usense.models;
 import java.util.ArrayList;
 
 
+/**
+ * This class is a model and is used to store device name and interests in common
+ * @author Miguel Tavares (COPELABS/ULHT)
+ * @version 1.0, 2016
+ */
 public class AlertInterestItem {
+
+    /** This ArrayList stores common interests to show */
+    private ArrayList<String> mInterests = new ArrayList<>();
 
     /** This variable is used to store device name */
     private String mDeviceName;
 
-    /** This ArrayList stores common interests to show */
-    private ArrayList<String> mInterests = new ArrayList<>();
 
     /**
      * Constructor of AlertInterest class

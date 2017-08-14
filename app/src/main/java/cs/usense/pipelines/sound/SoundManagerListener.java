@@ -1,13 +1,17 @@
-/**
- * @version 2.0
- * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, date (e.g. 22-04-2016)
- * Class is part of the NSense application. This class provides support for microphone pipeline, and
- * it used to receive the decibels values.
- * @author Miguel Tavares (COPELABS/ULHT)
+/*
+ * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, 2016/11/18.
+ * Class is part of the NSense application. It provides support for sound pipeline.
  */
+
 
 package cs.usense.pipelines.sound;
 
+
+/**
+ * This interface is used to listen the microphone recording the environment sound.
+ * @author Miguel Tavares (COPELABS/ULHT)
+ * @version 2.0, 2016
+ */
 interface SoundManagerListener {
 
     /**

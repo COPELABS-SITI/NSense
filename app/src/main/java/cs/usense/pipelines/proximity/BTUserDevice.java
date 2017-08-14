@@ -1,17 +1,16 @@
-/**
- * @version 2.0
- * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, 06-04-2016
- * Class is part of the NSense application.
- *  This class represents a user device found by means of Bluetooth.
- *  The information kept are device name, MAC address, and time of first encounter.
- * @author Waldir Moreira (COPELABS/ULHT)
+/*
+ * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, 2016/04/06.
+ * Class is part of the NSense application. It provides support for proximity pipeline.
  */
 
 package cs.usense.pipelines.proximity;
 
 /**
- * This class Provide details of User device name, MAC address, and time of first encounter.
- * */
+ * This class represents a user device found by means of Bluetooth.
+ * The information kept are device name, MAC address, and time of first encounter.
+ * @author Waldir Moreira (COPELABS/ULHT)
+ * @version 2.0, 2016
+ */
 public class BTUserDevice {
 
 	/** This variable is to get the address of device */
@@ -23,6 +22,7 @@ public class BTUserDevice {
 	/** This variable is to get the encounter time of device */
 	private long encounterTime;
 
+	/** This variable is used to store user's interests */
 	private String interests;
 
 	/**
@@ -83,7 +83,7 @@ public class BTUserDevice {
 
 	/**
 	 * This method sets the user's interests.
-	 * @param interests
+	 * @param interests user's interests to set
 	 */
 	public void setInterests(String interests) {
 		this.interests = interests;

@@ -1,28 +1,24 @@
-/**
- * @version 2.0
- * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, date (e.g. 22-04-2016)
- * Class is part of the NSense application. It provides support for inference module and
- * provides the SocialDetailComputationalData object to store social weight and the information to
- * compute how many stars each node has.
- * @author Miguel Tavares (COPELABS/ULHT)
+/*
+ * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, 2015/11/25.
+ * Class is part of the NSense application.
  */
 
 package cs.usense.inferenceModule;
 
-
+/**
+ * It provides support for inference module and provides the
+ * SocialDetailComputationalData object to store social weight
+ * and the information to compute how many stars each node has.
+ * @author Miguel Tavares (COPELABS/ULHT)
+ * @version 2.0, 2016
+ */
 class SocialComputationalData {
 
     /** This variable stores the factor to compute SI stars */
     static final double SI_STARS_FACTOR = 0.0564139626;
 
-    /** This variable stores the factor to compute propinquity stars */
+    /** This variable stores the factor to compute mPropinquity stars */
     static final double PROP_STARS_FACTOR = 3.45900878;
-
-    /** Social Interaction variable of the SocialDetail object */
-    private double socialInteraction;
-
-    /** Propinquity variable of the SocialDetail object */
-    private double propinquity;
 
     /** Social Interaction EMA variable of the SocialDetail object */
     protected double socialInteractionEMA;
@@ -30,46 +26,50 @@ class SocialComputationalData {
     /** Propinquity EMA variable of the SocialDetail object */
     protected double propinquityEMA;
 
-    /** This variable stores the newest encDurationNow value */
-    private double encDurationNow;
+    /** Social Interaction variable of the SocialDetail object */
+    private double mSocialInteraction;
 
-    /** This variable stores the previous encDurationNow value */
-    private double lastSeenEncDurationNow;
+    /** Propinquity variable of the SocialDetail object */
+    private double mPropinquity;
+
+    /** This variable stores the newest mEncDurationNow value */
+    private double mEncDurationNow;
+
+    /** This variable stores the previous mEncDurationNow value */
+    private double mLastSeenEncDurationNow;
 
     /**
      * This variable stores how many times we compared without success the lastSeen and the newest
      * encDuration values
      */
-    private int timesCheckingEncDuration;
+    private int mTimesCheckingEncDuration;
 
     /** This variable stores the social weight value */
-    private double socialWeight;
+    private double mSocialWeight;
+
+    /** This is the default constructor of the SocialComputationalData class */
+    SocialComputationalData() {}
 
     /** This is the constructor of the SocialComputationalData class */
     SocialComputationalData(double socialWeight, double encDurationNow) {
-        this.socialWeight = socialWeight;
-        this.encDurationNow = encDurationNow;
-    }
-
-    /** This is the default constructor of the SocialComputationalData class */
-    SocialComputationalData() {
-
+        this.mSocialWeight = socialWeight;
+        this.mEncDurationNow = encDurationNow;
     }
 
     /**
      * This method get the social interaction
-     * @return socialInteraction the social interaction
+     * @return mSocialInteraction the social interaction
      */
     public double getSocialInteraction() {
-        return socialInteraction;
+        return mSocialInteraction;
     }
 
     /**
-     * This method get the propinquity
-     * @return propinquity the propinquity
+     * This method get the mPropinquity
+     * @return mPropinquity the mPropinquity
      */
     public double getPropinquity() {
-        return propinquity;
+        return mPropinquity;
     }
 
     /**
@@ -81,68 +81,68 @@ class SocialComputationalData {
     }
 
     /**
-     * This method get the propinquity EMA
-     * @return propinquityEMA the propinquity EMA
+     * This method get the mPropinquity EMA
+     * @return propinquityEMA the mPropinquity EMA
      */
-    public double getPropinquityEMA() {
+    public double getmPropinquityEMA() {
         return propinquityEMA;
     }
 
     /**
-     * This method returns the encDurationNow value
-     * @return encDurationNow
+     * This method returns the mEncDurationNow value
+     * @return mEncDurationNow
      */
     public double getEncDurationNow() {
-        return encDurationNow;
+        return mEncDurationNow;
     }
 
     /**
-     * This method returns the lastSeenEncDurationNow
-     * @return lastSeenEncDurationNow
+     * This method returns the mLastSeenEncDurationNow
+     * @return mLastSeenEncDurationNow
      */
     public double getLastSeenEncDurationNow() {
-        return lastSeenEncDurationNow;
+        return mLastSeenEncDurationNow;
     }
 
     /**
-     * This method returns the value of timesCheckingEncDuration
-     * @return timesCheckingEncDuration
+     * This method returns the value of mTimesCheckingEncDuration
+     * @return mTimesCheckingEncDuration
      */
     public int getTimesCheckingEncDuration() {
-        return timesCheckingEncDuration;
+        return mTimesCheckingEncDuration;
     }
 
     /**
      * This method returns the social weight value
-     * @return socialWeight
+     * @return mSocialWeight
      */
     public double getSocialWeight() {
-        return socialWeight;
+        return mSocialWeight;
     }
 
     /**
-     * This method sets a new value for encDurationNow
+     * This method sets a new value for mEncDurationNow
      * @param encDurationNow
      */
     public void setEncDurationNow(double encDurationNow) {
-        this.encDurationNow = encDurationNow;
+        this.mEncDurationNow = encDurationNow;
     }
 
     /**
-     * This value sets a new value for lastSeenEncDurationNow
+     * This value sets a new value for mLastSeenEncDurationNow
      * @param lastSeenEncDurationNow
      */
 
     public void setLastSeenEncDurationNow(double lastSeenEncDurationNow) {
-        this.lastSeenEncDurationNow = lastSeenEncDurationNow;
+        this.mLastSeenEncDurationNow = lastSeenEncDurationNow;
     }
 
     /**
      * This method sets a new value for social weight
-     * @param socialWeight
+     * @param mSocialWeight
      */
-    public void setSocialWeight(double socialWeight) {
-        this.socialWeight = socialWeight;
+    public void setSocialWeight(double mSocialWeight) {
+        this.mSocialWeight = mSocialWeight;
     }
 
     /**
@@ -150,15 +150,15 @@ class SocialComputationalData {
      * @param socialInteraction the social interaction
      */
     public void setSocialInteraction(double socialInteraction) {
-        this.socialInteraction = socialInteraction;
+        this.mSocialInteraction = socialInteraction;
     }
 
     /**
-     * This method set the propinquity
-     * @param propinquity the propinquity
+     * This method set the mPropinquity
+     * @param propinquity the mPropinquity
      */
     public void setPropinquity(double propinquity) {
-        this.propinquity = propinquity;
+        this.mPropinquity = propinquity;
     }
 
     /**
@@ -172,17 +172,17 @@ class SocialComputationalData {
     }
 
     /**
-     * This method sets the timesCheckingEncDuration variable to zero.
+     * This method sets the mTimesCheckingEncDuration variable to zero.
      */
     public void resetTimesCheckingEncDuration() {
-        timesCheckingEncDuration = 0;
+        mTimesCheckingEncDuration = 0;
     }
 
     /**
-     * This method increments the timesCheckingEncDuration variable in one unit
+     * This method increments the mTimesCheckingEncDuration variable in one unit
      */
     public void incTimesCheckingEncDuration() {
-        timesCheckingEncDuration++;
+        mTimesCheckingEncDuration++;
     }
 
 }

@@ -1,9 +1,8 @@
-/**
- * @version 2.0
- * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, date (e.g. 22-04-2016)
- * Class is part of the NSense application. This class is used to store in a log the battery level.
- * @author Miguel Tavares (COPELABS/ULHT)
+/*
+ * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, 2016/11/25.
+ * Class is part of the NSense application.
  */
+
 
 package cs.usense.energy;
 
@@ -16,6 +15,12 @@ import android.util.Log;
 
 import cs.usense.utilities.Utils;
 
+
+/**
+ * This class is used to store in a log the battery level.
+ * @author Miguel Tavares (COPELABS/ULHT)
+ * @version 1.0, 2016
+ */
 public class BatteryReceiver extends BroadcastReceiver {
 
     /** This variable is used to debug BatteryReceiver class */

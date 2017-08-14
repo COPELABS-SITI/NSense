@@ -1,3 +1,8 @@
+/*
+ * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, 2017/06/05.
+ * Class is part of the NSense application.
+ */
+
 package cs.usense.presenters;
 
 
@@ -12,11 +17,22 @@ import cs.usense.models.AlertInterestItem;
 import cs.usense.preferences.InterestsPreferences;
 import cs.usense.utilities.InterestsUtils;
 
+
+/**
+ * This class is used to implement MVP design pattern.
+ * Receives requests from the view and treat them.
+ * @author Miguel Tavares (COPELABS/ULHT)
+ * @version 1.0, 2017
+ */
 public class AlertInterestsPresenter implements AlertInterestsInterfaces.Presenter {
 
+    /** This object is used to establish communication with the view */
     private AlertInterestsInterfaces.View mView;
 
-
+    /**
+     * This method is the AlertInterestsPresenter constructor
+     * @param view view interface to communicate with the view
+     */
     public AlertInterestsPresenter(AlertInterestsInterfaces.View view) {
         mView = view;
     }
@@ -38,6 +54,12 @@ public class AlertInterestsPresenter implements AlertInterestsInterfaces.Present
         mView.onReceiveSimilarInterests(alertInterestItems);
     }
 
+    /**
+     * This method compares and retrieves an ArrayList with the common interests
+     * @param socialDetail other user interests
+     * @param myInterests owner's device interests
+     * @return ArrayList with common interests
+     */
     private ArrayList<String> getCommonInterests(SocialDetail socialDetail, ArrayList<String> myInterests) {
         ArrayList<String> similarInterests = new ArrayList<>();
         if(socialDetail.getInterests() != null) {

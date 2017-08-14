@@ -1,7 +1,7 @@
 [
     {
         "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/common_google_signin_btn_text_dark_focused.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.1/res/drawable/common_google_signin_btn_text_dark_focused.xml"
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.2/res/drawable/common_google_signin_btn_text_dark_focused.xml"
     },
     {
         "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/abc_btn_radio_material.xml",
@@ -41,15 +41,15 @@
     },
     {
         "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/common_google_signin_btn_icon_light_focused.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.1/res/drawable/common_google_signin_btn_icon_light_focused.xml"
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.2/res/drawable/common_google_signin_btn_icon_light_focused.xml"
     },
     {
         "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/common_google_signin_btn_text_dark.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.1/res/drawable/common_google_signin_btn_text_dark.xml"
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.2/res/drawable/common_google_signin_btn_text_dark.xml"
     },
     {
         "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/common_google_signin_btn_text_light_focused.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.1/res/drawable/common_google_signin_btn_text_light_focused.xml"
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.2/res/drawable/common_google_signin_btn_text_light_focused.xml"
     },
     {
         "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/ic_sensing_range.xml",
@@ -81,7 +81,7 @@
     },
     {
         "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/common_google_signin_btn_text_light_normal.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.1/res/drawable/common_google_signin_btn_text_light_normal.xml"
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.2/res/drawable/common_google_signin_btn_text_light_normal.xml"
     },
     {
         "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/abc_item_background_holo_light.xml",
@@ -97,7 +97,7 @@
     },
     {
         "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/common_google_signin_btn_icon_disabled.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.1/res/drawable/common_google_signin_btn_icon_disabled.xml"
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.2/res/drawable/common_google_signin_btn_icon_disabled.xml"
     },
     {
         "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/abc_ratingbar_small_material.xml",
@@ -113,7 +113,7 @@
     },
     {
         "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/common_google_signin_btn_icon_light.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.1/res/drawable/common_google_signin_btn_icon_light.xml"
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.2/res/drawable/common_google_signin_btn_icon_light.xml"
     },
     {
         "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/abc_ratingbar_full_material.xml",
@@ -141,15 +141,15 @@
     },
     {
         "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/common_google_signin_btn_text_disabled.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.1/res/drawable/common_google_signin_btn_text_disabled.xml"
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.2/res/drawable/common_google_signin_btn_text_disabled.xml"
     },
     {
         "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/common_google_signin_btn_icon_dark_focused.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.1/res/drawable/common_google_signin_btn_icon_dark_focused.xml"
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.2/res/drawable/common_google_signin_btn_icon_dark_focused.xml"
     },
     {
         "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/common_google_signin_btn_text_dark_normal.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.1/res/drawable/common_google_signin_btn_text_dark_normal.xml"
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.2/res/drawable/common_google_signin_btn_text_dark_normal.xml"
     },
     {
         "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/abc_dialog_material_background_dark.xml",
@@ -161,7 +161,7 @@
     },
     {
         "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/common_google_signin_btn_icon_light_normal.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.1/res/drawable/common_google_signin_btn_icon_light_normal.xml"
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.2/res/drawable/common_google_signin_btn_icon_light_normal.xml"
     },
     {
         "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/abc_btn_borderless_material.xml",
@@ -173,7 +173,7 @@
     },
     {
         "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/common_google_signin_btn_icon_dark.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.1/res/drawable/common_google_signin_btn_icon_dark.xml"
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.2/res/drawable/common_google_signin_btn_icon_dark.xml"
     },
     {
         "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/ic_personal_range.xml",
@@ -181,7 +181,7 @@
     },
     {
         "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/common_google_signin_btn_text_light.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.1/res/drawable/common_google_signin_btn_text_light.xml"
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.2/res/drawable/common_google_signin_btn_text_light.xml"
     },
     {
         "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/ic_intimate_range.xml",
@@ -193,6 +193,6 @@
     },
     {
         "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/common_google_signin_btn_icon_dark_normal.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.1/res/drawable/common_google_signin_btn_icon_dark_normal.xml"
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.2/res/drawable/common_google_signin_btn_icon_dark_normal.xml"
     }
 ]

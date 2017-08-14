@@ -1,9 +1,6 @@
-/**
- * @version 2.0
- * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, date (e.g. 22-04-2016)
- * Class is part of the NSense application. This class instantiates an activity that allows the
- * user to set his alerts
- * @author Miguel Tavares (COPELABS/ULHT)
+/*
+ * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, 2016/11/25.
+ * Class is part of the NSense application.
  */
 
 package cs.usense.activities;
@@ -15,6 +12,12 @@ import android.util.Log;
 
 import cs.usense.R;
 
+
+/**
+ * This class instantiates an activity that allows the user to set his alerts
+ * @author Miguel Tavares (COPELABS/ULHT)
+ * @version 1.0, 2016
+ */
 public class AlertsActivity extends ActionBarActivity {
 
     /** This variable is used to debug AlertsActivity class */
@@ -27,7 +30,9 @@ public class AlertsActivity extends ActionBarActivity {
         setup();
     }
 
-    /** This method initialize everything needed in this activity */
+    /**
+     *  This method initialize everything needed in this activity
+     */
     private void setup() {
         Log.i(TAG, "setup");
         setActionBarTitle(getString(R.string.Alerts));

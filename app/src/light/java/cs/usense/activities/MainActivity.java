@@ -1,14 +1,8 @@
-/**
- * @version 2.0
- * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, date (e.g. 22-04-2016)
- * Class is part of the NSense application. This class controls the User Interface and update it
- * based on NSenseService results.
- * @author Saeik Firdose (COPELABS/ULHT),
- * @author Luis Lopes (COPELABS/ULHT),
- * @author Waldir Moreira (COPELABS/ULHT),
- * @author Reddy Pallavali (COPELABS/ULHT)
- * @author Miguel Tavares (COPELABS/ULHT)
+/*
+ * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, 2015/11/25.
+ * Class is part of the NSense application.
  */
+
 
 package cs.usense.activities;
 
@@ -26,6 +20,13 @@ import cs.usense.services.NSenseService;
 
 /**
  * This class provides the layout of NSense application and initialize the NSense Service
+ * This class controls the User Interface and update it based on NSenseService results.
+ * @author Saeik Firdose (COPELABS/ULHT),
+ * @author Luis Lopes (COPELABS/ULHT),
+ * @author Waldir Moreira (COPELABS/ULHT),
+ * @author Reddy Pallavali (COPELABS/ULHT)
+ * @author Miguel Tavares (COPELABS/ULHT)
+ * @version 2.0
  */
 public class MainActivity extends ActionBarActivity implements ServiceConnection {
 
@@ -49,7 +50,7 @@ public class MainActivity extends ActionBarActivity implements ServiceConnection
     private void setup() {
         Log.i(TAG, "setup was invoked");
 
-         /** Checks if the service is already running */
+         /* Checks if the service is already running */
         if (NSenseService.isMyServiceRunning(NSenseService.class, this)) {
             Log.i(TAG, "Service is running.");
             bindService(new Intent(MainActivity.this, NSenseService.class), this, BIND_AUTO_CREATE);

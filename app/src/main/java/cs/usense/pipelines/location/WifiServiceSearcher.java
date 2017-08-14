@@ -1,10 +1,6 @@
-/**
- * @version 2.0
- * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, 16-11-2015
- * Class is part of the NSense application.
- * This class manage all the devices found at the WiFi mWifiP2pManager discover mechanism.
- * @author Luis Amaral Lopes (COPELABS/ULHT),
- * @author Miguel Tavares (COPELABS/ULHT)
+/*
+ * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, 2016/11/21.
+ * Class is part of the NSense application. It provides support for location pipeline.
  */
 
 package cs.usense.pipelines.location;
@@ -25,20 +21,31 @@ import java.util.TimerTask;
 
 import cs.usense.db.NSenseDataSource;
 
+
+/**
+ * This class manage all the devices found at the WiFi mWifiP2pManager discover mechanism.
+ * @author Luis Amaral Lopes (COPELABS/ULHT),
+ * @author Miguel Tavares (COPELABS/ULHT)
+ * @version 2.0, 2016
+ */
 class WifiServiceSearcher {
 
     /** This variable is used to debug WifiServiceSearcher class */
     private static final String TAG = "WifiServiceSearcher";
 
     /** This variable is used to set a time window to reboot Wi-Fi */
-    private static int WIFI_RESTART_INITIAL_FIX_TIME = 2 * 60 * 1000;
+    private static final int WIFI_RESTART_INITIAL_FIX_TIME = 2 * 60 * 1000;
 
-    /** Interface to global
-     *    about an application environment. */
-    private Context mContext;
+    /** RelativePositionWiFiNoConnection module. */
+    private RelativePositionWiFiNoConnection mCallBack;
 
-    /** NSense Data base. */
-    private NSenseDataSource mDataSource;
+    /** A class for creating a Bonjour service discovery request. */
+    private WifiP2pDnsSdServiceRequest mServiceRequest;
+
+    /** Object that contains info from the TXT of the device found. */
+    private TxTInfoReceived mTxTInfoReceived;
+
+    private Timer mWifiRestartFixTimer;
 
     /** This class provides the API for managing Wi-Fi peer-to-peer connectivity. */
     private WifiP2pManager mWifiP2pManager;
@@ -46,16 +53,11 @@ class WifiServiceSearcher {
     /** A mChannel that connects the application to the Wifi mWifiP2pManager framework. */
     private WifiP2pManager.Channel mChannel;
 
-    /** A class for creating a Bonjour service discovery request. */
-    private WifiP2pDnsSdServiceRequest mServiceRequest;
+    /** NSense Data base. */
+    private NSenseDataSource mDataSource;
 
-    /** RelativePositionWiFiNoConnection module. */
-    private RelativePositionWiFiNoConnection mCallBack;
-
-    /** Object that contains info from the TXT of the device found. */
-    private TxTInfoReceived mTxTInfoReceived = null;
-
-    private Timer mWifiRestartFixTimer = null;
+    /** Interface to global about an application environment. */
+    private Context mContext;
 
     private class TxTInfoReceived {
         String TXTBTMACAddress = "";
@@ -67,7 +69,6 @@ class WifiServiceSearcher {
      * WifiServiceSearcher constructor
      * @param context - Interface to global information about an application environment.
      * @param callback - RelativePositionWiFiNoConnection module.
-     * @param dataSource - NSense data base.
      */
     WifiServiceSearcher(Context context, RelativePositionWiFiNoConnection callback, NSenseDataSource dataSource) {
         mContext = context;
@@ -98,14 +99,10 @@ class WifiServiceSearcher {
      * Requests a service discovery.
      */
     void startServiceDiscovery() {
-
-
         if(mWifiRestartFixTimer == null) {
             startWiFiRestartFixTimer();
         }
-
-
-        /**
+        /*
          * Register mListeners for DNS-SD services. These are callbacks invoked
          * by the system when a service is actually discovered.
          */
@@ -114,32 +111,22 @@ class WifiServiceSearcher {
                     @Override
                     public void onDnsSdServiceAvailable(String instanceName, String registrationType, WifiP2pDevice device) {
                         stopWiFiRestartFixTimer();
-                        /** A service has been discovered. Is this our app? */
+                        /* A service has been discovered. Is this our app? */
                         if (registrationType.contains(RelativePositionWiFiNoConnection.SERVICE_TYPE)) {
                             Log.i(TAG, "Found Something...");
                             String deviceNameFixed = deviceNameFix(device.deviceName);
                             int listPosition = searchDeviceOnList(deviceNameFixed, device.deviceAddress);
                             if (listPosition == -1) {
-                                /** New Device */
+                                /* New Device */
                                 NSenseDevice nSenseDevice = new NSenseDevice(deviceNameFixed, instanceName, device.deviceAddress);
                                 addTxtInfo(nSenseDevice, device.deviceName);
                                 Log.i(TAG, "Fill new record with " + nSenseDevice.toString());
                                 mCallBack.listNSenseDevices.add(nSenseDevice);
-                                if (!mDataSource.hasLocationEntry(device.deviceAddress, deviceNameFixed)) {
-                                    mDataSource.registerLocationEntry(new LocationEntry(nSenseDevice.getDeviceName(), nSenseDevice.getWifiDirectMACAddress()));
-                                }
                                 listPosition = mCallBack.listNSenseDevices.size() - 1;
                             } else {
-                                /** Not New Device */
-                                Log.i(TAG, "position " + listPosition + "\n" + mCallBack.listNSenseDevices.get(listPosition).toString());
                                 addTxtInfo(mCallBack.listNSenseDevices.get(listPosition), device.deviceName);
                             }
-                            if(mDataSource.hasBTDevice(mCallBack.listNSenseDevices.get(listPosition))) {
-                                Log.i(TAG, "I will update the interests on database");
-                                mDataSource.updateInterests(mCallBack.listNSenseDevices.get(listPosition));
-                            } else {
-                                mDataSource.insertDevice(mCallBack.listNSenseDevices.get(listPosition));
-                            }
+                            mDataSource.updateDevice(mCallBack.listNSenseDevices.get(listPosition));
                         } else {
                             Log.i(TAG, "Other device Type found " + instanceName + " " + registrationType);
                         }
@@ -155,29 +142,28 @@ class WifiServiceSearcher {
                 	if (record != null) {
                         mTxTInfoReceived = new TxTInfoReceived();
                         mTxTInfoReceived.mDevice = device;
-                        String mBTAddress = record.get(LocationPipeline.BT_MAC_INFO);
-                        String mInterests = record.get(LocationPipeline.INTERESTS_INFO);
+                        String btMac = record.get(LocationPipeline.BT_MAC_INFO);
+                        String interests = record.get(LocationPipeline.INTERESTS_INFO);
 
-                        if (mBTAddress != null && !mBTAddress.equals("")){
-                            Log.i(TAG, "TXT BTMAC Received: " + mBTAddress);
-                            mTxTInfoReceived.TXTBTMACAddress = mBTAddress;
+                        if (btMac != null && !btMac.equals("")){
+                            Log.i(TAG, "TXT BTMAC Received: " + btMac);
+                            mTxTInfoReceived.TXTBTMACAddress = btMac;
                         } else {
-                            Log.w(TAG, "No TXT BTMAC Received.");
+                            Log.e(TAG, "No TXT BTMAC Received.");
                         }
 
-                        if (mInterests != null && !mInterests.equals("")){
-                            Log.i(TAG, "TXT Interests Received: " + mInterests);
-                            mTxTInfoReceived.interests = mInterests;
+                        if (interests != null && !interests.equals("")){
+                            Log.i(TAG, "TXT Interests Received: " + interests);
+                            mTxTInfoReceived.interests = interests;
                         } else {
-                            Log.w(TAG, "No TXT Interests Received.");
+                            Log.e(TAG, "No TXT Interests Received.");
                         }
 
                     }
                 }
             });
 
-
-        /** After attaching mListeners, create a service request and initiate discovery. */
+        /* After attaching mListeners, create a service request and initiate discovery. */
         mServiceRequest = WifiP2pDnsSdServiceRequest.newInstance();
         mWifiP2pManager.addServiceRequest(mChannel, mServiceRequest,
                 new ActionListener() {
@@ -208,12 +194,17 @@ class WifiServiceSearcher {
         });
     }
 
-    private void addTxtInfo(NSenseDevice nSenseDevice, String deviceAddress) {
+    /**
+     * This method stores txtRecord data received through WI-FI P2P
+     * @param nSenseDevice device where the received data will be stored
+     * @param deviceName device name to check if the data belongs to this device
+     */
+    private void addTxtInfo(NSenseDevice nSenseDevice, String deviceName) {
         if (mTxTInfoReceived != null) {
-            Log.i(TAG, "Compare: " + mTxTInfoReceived.mDevice.deviceName + " " + deviceAddress);
-            if (mTxTInfoReceived.mDevice.deviceName.equalsIgnoreCase(deviceAddress)) {
-                nSenseDevice.setWifiAPMACAddress(mTxTInfoReceived.mDevice.deviceAddress);
-                nSenseDevice.setBtMACAddress(mTxTInfoReceived.TXTBTMACAddress);
+            Log.i(TAG, "Compare: " + mTxTInfoReceived.mDevice.deviceName + " " + deviceName);
+            if (mTxTInfoReceived.mDevice.deviceName.equalsIgnoreCase(deviceName)) {
+                nSenseDevice.setWifiApMac(mTxTInfoReceived.mDevice.deviceAddress);
+                nSenseDevice.setBtMac(mTxTInfoReceived.TXTBTMACAddress);
                 nSenseDevice.setInterests(mTxTInfoReceived.interests);
             }
             mTxTInfoReceived = null;
@@ -226,7 +217,7 @@ class WifiServiceSearcher {
             if(deviceName.equalsIgnoreCase(mCallBack.listNSenseDevices.get(i).getDeviceName())) {
                 position = i;
                 break;
-            } else if(deviceAddress.equalsIgnoreCase(mCallBack.listNSenseDevices.get(i).getWifiDirectMACAddress())) {
+            } else if(deviceAddress.equalsIgnoreCase(mCallBack.listNSenseDevices.get(i).getWifiDirectMac())) {
                 position = i;
                 break;
             }
@@ -234,6 +225,12 @@ class WifiServiceSearcher {
         return position;
     }
 
+    /**
+     * This method fix the device names. Some devices contains the
+     * string "Phone" on it's name's.
+     * @param deviceName device name to be fixed
+     * @return device name fixed
+     */
     private String deviceNameFix(String deviceName) {
         if(deviceName.contains("[Phone]")) {
             deviceName = deviceName.split("\\[.*\\]")[1].trim();

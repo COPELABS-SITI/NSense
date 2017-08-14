@@ -1,17 +1,17 @@
-/**
- * @version 2.0
- * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, 06-04-2016
- * Class is part of the NSense application.
- *  This class holds the encounter duration between a peer and the user device in specific time slots.
- *  The information kept are device MAC address and time spent in the vicinity (i.e., total time within communication range).
- * @author Waldir Moreira (COPELABS/ULHT)
+/*
+ * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, 2016/04/06.
+ * Class is part of the NSense application. It provides support for proximity pipeline.
  */
 
 package cs.usense.pipelines.proximity;
 
 /**
- * This class provide details of Bluetooth User Device and  Encounter Duration
- * */
+ * This class holds the encounter duration between a peer and the user device
+ * in specific time slots. The information kept are device MAC address and
+ * time spent in the vicinity (i.e., total time within communication range).
+ * @author Waldir Moreira (COPELABS/ULHT)
+ * @version 2.0, 2016
+ */
 public class BTUserDevEncounterDuration {
 	
 	/** This variable is to get the address of device */
@@ -19,8 +19,7 @@ public class BTUserDevEncounterDuration {
 	
 	/** This variable is to get the device encounter duration in specific time slots */
 	private double[] encounterDuration = new double [24];
-	
-	
+
 	/**
      * This method gets the MAC address of this Bluetooth device.
 	 * @return deviceAdd The device address to be used as key.

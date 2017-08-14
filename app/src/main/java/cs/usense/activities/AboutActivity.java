@@ -1,9 +1,6 @@
-/**
- * @version 2.0
- * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, date (e.g. 22-04-2016)
- * Class is part of the NSense application. This class instantiates an activity that shows a small
- * description about the application
- * @author Miguel Tavares (COPELABS/ULHT)
+/*
+ * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, 2016/11/25.
+ * Class is part of the NSense application.
  */
 
 package cs.usense.activities;
@@ -19,16 +16,23 @@ import cs.usense.R;
 import cs.usense.interfaces.AboutInterfaces;
 import cs.usense.presenters.AboutPresenter;
 
+
+/**
+ * This class provides some information related with the application
+ * @author Miguel Tavares (COPELABS/ULHT)
+ * @version 1.0, 2016
+ */
 public class AboutActivity extends ActionBarActivity implements AboutInterfaces.View {
 
     /** This variable is used to debug AboutInterfaces class */
     private static final String TAG = "AboutActivity";
 
+    /** This variable shows the application version */
+    @BindView(R.id.version) TextView applicationVersion;
+
     /** This object is the presenter of this activity */
     private AboutInterfaces.Presenter mPresenter;
 
-    /** This variable shows the application version */
-    @BindView(R.id.version) TextView mApplicationVersion;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -37,7 +41,9 @@ public class AboutActivity extends ActionBarActivity implements AboutInterfaces.
         setup();
     }
 
-    /** This method initialize everything needed in this activity */
+    /**
+     * This method initialize everything needed in this activity
+     */
     private void setup() {
         Log.i(TAG, "setup");
         ButterKnife.bind(this);
@@ -58,7 +64,7 @@ public class AboutActivity extends ActionBarActivity implements AboutInterfaces.
     @Override
     public void showAboutInfo(String aboutInfo) {
         Log.i(TAG, aboutInfo);
-        mApplicationVersion.setText(aboutInfo);
+        applicationVersion.setText(aboutInfo);
     }
 
     @Override
@@ -70,7 +76,6 @@ public class AboutActivity extends ActionBarActivity implements AboutInterfaces.
 
     @Override
     public void onDestroy() {
-        Log.i(TAG, "onBackPressed");
         mPresenter.onDestroy();
         super.onDestroy();
     }

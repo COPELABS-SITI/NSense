@@ -1,10 +1,6 @@
-/**
- * @version 2.0
- * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, date (e.g. 22-04-2016)
- * Class is part of the NSense application. This class is a model to be used on SociabilityActivity.
- * Stores device name and stars value of social interaction or propinquity.
- * This class implements the interface Parcelable.
- * @author Miguel Tavares (COPELABS/ULHT)
+/*
+ * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, 2016/11/25.
+ * Class is part of the NSense application.
  */
 
 package cs.usense.models;
@@ -16,11 +12,18 @@ import android.widget.ImageView;
 
 import cs.usense.R;
 
+/**
+ * This class is a model to be used on SociabilityActivity.
+ * Stores device name and stars value of social interaction or propinquity.
+ * This class implements the interface Parcelable.
+ * @author Miguel Tavares (COPELABS/ULHT)
+ * @version 1.0, 2016
+ */
 public class SociabilityDetailItem implements Parcelable {
 
     /** This variable is used to define stars views */
-    public static final int[] STARS = {R.id.row_ratingStars0, R.id.row_ratingStars1, R.id.row_ratingStars2,
-            R.id.row_ratingStars3, R.id.row_ratingStars4};
+    public static final int[] STARS = {R.id.row_ratingStars0, R.id.row_ratingStars1,
+            R.id.row_ratingStars2, R.id.row_ratingStars3, R.id.row_ratingStars4};
 
     /** This variable stores the device name */
     private String mDeviceName;
@@ -38,6 +41,10 @@ public class SociabilityDetailItem implements Parcelable {
         mStarsValue = starsValue;
     }
 
+    /**
+     * This method is the parcelable constructor of SociabilityDetailItem class
+     * @param in received parcel
+     */
     private SociabilityDetailItem(Parcel in) {
         mDeviceName = in.readString();
         mStarsValue = in.readDouble();
@@ -94,17 +101,6 @@ public class SociabilityDetailItem implements Parcelable {
         return mDeviceName + " " + mStarsValue;
     }
 
-    @Override
-    public int describeContents() {
-        return 0;
-    }
-
-    @Override
-    public void writeToParcel(Parcel dest, int flags) {
-        dest.writeString(mDeviceName);
-        dest.writeDouble(mStarsValue);
-    }
-
     @SuppressWarnings("unused")
     public static final Parcelable.Creator<SociabilityDetailItem> CREATOR = new Parcelable.Creator<SociabilityDetailItem>() {
         @Override
@@ -117,4 +113,15 @@ public class SociabilityDetailItem implements Parcelable {
             return new SociabilityDetailItem[size];
         }
     };
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeString(mDeviceName);
+        dest.writeDouble(mStarsValue);
+    }
 }

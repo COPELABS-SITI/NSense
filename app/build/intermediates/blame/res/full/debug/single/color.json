@@ -1,7 +1,7 @@
 [
     {
         "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/color/common_google_signin_btn_tint.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.1/res/color/common_google_signin_btn_tint.xml"
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.2/res/color/common_google_signin_btn_tint.xml"
     },
     {
         "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/color/abc_primary_text_disable_only_material_dark.xml",
@@ -17,7 +17,7 @@
     },
     {
         "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/color/common_google_signin_btn_text_light.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.1/res/color/common_google_signin_btn_text_light.xml"
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.2/res/color/common_google_signin_btn_text_light.xml"
     },
     {
         "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/color/abc_secondary_text_material_light.xml",
@@ -37,7 +37,7 @@
     },
     {
         "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/color/common_google_signin_btn_text_dark.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.1/res/color/common_google_signin_btn_text_dark.xml"
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.2/res/color/common_google_signin_btn_text_dark.xml"
     },
     {
         "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/color/abc_search_url_text.xml",

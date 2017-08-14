@@ -1,7 +1,25 @@
+/*
+ * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, 2015/5/26.
+ * Class is part of the NSense application. It provides support for sound pipeline.
+ */
+
+
+package cs.usense.pipelines.sound;
+
+
+import android.content.Context;
+import android.content.pm.PackageManager;
+import android.os.Handler;
+import android.util.Log;
+
+import cs.usense.R;
+import cs.usense.db.NSenseDataSource;
+import cs.usense.exceptions.SensorNotFoundException;
+import cs.usense.services.NSenseService;
+import cs.usense.utilities.DateUtils;
+import cs.usense.utilities.Utils;
+
 /**
- * @version 2.0
- * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, date (e.g. 22-04-2016)
- * Class is part of the NSense application. It provides support for Microphone pipeline.
  * This class is contains the core functionalities of
  * the application relating to Microphone. The SoundManager provides all the information from
  * Microphone adapter so this class can perform the analysis over Environmental Sound prior to
@@ -9,22 +27,9 @@
  * Some of the code is adapted from Google's NoiseAlert application code.
  * @author Reddy Pallavali (COPELABS/ULHT),
  * @author Miguel Tavares (COPELABS/ULHT)
+ * @version 2.0, 2016
  */
 
-package cs.usense.pipelines.sound;
-
-
-import android.os.Handler;
-import android.util.Log;
-
-import cs.usense.db.NSenseDataSource;
-import cs.usense.services.NSenseService;
-import cs.usense.utilities.DateUtils;
-import cs.usense.utilities.Utils;
-
-/**
- * This class is contains the core functionalities of the application relating to Microphone.
- */
 public class SoundPipeline implements SoundManagerListener {
 
 	/** TAG to debug the SoundPipeline class */
@@ -54,6 +59,9 @@ public class SoundPipeline implements SoundManagerListener {
 	/** This class is to use send or process message */
 	private Handler mHandler = new Handler();
 
+	/** This object stores the application context */
+	private Context mContext;
+
 
 	/** This Runnable fetches sound levels */
 	private Runnable mThread = new Runnable() {
@@ -70,12 +78,25 @@ public class SoundPipeline implements SoundManagerListener {
 	 * This method constructs the SoundPipeline
 	 * @param callback Supply NSenseService object for MainActivity to use
 	 * @param dataSource NSenseDataSource to access various methods and information of the USense Data base
+	 * @throws SensorNotFoundException this exception is triggered when the microphone sensor is missing
 	 */
-	public SoundPipeline(NSenseService callback, NSenseDataSource dataSource) {
+	public SoundPipeline(NSenseService callback, NSenseDataSource dataSource) throws SensorNotFoundException {
 		Log.i(TAG, "The SoundPipeline constructor was invoked");
+		mContext = callback.getApplicationContext();
+		checkIfSoundPipelineCanBeInstantiated();
 		mSoundManager = new SoundManager(this, callback.getApplicationContext());
 		mDataSource = dataSource;
 		start();
+	}
+
+	/**
+	 * This method checks if the device has a microphone, if not throws an exception
+	 * @throws SensorNotFoundException this exception is triggered when the microphone sensor is missing
+	 */
+	private void checkIfSoundPipelineCanBeInstantiated() throws SensorNotFoundException {
+		PackageManager pm = mContext.getPackageManager();
+		if(!pm.hasSystemFeature(PackageManager.FEATURE_MICROPHONE))
+			throw new SensorNotFoundException(mContext.getString(R.string.sensor_not_found_message, mContext.getString(R.string.Microphone)));
 	}
 
 	/**

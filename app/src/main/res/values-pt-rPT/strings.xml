@@ -49,6 +49,23 @@
     <string name="Turn_Off">Desligar</string>
 
     <!-- Class -->
+    <!-- MotionPipeline -->
+    <string name="Accelerometer">acelerómetro</string>
+
+    <!-- Class -->
+    <!-- SoundPipeline -->
+    <string name="Microphone">microfone</string>
+
+    <!-- Class -->
+    <!-- ProximityPipeline -->
+    <string name="Bluetooth">Bluetooth</string>
+
+    <!-- Class -->
+    <!-- LocationPipeline -->
+    <string name="Wi_Fi">Wi-Fi</string>
+    <string name="Wi_Fi_Direct">Wi-Fi Direct</string>
+
+    <!-- Class -->
     <!-- CategoriesActivity -->
     <string name="Interests_saved">Os seus interesses foram guardados com sucesso</string>
 
@@ -110,6 +127,13 @@
     <!-- Class -->
     <!-- activity_mobility.xml -->
     <string name="coming_soon">Disponível brevemente</string>
+
+    <!-- Class -->
+    <!-- SensorNotFoundExceptionn -->
+    <string name="sensor_not_found_title">Funcionalidade não detetada</string>
+    <string name="sensor_not_found_message">O NSense não detetou o %s no seu equipamento.
+        \nDesta forma o NSense não será compativel com este equipamento.</string>
+
 
     <!-- Class -->
     <!-- Utils -->

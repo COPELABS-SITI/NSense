@@ -1,8 +1,6 @@
-/**
- * @version 2.0
- * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, mDate (e.g. 22-04-2016)
+/*
+ * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, 2015/5/26.
  * Class is part of the NSense application. It provides support for accelerometer pipeline.
- * @author Saeik Firdose (COPELABS/ULHT)
  */
 
 package cs.usense.pipelines.motion;
@@ -13,8 +11,12 @@ import java.util.Locale;
 
 import cs.usense.utilities.DateUtils;
 
+
 /**
- * This class provides various methods to provide the action details to the NSenseService
+ * This class is a model of motion pipeline.
+ * @author Saeik Firdose (COPELABS/ULHT)
+ * @author Miguel Tavares (COPELABS/ULHT)
+ * @version 2.0, 2016
  */
 public class MotionEntry {
 
@@ -44,7 +46,7 @@ public class MotionEntry {
 
 
 	/**
-	 * This method constructs the Actions Entry
+	 * This method constructs the Actions Entry class
 	 */
 	public MotionEntry(String actionType) {
 		mActionType = actionType;
@@ -144,7 +146,7 @@ public class MotionEntry {
 
 	/**
 	 * This method return a string containing the ACTIONTYPE, mActionStartTime, mActionDuration, mActionEndTime, HOUR, ACTIONCOUNTER, DAY, and TIMEFRAME.
-	 * @return string String with the ACTIONTYPE, mActionStartTime, mActionDuration, mActionEndTime, HOUR, ACTIONCOUNTER, DAY, and TIMEFRAME values
+	 * @return String with the ACTIONTYPE, mActionStartTime, mActionDuration, mActionEndTime, HOUR, ACTIONCOUNTER, DAY, and TIMEFRAME values
 	 */
 	@Override
 	public String toString() {
@@ -166,13 +168,8 @@ public class MotionEntry {
      */
 	private String checkTimeFrame() {
 		SimpleDateFormat dayFormat = new SimpleDateFormat("EEEE", Locale.UK);
-		String timeframe = dayFormat.format(Calendar.getInstance().getTime());
-		if (timeframe.equals("Sunday") || timeframe.equals("Saturday")) {
-			timeframe = "WeekEnd";
-		} else {
-			timeframe = "WeekDay";
-		}
-		return timeframe;
+		String timeFrame = dayFormat.format(Calendar.getInstance().getTime());
+		return timeFrame.equals("Sunday") || timeFrame.equals("Saturday") ? "WeekEnd" : "WeekDay";
 	}
 
 }

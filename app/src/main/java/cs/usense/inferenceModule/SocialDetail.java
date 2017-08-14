@@ -1,10 +1,6 @@
-/**
- * @version 2.0
- * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, date (e.g. 22-04-2016)
- * Class is part of the NSense application. It provides support for inference module and 
- * provides the SocialDetail object to store the information to compute Social Interaction and Propinquity.
- * @author Saeik Firdose (COPELABS/ULHT),
- * @author Miguel Tavares (COPELABS/ULHT)
+/*
+ * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, 2015/11/25.
+ * Class is part of the NSense application.
  */
 
 package cs.usense.inferenceModule;
@@ -22,9 +18,12 @@ import cs.usense.utilities.InterestsUtils;
 
 
 /**
- * This class provides getter and setter methods of SocialDetail object
+ * It provides support for inference module and provides the SocialDetail
+ * object to store the information to compute Social Interaction and Propinquity.
+ * @author Saeik Firdose (COPELABS/ULHT),
+ * @author Miguel Tavares (COPELABS/ULHT)
+ * @version 2.0, 2016
  */
-
 public class SocialDetail extends SocialComputationalData implements Comparable<SocialDetail>, Parcelable {
 
 	/** This variable stores the social interaction percentage. */
@@ -57,7 +56,9 @@ public class SocialDetail extends SocialComputationalData implements Comparable<
 	/** This variable stores user's interests */
 	private String interests;
 
-	/** This is the constructor of the SocialDetail class */
+	/**
+	 *  This is the constructor of the SocialDetail class
+	 */
 	public SocialDetail(String deviceName, String btMacAddress, double socialWeight, double encDurationNow, String interests) {
 		super(socialWeight, encDurationNow);
 		this.deviceName = deviceName.trim();
@@ -65,6 +66,10 @@ public class SocialDetail extends SocialComputationalData implements Comparable<
 		this.interests = interests;
 	}
 
+	/**
+	 * This method is the parcelable constructor of SocialDetail class
+	 * @param in parcel received
+	 */
 	private SocialDetail(Parcel in) {
 		siPercentage = in.readDouble();
 		propPercentage = in.readDouble();
@@ -75,18 +80,13 @@ public class SocialDetail extends SocialComputationalData implements Comparable<
 		interests = in.readString();
 	}
 
-	public static final Parcelable.Creator<SocialDetail> CREATOR = new Parcelable.Creator<SocialDetail>() {
+	public static boolean isSiLowerThanSiAvg(double value) {
+		return SocialDetail.getSiPercentage() < SocialDetail.getAvgSiPercentage() * value;
+	}
 
-		@Override
-		public SocialDetail createFromParcel(Parcel source) {
-			return new SocialDetail(source);
-		}
-
-		@Override
-		public SocialDetail[] newArray(int size) {
-			return new SocialDetail[size];
-		}
-	};
+	public static boolean isPropLowerThanPropAvg(double value) {
+		return SocialDetail.getPropPercentage() < SocialDetail.getAvgPropPercentage() * value;
+	}
 
 	/**
 	 * This method returns the social interaction percentage
@@ -275,7 +275,7 @@ public class SocialDetail extends SocialComputationalData implements Comparable<
 		double tempDistance = socialDetail.distance;
 		double tempDistance2 = this.distance;
 
-		/** If the distance is -1 we set it temporarily to 1000. We are doing this because -1 < 0 */
+		/* If the distance is -1 we set it temporarily to 1000. We are doing this because -1 < 0 */
 		if(tempDistance == LocationEntry.NA_DISTANCE_VALUE) {
 			tempDistance = 1000;
 		}
@@ -307,7 +307,7 @@ public class SocialDetail extends SocialComputationalData implements Comparable<
 		sb.append("Social Interaction: ").append(getSocialInteraction()).append("\n");
 		sb.append("Propinquity: ").append(getPropinquity()).append("\n");
 		sb.append("Social Interaction(EMA): ").append(getSocialInteractionEMA()).append("\n");
-		sb.append("Propinquity(EMA): ").append(getPropinquityEMA()).append("\n");
+		sb.append("Propinquity(EMA): ").append(getmPropinquityEMA()).append("\n");
 		sb.append("Social Interaction Stars: ").append(getSocialInteractionStars()).append("\n");
 		sb.append("Propinquity Stars: ").append(getPropinquityStars()).append("\n");
 		sb.append("SW: ").append(getSocialWeight()).append("\n");
@@ -317,6 +317,19 @@ public class SocialDetail extends SocialComputationalData implements Comparable<
 		sb.append("Interests: ").append(getInterests()).append("\n");
 		return sb.toString();
 	}
+
+	public static final Parcelable.Creator<SocialDetail> CREATOR = new Parcelable.Creator<SocialDetail>() {
+
+		@Override
+		public SocialDetail createFromParcel(Parcel source) {
+			return new SocialDetail(source);
+		}
+
+		@Override
+		public SocialDetail[] newArray(int size) {
+			return new SocialDetail[size];
+		}
+	};
 
 	@Override
 	public void writeToParcel(Parcel dest, int flags) {

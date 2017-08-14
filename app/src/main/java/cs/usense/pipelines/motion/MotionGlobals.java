@@ -1,14 +1,15 @@
-/**
- * @version 2.0
- * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, date (e.g. 22-04-2016)
+/*
+ * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, 2015/5/26.
  * Class is part of the NSense application. It provides support for accelerometer pipeline.
- * @author Saeik Firdose (COPELABS/ULHT)
  */
 
 package cs.usense.pipelines.motion;
 
 /**
- * This class provides global variables
+ * This class has some global variables related with the motion pipeline
+ * @author Saeik Firdose (COPELABS/ULHT)
+ * @author Miguel Tavares (COPELABS/ULHT)
+ * @version 2.0, 2016
  */
 public abstract class MotionGlobals {
 

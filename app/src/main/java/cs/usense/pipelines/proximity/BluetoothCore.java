@@ -1,12 +1,8 @@
-/**
- * @version 2.0
- * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, 06-04-2016
- * Class is part of the NSense application.
- * This class is contains the core functionalities of the application. 
- * The BTManager provides all the information from Bluetooth adapter so this class can 
- * perform the social context analysis prior to storing the required information in the database.
- * @author Waldir Moreira (COPELABS/ULHT)
+/*
+ * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, 2016/04/06.
+ * Class is part of the NSense application. It provides support for proximity pipeline.
  */
+
 
 package cs.usense.pipelines.proximity;
 
@@ -18,6 +14,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
 import android.os.Environment;
 import android.text.format.DateFormat;
 import android.util.Log;
@@ -33,9 +30,18 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
+import cs.usense.R;
 import cs.usense.db.NSenseDataSource;
+import cs.usense.exceptions.SensorNotFoundException;
 import cs.usense.services.NSenseService;
 
+
+/**
+ * The BTManager provides all the information from Bluetooth adapter so this class can
+ * perform the social context analysis prior to storing the required information in the database.
+ * @author Waldir Moreira (COPELABS/ULHT)
+ * @version 2.0, 2016
+ */
 public class BluetoothCore {
 
 	private final static String TAG = "Social Proximity";
@@ -118,9 +124,12 @@ public class BluetoothCore {
 	 * @param context Interface to global information about an application environment.
 	 * @param datasource NSenseDataSource to access various methods and information of the NSense Data base
 	 **/
-	public BluetoothCore(NSenseService callback, Context context, NSenseDataSource datasource) {
+	public BluetoothCore(NSenseService callback, Context context, NSenseDataSource datasource) throws SensorNotFoundException {
 		this.callback = callback;
 		this.datasource = datasource;
+		this.context = callback.getApplicationContext();
+
+		checkIfProximityPipelineCanBeInstantiated();
 
 		if(debug){
 			if (!Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)){
@@ -171,6 +180,12 @@ public class BluetoothCore {
 		alarmMgr = (AlarmManager)context.getSystemService(Context.ALARM_SERVICE);
 		alarmMgr.setRepeating(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), 3600000, alarmIntent);
 
+	}
+
+	private void checkIfProximityPipelineCanBeInstantiated() throws SensorNotFoundException {
+		PackageManager pm = context.getPackageManager();
+		if(!pm.hasSystemFeature(PackageManager.FEATURE_BLUETOOTH))
+			throw new SensorNotFoundException(context.getString(R.string.sensor_not_found_message, "Bluetooth"));
 	}
 
 	private void storeOwnDeviceInformation() {

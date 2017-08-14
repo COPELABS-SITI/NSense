@@ -61,7 +61,7 @@ public abstract class Utils {
      * @param data Data to be written
      */
     public static void appendLogs(String fileName, String data) {
-        appendLogs(fileName, new ArrayList<>(Arrays.asList(DateUtils.getTimeNowAsStringSecond(), data)));
+        appendLogs(fileName, new ArrayList<>(Arrays.asList(DateUtils.getTimeNowTimeSeriesFormat(), data)));
     }
 
     /**

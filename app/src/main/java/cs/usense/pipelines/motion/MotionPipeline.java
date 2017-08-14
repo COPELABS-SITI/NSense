@@ -1,14 +1,13 @@
-/**
- * @version 2.0
- * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, date (e.g. 22-04-2016)
+/*
+ * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, 2015/5/26.
  * Class is part of the NSense application. It provides support for accelerometer pipeline.
- * @author Saeik Firdose (COPELABS/ULHT)
- * @author Miguel Tavares (COPELABS/ULHT)
  */
 
 package cs.usense.pipelines.motion;
 
 
+import android.content.Context;
+import android.content.pm.PackageManager;
 import android.os.AsyncTask;
 import android.util.Log;
 
@@ -20,13 +19,20 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.concurrent.ArrayBlockingQueue;
 
+import cs.usense.R;
 import cs.usense.db.NSenseDataSource;
+import cs.usense.exceptions.SensorNotFoundException;
 import cs.usense.services.NSenseService;
 import cs.usense.utilities.DateUtils;
 import cs.usense.utilities.Utils;
 
+
 /**
- * This class provides various methods to provide Accelerometer sensor data
+ * This class instantiates the accelerometer sensor, collects it's data and classify them.
+ * The movements can be Standing or Moving
+ * @author Saeik Firdose (COPELABS/ULHT)
+ * @author Miguel Tavares (COPELABS/ULHT)
+ * @version 2.0, 2016
  */
 public class MotionPipeline implements MotionListener {
 
@@ -54,16 +60,34 @@ public class MotionPipeline implements MotionListener {
     /** This object stores the actions information, like activity type, activity duration */
     private MotionEntry mPreviousAction = null;
 
+    /** This object stores the application context */
+    private Context mContext;
+
+
     /**
      * This class instantiate the MotionPipeline and initialize the listener and activity classification task
      * @param callback   Supply functionality for MainActivity to use
      * @param dataSource NSenseDataSource to access various methods and information of the NSense Data base
+     * @throws SensorNotFoundException this exception is triggered when the accelerometer sensor is missing
      */
-    public MotionPipeline(NSenseService callback, NSenseDataSource dataSource) {
+    public MotionPipeline(NSenseService callback, NSenseDataSource dataSource) throws SensorNotFoundException {
         Log.i(TAG, "MotionPipeline constructor was invoked");
+        mContext = callback.getApplicationContext();
+        checkIfMotionPipelineCanBeInstantiated();
         mDataSource = dataSource;
         mMotionManager = new MotionManager(callback, this);
         start();
+    }
+
+    /**
+     * This method checks if the device has an accelerometer sensor.
+     * If not throws an exception
+     * @throws SensorNotFoundException this exception is triggered when the accelerometer sensor is missing
+     */
+    private void checkIfMotionPipelineCanBeInstantiated() throws SensorNotFoundException {
+        PackageManager pm = mContext.getPackageManager();
+        if(!pm.hasSystemFeature(PackageManager.FEATURE_SENSOR_ACCELEROMETER))
+            throw new SensorNotFoundException(mContext.getString(R.string.sensor_not_found_message, mContext.getString(R.string.Accelerometer)));
     }
 
     /**
@@ -82,7 +106,7 @@ public class MotionPipeline implements MotionListener {
             }
         }
 
-        Log.i(TAG, " CounterMap Activity ::" + counterMap);
+        Log.i(TAG, "CounterMap Activity :: " + counterMap);
 
         int maxValue = 0;
         for (int value : counterMap.values()) {
@@ -93,7 +117,7 @@ public class MotionPipeline implements MotionListener {
 
         float confidence = (maxValue * 100) / NUMBER_OF_SAMPLES;
 
-        Log.i(TAG, " confidence is :: " + confidence);
+        Log.i(TAG, "confidence is :: " + confidence);
 
         int activityType = 0;
         for (Entry<Integer, Integer> entry : counterMap.entrySet()) {
@@ -106,7 +130,8 @@ public class MotionPipeline implements MotionListener {
     }
 
     /**
-     * This method provides the real time activities with an asynchronous task
+     * This method starts the collecting data process from the accelerometer
+     * sensor and provides the real time activities.
      */
     private void start() {
         Log.i(TAG, "start was invoked");
@@ -138,10 +163,10 @@ public class MotionPipeline implements MotionListener {
                             im[i] = .0;
                         }
 
-                        /** Append max after frequency component */
+                        /* Append max after frequency component */
                         featureVectorArray.add(max);
 
-                        /** Adds the classification to the list */
+                        /* Adds the classification to the list */
                         listArray.add(classifyActivity(featureVectorArray));
 
                         Log.i(TAG, "The size of listArray is " + listArray.size());
@@ -176,6 +201,7 @@ public class MotionPipeline implements MotionListener {
 
     /**
      * This method is used to print logs to a file and store data in the database.
+     * @param actionType movement type
      */
     private void saveData(String actionType) {
         Log.i(TAG, "saveData was invoked");
@@ -210,6 +236,9 @@ public class MotionPipeline implements MotionListener {
 
     /**
      * This method is used to listen the accelerometer changes
+     * @param x X-axis represent tilting the phone from left - right and vice versa
+     * @param y Y-axis represent tilting the phone upside down and vice versa
+     * @param z Z-axis represent lifting the phone screen side up and down
      */
     @Override
     public void updateBuffer(float x, float y, float z) {
@@ -225,7 +254,7 @@ public class MotionPipeline implements MotionListener {
     }
 
     /**
-     * This method evaluates the activity type.
+     * This method classify and try to predict the next activity type
      * @param actionType users action
      * @param dataToEvaluate list with data to evaluate the action type
      */
@@ -254,13 +283,7 @@ public class MotionPipeline implements MotionListener {
      * @param motionValue motion value to be checked
      */
     private String evaluateActionType(int motionValue) {
-        String result;
-        if(motionValue == STATIONARY_VALUE) {
-            result = "STATIONARY";
-        } else {
-            result = "MOVING";
-        }
-        return result;
+        return motionValue == STATIONARY_VALUE ? "STATIONARY" : "MOVING";
     }
 
     /**

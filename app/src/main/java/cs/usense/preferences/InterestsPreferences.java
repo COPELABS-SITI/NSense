@@ -1,8 +1,6 @@
-/**
- * @version 2.0
- * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, date (e.g. 22-04-2016)
- * Class is part of the NSense application. This class is responsible to manage interests preferences
- * @author Miguel Tavares (COPELABS/ULHT)
+/*
+ * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, 2016/11/25.
+ * Class is part of the NSense application.
  */
 
 package cs.usense.preferences;
@@ -20,6 +18,11 @@ import cs.usense.utilities.InterestsUtils;
 import static android.content.Context.MODE_PRIVATE;
 
 
+/**
+ * This class is responsible to manage interests preferences
+ * @author Miguel Tavares (COPELABS/ULHT)
+ * @version 1.0, 2016
+ */
 public abstract class InterestsPreferences {
 
     /** This variable is used as a key to write and read data on preferences */
@@ -29,6 +32,10 @@ public abstract class InterestsPreferences {
     private static final String RATINGS = "RATINGS";
 
 
+    /**
+     * This method is used to sort the interests.
+     * @param interests interests to be sorted
+     */
     private static void sortInterests(ArrayList<String> interests) {
         ArrayList<Integer> temp = new ArrayList<>();
         for(String interest : interests) {
@@ -41,6 +48,13 @@ public abstract class InterestsPreferences {
         }
     }
 
+    /**
+     * This method checks if the interests are different than
+     * the interests that was stored on cache
+     * @param context application context
+     * @param interests new interests
+     * @return true if the interests changed, false if not
+     */
     public static boolean isInterestsChanged(Context context, ArrayList<String> interests) {
         boolean result = false;
         ArrayList<String> cacheInterests = readCategoriesFromCacheAsArrayList(context);

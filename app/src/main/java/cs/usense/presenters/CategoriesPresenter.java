@@ -1,3 +1,8 @@
+/*
+ * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, 2017/06/05.
+ * Class is part of the NSense application.
+ */
+
 package cs.usense.presenters;
 
 
@@ -7,10 +12,18 @@ import android.widget.RelativeLayout;
 
 import java.util.ArrayList;
 
+import cs.usense.views.InformationView;
 import cs.usense.R;
 import cs.usense.interfaces.CategoriesInterfaces;
 import cs.usense.preferences.InterestsPreferences;
 
+
+/**
+ * This class is used to implement MVP design pattern.
+ * Receives requests from the view and treat them.
+ * @author Miguel Tavares (COPELABS/ULHT)
+ * @version 1.0, 2017
+ */
 public class CategoriesPresenter implements CategoriesInterfaces.Presenter {
 
     /** This variable is used to set how many interests users need to choose */
@@ -19,29 +32,35 @@ public class CategoriesPresenter implements CategoriesInterfaces.Presenter {
     /** This ArrayList contains user's ratings */
     private ArrayList<String> mCategories = new ArrayList<>();
 
+    /** This object is used to establish communication with the view */
     private CategoriesInterfaces.View mView;
 
+    /**
+     * This method is the CategoriesPresenter constructor
+     * @param view view interface to communicate with the view
+     */
     public CategoriesPresenter(CategoriesInterfaces.View view) {
         mView = view;
     }
 
     @Override
     public void onClickCategory(Context context, View view) {
-        int tag = Integer.parseInt(view.getTag().toString());
-        RelativeLayout relativeLayout = (RelativeLayout) view;
-        Object state = relativeLayout.getTag(R.id.interests);
-        if (state != null) {
-            /** disable category */
-            mView.onUpdateCategory(view, tag, R.color.white, R.color.black, null);
-            mCategories.remove(String.valueOf(tag * 10));
+        InformationView infoView = ((InformationView) view);
+        String categoryValue = (String) infoView.getTag();
+        if(mCategories.contains(categoryValue)) {
+            mCategories.remove(categoryValue);
         } else {
-            /** enable category */
-            mView.onUpdateCategory(view, tag, R.color.black, R.color.white, 1);
-            mCategories.add(String.valueOf(tag * 10));
+            mCategories.add(categoryValue);
         }
         mView.onUpdateProgressBar(mCategories.size());
     }
 
+    /**
+     * This method checks if the user selected a minimum of MIN_CATEGORIES
+     * categories of interests
+     * @param context application context
+     * @return true if a minimum of categories of interests was selected, false if not
+     */
     @Override
     public boolean onValidation(Context context) {
         boolean isValid = mCategories.size() >= MIN_CATEGORIES;
@@ -54,18 +73,24 @@ public class CategoriesPresenter implements CategoriesInterfaces.Presenter {
         return isValid;
     }
 
+    /**
+     * This method loads the stored categories to the matrix of categories
+     * @param context application context
+     * @param relativeLayout layout where the categories will be loaded
+     */
     @Override
     public void onLoadCategories(Context context, RelativeLayout relativeLayout) {
-        ArrayList<String> categories = InterestsPreferences.readCategoriesFromCacheAsArrayList(context);
-        for(String category : categories) {
-            if(Integer.parseInt(category) % 10 == 0) {
-                String categoryValue = String.valueOf(Integer.parseInt(category) / 10);
-                RelativeLayout categoryLayout = (RelativeLayout) relativeLayout.findViewWithTag(categoryValue.trim());
-                if (categoryLayout != null) {
-                    onClickCategory(context, categoryLayout);
-                }
-            }
+        mCategories = InterestsPreferences.readCategoriesFromCacheAsArrayList(context);
+        mView.onUpdateProgressBar(mCategories.size());
+        for(String category : mCategories) {
+            InformationView infoView = (InformationView) relativeLayout.findViewWithTag(category);
+            infoView.switchStatus();
         }
+    }
+
+    @Override
+    public void onDestroy() {
+        mView = null;
     }
 
 }

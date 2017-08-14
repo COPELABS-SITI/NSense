@@ -1,14 +1,18 @@
-/**
- * @version 2.0
- * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, date (e.g. 22-04-2016)
- * Class is part of the NSense application. This class instantiates an activity to show an history
- * of social interaction and propinquity in a scale that starts on 0 to 5.
- * @author Miguel Tavares (COPELABS/ULHT)
+/*
+ * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, 2016/11/25.
+ * Class is part of the NSense application.
  */
 
 package cs.usense.models;
 
 
+/**
+ * Class is part of the NSense application. This class instantiates
+ * an activity to show an history of social interaction and propinquity
+ * in a scale that starts on 0 to 5.
+ * @author Miguel Tavares (COPELABS/ULHT)
+ * @version 1.0, 2016
+ */
 public class SociabilityGraphItem {
 
     /** This variable stores the date of data */

@@ -134,8 +134,22 @@ public abstract class InterestsUtils {
         return stringBuilder.toString();
     }
 
+    public static String buildInterest(String interest, String rating) {
+        int interestValue = Integer.valueOf(InterestsUtils.getInterestValue(interest));
+        int ratingValue = Integer.valueOf(InterestsUtils.getRatingValue(rating));
+        return String.valueOf(interestValue + ratingValue);
+    }
+
     public static String getCategoryOfRating(String category) {
         return String.valueOf((Integer.parseInt(category) / CATEGORIES_OFFSET) * CATEGORIES_OFFSET);
+    }
+
+    public static String getCategoryOfInterestAsString(String interest) {
+        return getInterestAsString(getCategoryOfRating(interest));
+    }
+
+    public static String getRatingOfInterestValue(String interest) {
+        return String.valueOf(Integer.parseInt(interest) % 10);
     }
 
     public static ArrayList<String> getRatingsAsString(Context context, String category) {

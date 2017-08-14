@@ -1,9 +1,6 @@
-/**
- * @version 2.0
- * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, 16-11-2015
+/*
+ * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, 2017/02/01.
  * Class is part of the NSense application.
- * This class builds a merged report
- * @author Miguel Tavares (COPELABS/ULHT)
  */
 
 package cs.usense.reports;
@@ -13,6 +10,12 @@ import android.content.Context;
 
 import cs.usense.db.NSenseDataSource;
 
+
+/**
+ * This class builds a merged report
+ * @author Miguel Tavares (COPELABS/ULHT)
+ * @version 1.0, 2017
+ */
 public abstract class MergedReport {
 
     /** This variable stores the file name of merged report */

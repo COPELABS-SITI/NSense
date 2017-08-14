@@ -1,9 +1,6 @@
-/**
- * @version 2.0
- * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, date (e.g. 22-04-2016)
- * Class is part of the NSense application. This class instantiates an activity to show
- * application report menu.
- * @author Miguel Tavares (COPELABS/ULHT)
+/*
+ * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, 2016/11/25.
+ * Class is part of the NSense application.
  */
 
 package cs.usense.activities;
@@ -25,13 +22,21 @@ import cs.usense.interfaces.ReportsInterfaces;
 import cs.usense.preferences.GeneralPreferences;
 import cs.usense.presenters.ReportsPresenter;
 
+
+/**
+ * This class instantiates an activity with a menu that allows the users to generate some reports.
+ * @author Miguel Tavares (COPELABS/ULHT)
+ * @version 1.0, 2016
+ */
 public class ReportsActivity extends ActionBarActivity implements OnItemClickListener, ReportsInterfaces.View {
 
+    /** This textview shows the email that is configured to send the reports */
+    @BindView(R.id.email_report) TextView emailReport;
 
-    @BindView(R.id.email_report) TextView mEmailReport;
-
+    /** This listview shows the list of reports that can be generated */
     @BindView(R.id.reports_list) ListView reportsList;
 
+    /** This object is the presenter of this activity */
     private ReportsInterfaces.Presenter mPresenter;
 
     @Override
@@ -56,9 +61,9 @@ public class ReportsActivity extends ActionBarActivity implements OnItemClickLis
      * This method load the email stored to a small TextView
      */
     @Override
-    public void onSetEmailReport(String emailReport) {
-        mEmailReport.setText(emailReport);
-        GeneralPreferences.setReportEmail(this, emailReport);
+    public void onSetEmailReport(String emailAddress) {
+        emailReport.setText(emailAddress);
+        GeneralPreferences.setReportEmail(this, emailAddress);
     }
 
     /**
@@ -92,6 +97,12 @@ public class ReportsActivity extends ActionBarActivity implements OnItemClickLis
     public void onBackPressed() {
         startActivity(new Intent(this, SettingsActivity.class));
         finish();
+    }
+
+    @Override
+    public void onDestroy() {
+        mPresenter.onDestroy();
+        super.onDestroy();
     }
 
 }

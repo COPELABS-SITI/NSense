@@ -1,9 +1,6 @@
-/**
- * @version 2.0
- * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, date (e.g. 22-04-2016)
- * Class is part of the NSense application. It provides support to the NSense History Activity, and 
- * provides the list of devices, SocialInteraction, and Propinquity information with the layout.
- * @author Miguel Tavares (COPELABS/ULHT)
+/*
+ * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, 2016/11/25.
+ * Class is part of the NSense application.
  */
 
 package cs.usense.adapters;
@@ -25,15 +22,23 @@ import cs.usense.models.SociabilityDetailItem;
 
 import static cs.usense.models.SociabilityDetailItem.STARS;
 
+
 /**
- * This class provides adapter details to the NSenseHistoryActivity 
+ * This class provides adapter details to the NSenseHistoryActivity
+ * @author Miguel Tavares (COPELABS/ULHT)
+ * @version 1.0, 2016
  */
 public class SociabilityDetailAdapter extends ArrayAdapter<SociabilityDetailItem> {
 
 	/** This variable is used to debug SociabilityDetailAdapter class */
 	private static final String TAG = "SociabilityDAdapter";
 
-
+	/**
+	 * Constructor of AlertInterestsAdapter class
+	 * @param context application context
+	 * @param resource layout on load data
+	 * @param data data to load
+	 */
 	public SociabilityDetailAdapter(Context context, int resource, ArrayList<SociabilityDetailItem> data) {
 		super(context, resource, data);
 	}
@@ -44,7 +49,7 @@ public class SociabilityDetailAdapter extends ArrayAdapter<SociabilityDetailItem
 		Log.i(TAG, getItem(position).toString());
 		LayoutInflater inflater = ((Activity) getContext()).getLayoutInflater();
 		convertView = inflater.inflate(R.layout.item_stars_detail, parent, false);
-		/** Set the device name */
+		/* Set the device name */
 		TextView deviceName = (TextView)convertView.findViewById(R.id.txtTitle);
 		deviceName.setText(getItem(position).getDeviceName());
 		getItem(position).fillStars(convertView, STARS);

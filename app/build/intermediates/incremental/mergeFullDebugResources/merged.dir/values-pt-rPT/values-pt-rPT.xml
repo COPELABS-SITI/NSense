@@ -7,11 +7,13 @@
         <item>Acerca</item>
     </string-array>
     <string name="About">Acerca</string>
+    <string name="Accelerometer">acelerómetro</string>
     <string name="Alert_friends_around">Alerta de pessoas ao seu redor</string>
     <string name="Alert_same_interests_around">Alerta de pessoas com interesses semelhantes</string>
     <string name="Alerts">Os meus alertas</string>
     <string name="Alerts_Frequency">Frequência dos alertas</string>
     <string name="Around_You">Interesses semelhantes à sua volta</string>
+    <string name="Bluetooth">Bluetooth</string>
     <string name="Interests_Report">Relatório de Interesses</string>
     <string name="Interests_not_available">Não há interesses a apresentar</string>
     <string name="Interests_saved">Os seus interesses foram guardados com sucesso</string>
@@ -19,6 +21,7 @@
     <string name="Map">Mapa</string>
     <string name="Map_Information">Informação do mapa</string>
     <string name="Merged_Report">Relatório Social com interesses</string>
+    <string name="Microphone">microfone</string>
     <string name="Mobility">Mobilidade</string>
     <string name="My_Categories">Os meus interesses</string>
     <string name="My_Ratings">As minhas classificações</string>
@@ -42,6 +45,8 @@
     <string name="Turn_Off">Desligar</string>
     <string name="User_Information">Informação do utilizador</string>
     <string name="Vibrate">Vibração</string>
+    <string name="Wi_Fi">Wi-Fi</string>
+    <string name="Wi_Fi_Direct">Wi-Fi Direct</string>
     <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Navegar para a página inicial"</string>
     <string msgid="1397052879051804371" name="abc_action_bar_home_description_format">"%1$s, %2$s"</string>
     <string msgid="6623331958280229229" name="abc_action_bar_home_subtitle_description_format">"%1$s, %2$s, %3$s"</string>
@@ -131,6 +136,9 @@
     <string name="send_report_by_email">Enviar relatório por email…</string>
     <string name="send_report_by_email_error">Tem de definir o endereço de email onde o relatório será recebido</string>
     <string name="send_report_by_email_success">O seu relatório foi enviado com sucesso</string>
+    <string name="sensor_not_found_message">O NSense não detetou o %s no seu equipamento.
+        \nDesta forma o NSense não será compativel com este equipamento.</string>
+    <string name="sensor_not_found_title">Funcionalidade não detetada</string>
     <string name="set_email_report_message">Email para onde o relatório será enviado</string>
     <string name="set_your_interests_to_proceed">Escolha no mínimo cinco interesses para prosseguir</string>
     <string name="social_report_success">O relatório social foi gerado com sucesso</string>

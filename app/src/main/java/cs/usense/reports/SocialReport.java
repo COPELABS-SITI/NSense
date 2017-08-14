@@ -1,9 +1,6 @@
-/**
- * @version 2.0
- * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, 16-11-2015
+/*
+ * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, 2017/02/01.
  * Class is part of the NSense application.
- * This class builds the social report
- * @author Miguel Tavares (COPELABS/ULHT)
  */
 
 package cs.usense.reports;
@@ -15,6 +12,11 @@ import android.util.Log;
 
 import cs.usense.db.NSenseDataSource;
 
+/**
+ * This class builds the social report
+ * @author Miguel Tavares (COPELABS/ULHT)
+ * @version 1.0, 2017
+ */
 public class SocialReport {
 
     /** This variable is used to debug SocialReport class */

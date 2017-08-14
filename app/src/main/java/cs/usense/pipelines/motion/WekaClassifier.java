@@ -1,14 +1,16 @@
-/**
- * @version 2.0
- * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, date (e.g. 22-04-2016)
- * Class is part of the NSense application. This class is provided as input the classify the the activities in real time.
- * @author Saeik Firdose (COPELABS/ULHT)
+/*
+ * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, 2015/5/26.
+ * Class is part of the NSense application. It provides support for accelerometer pipeline.
  */
+
 
 package cs.usense.pipelines.motion;
 
+
 /**
- * This class provides some objects to classify the real time activities based on trained data set 
+ * This class is provided as input the classify the the activities in real time.
+ * @author Saeik Firdose (COPELABS/ULHT)
+ * @version 1.0, 2015
  */
 public class WekaClassifier {
 

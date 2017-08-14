@@ -1,10 +1,8 @@
-/**
- * @version 2.0
- * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, date (e.g. 22-04-2016)
- * Class is part of the NSense application. This class instantiates an activity to a description of
- * the circles drawn on the map.
- * @author Miguel Tavares (COPELABS/ULHT)
+/*
+ * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, 2016/11/25.
+ * Class is part of the NSense application.
  */
+
 
 package cs.usense.activities;
 
@@ -14,6 +12,12 @@ import android.widget.ImageView;
 
 import cs.usense.R;
 
+/**
+ * This class instantiates an activity to a description of the
+ * circles drawn on the map.
+ * @author Miguel Tavares (COPELABS/ULHT)
+ * @version 1.0, 2016
+ */
 public class MapInformationActivity extends AppCompatActivity {
 
     @Override

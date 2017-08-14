@@ -1,3 +1,8 @@
+/*
+ * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, 2015/11/16.
+ * Class is part of the NSense application. It provides support for location pipeline.
+ */
+
 package cs.usense.pipelines.location;
 
 import android.bluetooth.BluetoothClass;
@@ -9,34 +14,44 @@ import android.content.IntentFilter;
 import android.os.SystemClock;
 import android.util.Log;
 
-import java.io.PrintWriter;
-import java.io.StringWriter;
-
-import cs.usense.activities.MainActivity;
 import cs.usense.db.NSenseDataSource;
-import cs.usense.utilities.DateUtils;
-import cs.usense.utilities.Utils;
 
+/**
+ * This class computes the distance between the user and the peers around.
+ * The distance is computed through BT and this class computes short distances.
+ * Longer distances are computed through WI-FI.
+ * @author Luis Amaral Lopes (COPELABS/ULHT),
+ * @author Miguel Tavares (COPELABS/ULHT)
+ * @version 2.0, 2016
+ */
 class RelativePositionBT {
 
-    private final String TAG = "RelativePositionBT";
+    /** This variable is used to debug RelativePositionBT class */
+    private static final String TAG = "RelativePositionBT";
 
-    // Free Space Path Loss (FSPL) Constants (see above)
-    private static final int FSPL_FREQ = 189;
-    private static final int FSPL_LIGHT = -148;
+    /** Calibrated power of the transmitter (dBm) at 0 meter */
+    private static final int DEFAULT_TX_POWER_LEVEL = -26;
 
-    private static final int DEFAULT_TX_POWER_LEVEL = -36;
+    /** This variable represents the RSSI at 1 meter using BT */
+    private static final int RSSI_AT_1_METER = -62;
 
-    private NSenseDataSource dataSource;
+    /** This variable represents the BT flag on DB */
+    private static final int BT_UPDATE_FLAG = 0;
 
-    private LocationPipeline callback;
+    /** This object is used to manage the database*/
+    private NSenseDataSource mDataSource;
 
-    /* (dBm) PATH_LOSS for isotropic antenna transmitting BLE (2.45 GHz) */
-    private static final int FREE_SPACE_PATH_LOSS_CONSTANT_FOR_BLE = FSPL_FREQ + FSPL_LIGHT; // const = 41
+    /** This object contains the application context */
+    private Context mContext;
 
-    RelativePositionBT(Context context, NSenseDataSource dataSource, LocationPipeline callback) {
-        this.dataSource = dataSource;
-        this.callback = callback;
+    /**
+     * Constructor of RelativePositionBT class
+     * @param context application context
+     * @param dataSource database reference
+     */
+    RelativePositionBT(Context context, NSenseDataSource dataSource) {
+        mContext = context;
+        mDataSource = dataSource;
         context.registerReceiver(receiver, new IntentFilter(BluetoothDevice.ACTION_FOUND));
     }
 
@@ -44,74 +59,41 @@ class RelativePositionBT {
 
         @Override
         public void onReceive(Context context, Intent intent) {
-            try {
-                String action = intent.getAction();
-                if (BluetoothDevice.ACTION_FOUND.equals(action)) {
-                    int rssi = intent.getShortExtra(BluetoothDevice.EXTRA_RSSI, Short.MIN_VALUE);
-                    BluetoothDevice mBTdevice = intent.getParcelableExtra(BluetoothDevice.EXTRA_DEVICE);
-                    BluetoothClass btClass = intent.getParcelableExtra(BluetoothDevice.EXTRA_CLASS);
-
-
-                    if (!filterDevice(btClass)) {
-                        Log.i(TAG, "Device of no interest");
-                        return;
+            String action = intent.getAction();
+            if (BluetoothDevice.ACTION_FOUND.equals(action)){
+                int rssi = intent.getShortExtra(BluetoothDevice.EXTRA_RSSI, Short.MIN_VALUE);
+                if (rssi > -70) {
+                    if (filterDevice((BluetoothClass) intent.getParcelableExtra(BluetoothDevice.EXTRA_CLASS))) {
+                        BluetoothDevice btDevice = intent.getParcelableExtra(BluetoothDevice.EXTRA_DEVICE);
+                        double distance = DistanceModels.logDistancePathLossModel(rssi, RSSI_AT_1_METER, DEFAULT_TX_POWER_LEVEL);
+                        Log.i(TAG, "LOG " + btDevice.getName() + " " + rssi + " " + distance);
+                        if (mDataSource.hasLocationEntry(btDevice.getAddress(), btDevice.getName())) {
+                            // Device exists
+                            mDataSource.updateLocationEntry(btDevice.getName(), btDevice.getAddress(), distance, BT_UPDATE_FLAG);
+                        } else {
+                            // New device
+                            mDataSource.registerLocationEntry(new LocationEntry(btDevice.getName(), null, distance, btDevice.getAddress()));
+                        }
                     }
-                    double mDistance = distanceFromRssi(rssi, DEFAULT_TX_POWER_LEVEL);
-
-                    Utils.appendLogs("BTDistance",
-                            new String[]{
-                                    DateUtils.getTimeNowAsStringSecond(),
-                                    String.valueOf(rssi),
-                                    String.valueOf(2450),
-                                    String.valueOf(mDistance),
-                                    //MainActivity.expectedDistance,
-                                    mBTdevice.getName()
-                            });
-
-                    if (dataSource.hasLocationEntry(mBTdevice.getAddress(), mBTdevice.getName())) {
-                        //Device exists
-                        LocationEntry entry = dataSource.getLocationEntry(mBTdevice.getAddress(), mBTdevice.getName());
-                        entry.setDistance(mDistance);
-                        entry.setLastUpdate(SystemClock.elapsedRealtime());
-                        dataSource.updateLocationEntry(entry);
-                    } else {
-                        //New Device
-                        LocationEntry entry = new LocationEntry();
-                        entry.setDeviceName(mBTdevice.getName());
-                        entry.setBSSID(mBTdevice.getAddress());
-                        entry.setDistance(mDistance);
-                        entry.setLastUpdate(SystemClock.elapsedRealtime());
-                        dataSource.registerLocationEntry(entry);
-                    }
-                    Log.i(TAG, " Device: " + mBTdevice.getName() + " RSSI: " + rssi + "dBm - Distance: " + mDistance);
                 }
-            } catch (Exception e) {
-                StringWriter errors = new StringWriter();
-                e.printStackTrace(new PrintWriter(errors));
-                Log.e(TAG, e.getMessage());
-                Utils.appendLogs("Error" + DateUtils.getTimeNowFileNameFormatted(), errors.toString());
             }
         }
     };
 
-    public void close(Context context) {
-        context.unregisterReceiver(receiver);
+    /**
+     * This method filter the devices detected by BT. 524 represents smart phones
+     * https://developer.android.com/reference/android/bluetooth/BluetoothClass.Device.html#PHONE_SMART
+     * @param btClass btClass object to check the device nature
+     * @return true if device is a smart phone, false if not
+     */
+    private boolean filterDevice(BluetoothClass btClass) {
+        return btClass.getDeviceClass() == 524;
     }
 
     /**
-     * Convert RSSI to distance using the free space path loss equation. See <a
-     * href="http://en.wikipedia.org/wiki/Free-space_path_loss">Free-space_path_loss</a>
-     *
-     * @param rssi Received Signal Strength Indication (RSSI) in dBm
-     * @param txPowerAtSource the calibrated power of the transmitter (dBm) at 0 meter
-     * @return the distance at which that rssi value would occur in meters
+     * This method stops the bluetooth distance computing feature
      */
-    private double distanceFromRssi(int rssi, int txPowerAtSource) {
-        int pathLoss = txPowerAtSource - rssi;
-        return Math.pow(10, (pathLoss - FREE_SPACE_PATH_LOSS_CONSTANT_FOR_BLE) / 20.0) * 2;
-    }
-
-    private boolean filterDevice(BluetoothClass btClass) {
-        return btClass.getDeviceClass() == 524 || btClass.getDeviceClass() == 268;
+    public void close() {
+        mContext.unregisterReceiver(receiver);
     }
 }

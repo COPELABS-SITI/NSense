@@ -4,7 +4,7 @@
     <!-- Layout -->
     <!-- AndroidManifest.xml -->
     <string name="google_maps_key">AIzaSyCkIQh0ZQSWCcdIq3uG0lr4LcEenD0-gRs</string>
-    <string name="Around_You">Same interests around you</string>
+    <string name="Around_You">Same mInterests around you</string>
     <string name="Sociability_History">Sociability History</string>
 
     <!-- Layout -->
@@ -47,6 +47,23 @@
     <string name="Mobility">Mobility</string>
     <string name="Settings">Settings</string>
     <string name="Turn_Off">Turn Off</string>
+
+    <!-- Class -->
+    <!-- MotionPipeline -->
+    <string name="Accelerometer">accelerometer</string>
+
+    <!-- Class -->
+    <!-- SoundPipeline -->
+    <string name="Microphone">microphone</string>
+
+    <!-- Class -->
+    <!-- ProximityPipeline -->
+    <string name="Bluetooth">Bluetooth</string>
+
+    <!-- Class -->
+    <!-- LocationPipeline -->
+    <string name="Wi_Fi">Wi-Fi</string>
+    <string name="Wi_Fi_Direct">Wi-Fi Direct</string>
 
     <!-- Class -->
     <!-- SubCategoriesActivity -->
@@ -110,6 +127,12 @@
     <!-- Class -->
     <!-- ActivityMobility -->
     <string name="coming_soon">Coming Soon</string>
+
+    <!-- Class -->
+    <!-- SensorNotFoundExceptionn -->
+    <string name="sensor_not_found_title">Feature not detected</string>
+    <string name="sensor_not_found_message">NSense did not find the %s on your device. \n
+        NSense cannot proceed without it.</string>
 
     <!-- Class -->
     <!-- Utils -->

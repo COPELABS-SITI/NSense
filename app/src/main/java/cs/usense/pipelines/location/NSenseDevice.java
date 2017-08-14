@@ -1,100 +1,146 @@
+/*
+ * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, 2015/11/16.
+ * Class is part of the NSense application. It provides support for location pipeline.
+ */
+
 package cs.usense.pipelines.location;
 
 
+/**
+ * This class is a model to describe a NSense device on application
+ * @author Luis Amaral Lopes (COPELABS/ULHT),
+ * @author Miguel Tavares (COPELABS/ULHT)
+ * @version 2.0, 2016
+ */
 public class NSenseDevice {
 
-    /** MAC address received from the discover process (Wi-Fi Direct) */
-    private String wifiDirectMACAddress;
-
-    /** MAC address from the AP received from the wifi manager */
-    private String wifiAPMACAddress;
-
-    /** BT MAC address */
-    private String btMACAddress;
+    /** Device Name */
+    private String mDeviceName;
 
     /** Access Point SSID */
-    private String mSSID;
+    private String mSsid;
 
-    /** Device Name */
-    private String deviceName;
+    /** MAC address received from the discover process (Wi-Fi Direct) */
+    private String mWifiDirectMac;
 
-    /** Number of times this device was not found at the WiFi scans. */
-    private int countNotFound;
+    /** MAC address from the AP received from the wifi manager */
+    private String mWifiApMac;
 
-    private String interests;
+    /** BT MAC address */
+    private String mBtMac;
 
+    /** User's interests */
+    private String mInterests;
 
-    public NSenseDevice(String deviceName, String mSSID, String wifiDirectMACAddress) {
-        this.deviceName = deviceName;
-        this.mSSID = mSSID;
-        this.wifiDirectMACAddress = wifiDirectMACAddress;
+    /**
+     * NSenseDevice class constructor
+     * @param deviceName the device name
+     * @param ssid ssid of WI-FI Direct AP
+     * @param wifiDirectMac mac of WI-FI Direct AP
+     */
+    public NSenseDevice(String deviceName, String ssid, String wifiDirectMac) {
+        mDeviceName = deviceName;
+        mSsid = ssid;
+        mWifiDirectMac = wifiDirectMac;
     }
 
-    public String getWifiDirectMACAddress() {
-        return wifiDirectMACAddress;
-    }
-
-    public String getWifiAPMACAddress() {
-        return wifiAPMACAddress;
-    }
-
-    public String getBtMACAddress() {
-        return btMACAddress;
-    }
-
-    public String getSSID() {
-        return mSSID;
-    }
-
+    /**
+     * This method returns the device name
+     * @return device name
+     */
     public String getDeviceName() {
-        return deviceName;
+        return mDeviceName;
     }
 
-    public int getCountNotFound() {
-        return countNotFound;
+    /**
+     * This method returns the ssid
+     * @return ssid
+     */
+    public String getSsid() {
+        return mSsid;
     }
 
-    /** Representation of interests chosen by the user */
+    /**
+     * This method returns MAC of WI-FI Direct
+     * @return MAC of WI-FI Direct
+     */
+    public String getWifiDirectMac() {
+        return mWifiDirectMac;
+    }
+
+    /**
+     * This method returns MAC of WI-FI Direct AP
+     * @return MAC of WI-FI Direct AP
+     */
+    public String getWifiApMac() {
+        return mWifiApMac;
+    }
+
+    /**
+     * This method returns MAC of BT
+     * @return MAC of BT
+     */
+    public String getBtMac() {
+        return mBtMac;
+    }
+
+    /**
+     * This method returns user's interests
+     * @return user's interests
+     */
     public String getInterests() {
-        return interests;
+        return mInterests;
     }
 
-    public void incrementCountNotFound() {
-        countNotFound++;
-    }
-
-    public void setSSID(String mSSID) {
-        this.mSSID = mSSID;
-    }
-
+    /**
+     * This method sets the mDeviceName attribute
+     * @param deviceName value to be set
+     */
     public void setDeviceName(String deviceName) {
-        this.deviceName = deviceName;
+        mDeviceName = deviceName;
     }
 
-    public void setCountNotFound(int countNotFound) {
-        this.countNotFound = countNotFound;
+    /**
+     * This method sets the mSsid attribute
+     * @param ssid value to be set
+     */
+    public void setSsid(String ssid) {
+        mSsid = ssid;
     }
 
-    public void setWifiAPMACAddress(String wifiAPMACAddress) {
-        this.wifiAPMACAddress = wifiAPMACAddress;
+    /**
+     * This method sets the mWifiApMac attribute
+     * @param wifiApMac value to be set
+     */
+    public void setWifiApMac(String wifiApMac) {
+        mWifiApMac = wifiApMac;
     }
 
-    public void setBtMACAddress(String btMACAddress) {
-        this.btMACAddress = btMACAddress;
+    /**
+     * This method sets the mBtMac attribute
+     * @param btMac value to be set
+     */
+    public void setBtMac(String btMac) {
+        mBtMac = btMac;
     }
 
+    /**
+     * This method sets the mInterests attribute
+     * @param interests value to be set
+     */
     public void setInterests(String interests) {
-        this.interests = interests;
+        mInterests = interests;
     }
 
+    @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append(deviceName).append(" ");
-        sb.append(mSSID).append(" ");
-        sb.append("MAC BT ").append(btMACAddress).append(" ");
-        sb.append("MAC WD ").append(wifiDirectMACAddress).append(" ");
-        sb.append("MAC AP ").append(wifiAPMACAddress).append(" ");
-        sb.append("Interests ").append(interests);
+        sb.append(mDeviceName).append(" ");
+        sb.append(mSsid).append(" ");
+        sb.append("MAC BT ").append(mBtMac).append(" ");
+        sb.append("MAC WD ").append(mWifiDirectMac).append(" ");
+        sb.append("MAC AP ").append(mWifiApMac).append(" ");
+        sb.append("Interests ").append(mInterests);
         return sb.toString();
     }
 

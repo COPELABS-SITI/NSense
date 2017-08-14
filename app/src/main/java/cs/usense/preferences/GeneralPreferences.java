@@ -1,9 +1,8 @@
-/**
- * @version 2.0
- * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, date (e.g. 22-04-2016)
- * Class is part of the NSense application. This class is responsible to manage interests preferences
- * @author Miguel Tavares (COPELABS/ULHT)
+/*
+ * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, 2016/11/25.
+ * Class is part of the NSense application.
  */
+
 
 package cs.usense.preferences;
 
@@ -11,11 +10,14 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.location.Location;
 
-import com.google.android.gms.maps.model.LatLng;
-
 import static android.content.Context.MODE_PRIVATE;
 
 
+/**
+ * This class is responsible to manage interests preferences
+ * @author Miguel Tavares (COPELABS/ULHT)
+ * @version 1.0, 2016
+ */
 public abstract class GeneralPreferences {
 
     /** This variable is used as a key to write and read data on preferences */

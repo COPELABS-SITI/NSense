@@ -1,14 +1,8 @@
-/**
- * @version 2.0
- * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, date (e.g. 22-04-2016)
- * Class is part of the NSense application. This class controls the User Interface and update it
- * based on NSenseService results.
- * @author Saeik Firdose (COPELABS/ULHT),
- * @author Luis Lopes (COPELABS/ULHT),
- * @author Waldir Moreira (COPELABS/ULHT),
- * @author Reddy Pallavali (COPELABS/ULHT)
- * @author Miguel Tavares (COPELABS/ULHT)
+/*
+ * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, 2015/11/25.
+ * Class is part of the NSense application.
  */
+
 
 package cs.usense.activities;
 
@@ -38,9 +32,17 @@ import cs.usense.services.NSenseService;
 import cs.usense.utilities.Utils;
 
 /**
- * This class provides the layout of NSense application and initialize the NSense Service
+ * This class provides the layout of NSense application and initialize the NSense Service.
+ * This class controls the User Interface and update it based on NSenseService results.
+ * @author Saeik Firdose (COPELABS/ULHT),
+ * @author Luis Lopes (COPELABS/ULHT),
+ * @author Waldir Moreira (COPELABS/ULHT),
+ * @author Reddy Pallavali (COPELABS/ULHT),
+ * @author Miguel Tavares (COPELABS/ULHT)
+ * @version 2.0, 2017
  */
-public class MainActivity extends ActionBarActivity implements OnMapReadyCallback, ServiceConnection {
+public class MainActivity extends ActionBarActivity implements MapActivityListener,
+        OnMapReadyCallback, ServiceConnection {
 
     /** This TAG is used to debug MainActivity class */
     private static final String TAG = "MainActivity";
@@ -62,7 +64,6 @@ public class MainActivity extends ActionBarActivity implements OnMapReadyCallbac
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Log.i(TAG, "onCreate was invoked");
-        Utils.dbBackup(this);
         setup();
     }
 
@@ -71,7 +72,6 @@ public class MainActivity extends ActionBarActivity implements OnMapReadyCallbac
      */
     private void setup() {
         Log.i(TAG, "setup was invoked");
-
         /* These objects are used to show % of Social Interaction and Propinquity */
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
@@ -104,7 +104,7 @@ public class MainActivity extends ActionBarActivity implements OnMapReadyCallbac
     }
 
     public void onClickMapInformation(View view) {
-        startActivity(new Intent(MainActivity.this, MapInformationActivity.class));
+        startActivity(new Intent(this, MapInformationActivity.class));
     }
 
     /**
@@ -116,23 +116,22 @@ public class MainActivity extends ActionBarActivity implements OnMapReadyCallbac
         updateActivity();
         mIsServiceBound = true;
         mBoundService = ((NSenseService.LocalBinder) service).getService();
-        mBoundService.setOnStateChangeListener(new MapActivityListener() {
+        mBoundService.setOnStateChangeListener(this);
+    }
 
-            @Override
-            public void onSociabilityChange(ArrayList<SocialDetail> socialInformation) {
-                Log.i(TAG, socialInformation.toString());
-                mMapManager.refreshMapInformation(socialInformation);
-            }
+    @Override
+    public void onSociabilityChange(ArrayList<SocialDetail> socialInformation) {
+        Log.i(TAG, socialInformation.toString());
+        mMapManager.refreshMapInformation(socialInformation);
+    }
 
-            @Override
-            public void onLocationChange(Location location) {
-                Log.i(TAG, location.getLatitude() + " " + location.getLongitude());
-                mMapManager.refreshLocation(location);
-                RelativeLayout one = (RelativeLayout) findViewById(R.id.waiting_for_location);
-                one.setVisibility(View.INVISIBLE);
-                mApplicationStarted = false;
-            }
-        });
+    @Override
+    public void onLocationChange(Location location) {
+        Log.i(TAG, location.getLatitude() + " " + location.getLongitude());
+        mMapManager.refreshLocation(location);
+        RelativeLayout one = (RelativeLayout) findViewById(R.id.waiting_for_location);
+        one.setVisibility(View.INVISIBLE);
+        mApplicationStarted = false;
     }
 
     /**

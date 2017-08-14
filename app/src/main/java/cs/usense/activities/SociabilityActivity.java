@@ -1,9 +1,6 @@
-/**
- * @version 2.0
- * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, date (e.g. 22-04-2016)
- * Class is part of the NSense application. This class instantiates an activity to show an history
- * of social interaction and propinquity in a scale that starts on 0 to 5.
- * @author Miguel Tavares (COPELABS/ULHT)
+/*
+ * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, 2016/11/25.
+ * Class is part of the NSense application.
  */
 
 package cs.usense.activities;
@@ -34,10 +31,17 @@ import cs.usense.models.SociabilityDetailItem;
 import cs.usense.presenters.SociabilityPresenter;
 import cs.usense.utilities.Utils;
 
-import static cs.usense.utilities.Extra.EXTRA_DATA;
-import static cs.usense.utilities.Extra.EXTRA_DATE;
-import static cs.usense.utilities.Extra.EXTRA_SOCIAL_DATA_TYPE;
+import static cs.usense.activities.SociabilityDetailActivity.EXTRA_DATA;
+import static cs.usense.activities.SociabilityDetailActivity.EXTRA_DATE;
+import static cs.usense.activities.SociabilityDetailActivity.EXTRA_SOCIAL_DATA_TYPE;
 
+
+/**
+ * This class instantiates an activity to show an history
+ * of social interaction and propinquity in a scale that starts on 0 to 5.
+ * @author Miguel Tavares (COPELABS/ULHT)
+ * @version 1.0, 2016
+ */
 public class SociabilityActivity extends ActionBarActivity implements OnChartValueSelectedListener, SociabilityInterfaces.View,
         YAxisValueFormatter, ValueFormatter {
 
@@ -45,8 +49,9 @@ public class SociabilityActivity extends ActionBarActivity implements OnChartVal
     private static final String TAG = "SociabilityActivity";
 
     /** This variable is used to show the bar graph */
-    @BindView(R.id.chart) BarChart mBarChart;
+    @BindView(R.id.chart) BarChart barChart;
 
+    /** This object is the presenter of this activity */
     private SociabilityInterfaces.Presenter mPresenter;
 
 
@@ -64,7 +69,7 @@ public class SociabilityActivity extends ActionBarActivity implements OnChartVal
         ButterKnife.bind(this);
         setActionBarTitle(getString(R.string.Sociability));
         mPresenter = new SociabilityPresenter(this);
-        mBarChart.setOnChartValueSelectedListener(this);
+        barChart.setOnChartValueSelectedListener(this);
         formatBarChart();
     }
 
@@ -73,19 +78,19 @@ public class SociabilityActivity extends ActionBarActivity implements OnChartVal
      */
     private void formatBarChart() {
         Log.i(TAG, "formatGraph was invoked");
-        mBarChart.animateY(2000);
-        mBarChart.setDescription(Utils.EMPTY_STRING);
-        mBarChart.getXAxis().setDrawGridLines(false);
-        mBarChart.setScaleYEnabled(false);
+        barChart.animateY(2000);
+        barChart.setDescription(Utils.EMPTY_STRING);
+        barChart.getXAxis().setDrawGridLines(false);
+        barChart.setScaleYEnabled(false);
 
-        XAxis xAxis = mBarChart.getXAxis();
+        XAxis xAxis = barChart.getXAxis();
         xAxis.setPosition(XAxis.XAxisPosition.BOTTOM);
         xAxis.setLabelsToSkip(0);
 
-        YAxis rightAxis = mBarChart.getAxisRight();
+        YAxis rightAxis = barChart.getAxisRight();
         rightAxis.setEnabled(false);
 
-        YAxis leftAxis = mBarChart.getAxisLeft();
+        YAxis leftAxis = barChart.getAxisLeft();
         leftAxis.setValueFormatter(this);
 
         leftAxis.setAxisMaxValue(6f);
@@ -101,7 +106,7 @@ public class SociabilityActivity extends ActionBarActivity implements OnChartVal
     @Override
     public void onReceiveBarData(BarData barData) {
         formatAndDataSet(barData);
-        mBarChart.setData(barData);
+        barChart.setData(barData);
     }
 
     /**
@@ -144,6 +149,13 @@ public class SociabilityActivity extends ActionBarActivity implements OnChartVal
     public void onBackPressed() {
         startActivity(new Intent(this, MainActivity.class));
         finish();
+    }
+
+    @Override
+    public void onDestroy() {
+        Log.i(TAG, "onBackPressed");
+        mPresenter.onDestroy();
+        super.onDestroy();
     }
 
 }

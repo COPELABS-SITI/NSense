@@ -1,13 +1,8 @@
-/**
- * @version 2.0
- * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, date (e.g. 22-04-2016)
- * Class is part of the NSense application. It initialize and controls all the pipelines/modules, database and send the information to the MapActivity.
- * @author Saeik Firdose (COPELABS/ULHT), 
- * @author Luis Lopes (COPELABS/ULHT), 
- * @author Waldir Moreira (COPELABS/ULHT), 
- * @author Reddy Pallavali (COPELABS/ULHT),
- * @author Miguel Tavares (COPELABS/ULHT)
+/*
+ * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, 2015/11/25.
+ * Class is part of the NSense application.
  */
+
 
 package cs.usense.services;
 
@@ -33,6 +28,7 @@ import cs.usense.activities.MainActivity;
 import cs.usense.db.NSenseDataSource;
 import cs.usense.energy.EnergyManager;
 import cs.usense.energy.WakeFullReceiver;
+import cs.usense.exceptions.SensorNotFoundException;
 import cs.usense.inferenceModule.SocialDetail;
 import cs.usense.inferenceModule.SocialInteraction;
 import cs.usense.map.MapActivityListener;
@@ -42,9 +38,16 @@ import cs.usense.pipelines.proximity.BluetoothCore;
 import cs.usense.pipelines.sound.SoundPipeline;
 import cs.usense.reports.ReportManager;
 
+
 /**
- * This class provides methods to initialize all the pipelines,
- * data base and get the data from all pipelines
+ * It initialize and controls all the pipelines/modules,
+ * database and send the information to the MapActivity.
+ * @author Saeik Firdose (COPELABS/ULHT),
+ * @author Luis Lopes (COPELABS/ULHT),
+ * @author Waldir Moreira (COPELABS/ULHT),
+ * @author Reddy Pallavali (COPELABS/ULHT),
+ * @author Miguel Tavares (COPELABS/ULHT)
+ * @version 2.0, 2016
  */
 public class NSenseService extends Service {
 
@@ -64,7 +67,7 @@ public class NSenseService extends Service {
 	private final IBinder mBinder = new LocalBinder();
 
 	/** This variable is used to access the mListeners */
-	private ArrayList<MapActivityListener> mListeners = new ArrayList<> ();
+	private ArrayList<MapActivityListener> mListeners = new ArrayList<>();
 
 	/** This handler is used to schedule the next wake-up */
 	private Handler mHandler = new Handler();
@@ -131,6 +134,7 @@ public class NSenseService extends Service {
 			if (service.service.getClassName().endsWith(".NSenseService")) {
 				Log.i(TAG, "Inside running" + nsenseService.getClass().getName());
 				result = true;
+				break;
 			}
 		}
 		return result;
@@ -169,27 +173,31 @@ public class NSenseService extends Service {
 	@Override
 	public int onStartCommand(Intent intent, int i, int j) {
 		Log.i(TAG, "onStartCommand was invoked");
-		mDataSource = NSenseDataSource.getInstance(this);
-		mDataSource.openDB(true);
+		try {
+			mDataSource = NSenseDataSource.getInstance(this);
 
-		/** Enable the notification icon */
-		runAsForeground();
+			/* Enable the notification icon */
+			runAsForeground();
 
-		/** Initializing the sensors */
-		mLocationPipeline = new LocationPipeline(this, mDataSource);
-		mBluetooth = new BluetoothCore(this, this, mDataSource);
-		mMicrophone = new SoundPipeline(this, mDataSource);
-		mAccelerometerPipeline = new MotionPipeline(this, mDataSource);
-		mSocialInteraction = new SocialInteraction(this, mDataSource);
-		//mEnergyManager = new EnergyManager(this);
+			/* Initializing the sensors */
+			mLocationPipeline = new LocationPipeline(this, mDataSource);
+			mBluetooth = new BluetoothCore(this, this, mDataSource);
+			mMicrophone = new SoundPipeline(this, mDataSource);
+			mAccelerometerPipeline = new MotionPipeline(this, mDataSource);
+			mSocialInteraction = new SocialInteraction(this, mDataSource);
+			//mEnergyManager = new EnergyManager(this);
 
-		/** Intializing ReportManager class */
-		mReportManager = new ReportManager(this, mDataSource);
+			/* Intializing ReportManager class */
+			mReportManager = new ReportManager(this, mDataSource);
 
-		mHandler.post(mRunnable);
+			mHandler.post(mRunnable);
+		} catch (SensorNotFoundException e) {
+			e.showDialogError(this);
+		}
 
 		return START_STICKY;
 	}
+
 
 	/**
 	 * This method provides the functionality to run the service as Foreground
@@ -216,23 +224,25 @@ public class NSenseService extends Service {
 	 */
 	public void close() {
 		Log.i(TAG, "close was invoked");
-		mBluetooth.close(NSenseService.this);
-		mMicrophone.close();
-		mHandler.removeCallbacks(mRunnable);
-		mAccelerometerPipeline.close();
-		mLocationPipeline.close();
-		mSocialInteraction.close();
-		mEnergyManager.close();
-		mDataSource.closeDB();
-		mReportManager.close();
+		if(mBluetooth != null)
+			mBluetooth.close(NSenseService.this);
+		if(mMicrophone != null)
+			mMicrophone.close();
+		if(mHandler != null)
+			mHandler.removeCallbacks(mRunnable);
+		if(mAccelerometerPipeline != null)
+			mAccelerometerPipeline.close();
+		if(mLocationPipeline != null)
+			mLocationPipeline.close();
+		if(mSocialInteraction != null)
+			mSocialInteraction.close();
+		if(mEnergyManager != null)
+			mEnergyManager.close();
+		if(mReportManager != null)
+			mReportManager.close();
+		if(mDataSource != null)
+			mDataSource.closeDB();
 		stopForeground(true);
-	}
-
-	@Override
-	public void onDestroy() {
-		Log.i(TAG, "onDestroy was invoked");
-		close();
-		super.onDestroy();
 	}
 
 	/** Listener Methods of all the pipelines to get data */
@@ -253,6 +263,13 @@ public class NSenseService extends Service {
 		for (MapActivityListener listener : mListeners) {
 			listener.onLocationChange(location);
 		}
+	}
+
+	@Override
+	public void onDestroy() {
+		Log.i(TAG, "onDestroy was invoked");
+		close();
+		super.onDestroy();
 	}
 
 }

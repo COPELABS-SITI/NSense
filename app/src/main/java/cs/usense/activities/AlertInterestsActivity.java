@@ -1,9 +1,6 @@
-/**
- * @version 2.0
- * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, date (e.g. 22-04-2016)
- * Class is part of the NSense application. This class instantiates an activity to show
- * common interests.
- * @author Miguel Tavares (COPELABS/ULHT)
+/*
+ * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, 2016/11/25.
+ * Class is part of the NSense application.
  */
 
 package cs.usense.activities;
@@ -26,19 +23,24 @@ import cs.usense.models.AlertInterestItem;
 import cs.usense.presenters.AlertInterestsPresenter;
 
 
+/**
+ * This class instantiates an activity that shows common interests.
+ * @author Miguel Tavares (COPELABS/ULHT)
+ * @version 1.0, 2016
+ */
 public class AlertInterestsActivity extends AppCompatActivity implements AlertInterestsInterfaces.View {
 
     /** This variable is used to debug AlertInterestsActivity interests */
     private static final String TAG = "AlertInterestsActivity";
 
-    /** This object is the presenter of this class */
-    private AlertInterestsInterfaces.Presenter mPresenter;
-
     /** This variable is the image on top activity */
-    @BindView(R.id.top_bar_image) ImageView topImageView;
+    @BindView(R.id.top_bar_image) ImageView topIcon;
 
     /** This variable is the that loads the interests */
-    @BindView(R.id.list) ListView mListView;
+    @BindView(R.id.list) ListView listView;
+
+    /** This object is the presenter of this class */
+    private AlertInterestsInterfaces.Presenter mPresenter;
 
 
     @Override
@@ -48,11 +50,13 @@ public class AlertInterestsActivity extends AppCompatActivity implements AlertIn
         setup();
     }
 
-    /** This method initialize everything needed in this activity */
+    /**
+     * This method initialize everything needed in this activity
+     */
     private void setup() {
         Log.i(TAG, "setup");
         ButterKnife.bind(this);
-        topImageView.setColorFilter(getResources().getColor(R.color.white));
+        topIcon.setColorFilter(getResources().getColor(R.color.white));
         mPresenter = new AlertInterestsPresenter(this);
     }
 
@@ -66,7 +70,7 @@ public class AlertInterestsActivity extends AppCompatActivity implements AlertIn
     @Override
     public void onReceiveSimilarInterests(ArrayList<AlertInterestItem> similarInterests) {
         Log.i(TAG, "onReceiveSimilarInterests");
-        mListView.setAdapter(new AlertInterestsAdapter(this, R.layout.item_alert_interests, similarInterests));
+        listView.setAdapter(new AlertInterestsAdapter(this, R.layout.item_alert_interests, similarInterests));
     }
 
     @Override
@@ -78,7 +82,6 @@ public class AlertInterestsActivity extends AppCompatActivity implements AlertIn
 
     @Override
     public void onDestroy() {
-        Log.i(TAG, "onBackPressed");
         mPresenter.onDestroy();
         super.onDestroy();
     }

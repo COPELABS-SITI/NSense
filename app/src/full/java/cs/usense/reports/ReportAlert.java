@@ -1,3 +1,8 @@
+/*
+ * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, 2017/05/24.
+ * Class is part of the NSense application.
+ */
+
 package cs.usense.reports;
 
 
@@ -10,25 +15,39 @@ import android.graphics.BitmapFactory;
 import android.os.Handler;
 import android.util.Log;
 
-import java.util.Date;
-
 import cs.usense.R;
 import cs.usense.activities.ReportsActivity;
 import cs.usense.preferences.InterestsPreferences;
 import cs.usense.utilities.DateUtils;
 
+
+/**
+ * This class triggers a notification to alert the user to
+ * send his reports.
+ * @author Miguel Tavares (COPELABS/ULHT)
+ * @version 1.0, 2017
+ */
 class ReportAlert implements Runnable {
 
+    /** This variable is used to debug ReportAlert class */
     private static final String TAG = "ReportAlert";
 
+    /** This variable stores the time when the alert is triggered */
+    private static final int SCHEDULING_TIME = 60 * 1000;
+
+    /** This variable is used to schedule the alert notification */
     private Handler mHandler = new Handler();
 
+    /** This variable stores the application context */
     private Context mContext;
 
-
+    /**
+     * This method is the constructor of ReportAlert class
+     * @param context application context
+     */
     ReportAlert(Context context) {
         mContext = context;
-        mHandler.postDelayed(this, 60 * 1000);
+        mHandler.postDelayed(this, SCHEDULING_TIME);
     }
 
     /**
@@ -50,7 +69,7 @@ class ReportAlert implements Runnable {
         builder.setLargeIcon(BitmapFactory.decodeResource(mContext.getResources(), R.drawable.ic_nsense));
         builder.setAutoCancel(true);
 
-        /** Checks if vibration feature is enabled */
+        /* Checks if vibration feature is enabled */
         if(InterestsPreferences.isVibrationEnabled(mContext)) {
             builder.setVibrate(new long[] { 1000, 1000, 1000, 1000, 1000 });
         }
@@ -68,9 +87,12 @@ class ReportAlert implements Runnable {
                     new Intent(mContext, ReportsActivity.class)
             );
         }
-        mHandler.postDelayed(this, 60 * 1000);
+        mHandler.postDelayed(this, SCHEDULING_TIME);
     }
 
+    /**
+     * This method is used to stop the alert scheduling
+     */
     public void close() {
         mHandler.removeCallbacks(this);
     }

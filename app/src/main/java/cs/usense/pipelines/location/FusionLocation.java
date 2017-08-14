@@ -1,8 +1,6 @@
-/**
- * @version 2.0
- * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, date (e.g. 22-04-2016)
- * Class is part of the NSense application. This class provides users location.
- * @author Miguel Tavares (COPELABS/ULHT)
+/*
+ * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, 2016/11/21.
+ * Class is part of the NSense application. It provides support for location pipeline.
  */
 
 package cs.usense.pipelines.location;
@@ -33,13 +31,18 @@ import cs.usense.db.NSenseDataSource;
 import cs.usense.services.NSenseService;
 import cs.usense.utilities.Utils;
 
+/**
+ * This class uses the Google Fusion Location API to give us our current position
+ * @author Miguel Tavares (COPELABS/ULHT)
+ * @version 1.0, 2016
+ */
 class FusionLocation implements LocationListener, ConnectionCallbacks,
         OnConnectionFailedListener, ResultCallback<LocationSettingsResult> {
 
     /** This variable is used to debug LocationPipeline class */
     private static final String TAG = "LocationPipeline";
 
-    /** Time between updates, 40 * 1000 = 40 seconds */
+    /** Time between updates, 50 * 1000 = 50 seconds */
     private static final int TIME_BETWEEN_UPDATES = 50 * 1000;
 
     /** This variable is used set Fusion Location API */
@@ -62,21 +65,18 @@ class FusionLocation implements LocationListener, ConnectionCallbacks,
 
 
     /**
-     * LocationPipeline constructor
+     * This method is the constructor of FusionLocation class
      * @param callback NSenseService reference
      */
     FusionLocation(NSenseService callback, NSenseDataSource dataSource) {
         mCallback = callback;
         mDataSource = dataSource;
-        start();
+        setup();
         checkLocationSettings();
     }
 
-    /**
-     * Starts the pipeline
-     */
-    private void start() {
-        //addEventListener(this);
+    /** Starts the fusion location feature */
+    private void setup() {
         buildGoogleApiClient();
         createLocationRequest();
         buildLocationSettingsRequest();
@@ -84,7 +84,7 @@ class FusionLocation implements LocationListener, ConnectionCallbacks,
     }
 
     /**
-     * Starts fusion location API
+     * This method instantiates a part of fusion location API
      */
     private synchronized void buildGoogleApiClient() {
         Log.i(TAG, "Building GoogleApiClient");
@@ -95,12 +95,18 @@ class FusionLocation implements LocationListener, ConnectionCallbacks,
                 .build();
     }
 
+    /**
+     * This method instantiates a part of fusion location API
+     */
     private void buildLocationSettingsRequest() {
         LocationSettingsRequest.Builder builder = new LocationSettingsRequest.Builder();
         builder.addLocationRequest(mLocationRequest);
         mLocationSettingsRequest = builder.build();
     }
 
+    /**
+     * This method checks if the location is enabled on user's device
+     */
     private void checkLocationSettings() {
         PendingResult<LocationSettingsResult> result =
                 LocationServices.SettingsApi.checkLocationSettings(
@@ -158,11 +164,11 @@ class FusionLocation implements LocationListener, ConnectionCallbacks,
 
     /**
      * This method is used when this pipeline is suspended
-     * @param i reason
+     * @param reason reason why the connection was been suspended
      */
     @Override
-    public void onConnectionSuspended(int i) {
-        Log.i(TAG, "Connection suspended");
+    public void onConnectionSuspended(int reason) {
+        Log.i(TAG, "Connection suspended reason " + reason);
         mGoogleApiClient.connect();
     }
 
@@ -172,11 +178,11 @@ class FusionLocation implements LocationListener, ConnectionCallbacks,
      */
     @Override
     public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
-        Log.i(TAG, "Connection failed: ConnectionResult.getErrorCode() = " + connectionResult.getErrorCode());
+        Log.i(TAG, "Connection failed reason " + connectionResult.getErrorCode());
     }
 
     /**
-     * This method stops this pipeline
+     * This method stops fusion location from getting user's position
      */
     public void close() {
         LocationServices.FusedLocationApi.removeLocationUpdates(mGoogleApiClient, this);

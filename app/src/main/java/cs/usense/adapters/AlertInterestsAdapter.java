@@ -1,8 +1,6 @@
-/**
- * @version 2.0
- * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, date (e.g. 22-04-2016)
- * Class is part of the NSense application. This class is used to load data on ListView
- * @author Miguel Tavares (COPELABS/ULHT)
+/*
+ * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, 2016/11/25.
+ * Class is part of the NSense application.
  */
 
 package cs.usense.adapters;
@@ -23,6 +21,11 @@ import cs.usense.R;
 import cs.usense.models.AlertInterestItem;
 
 
+/**
+ * This class is used to load data on ListView
+ * @author Miguel Tavares (COPELABS/ULHT)
+ * @version 1.0, 2016
+ */
 public class AlertInterestsAdapter extends ArrayAdapter<AlertInterestItem> {
 
     /** This variable is used to debug AlertInterestsAdapter class */

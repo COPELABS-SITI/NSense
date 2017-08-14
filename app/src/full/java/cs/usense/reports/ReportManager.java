@@ -1,10 +1,8 @@
-/**
- * @version 2.0
- * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, 16-11-2015
+/*
+ * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, 2017/05/24.
  * Class is part of the NSense application.
- * This is responsible to manage the different kind of reports.
- * @author Miguel Tavares (COPELABS/ULHT)
  */
+
 
 package cs.usense.reports;
 
@@ -14,6 +12,12 @@ import android.util.Log;
 
 import cs.usense.db.NSenseDataSource;
 
+
+/**
+ * This class is responsible to manage the different kind of reports.
+ * @author Miguel Tavares (COPELABS/ULHT)
+ * @version 1.0, 2017
+ */
 public class ReportManager {
 
     /** This variable is used to debug ReportManager class */
@@ -25,9 +29,14 @@ public class ReportManager {
     /** This object is responsible to build social report */
     private SocialReport mSocialReport;
 
+    /** This variable is used to trigger the report alert */
     private ReportAlert mReportAlert;
 
-
+    /**
+     * This method is the constructor of ReportManager class
+     * @param context application context
+     * @param dataSource data base reference
+     */
     public ReportManager(Context context, NSenseDataSource dataSource) {
         Log.i(TAG, "ReportManager constructor");
         mInterestsReport = new InterestsReport(dataSource);

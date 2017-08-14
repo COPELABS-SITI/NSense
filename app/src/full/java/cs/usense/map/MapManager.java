@@ -32,6 +32,7 @@ import java.util.Random;
 import cs.usense.R;
 import cs.usense.activities.DeviceCategoriesActivity;
 import cs.usense.inferenceModule.SocialDetail;
+import cs.usense.utilities.Utils;
 
 public class MapManager implements GoogleMap.OnInfoWindowClickListener {
 
@@ -48,7 +49,7 @@ public class MapManager implements GoogleMap.OnInfoWindowClickListener {
     private static final int YELLOW_ZOOM = 20;
 
     /** This variable is used to scale real values to the map values */
-    private static final int SCALE_FACTOR = 5;
+    private static final double SCALE_FACTOR = 5.5;
 
     /** This variable is used to define bluetooth sensing range */
     private static final double BLUETOOTH_DISTANCE = 10.0;
@@ -58,6 +59,10 @@ public class MapManager implements GoogleMap.OnInfoWindowClickListener {
 
     /** This variable is used to define circles radius */
     private static final double RANGES[] = {20, 7.5, 3.6, 1.2, 0.45};
+
+    private static final int WIFI_RANGE_LEVELS[] = {10, 15, 20, 30, 50, 70, 100};
+
+    private static final double WIFI_RANGE_SCALE = 5.8;
 
     /** This variable is used to store my location */
     private static Location sLocation;
@@ -108,20 +113,16 @@ public class MapManager implements GoogleMap.OnInfoWindowClickListener {
      * This method is responsible to refresh map information
      */
     public void refreshMap() {
-        try {
-            if (sLocation != null) {
-                mGoogleMap.clear();
-                mMarkerLocations.clear();
-                if (sSocialInformation != null) {
-                    for (SocialDetail socialDetail : sSocialInformation) {
-                        putMarker(sLocation, socialDetail);
-                    }
+        if (sLocation != null) {
+            mGoogleMap.clear();
+            mMarkerLocations.clear();
+            if (sSocialInformation != null) {
+                for (SocialDetail socialDetail : sSocialInformation) {
+                    putMarker(sLocation, socialDetail);
                 }
-                drawCirclesProximityCircles();
-                setYourLocation();
             }
-        } catch(ConcurrentModificationException e) {
-            e.printStackTrace();
+            drawCirclesProximityCircles();
+            setYourLocation();
         }
     }
 
@@ -147,11 +148,27 @@ public class MapManager implements GoogleMap.OnInfoWindowClickListener {
      */
     private double scaleDistance(double distance) {
         if(distance < 0) {
-            distance = BLUETOOTH_DISTANCE;
-        } else if (distance < 1) {
+            distance = wifiRangeScale(BLUETOOTH_DISTANCE);
+        } else if (distance < 0.6) {
             distance = 1.0;
+        } else {
+            if(RANGES[3] > distance)
+                distance *= SCALE_FACTOR;
+            else
+                distance = wifiRangeScale(distance);
         }
         return distance;
+    }
+
+    private double wifiRangeScale(double distance) {
+        double scaledDistance = 0;
+        for(int i = 0; i < WIFI_RANGE_LEVELS.length; i++) {
+            if(WIFI_RANGE_LEVELS[i] >= distance) {
+                scaledDistance = RANGES[1] * SCALE_FACTOR + (i + 1) * WIFI_RANGE_SCALE;
+                break;
+            }
+        }
+        return scaledDistance;
     }
 
     /**
@@ -183,8 +200,8 @@ public class MapManager implements GoogleMap.OnInfoWindowClickListener {
     private void putMarker(Location location, SocialDetail socialDetail) {
         mGoogleMap.addMarker(new MarkerOptions()
                 .position(generateLocationWithinRadius(location, scaleDistance(socialDetail.getDistance())))
-                .title(socialDetail.getDeviceName())
-                .icon(BitmapDescriptorFactory.fromBitmap(getBitmap(R.drawable.marker_device))));
+                .icon(BitmapDescriptorFactory.fromBitmap(getBitmap(R.drawable.marker_device)))
+                .title(socialDetail.getDeviceName()));
     }
 
     /**
@@ -212,7 +229,8 @@ public class MapManager implements GoogleMap.OnInfoWindowClickListener {
         Location location;
         while(true) {
             location = getLocationInLatLngRad(radius, myCurrentLocation);
-            if(myCurrentLocation.distanceTo(location) >= radius * 0.95 && checkMarkersAround(location, radius)) {
+            double distance = myCurrentLocation.distanceTo(location);
+            if(distance >= radius * 0.98 && distance < radius * 1.02 && checkMarkersAround(location, radius)) {
                 mMarkerLocations.add(location);
                 break;
             }
@@ -262,13 +280,7 @@ public class MapManager implements GoogleMap.OnInfoWindowClickListener {
      * @return radius size to avoid overlapping
      */
     private double avoidOverlapping(double radius) {
-        double fixOverlapping;
-        if(radius < RANGES[3] * SCALE_FACTOR) {
-            fixOverlapping = 0.5;
-        } else {
-            fixOverlapping = 5;
-        }
-        return fixOverlapping;
+        return radius < RANGES[3] * SCALE_FACTOR ? 0.5 : 5.0;
     }
 
     /**

@@ -1,12 +1,11 @@
-/**
- * @version 2.0
- * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, date (e.g. 22-04-2016)
- * Class is part of the NSense application. This class controls the action bar menu.
- * @author Miguel Tavares (COPELABS/ULHT)
+/*
+ * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, 2016/11/25.
+ * Class is part of the NSense application.
  */
 
 package cs.usense.activities;
 
+import android.app.NotificationManager;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -20,6 +19,12 @@ import cs.usense.R;
 import cs.usense.services.NSenseService;
 import cs.usense.utilities.Utils;
 
+
+/**
+ * This class provides some generic methods to activities like the action bar menu
+ * @author Miguel Tavares (COPELABS/ULHT)
+ * @version 2.0, 2016
+ */
 public class ActionBarActivity extends AppCompatActivity {
 
     /** This variable is used to debug ActionBarActivity class */
@@ -95,10 +100,11 @@ public class ActionBarActivity extends AppCompatActivity {
     /**
      * This method is used to turn off the application
      */
-    private void turnOff() {
+    void turnOff() {
         Log.i(TAG, "turnOff was invoked");
         stopService(new Intent(this, NSenseService.class));
-        finish();
+        ((NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE)).cancelAll();
+        finishAffinity();
     }
 
 }

@@ -1,9 +1,6 @@
-/**
- * @version 2.0
- * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, date (e.g. 22-04-2016)
+/*
+ * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, 2015/5/26.
  * Class is part of the NSense application. It provides support for accelerometer pipeline.
- * @author Saeik Firdose (COPELABS/ULHT),
- * @author Miguel Tavares (COPELABS/ULHT)
  */
 
 package cs.usense.pipelines.motion;
@@ -16,11 +13,13 @@ import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.util.Log;
 
-import cs.usense.services.NSenseService;
-
 
 /**
- * This class provides some methods to provide the actions to the NSenseService
+ * This class instantiates the accelerometer sensor and provide it's values
+ * though updateBuffer method.
+ * @author Saeik Firdose (COPELABS/ULHT)
+ * @author Miguel Tavares (COPELABS/ULHT)
+ * @version 2.0, 2016
  */
 class MotionManager implements SensorEventListener {
 
@@ -46,13 +45,14 @@ class MotionManager implements SensorEventListener {
 	private String mSensorName;
 
 	/**
-	 * This method start mIsRunning to the accelerometer sensor changes
-	 * @param callback Interface to global information about an application environment.
+	 * This method is the constructor of MotionManager class
+	 * @param context application context
+	 * @param listener used to notify the manager with the accelerometer data
 	 */
-	MotionManager(NSenseService callback, MotionListener listener) {
+	MotionManager(Context context, MotionListener listener) {
 		Log.i(TAG, "MotionManager constructor was invoked");
 		mListener = listener;
-		start(callback.getApplicationContext());
+		start(context);
 	}
 
 	/**
@@ -64,31 +64,12 @@ class MotionManager implements SensorEventListener {
 	}
 
 	/**
-	 * This method close the mListener if it is not mIsRunning
+	 * This method register the accelerometer and put it running
+	 * @param context application context
 	 */
-	public void close(){
-		Log.i(TAG, "close was invoked");
-		if(mIsRunning){
-			stopListening();
-		}
-	}
-
-	/**
-	 * This method Unregisters mListeners
-	 */
-	private void stopListening() {
-		Log.i(TAG, "stopListening was invoked");
-		mSensorManager.unregisterListener(this);
-		mIsRunning = false;
-	}
-
-	/**
-	 * This method registers a mListener and start mIsRunning
-	 * running accelerometerListener callback for accelerometer events
-	 */
-	private void start(Context mContext) {
+	private void start(Context context) {
 		Log.i(TAG, "start was invoked");
-		mSensorManager = (SensorManager) mContext.getSystemService(Context.SENSOR_SERVICE);
+		mSensorManager = (SensorManager) context.getSystemService(Context.SENSOR_SERVICE);
 		mIsRunning = mSensorManager.registerListener(this, mSensorManager.getDefaultSensor(Sensor.TYPE_LINEAR_ACCELERATION), SensorManager.SENSOR_DELAY_UI);
 		mSensorName = TYPE_LINEAR_ACCELERATION;
 		if(!mIsRunning) {
@@ -98,14 +79,42 @@ class MotionManager implements SensorEventListener {
 		Log.i(TAG, "The type of accelerometer instantiated is " + mSensorName);
 	}
 
+	/**
+	 * This method provides the accelerometer data
+	 * @param event accelerometer data
+	 */
 	@Override
 	public void onSensorChanged(final SensorEvent event) {
 		mListener.updateBuffer(event.values[0], event.values[1], event.values[2]);
 	}
 
+	/**
+	 * This method is triggered when the accelerometer's accuracy changes
+	 * @param sensor sensor which changed it's accuracy
+	 * @param accuracy new accuracy
+	 */
 	@Override
 	public void onAccuracyChanged(Sensor sensor, int accuracy) {
 		Log.i(TAG, "The accelerometer accuracy has been changed");
+	}
+
+	/**
+	 * This method stops and unregisters the accelerometer
+	 */
+	private void stopListening() {
+		Log.i(TAG, "stopListening was invoked");
+		mSensorManager.unregisterListener(this);
+		mIsRunning = false;
+	}
+
+	/**
+	 * This method checks if the accelerometer is running, if it's running stops it
+	 */
+	public void close(){
+		Log.i(TAG, "close was invoked");
+		if(mIsRunning){
+			stopListening();
+		}
 	}
 
 }

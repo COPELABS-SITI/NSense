@@ -1,9 +1,6 @@
-/**
- * @version 2.0
- * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, 16-11-2015
+/*
+ * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, 2017/02/01.
  * Class is part of the NSense application.
- * This class build report on background
- * @author Miguel Tavares (COPELABS/ULHT)
  */
 
 package cs.usense.reports;
@@ -21,6 +18,11 @@ import cs.usense.R;
 import cs.usense.preferences.GeneralPreferences;
 import cs.usense.utilities.Utils;
 
+/**
+ * This class is used to build reports in a alternative thread
+ * @author Miguel Tavares (COPELABS/ULHT)
+ * @version 1.0, 2017
+ */
 class BackgroundTask {
 
     /** This variable is used to provide to the user the status of report */
@@ -93,6 +95,5 @@ class BackgroundTask {
             Toast.makeText(context, context.getString(R.string.send_report_by_email_error), Toast.LENGTH_LONG).show();
         }
     }
-
 
 }
