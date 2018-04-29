@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<defaultsettings>
+<sensors>
+		<sensor>
+		    	<sensorname>GPS</sensorname>
+		    	<sensorinterval>1000</sensorinterval>
+		    	<classname>LocationManager.GPS</classname>
+		</sensor>
+		<sensor>
+		    	<sensorname>Accelerometer</sensorname>
+		    	<sensorinterval>8000</sensorinterval>
+		    	<classname>Sensor.TYPE_ACCELEROMETER</classname>
+		</sensor>
+</sensors>
+<adapters>
+		<adapter>
+			   	<adaptername>Wifi</adaptername>
+		</adapter>
+		<adapter>
+			   	<adaptername>BT</adaptername>
+		</adapter>
+		<adapter>
+		    <adaptername>Microphone</adaptername>
+		</adapter>
+</adapters>
+</defaultsettings>

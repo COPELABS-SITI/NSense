@@ -19,10 +19,10 @@ import android.widget.Toast;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import cs.usense.views.InformationView;
 import cs.usense.R;
 import cs.usense.interfaces.CategoriesInterfaces;
 import cs.usense.presenters.CategoriesPresenter;
+import cs.usense.views.InformationView;
 
 
 /**

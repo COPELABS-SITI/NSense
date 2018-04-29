@@ -8,11 +8,43 @@
         "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable-ldrtl-hdpi-v17/abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable-ldrtl-hdpi-v17/abc_ic_ab_back_mtrl_am_alpha.png",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable-ldrtl-hdpi-v17/abc_ic_ab_back_mtrl_am_alpha.png"
+    },
+    {
         "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable-ldrtl-hdpi-v17/abc_ic_menu_cut_mtrl_alpha.png",
         "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable-ldrtl-hdpi-v17/abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable-ldrtl-hdpi-v17/abc_spinner_mtrl_am_alpha.9.png",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable-ldrtl-hdpi-v17/abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable-ldrtl-hdpi-v17/abc_ic_ab_back_mtrl_am_alpha.png",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable-ldrtl-hdpi-v17/abc_ic_ab_back_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable-ldrtl-hdpi-v17/abc_ic_menu_copy_mtrl_am_alpha.png",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable-ldrtl-hdpi-v17/abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable-ldrtl-hdpi-v17/abc_spinner_mtrl_am_alpha.9.png",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable-ldrtl-hdpi-v17/abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
         "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable-ldrtl-hdpi-v17/abc_spinner_mtrl_am_alpha.9.png",
         "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable-ldrtl-hdpi-v17/abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable-ldrtl-hdpi-v17/abc_ic_menu_cut_mtrl_alpha.png",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable-ldrtl-hdpi-v17/abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable-ldrtl-hdpi-v17/abc_ic_menu_copy_mtrl_am_alpha.png",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable-ldrtl-hdpi-v17/abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable-ldrtl-hdpi-v17/abc_ic_menu_cut_mtrl_alpha.png",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable-ldrtl-hdpi-v17/abc_ic_menu_cut_mtrl_alpha.png"
     }
 ]

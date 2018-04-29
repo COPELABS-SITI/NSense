@@ -61,6 +61,30 @@
 		<item>@color/orange</item>
 		<item>@color/red</item>
 	</array>
+    <string-array name="functions_mobility">
+        <item>@string/scan_wifi</item>
+        <item>@string/scan_wifiP2p</item>
+        <item>@string/donwload</item>
+        <item>@string/netwok_ping</item>
+        <item>@string/access_point</item>
+        <item>@string/function_1</item>
+        <item>@string/function_2</item>
+        <item>@string/function_3</item>
+        <item>@string/function_4</item>
+        <item>@string/function_5</item>
+    </string-array>
+    <array name="images_mobility">
+        <item>@drawable/ic_wifi</item>
+        <item>@drawable/ic_vector_circle</item>
+        <item>@drawable/ic_download_network</item>
+        <item>@drawable/ic_network_ping</item>
+        <item>@drawable/ic_access_point_network</item>
+        <item>@drawable/ic_function</item>
+        <item>@drawable/ic_function</item>
+        <item>@drawable/ic_function</item>
+        <item>@drawable/ic_function</item>
+        <item>@drawable/ic_function</item>
+    </array>
     <string-array name="ratings">
         <item>@string/low</item>
         <item>@string/average</item>
@@ -131,9 +155,9 @@
     <color name="dim_foreground_material_light">#ff323232</color>
     <color name="foreground_material_dark">@android:color/white</color>
     <color name="foreground_material_light">@android:color/black</color>
+    <color name="gray">#e6e6e6</color>
     <color name="green">#B300DA3C</color>
-    <color name="grey">#e6e6e6</color>
-    <color name="hard_grey">#727272</color>
+    <color name="hard_gray">#727272</color>
     <color name="highlighted_text_material_dark">#6680cbc4</color>
     <color name="highlighted_text_material_light">#66009688</color>
     <color name="hint_foreground_material_dark">@color/bright_foreground_disabled_material_dark</color>
@@ -220,6 +244,7 @@
     <declare-styleable name="MenuView"><attr name="android:itemTextAppearance"/><attr name="android:horizontalDivider"/><attr name="android:verticalDivider"/><attr name="android:headerBackground"/><attr name="android:itemBackground"/><attr name="android:windowAnimationStyle"/><attr name="android:itemIconDisabledAlpha"/><attr format="boolean" name="preserveIconSpacing"/></declare-styleable>
     <declare-styleable name="PopupWindow"><attr format="boolean" name="overlapAnchor"/><attr name="android:popupBackground"/></declare-styleable>
     <declare-styleable name="PopupWindowBackgroundState"><attr format="boolean" name="state_above_anchor"/></declare-styleable>
+    <declare-styleable name="RecyclerView"><attr format="string" name="layoutManager"/><attr name="android:orientation"/><attr format="integer" name="spanCount"/><attr format="boolean" name="reverseLayout"/><attr format="boolean" name="stackFromEnd"/></declare-styleable>
     <declare-styleable name="SearchView"><attr format="reference" name="layout"/><attr format="boolean" name="iconifiedByDefault"/><attr name="android:maxWidth"/><attr format="string" name="queryHint"/><attr format="string" name="defaultQueryHint"/><attr name="android:imeOptions"/><attr name="android:inputType"/><attr format="reference" name="closeIcon"/><attr format="reference" name="goIcon"/><attr format="reference" name="searchIcon"/><attr format="reference" name="searchHintIcon"/><attr format="reference" name="voiceIcon"/><attr format="reference" name="commitIcon"/><attr format="reference" name="suggestionRowLayout"/><attr format="reference" name="queryBackground"/><attr format="reference" name="submitBackground"/><attr name="android:focusable"/></declare-styleable>
     <declare-styleable name="SignInButton"><attr format="reference" name="buttonSize">
 <enum name="standard" value="0"/>
@@ -317,6 +342,9 @@
     <item format="float" name="highlight_alpha_material_colored" type="dimen">0.26</item>
     <item format="float" name="highlight_alpha_material_dark" type="dimen">0.20</item>
     <item format="float" name="highlight_alpha_material_light" type="dimen">0.12</item>
+    <dimen name="item_touch_helper_max_drag_scroll_per_frame">20dp</dimen>
+    <dimen name="item_touch_helper_swipe_escape_max_velocity">800dp</dimen>
+    <dimen name="item_touch_helper_swipe_escape_velocity">120dp</dimen>
     <dimen name="ld_side_cb_margin">16dp</dimen>
     <dimen name="ld_side_margin">22dp</dimen>
     <dimen name="notification_large_icon_height">64dp</dimen>
@@ -328,6 +356,7 @@
     <item name="action_menu_divider" type="id"/>
     <item name="action_menu_presenter" type="id"/>
     <item name="home" type="id"/>
+    <item name="item_touch_helper_previous_elevation" type="id"/>
     <item name="ld_color_area" type="id"/>
     <item name="ld_icon" type="id"/>
     <item name="ld_message" type="id"/>
@@ -410,6 +439,7 @@
         strength” towards others; your motion pattern;
         surrounding sound.
     </string>
+    <string name="access_point">Access Point</string>
     <string name="app_name">NSense</string>
     <string name="art">Art</string>
     <string name="average">Average</string>
@@ -438,8 +468,11 @@
     <string name="common_signin_button_text">Sign in</string>
     <string name="common_signin_button_text_long">Sign in with Google</string>
     <string name="community">Community</string>
+    <string name="connection_deseable">No connection</string>
+    <string name="connection_enable">Cennected</string>
     <string name="day">3600000</string>
     <string name="dont_show_again">Don\'t show again</string>
+    <string name="donwload">Download Test</string>
     <string name="email_not_valid">"This email is not valid"</string>
     <string name="email_report">Email to deliver reports</string>
     <string name="ex_msg_dialog_choice_confirm">Confirm button is only for multi choice lists. You must call setMultiChoiceItems first</string>
@@ -449,9 +482,15 @@
     <string name="finish">Finish</string>
     <string name="food">Food</string>
     <string name="friends_around_you">There are friends around you</string>
+    <string name="function_1">Function 1</string>
+    <string name="function_2">Function 2</string>
+    <string name="function_3">Function 3</string>
+    <string name="function_4">Function 4</string>
+    <string name="function_5">Function 5</string>
     <string name="google_maps_key">AIzaSyCkIQh0ZQSWCcdIq3uG0lr4LcEenD0-gRs</string>
     <string name="government">Government</string>
     <string name="health_and_fitness">Health and Fitness</string>
+    <string name="hello_world">Hello world!</string>
     <string name="hi_here_is_your_report">Hi, \nHere is your report.</string>
     <string name="high">High</string>
     <string name="hobby">Hobby</string>
@@ -459,9 +498,11 @@
     <string name="hour">86400000</string>
     <string name="interests_report_success">Interests report was generated with success</string>
     <string name="low">Low</string>
+    <string name="menu_settings">Settings</string>
     <string name="minute">60000</string>
     <string name="movies">Movies and Multimedia</string>
     <string name="music">Music</string>
+    <string name="netwok_ping">Network Ping</string>
     <string name="ok">OK</string>
     <string name="on_demand">On Demand</string>
     <string name="once_a_day">Once a Day</string>
@@ -471,6 +512,9 @@
     <string name="please_send_your_reports">Please don\'t forget to send your reports</string>
     <string name="report_success">Report was built with success</string>
     <string name="reports">Reports</string>
+    <string name="restartScanning">Re-start scanning</string>
+    <string name="scan_wifi">Scan Wifi</string>
+    <string name="scan_wifiP2p">Scan WifiP2p</string>
     <string name="science">Science and Technology</string>
     <string name="send_report_by_email">Send report by email…</string>
     <string name="send_report_by_email_error">You must define on settings the email where the report will be receipt</string>
@@ -485,6 +529,9 @@
     <string name="spirituality">Spirituality</string>
     <string name="sport">Sport</string>
     <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="stopScanning">Stop Scanning</string>
+    <string name="title_activity_details">DetailsActivity</string>
+    <string name="title_activity_main">Mobility Tracker</string>
     <string name="travel">Travel and Outdoor</string>
     <string name="user_interests">%1$s interests</string>
     <string name="users_report">%1$s of %2$s</string>
@@ -494,6 +541,13 @@
     <string name="view_more">View More</string>
     <string name="waiting_for_your_location">Waiting for your location…</string>
     <string name="with_same_interests_as_you">with the same interests as you.</string>
+    <string name="writeAPToFile">Write AP List to File</string>
+    <string name="writeRankToFile0">Write Ranking 0 to File</string>
+    <string name="writeRankToFile1">Write Ranking 1 to File</string>
+    <string name="writeRankToFile2">Write Ranking 2 to File</string>
+    <string name="writeRankToFile3">Write Ranking 3 to File</string>
+    <string name="writeRankToFile4">Write Ranking 4 to File</string>
+    <string name="writeVisitToFile">Write Visits To File</string>
     <string name="you_are_here">You are here</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
@@ -1477,10 +1531,10 @@
         <item name="android:textColor">?android:textColorPrimary</item>
     </style>
     <style name="MyActionBar" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
-        <item name="android:background">@color/grey</item>
+        <item name="android:background">@color/gray</item>
         <item name="displayOptions">showHome</item>
         <!-- Support library compatibility -->
-        <item name="background">@color/grey</item>
+        <item name="background">@color/gray</item>
     </style>
     <style name="Platform.AppCompat" parent="android:Theme">
         <item name="android:windowNoTitle">true</item>

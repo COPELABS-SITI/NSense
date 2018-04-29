@@ -1,6 +1,6 @@
 /*
- * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, 2015/11/16.
- * Class is part of the NSense application. It provides support for location pipeline.
+ * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, 2017/9/11.
+ * Insert description here ...
  */
 
 package cs.usense.pipelines.location;
@@ -11,7 +11,6 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
-import android.os.SystemClock;
 import android.util.Log;
 
 import cs.usense.db.NSenseDataSource;

@@ -16,10 +16,10 @@ import java.util.ArrayList;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import cs.usense.views.InformationView;
 import cs.usense.R;
 import cs.usense.preferences.InterestsPreferences;
 import cs.usense.utilities.InterestsUtils;
+import cs.usense.views.InformationView;
 
 
 /**

@@ -16,6 +16,7 @@ import java.util.Collections;
 import cs.usense.utilities.InterestsUtils;
 
 import static android.content.Context.MODE_PRIVATE;
+import static cs.usense.wifi.p2p.TextRecordKeys.INTERESTS_KEY;
 
 
 /**
@@ -97,6 +98,7 @@ public abstract class InterestsPreferences {
         }
         editor.putString(RATINGS, ratings.toString());
         editor.apply();
+        WifiP2pTxtRecordPreferences.setRecord(context, INTERESTS_KEY, readInterestsFromCacheAsString(context));
     }
 
     /**

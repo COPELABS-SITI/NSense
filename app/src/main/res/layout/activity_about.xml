@@ -32,7 +32,7 @@
             android:layout_height="wrap_content"
             app:documentView_insetPadding="24dp"
             app:documentView_textSize="15sp"
-            app:documentView_textColor="@color/hard_grey"
+            app:documentView_textColor="@color/hard_gray"
             app:documentView_textAlignment="justified"
             app:documentView_text="@string/about_info" />
 

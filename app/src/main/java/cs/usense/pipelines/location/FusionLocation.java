@@ -1,6 +1,6 @@
 /*
- * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, 2016/11/21.
- * Class is part of the NSense application. It provides support for location pipeline.
+ * COPYRIGHTS COPELABS/ULHT, LGPLv3.0, 2017/9/11.
+ * Insert description here ...
  */
 
 package cs.usense.pipelines.location;

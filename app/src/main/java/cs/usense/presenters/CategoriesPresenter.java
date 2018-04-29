@@ -12,10 +12,10 @@ import android.widget.RelativeLayout;
 
 import java.util.ArrayList;
 
-import cs.usense.views.InformationView;
 import cs.usense.R;
 import cs.usense.interfaces.CategoriesInterfaces;
 import cs.usense.preferences.InterestsPreferences;
+import cs.usense.views.InformationView;
 
 
 /**

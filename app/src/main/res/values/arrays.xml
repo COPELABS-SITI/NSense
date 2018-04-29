@@ -78,4 +78,29 @@
         <item>@string/high</item>
     </string-array>
 
+    <array name="images_mobility">
+        <item>@drawable/ic_wifi</item>
+        <item>@drawable/ic_vector_circle</item>
+        <item>@drawable/ic_download_network</item>
+        <item>@drawable/ic_network_ping</item>
+        <item>@drawable/ic_access_point_network</item>
+        <item>@drawable/ic_function</item>
+        <item>@drawable/ic_function</item>
+        <item>@drawable/ic_function</item>
+        <item>@drawable/ic_function</item>
+        <item>@drawable/ic_function</item>
+    </array>
+
+    <string-array name="functions_mobility">
+        <item>@string/scan_wifi</item>
+        <item>@string/scan_wifiP2p</item>
+        <item>@string/donwload</item>
+        <item>@string/netwok_ping</item>
+        <item>@string/access_point</item>
+        <item>@string/function_1</item>
+        <item>@string/function_2</item>
+        <item>@string/function_3</item>
+        <item>@string/function_4</item>
+        <item>@string/function_5</item>
+    </string-array>
 </resources>

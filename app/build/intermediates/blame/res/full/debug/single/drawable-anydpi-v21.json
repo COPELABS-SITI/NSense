@@ -1,35 +1,11 @@
 [
     {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_interest_sport.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_interest_sport.xml"
-    },
-    {
         "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_interest_fashion.xml",
         "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_interest_fashion.xml"
     },
     {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_interest_pets.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_interest_pets.xml"
-    },
-    {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_interest_charities.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_interest_charities.xml"
-    },
-    {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_report.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_report.xml"
-    },
-    {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_interest_government.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_interest_government.xml"
-    },
-    {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_star_empty.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_star_empty.xml"
-    },
-    {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_interest_family.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_interest_family.xml"
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_interest_spirituality.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_interest_spirituality.xml"
     },
     {
         "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_interest_cars.xml",
@@ -40,32 +16,36 @@
         "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/btn_info.xml"
     },
     {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_information.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_information.xml"
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_information.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_information.xml"
     },
     {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_reporting.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_reporting.xml"
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_interest_movies.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_interest_movies.xml"
     },
     {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_star_full.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_star_full.xml"
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_interest_business.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_interest_business.xml"
     },
     {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_interest_others.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_interest_others.xml"
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/marker_old_man.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/marker_old_man.xml"
     },
     {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_interest_food.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_interest_food.xml"
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_interest_art.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_interest_art.xml"
     },
     {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_interest_art.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_interest_art.xml"
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_alerts.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_alerts.xml"
     },
     {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_settings.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_settings.xml"
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_information.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_information.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_reporting.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_reporting.xml"
     },
     {
         "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_turn_off.xml",
@@ -76,95 +56,451 @@
         "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_interest_travel.xml"
     },
     {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_arroba.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_arroba.xml"
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_star_empty.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_star_empty.xml"
     },
     {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_sociability.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_sociability.xml"
-    },
-    {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_star_half.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_star_half.xml"
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_interest_others.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_interest_others.xml"
     },
     {
         "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/marker_device.xml",
         "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/marker_device.xml"
     },
     {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_about.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_about.xml"
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_about.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_about.xml"
     },
     {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_interest_hobby.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_interest_hobby.xml"
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_report.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_report.xml"
     },
     {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_interest_movies.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_interest_movies.xml"
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_interest_hobby.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_interest_hobby.xml"
     },
     {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_map.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_map.xml"
-    },
-    {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/marker_old_man.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/marker_old_man.xml"
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_interest_community.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_interest_community.xml"
     },
     {
         "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_mobility.xml",
         "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_mobility.xml"
     },
     {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_interest_fashion.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_interest_fashion.xml"
+    },
+    {
         "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_favorite.xml",
         "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_favorite.xml"
     },
     {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/btn_options.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/btn_options.xml"
-    },
-    {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_interest_health.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_interest_health.xml"
-    },
-    {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_double_arrow.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_double_arrow.xml"
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_interest_travel.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_interest_travel.xml"
     },
     {
         "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_interest_spirituality.xml",
         "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_interest_spirituality.xml"
     },
     {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_interest_science.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_interest_science.xml"
-    },
-    {
         "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_interest_community.xml",
         "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_interest_community.xml"
     },
     {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_interest_business.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_interest_business.xml"
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_turn_off.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_turn_off.xml"
     },
     {
         "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_interest_home.xml",
         "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_interest_home.xml"
     },
     {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_interest_music.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_interest_music.xml"
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/marker_device.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/marker_device.xml"
     },
     {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_alerts.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_alerts.xml"
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_interest_health.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_interest_health.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_favorite.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_favorite.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_double_arrow.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_double_arrow.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_interest_art.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_interest_art.xml"
     },
     {
         "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_email.xml",
         "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_email.xml"
     },
     {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_interest_others.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_interest_others.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_interest_charities.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_interest_charities.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_interest_pets.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_interest_pets.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_report.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_report.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_mobility.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_mobility.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_interest_vacation.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_interest_vacation.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_star_empty.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_star_empty.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_interest_science.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_interest_science.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_turn_off.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_turn_off.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/marker_old_man.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/marker_old_man.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_interest_others.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_interest_others.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_interest_food.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_interest_food.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_interest_spirituality.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_interest_spirituality.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_settings.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_settings.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_interest_charities.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_interest_charities.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_interest_health.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_interest_health.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_star_full.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_star_full.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_favorite.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_favorite.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_interest_science.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_interest_science.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_interest_hobby.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_interest_hobby.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/btn_options.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/btn_options.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_interest_sport.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_interest_sport.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_interest_community.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_interest_community.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/marker_old_man.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/marker_old_man.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_map.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_map.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_email.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_email.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_interest_sport.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_interest_sport.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_sociability.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_sociability.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_interest_business.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_interest_business.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_about.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_about.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_interest_music.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_interest_music.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_interest_music.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_interest_music.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_interest_sport.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_interest_sport.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_interest_government.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_interest_government.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_double_arrow.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_double_arrow.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_map.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_map.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_star_half.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_star_half.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_interest_government.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_interest_government.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_information.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_information.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/btn_info.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/btn_info.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_email.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_email.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_star_full.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_star_full.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_interest_cars.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_interest_cars.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_interest_home.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_interest_home.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_interest_art.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_interest_art.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_settings.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_settings.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/marker_device.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/marker_device.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_sociability.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_sociability.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_arroba.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_arroba.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_interest_fashion.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_interest_fashion.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_star_half.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_star_half.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_interest_movies.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_interest_movies.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_interest_travel.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_interest_travel.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_interest_movies.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_interest_movies.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_interest_food.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_interest_food.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/btn_options.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/btn_options.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_interest_health.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_interest_health.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_interest_hobby.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_interest_hobby.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_star_full.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_star_full.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_interest_music.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_interest_music.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_interest_home.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_interest_home.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_alerts.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_alerts.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_reporting.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_reporting.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_interest_cars.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_interest_cars.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_map.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_map.xml"
+    },
+    {
         "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_interest_vacation.xml",
         "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_interest_vacation.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_settings.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_settings.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_mobility.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_mobility.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_star_empty.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_star_empty.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_interest_family.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_interest_family.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_alerts.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_alerts.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_reporting.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_reporting.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_interest_vacation.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_interest_vacation.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_interest_pets.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_interest_pets.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_interest_family.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_interest_family.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_report.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_report.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/btn_info.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/btn_info.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_interest_charities.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_interest_charities.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_sociability.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_sociability.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_interest_pets.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_interest_pets.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_about.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_about.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_interest_government.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_interest_government.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_interest_food.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_interest_food.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_star_half.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_star_half.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/btn_options.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/btn_options.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_interest_business.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_interest_business.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_double_arrow.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_double_arrow.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_arroba.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_arroba.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_interest_science.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_interest_science.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_interest_family.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_interest_family.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable-anydpi-v21/ic_arroba.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/generated/res/pngs/full/debug/drawable-anydpi-v21/ic_arroba.xml"
     }
 ]

@@ -4,36 +4,428 @@
         "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/res/layout/activity_sensor_not_found.xml"
     },
     {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/notification_media_cancel_action.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/notification_media_cancel_action.xml"
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/abc_popup_menu_item_layout.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_popup_menu_item_layout.xml"
     },
     {
         "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/abc_list_menu_item_radio.xml",
         "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_list_menu_item_radio.xml"
     },
     {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/notification_template_media.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/notification_template_media.xml"
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/layout/view_color_area.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.yarolegovich/lovely-dialog/1.0.4/res/layout/view_color_area.xml"
     },
     {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/activity_splash.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/res/layout/activity_splash.xml"
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/select_dialog_item_material.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/select_dialog_item_material.xml"
     },
     {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/abc_popup_menu_item_layout.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_popup_menu_item_layout.xml"
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/abc_search_view.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_search_view.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/layout/abc_screen_toolbar.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_screen_toolbar.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/layout/dialog_standard.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.yarolegovich/lovely-dialog/1.0.4/res/layout/dialog_standard.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/layout/abc_list_menu_item_checkbox.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_list_menu_item_checkbox.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/abc_list_menu_item_icon.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_list_menu_item_icon.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/layout/abc_search_view.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_search_view.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/abc_expanded_menu_layout.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_expanded_menu_layout.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/layout/item_simple_text_multichoice.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.yarolegovich/lovely-dialog/1.0.4/res/layout/item_simple_text_multichoice.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/layout/notification_template_big_media.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/notification_template_big_media.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/layout/notification_template_lines.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/notification_template_lines.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/abc_action_menu_item_layout.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/layout/abc_select_dialog_material.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_select_dialog_material.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/layout/notification_media_cancel_action.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/notification_media_cancel_action.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/abc_action_bar_view_list_nav_layout.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_action_bar_view_list_nav_layout.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/layout/item_simple_text.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.yarolegovich/lovely-dialog/1.0.4/res/layout/item_simple_text.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/layout/fragment_attractiveness.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/src/full/res/layout/fragment_attractiveness.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/layout/abc_action_menu_layout.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_action_menu_layout.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/notification_template_big_media_narrow.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/notification_template_big_media_narrow.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/layout/activity_mobility_details.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/src/main/res/layout/activity_mobility_details.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/activity_device_categories.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/res/layout/activity_device_categories.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/layout/activity_device_categories.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/src/main/res/layout/activity_device_categories.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/layout/abc_alert_dialog_material.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_alert_dialog_material.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/layout/view_color_options.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/src/main/res/layout/view_color_options.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/layout/activity_alert_interests.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/src/main/res/layout/activity_alert_interests.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/layout/abc_action_mode_bar.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_action_mode_bar.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/layout/abc_list_menu_item_icon.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_list_menu_item_icon.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/layout/abc_action_bar_title_item.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/layout/abc_activity_chooser_view_list_item.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_activity_chooser_view_list_item.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/layout/activity_sociability_detail.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/src/main/res/layout/activity_sociability_detail.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/activity_top_bar.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/res/layout/activity_top_bar.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/layout/abc_screen_toolbar.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_screen_toolbar.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/activity_settings.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/res/layout/activity_settings.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/layout/notification_media_action.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/notification_media_action.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/layout/abc_list_menu_item_layout.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/layout/abc_screen_content_include.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_screen_content_include.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/layout/notification_template_media.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/notification_template_media.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/layout/activity_main.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/src/full/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/notification_template_lines.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/notification_template_lines.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/layout/notification_template_big_media_narrow.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/notification_template_big_media_narrow.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/layout/dialog_text_input.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.yarolegovich/lovely-dialog/1.0.4/res/layout/dialog_text_input.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/layout/activity_reports.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/src/main/res/layout/activity_reports.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/notification_media_cancel_action.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/notification_media_cancel_action.xml"
     },
     {
         "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/activity_reports.xml",
         "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/res/layout/activity_reports.xml"
     },
     {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/notification_template_part_chronometer.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/notification_template_part_chronometer.xml"
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/layout/item_stars_detail.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/src/main/res/layout/item_stars_detail.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/layout/activity_device_ratings.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/src/main/res/layout/activity_device_ratings.xml"
     },
     {
         "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/abc_screen_content_include.xml",
         "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_screen_content_include.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/layout/activity_reports.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/src/main/res/layout/activity_reports.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/layout/item_alert_interests.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/src/main/res/layout/item_alert_interests.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/abc_list_menu_item_checkbox.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_list_menu_item_checkbox.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/abc_list_menu_item_layout.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/support_simple_spinner_dropdown_item.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/support_simple_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/abc_screen_simple_overlay_action_mode.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_screen_simple_overlay_action_mode.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/abc_action_mode_close_item_material.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_action_mode_close_item_material.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/layout/notification_template_part_time.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/notification_template_part_time.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/layout/activity_mobility_details.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/src/main/res/layout/activity_mobility_details.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/layout/abc_expanded_menu_layout.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_expanded_menu_layout.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/item_image_and_title.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/res/layout/item_image_and_title.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/layout/item_image_and_title.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/src/main/res/layout/item_image_and_title.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/layout/abc_popup_menu_item_layout.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_popup_menu_item_layout.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/layout/notification_media_cancel_action.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/notification_media_cancel_action.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/layout/item_footer_confirm.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.yarolegovich/lovely-dialog/1.0.4/res/layout/item_footer_confirm.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/layout/abc_action_menu_item_layout.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/layout/item_stars_detail.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/src/main/res/layout/item_stars_detail.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/select_dialog_singlechoice_material.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/select_dialog_singlechoice_material.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/layout/dialog_text_input.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.yarolegovich/lovely-dialog/1.0.4/res/layout/dialog_text_input.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/layout/abc_select_dialog_material.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_select_dialog_material.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/layout/abc_action_bar_title_item.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/layout/abc_action_bar_view_list_nav_layout.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_action_bar_view_list_nav_layout.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/layout/abc_action_menu_item_layout.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/layout/activity_alerts.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/src/main/res/layout/activity_alerts.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/layout/dialog_choice.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.yarolegovich/lovely-dialog/1.0.4/res/layout/dialog_choice.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/layout/activity_categories.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/src/main/res/layout/activity_categories.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/layout/abc_list_menu_item_layout.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/layout/activity_splash.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/src/main/res/layout/activity_splash.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/layout/notification_template_big_media.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/notification_template_big_media.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/item_simple_text_multichoice.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.yarolegovich/lovely-dialog/1.0.4/res/layout/item_simple_text_multichoice.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/layout/view_title_and_message.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.yarolegovich/lovely-dialog/1.0.4/res/layout/view_title_and_message.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/layout/activity_mobility_1.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/src/full/res/layout/activity_mobility_1.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/layout/dialog_progress.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.yarolegovich/lovely-dialog/1.0.4/res/layout/dialog_progress.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/notification_template_big_media.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/notification_template_big_media.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/abc_screen_toolbar.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_screen_toolbar.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/view_title_and_message.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.yarolegovich/lovely-dialog/1.0.4/res/layout/view_title_and_message.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/layout/notification_template_big_media_narrow.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/notification_template_big_media_narrow.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/layout/view_color_area.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.yarolegovich/lovely-dialog/1.0.4/res/layout/view_color_area.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/layout/support_simple_spinner_dropdown_item.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/support_simple_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/item_alert_interests.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/res/layout/item_alert_interests.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/activity_sociability_detail.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/res/layout/activity_sociability_detail.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/view_color_area.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.yarolegovich/lovely-dialog/1.0.4/res/layout/view_color_area.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/layout/abc_list_menu_item_radio.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_list_menu_item_radio.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/layout/support_simple_spinner_dropdown_item.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/support_simple_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/abc_alert_dialog_button_bar_material.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_alert_dialog_button_bar_material.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/layout/item_alert_interests.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/src/main/res/layout/item_alert_interests.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/layout/abc_action_bar_up_container.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_action_bar_up_container.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/layout/activity_ratings.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/src/main/res/layout/activity_ratings.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/layout/notification_template_part_time.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/notification_template_part_time.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/layout/fragment_attractiveness.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/src/full/res/layout/fragment_attractiveness.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/notification_template_part_time.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/notification_template_part_time.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/layout/dialog_custom.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.yarolegovich/lovely-dialog/1.0.4/res/layout/dialog_custom.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/layout/abc_action_mode_close_item_material.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_action_mode_close_item_material.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/layout/item_image_and_title.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/src/main/res/layout/item_image_and_title.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/layout/notification_template_lines.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/notification_template_lines.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/layout/select_dialog_multichoice_material.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/select_dialog_multichoice_material.xml"
     },
     {
         "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/dialog_custom.xml",
@@ -44,72 +436,260 @@
         "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/res/layout/view_color_options.xml"
     },
     {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/select_dialog_item_material.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/select_dialog_item_material.xml"
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/layout/abc_action_bar_view_list_nav_layout.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_action_bar_view_list_nav_layout.xml"
     },
     {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/abc_dialog_title_material.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_dialog_title_material.xml"
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/layout/abc_screen_simple.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_screen_simple.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/layout/notification_template_media.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/notification_template_media.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/layout/activity_mobility_1.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/src/full/res/layout/activity_mobility_1.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/layout/abc_list_menu_item_checkbox.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_list_menu_item_checkbox.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/layout/abc_alert_dialog_button_bar_material.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_alert_dialog_button_bar_material.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/activity_device_ratings.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/res/layout/activity_device_ratings.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/layout/activity_sociability_detail.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/src/main/res/layout/activity_sociability_detail.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/layout/dialog_custom.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.yarolegovich/lovely-dialog/1.0.4/res/layout/dialog_custom.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/layout/activity_about.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/src/main/res/layout/activity_about.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/layout/select_dialog_singlechoice_material.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/select_dialog_singlechoice_material.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/layout/dialog_standard.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.yarolegovich/lovely-dialog/1.0.4/res/layout/dialog_standard.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/layout/activity_device_categories.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/src/main/res/layout/activity_device_categories.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/layout/notification_template_part_chronometer.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/layout/activity_mobility.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/src/main/res/layout/activity_mobility.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/layout/dialog_info.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.yarolegovich/lovely-dialog/1.0.4/res/layout/dialog_info.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/layout/activity_alerts.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/src/main/res/layout/activity_alerts.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/activity_about.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/res/layout/activity_about.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/layout/activity_map_information.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/src/full/res/layout/activity_map_information.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/activity_alerts.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/res/layout/activity_alerts.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/layout/abc_action_menu_layout.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_action_menu_layout.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/layout/abc_alert_dialog_button_bar_material.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_alert_dialog_button_bar_material.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/layout/abc_list_menu_item_radio.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_list_menu_item_radio.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/layout/activity_about.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/src/main/res/layout/activity_about.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/item_footer_confirm.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.yarolegovich/lovely-dialog/1.0.4/res/layout/item_footer_confirm.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/layout/abc_search_view.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_search_view.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/layout/activity_sensor_not_found.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/src/main/res/layout/activity_sensor_not_found.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/layout/abc_screen_simple.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_screen_simple.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/layout/select_dialog_item_material.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/select_dialog_item_material.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/layout/activity_ratings.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/src/main/res/layout/activity_ratings.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/abc_action_bar_up_container.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_action_bar_up_container.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/layout/abc_activity_chooser_view_list_item.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_activity_chooser_view_list_item.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/layout/abc_action_bar_up_container.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_action_bar_up_container.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/dialog_choice.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.yarolegovich/lovely-dialog/1.0.4/res/layout/dialog_choice.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/layout/activity_mobility.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/src/main/res/layout/activity_mobility.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/activity_sociability.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/res/layout/activity_sociability.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/layout/activity_top_bar.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/src/main/res/layout/activity_top_bar.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/layout/item_footer_confirm.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.yarolegovich/lovely-dialog/1.0.4/res/layout/item_footer_confirm.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/abc_activity_chooser_view_list_item.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_activity_chooser_view_list_item.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/layout/abc_dialog_title_material.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_dialog_title_material.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/notification_template_media.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/notification_template_media.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/activity_splash.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/res/layout/activity_splash.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/layout/notification_template_part_chronometer.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/notification_template_part_chronometer.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/layout/select_dialog_item_material.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/select_dialog_item_material.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/layout/abc_list_menu_item_icon.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_list_menu_item_icon.xml"
     },
     {
         "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/select_dialog_multichoice_material.xml",
         "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/select_dialog_multichoice_material.xml"
     },
     {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/abc_search_view.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_search_view.xml"
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/abc_dialog_title_material.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_dialog_title_material.xml"
     },
     {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/abc_list_menu_item_layout.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_list_menu_item_layout.xml"
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/layout/activity_splash.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/src/main/res/layout/activity_splash.xml"
     },
     {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/abc_list_menu_item_checkbox.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_list_menu_item_checkbox.xml"
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/layout/select_dialog_multichoice_material.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/select_dialog_multichoice_material.xml"
     },
     {
         "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/abc_select_dialog_material.xml",
         "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_select_dialog_material.xml"
     },
     {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/support_simple_spinner_dropdown_item.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/support_simple_spinner_dropdown_item.xml"
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/layout/dialog_progress.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.yarolegovich/lovely-dialog/1.0.4/res/layout/dialog_progress.xml"
     },
     {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/abc_list_menu_item_icon.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_list_menu_item_icon.xml"
-    },
-    {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/abc_screen_simple_overlay_action_mode.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_screen_simple_overlay_action_mode.xml"
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/layout/dialog_choice.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.yarolegovich/lovely-dialog/1.0.4/res/layout/dialog_choice.xml"
     },
     {
         "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/abc_action_bar_title_item.xml",
         "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_action_bar_title_item.xml"
     },
     {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/abc_action_mode_close_item_material.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_action_mode_close_item_material.xml"
-    },
-    {
         "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/activity_main.xml",
         "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/full/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/layout/activity_sociability.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/src/main/res/layout/activity_sociability.xml"
     },
     {
         "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/activity_categories.xml",
         "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/res/layout/activity_categories.xml"
     },
     {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/layout/activity_categories.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/src/main/res/layout/activity_categories.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/layout/abc_dialog_title_material.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_dialog_title_material.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/layout/abc_screen_content_include.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_screen_content_include.xml"
+    },
+    {
         "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/activity_map_information.xml",
         "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/full/res/layout/activity_map_information.xml"
     },
     {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/abc_expanded_menu_layout.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_expanded_menu_layout.xml"
-    },
-    {
         "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/abc_action_mode_bar.xml",
         "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_action_mode_bar.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/layout/abc_search_dropdown_item_icons_2line.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_search_dropdown_item_icons_2line.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/layout/abc_screen_simple_overlay_action_mode.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_screen_simple_overlay_action_mode.xml"
     },
     {
         "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/abc_alert_dialog_material.xml",
@@ -128,151 +708,147 @@
         "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.yarolegovich/lovely-dialog/1.0.4/res/layout/dialog_progress.xml"
     },
     {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/item_image_and_title.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/res/layout/item_image_and_title.xml"
-    },
-    {
         "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/abc_action_menu_layout.xml",
         "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_action_menu_layout.xml"
     },
     {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/activity_device_ratings.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/res/layout/activity_device_ratings.xml"
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/layout/dialog_info.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.yarolegovich/lovely-dialog/1.0.4/res/layout/dialog_info.xml"
     },
     {
         "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/abc_search_dropdown_item_icons_2line.xml",
         "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_search_dropdown_item_icons_2line.xml"
     },
     {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/abc_action_menu_item_layout.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_action_menu_item_layout.xml"
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/layout/abc_expanded_menu_layout.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_expanded_menu_layout.xml"
     },
     {
         "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/activity_ratings.xml",
         "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/res/layout/activity_ratings.xml"
     },
     {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/abc_action_bar_view_list_nav_layout.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_action_bar_view_list_nav_layout.xml"
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/layout/activity_device_ratings.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/src/main/res/layout/activity_device_ratings.xml"
     },
     {
         "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/abc_screen_simple.xml",
         "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_screen_simple.xml"
     },
     {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/select_dialog_singlechoice_material.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/select_dialog_singlechoice_material.xml"
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/layout/activity_settings.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/src/main/res/layout/activity_settings.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/layout/abc_action_mode_bar.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_action_mode_bar.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/layout/abc_alert_dialog_material.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_alert_dialog_material.xml"
     },
     {
         "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/abc_activity_chooser_view.xml",
         "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_activity_chooser_view.xml"
     },
     {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/notification_template_big_media_narrow.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/notification_template_big_media_narrow.xml"
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/layout/abc_activity_chooser_view.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_activity_chooser_view.xml"
     },
     {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/activity_device_categories.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/res/layout/activity_device_categories.xml"
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/layout/activity_main.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/src/full/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/layout/item_simple_text_multichoice.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.yarolegovich/lovely-dialog/1.0.4/res/layout/item_simple_text_multichoice.xml"
     },
     {
         "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/dialog_standard.xml",
         "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.yarolegovich/lovely-dialog/1.0.4/res/layout/dialog_standard.xml"
     },
     {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/activity_about.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/res/layout/activity_about.xml"
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/layout/activity_map_information.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/src/full/res/layout/activity_map_information.xml"
     },
     {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/item_simple_text_multichoice.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.yarolegovich/lovely-dialog/1.0.4/res/layout/item_simple_text_multichoice.xml"
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/layout/activity_sensor_not_found.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/src/main/res/layout/activity_sensor_not_found.xml"
     },
     {
         "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/item_simple_text.xml",
         "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.yarolegovich/lovely-dialog/1.0.4/res/layout/item_simple_text.xml"
     },
     {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/activity_alerts.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/res/layout/activity_alerts.xml"
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/layout/notification_media_action.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/notification_media_action.xml"
     },
     {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/notification_template_big_media.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/notification_template_big_media.xml"
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/layout/item_simple_text.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.yarolegovich/lovely-dialog/1.0.4/res/layout/item_simple_text.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/layout/abc_search_dropdown_item_icons_2line.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_search_dropdown_item_icons_2line.xml"
     },
     {
         "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/dialog_text_input.xml",
         "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.yarolegovich/lovely-dialog/1.0.4/res/layout/dialog_text_input.xml"
     },
     {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/layout/abc_activity_chooser_view.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_activity_chooser_view.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/layout/activity_top_bar.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/src/main/res/layout/activity_top_bar.xml"
+    },
+    {
         "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/item_stars_detail.xml",
         "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/res/layout/item_stars_detail.xml"
     },
     {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/abc_screen_toolbar.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_screen_toolbar.xml"
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/layout/activity_sociability.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/src/main/res/layout/activity_sociability.xml"
     },
     {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/view_title_and_message.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.yarolegovich/lovely-dialog/1.0.4/res/layout/view_title_and_message.xml"
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/layout/abc_screen_simple_overlay_action_mode.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_screen_simple_overlay_action_mode.xml"
     },
     {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/item_alert_interests.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/res/layout/item_alert_interests.xml"
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/layout/activity_alert_interests.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/src/main/res/layout/activity_alert_interests.xml"
     },
     {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/activity_sociability_detail.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/res/layout/activity_sociability_detail.xml"
-    },
-    {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/item_footer_confirm.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.yarolegovich/lovely-dialog/1.0.4/res/layout/item_footer_confirm.xml"
-    },
-    {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/activity_top_bar.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/res/layout/activity_top_bar.xml"
-    },
-    {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/view_color_area.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.yarolegovich/lovely-dialog/1.0.4/res/layout/view_color_area.xml"
-    },
-    {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/activity_settings.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/res/layout/activity_settings.xml"
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/layout/view_color_options.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/src/main/res/layout/view_color_options.xml"
     },
     {
         "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/activity_mobility.xml",
         "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/res/layout/activity_mobility.xml"
     },
     {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/abc_alert_dialog_button_bar_material.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_alert_dialog_button_bar_material.xml"
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/layout/activity_settings.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/src/main/res/layout/activity_settings.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/layout/select_dialog_singlechoice_material.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/select_dialog_singlechoice_material.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/layout/abc_popup_menu_item_layout.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_popup_menu_item_layout.xml"
     },
     {
         "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/dialog_info.xml",
         "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.yarolegovich/lovely-dialog/1.0.4/res/layout/dialog_info.xml"
     },
     {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/abc_action_bar_up_container.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_action_bar_up_container.xml"
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/layout/view_title_and_message.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.yarolegovich/lovely-dialog/1.0.4/res/layout/view_title_and_message.xml"
     },
     {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/notification_template_lines.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/notification_template_lines.xml"
-    },
-    {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/dialog_choice.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.yarolegovich/lovely-dialog/1.0.4/res/layout/dialog_choice.xml"
-    },
-    {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/notification_template_part_time.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/notification_template_part_time.xml"
-    },
-    {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/activity_sociability.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/res/layout/activity_sociability.xml"
-    },
-    {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/layout/abc_activity_chooser_view_list_item.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_activity_chooser_view_list_item.xml"
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/layout/abc_action_mode_close_item_material.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_action_mode_close_item_material.xml"
     }
 ]

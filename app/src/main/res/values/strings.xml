@@ -179,4 +179,34 @@
     <string name="average">Average</string>
     <string name="high">High</string>
 
+    <!-- class -->
+    <!-- activity_mobility -->
+    <string name="scan_wifi">Scan Wifi</string>
+    <string name="scan_wifiP2p">Scan WifiP2p</string>
+    <string name="donwload">Download Test</string>
+    <string name="netwok_ping">Network Ping</string>
+    <string name="access_point">Access Point</string>
+    <string name="connection_enable">Cennected</string>
+    <string name="connection_deseable">No connection</string>
+    <string name="function_1">Function 1</string>
+    <string name="function_2">Function 2</string>
+    <string name="function_3">Function 3</string>
+    <string name="function_4">Function 4</string>
+    <string name="function_5">Function 5</string>
+
+    <string name="app_name">Mobility Tracker</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Mobility Tracker</string>
+    <string name="stopScanning">Stop Scanning</string>
+    <string name="restartScanning">Re-start scanning</string>
+    <string name="writeAPToFile">Write AP List to File</string>
+    <string name="writeVisitToFile">Write Visits To File</string>
+    <string name="title_activity_details">DetailsActivity</string>
+    <string name="writeRankToFile0">Write Ranking 0 to File</string>
+    <string name="writeRankToFile1">Write Ranking 1 to File</string>
+    <string name="writeRankToFile2">Write Ranking 2 to File</string>
+    <string name="writeRankToFile3">Write Ranking 3 to File</string>
+    <string name="writeRankToFile4">Write Ranking 4 to File</string>
+
 </resources>

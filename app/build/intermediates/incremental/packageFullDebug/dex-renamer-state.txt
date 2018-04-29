@@ -1,0 +1,4 @@
+#Sun Apr 29 22:06:00 WEST 2018
+base.0=/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/transforms/dex/full/debug/folders/1000/1f/main
+renamed.0=classes.dex
+file.0=/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/transforms/dex/full/debug/folders/1000/1f/main/classes.dex

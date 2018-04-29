@@ -4,6 +4,7 @@
 
     <!-- Google Play filtering -->
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
@@ -22,6 +23,9 @@
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.READ_LOGS" />
 
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" ></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" ></uses-permission>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" ></uses-permission>
     <!-- Google Play filtering -->
     <uses-feature
         android:name="android.hardware.wifi.direct"
@@ -50,7 +54,7 @@
         <activity
             android:name=".activities.MainActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".activities.CategoriesActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
@@ -104,7 +108,21 @@
         <activity
             android:name=".activities.MobilityActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
-            android:screenOrientation="portrait" />
+            android:parentActivityName=".activities.MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.DetailsMobilityActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:parentActivityName=".activities.MobilityActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.MobilityActivity" />
+        </activity>
         <activity
             android:name=".activities.SensorNotFoundActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
@@ -113,15 +131,19 @@
 
         <service android:name=".services.NSenseService" />
         <service android:name=".energy.NSenseIntentService" />
+        <service
+            android:name=".pipelines.mobility.mobilitytracker.MTrackerService"
+            android:label="@string/title_activity_main"></service>
 
         <receiver android:name=".energy.WakeFullReceiver" />
-
+        <receiver android:name=".activities.AlarmReceiver"></receiver>
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
+
 
     </application>
 

@@ -10,6 +10,7 @@
 
     <!-- Google Play filtering -->
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
@@ -27,7 +28,9 @@
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.READ_LOGS" />
-
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
     <!-- Google Play filtering -->
     <uses-feature
         android:name="android.hardware.wifi.direct"
@@ -113,7 +116,21 @@
         <activity
             android:name="cs.usense.activities.MobilityActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
-            android:screenOrientation="portrait" />
+            android:parentActivityName="cs.usense.activities.MainActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.MainActivity" />
+        </activity>
+        <activity
+            android:name="cs.usense.activities.DetailsMobilityActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:parentActivityName="cs.usense.activities.MobilityActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.MobilityActivity" />
+        </activity>
         <activity
             android:name="cs.usense.activities.SensorNotFoundActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
@@ -122,8 +139,12 @@
 
         <service android:name="cs.usense.services.NSenseService" />
         <service android:name="cs.usense.energy.NSenseIntentService" />
+        <service
+            android:name="cs.usense.pipelines.mobility.mobilitytracker.MTrackerService"
+            android:label="@string/title_activity_main" />
 
         <receiver android:name="cs.usense.energy.WakeFullReceiver" />
+        <receiver android:name="cs.usense.activities.AlarmReceiver" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"

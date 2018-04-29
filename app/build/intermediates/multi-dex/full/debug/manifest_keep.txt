@@ -1,0 +1,27 @@
+-keep class cs.usense.services.Splunk {
+    <init>();
+    void attachBaseContext(android.content.Context);
+}
+-keep class cs.usense.activities.SplashActivity { <init>(); }
+-keep class cs.usense.activities.MainActivity { <init>(); }
+-keep class cs.usense.activities.CategoriesActivity { <init>(); }
+-keep class cs.usense.activities.RatingsActivity { <init>(); }
+-keep class cs.usense.activities.SettingsActivity { <init>(); }
+-keep class cs.usense.activities.AboutActivity { <init>(); }
+-keep class cs.usense.activities.AlertsActivity { <init>(); }
+-keep class cs.usense.activities.DeviceCategoriesActivity { <init>(); }
+-keep class cs.usense.activities.DeviceRatingsActivity { <init>(); }
+-keep class cs.usense.activities.MapInformationActivity { <init>(); }
+-keep class cs.usense.activities.AlertInterestsActivity { <init>(); }
+-keep class cs.usense.activities.SociabilityDetailActivity { <init>(); }
+-keep class cs.usense.activities.SociabilityActivity { <init>(); }
+-keep class cs.usense.activities.ReportsActivity { <init>(); }
+-keep class cs.usense.activities.MobilityActivity { <init>(); }
+-keep class cs.usense.activities.DetailsMobilityActivity { <init>(); }
+-keep class cs.usense.activities.SensorNotFoundActivity { <init>(); }
+-keep class cs.usense.services.NSenseService { <init>(); }
+-keep class cs.usense.energy.NSenseIntentService { <init>(); }
+-keep class cs.usense.pipelines.mobility.mobilitytracker.MTrackerService { <init>(); }
+-keep class cs.usense.energy.WakeFullReceiver { <init>(); }
+-keep class cs.usense.activities.AlarmReceiver { <init>(); }
+-keep class com.google.android.gms.common.api.GoogleApiActivity { <init>(); }

@@ -1,47 +1,71 @@
 [
     {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/common_google_signin_btn_text_dark_focused.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.2/res/drawable/common_google_signin_btn_text_dark_focused.xml"
-    },
-    {
         "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/abc_btn_radio_material.xml",
         "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_btn_radio_material.xml"
     },
     {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/abc_btn_check_material.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_btn_check_material.xml"
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable/abc_list_selector_holo_light.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_list_selector_holo_light.xml"
     },
     {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/abc_list_selector_holo_dark.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_list_selector_holo_dark.xml"
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable/abc_cab_background_top_material.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_cab_background_top_material.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable/shape_rounded_rectangle_black.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/src/main/res/drawable/shape_rounded_rectangle_black.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable/abc_ratingbar_indicator_material.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_ratingbar_indicator_material.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable/common_google_signin_btn_text_dark_normal.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.2/res/drawable/common_google_signin_btn_text_dark_normal.xml"
     },
     {
         "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/abc_seekbar_track_material.xml",
         "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_seekbar_track_material.xml"
     },
     {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/shape_rounded_rectangle_black.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/res/drawable/shape_rounded_rectangle_black.xml"
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable/common_google_signin_btn_text_light_normal.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.2/res/drawable/common_google_signin_btn_text_light_normal.xml"
     },
     {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/abc_text_cursor_material.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_text_cursor_material.xml"
-    },
-    {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/abc_list_selector_background_transition_holo_dark.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_list_selector_background_transition_holo_dark.xml"
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable/ic_sensing_range.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/src/main/res/drawable/ic_sensing_range.xml"
     },
     {
         "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/abc_ratingbar_indicator_material.xml",
         "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_ratingbar_indicator_material.xml"
     },
     {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable/abc_btn_borderless_material.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_btn_borderless_material.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable/ic_personal_range.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/src/main/res/drawable/ic_personal_range.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable/common_google_signin_btn_text_dark.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.2/res/drawable/common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable/progress_bar_style.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/src/main/res/drawable/progress_bar_style.xml"
+    },
+    {
         "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/abc_btn_default_mtrl_shape.xml",
         "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_btn_default_mtrl_shape.xml"
     },
     {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/common_google_signin_btn_icon_light_focused.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.2/res/drawable/common_google_signin_btn_icon_light_focused.xml"
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable/common_google_signin_btn_text_dark_focused.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.2/res/drawable/common_google_signin_btn_text_dark_focused.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable/abc_list_selector_holo_dark.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_list_selector_holo_dark.xml"
     },
     {
         "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/common_google_signin_btn_text_dark.xml",
@@ -52,12 +76,16 @@
         "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.2/res/drawable/common_google_signin_btn_text_light_focused.xml"
     },
     {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/ic_sensing_range.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/res/drawable/ic_sensing_range.xml"
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable/common_google_signin_btn_icon_light_normal.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.2/res/drawable/common_google_signin_btn_icon_light_normal.xml"
     },
     {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/ic_public_range.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/res/drawable/ic_public_range.xml"
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable/common_google_signin_btn_icon_disabled.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.2/res/drawable/common_google_signin_btn_icon_disabled.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable/abc_list_selector_holo_dark.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_list_selector_holo_dark.xml"
     },
     {
         "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/abc_dialog_material_background_light.xml",
@@ -68,12 +96,12 @@
         "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/res/drawable/progress_bar_style.xml"
     },
     {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/abc_btn_colored_material.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_btn_colored_material.xml"
-    },
-    {
         "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/ic_social_range.xml",
         "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/res/drawable/ic_social_range.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable/ic_public_range.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/src/main/res/drawable/ic_public_range.xml"
     },
     {
         "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/abc_tab_indicator_material.xml",
@@ -84,32 +112,52 @@
         "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.2/res/drawable/common_google_signin_btn_text_light_normal.xml"
     },
     {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/abc_item_background_holo_light.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_item_background_holo_light.xml"
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable/ic_nsense_logo.png",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/src/full/res/drawable/ic_nsense_logo.png"
     },
     {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/abc_cab_background_top_material.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_cab_background_top_material.xml"
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable/abc_seekbar_thumb_material.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_seekbar_thumb_material.xml"
     },
     {
         "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/abc_edit_text_material.xml",
         "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_edit_text_material.xml"
     },
     {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/common_google_signin_btn_icon_disabled.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.2/res/drawable/common_google_signin_btn_icon_disabled.xml"
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable/abc_list_selector_holo_light.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_list_selector_holo_light.xml"
     },
     {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/abc_ratingbar_small_material.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_ratingbar_small_material.xml"
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable/abc_btn_colored_material.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable/ic_intimate_range.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/src/main/res/drawable/ic_intimate_range.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable/common_google_signin_btn_icon_dark.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.2/res/drawable/common_google_signin_btn_icon_dark.xml"
     },
     {
         "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/abc_item_background_holo_dark.xml",
         "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_item_background_holo_dark.xml"
     },
     {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/abc_seekbar_thumb_material.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_seekbar_thumb_material.xml"
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable/abc_item_background_holo_dark.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_item_background_holo_dark.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable/common_google_signin_btn_text_light_focused.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.2/res/drawable/common_google_signin_btn_text_light_focused.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable/abc_item_background_holo_light.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_item_background_holo_light.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable/ic_sensing_range.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/src/main/res/drawable/ic_sensing_range.xml"
     },
     {
         "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/common_google_signin_btn_icon_light.xml",
@@ -120,24 +168,48 @@
         "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_ratingbar_full_material.xml"
     },
     {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/abc_switch_thumb_material.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_switch_thumb_material.xml"
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable/abc_btn_borderless_material.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_btn_borderless_material.xml"
     },
     {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/abc_textfield_search_material.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_textfield_search_material.xml"
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable/abc_cab_background_internal_bg.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_cab_background_internal_bg.xml"
     },
     {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/abc_list_selector_background_transition_holo_light.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_list_selector_background_transition_holo_light.xml"
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable/abc_spinner_textfield_background_material.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_spinner_textfield_background_material.xml"
     },
     {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/abc_spinner_textfield_background_material.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_spinner_textfield_background_material.xml"
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable/common_google_signin_btn_icon_light_focused.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.2/res/drawable/common_google_signin_btn_icon_light_focused.xml"
     },
     {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/ic_nsense_logo.png",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/full/res/drawable/ic_nsense_logo.png"
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable/abc_btn_check_material.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_btn_check_material.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable/abc_ratingbar_small_material.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_ratingbar_small_material.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable/common_google_signin_btn_icon_disabled.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.2/res/drawable/common_google_signin_btn_icon_disabled.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable/abc_btn_check_material.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_btn_check_material.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable/common_google_signin_btn_icon_dark_focused.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.2/res/drawable/common_google_signin_btn_icon_dark_focused.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable/abc_switch_thumb_material.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_switch_thumb_material.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable/abc_seekbar_track_material.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_seekbar_track_material.xml"
     },
     {
         "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/common_google_signin_btn_text_disabled.xml",
@@ -152,47 +224,367 @@
         "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.2/res/drawable/common_google_signin_btn_text_dark_normal.xml"
     },
     {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/abc_dialog_material_background_dark.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_dialog_material_background_dark.xml"
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable/abc_ratingbar_small_material.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_ratingbar_small_material.xml"
     },
     {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/shape_rounded_rectangle_white.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/res/drawable/shape_rounded_rectangle_white.xml"
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable/abc_list_selector_background_transition_holo_dark.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_list_selector_background_transition_holo_dark.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable/abc_dialog_material_background_light.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_dialog_material_background_light.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable/common_google_signin_btn_icon_light_normal.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.2/res/drawable/common_google_signin_btn_icon_light_normal.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable/abc_cab_background_internal_bg.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_cab_background_internal_bg.xml"
     },
     {
         "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/common_google_signin_btn_icon_light_normal.xml",
         "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.2/res/drawable/common_google_signin_btn_icon_light_normal.xml"
     },
     {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/abc_btn_borderless_material.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_btn_borderless_material.xml"
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable/common_google_signin_btn_text_dark.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.2/res/drawable/common_google_signin_btn_text_dark.xml"
     },
     {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/abc_list_selector_holo_light.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_list_selector_holo_light.xml"
-    },
-    {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/common_google_signin_btn_icon_dark.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.2/res/drawable/common_google_signin_btn_icon_dark.xml"
-    },
-    {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/ic_personal_range.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/res/drawable/ic_personal_range.xml"
-    },
-    {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/common_google_signin_btn_text_light.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.2/res/drawable/common_google_signin_btn_text_light.xml"
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable/ic_public_range.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/src/main/res/drawable/ic_public_range.xml"
     },
     {
         "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/ic_intimate_range.xml",
         "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/res/drawable/ic_intimate_range.xml"
     },
     {
-        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/abc_cab_background_internal_bg.xml",
-        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_cab_background_internal_bg.xml"
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable/abc_list_selector_background_transition_holo_light.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_list_selector_background_transition_holo_light.xml"
     },
     {
         "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/common_google_signin_btn_icon_dark_normal.xml",
         "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.2/res/drawable/common_google_signin_btn_icon_dark_normal.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable/common_google_signin_btn_icon_dark_normal.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.2/res/drawable/common_google_signin_btn_icon_dark_normal.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable/abc_text_cursor_material.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_text_cursor_material.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable/abc_btn_radio_material.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_btn_radio_material.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable/common_google_signin_btn_icon_dark_normal.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.2/res/drawable/common_google_signin_btn_icon_dark_normal.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable/abc_cab_background_top_material.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_cab_background_top_material.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/common_google_signin_btn_text_dark_focused.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.2/res/drawable/common_google_signin_btn_text_dark_focused.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable/common_google_signin_btn_icon_light.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.2/res/drawable/common_google_signin_btn_icon_light.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/abc_btn_check_material.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_btn_check_material.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable/abc_list_selector_background_transition_holo_dark.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_list_selector_background_transition_holo_dark.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/abc_list_selector_holo_dark.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_list_selector_holo_dark.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable/common_google_signin_btn_icon_dark.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.2/res/drawable/common_google_signin_btn_icon_dark.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable/abc_item_background_holo_light.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_item_background_holo_light.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable/abc_ratingbar_indicator_material.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_ratingbar_indicator_material.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/shape_rounded_rectangle_black.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/res/drawable/shape_rounded_rectangle_black.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable/common_google_signin_btn_text_light_normal.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.2/res/drawable/common_google_signin_btn_text_light_normal.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable/abc_edit_text_material.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_edit_text_material.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/abc_text_cursor_material.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_text_cursor_material.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/abc_list_selector_background_transition_holo_dark.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_list_selector_background_transition_holo_dark.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable/common_google_signin_btn_text_disabled.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.2/res/drawable/common_google_signin_btn_text_disabled.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable/ic_intimate_range.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/src/main/res/drawable/ic_intimate_range.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable/common_google_signin_btn_text_dark_focused.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.2/res/drawable/common_google_signin_btn_text_dark_focused.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable/abc_seekbar_thumb_material.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_seekbar_thumb_material.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable/abc_tab_indicator_material.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_tab_indicator_material.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable/abc_edit_text_material.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_edit_text_material.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/common_google_signin_btn_icon_light_focused.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.2/res/drawable/common_google_signin_btn_icon_light_focused.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable/shape_rounded_rectangle_black.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/src/main/res/drawable/shape_rounded_rectangle_black.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable/abc_dialog_material_background_dark.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_dialog_material_background_dark.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/ic_sensing_range.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/res/drawable/ic_sensing_range.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable/common_google_signin_btn_icon_dark_focused.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.2/res/drawable/common_google_signin_btn_icon_dark_focused.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable/abc_btn_radio_material.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_btn_radio_material.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable/common_google_signin_btn_text_light.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.2/res/drawable/common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/ic_public_range.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/res/drawable/ic_public_range.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable/progress_bar_style.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/src/main/res/drawable/progress_bar_style.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable/ic_social_range.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/src/main/res/drawable/ic_social_range.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable/abc_item_background_holo_dark.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_item_background_holo_dark.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable/common_google_signin_btn_icon_light_focused.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.2/res/drawable/common_google_signin_btn_icon_light_focused.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable/common_google_signin_btn_icon_light.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.2/res/drawable/common_google_signin_btn_icon_light.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable/abc_seekbar_track_material.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_seekbar_track_material.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/abc_btn_colored_material.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable/abc_btn_colored_material.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable/common_google_signin_btn_text_disabled.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.2/res/drawable/common_google_signin_btn_text_disabled.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/abc_item_background_holo_light.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_item_background_holo_light.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/abc_cab_background_top_material.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_cab_background_top_material.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/common_google_signin_btn_icon_disabled.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.2/res/drawable/common_google_signin_btn_icon_disabled.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable/abc_list_selector_background_transition_holo_light.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_list_selector_background_transition_holo_light.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable/abc_textfield_search_material.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_textfield_search_material.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable/abc_tab_indicator_material.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_tab_indicator_material.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable/abc_switch_thumb_material.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_switch_thumb_material.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable/abc_btn_default_mtrl_shape.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_btn_default_mtrl_shape.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/abc_ratingbar_small_material.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_ratingbar_small_material.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable/common_google_signin_btn_text_light_focused.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.2/res/drawable/common_google_signin_btn_text_light_focused.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/abc_seekbar_thumb_material.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_seekbar_thumb_material.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/abc_switch_thumb_material.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_switch_thumb_material.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable/ic_personal_range.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/src/main/res/drawable/ic_personal_range.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/abc_textfield_search_material.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_textfield_search_material.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable/shape_rounded_rectangle_white.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/src/main/res/drawable/shape_rounded_rectangle_white.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/abc_list_selector_background_transition_holo_light.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_list_selector_background_transition_holo_light.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable/abc_ratingbar_full_material.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_ratingbar_full_material.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable/abc_textfield_search_material.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_textfield_search_material.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/abc_spinner_textfield_background_material.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_spinner_textfield_background_material.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable/abc_text_cursor_material.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_text_cursor_material.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable/abc_spinner_textfield_background_material.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_spinner_textfield_background_material.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable/ic_nsense_logo.png",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/src/full/res/drawable/ic_nsense_logo.png"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/ic_nsense_logo.png",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/full/res/drawable/ic_nsense_logo.png"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/abc_dialog_material_background_dark.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_dialog_material_background_dark.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable/abc_btn_default_mtrl_shape.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_btn_default_mtrl_shape.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/shape_rounded_rectangle_white.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/res/drawable/shape_rounded_rectangle_white.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/abc_btn_borderless_material.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_btn_borderless_material.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable/abc_ratingbar_full_material.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_ratingbar_full_material.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable/common_google_signin_btn_text_light.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.2/res/drawable/common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/abc_list_selector_holo_light.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_list_selector_holo_light.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable/shape_rounded_rectangle_white.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/src/main/res/drawable/shape_rounded_rectangle_white.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/common_google_signin_btn_icon_dark.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.2/res/drawable/common_google_signin_btn_icon_dark.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/common_google_signin_btn_text_light.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.2/res/drawable/common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/ic_personal_range.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/main/res/drawable/ic_personal_range.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable/common_google_signin_btn_text_dark_normal.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.2/res/drawable/common_google_signin_btn_text_dark_normal.xml"
+    },
+    {
+        "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/drawable/abc_cab_background_internal_bg.xml",
+        "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_cab_background_internal_bg.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable/abc_dialog_material_background_light.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_dialog_material_background_light.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable/ic_social_range.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/src/main/res/drawable/ic_social_range.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable/abc_dialog_material_background_dark.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_dialog_material_background_dark.xml"
     }
 ]

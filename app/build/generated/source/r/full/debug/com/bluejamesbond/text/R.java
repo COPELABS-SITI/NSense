@@ -36,20 +36,20 @@ public final class R {
 		public static final int documentView_wordSpacingMultiplier = 0x7f0100be;
 	}
 	public static final class id {
-		public static final int auto_quality = 0x7f0d0027;
-		public static final int bold = 0x7f0d0022;
-		public static final int center = 0x7f0d001e;
-		public static final int formatted = 0x7f0d0026;
-		public static final int grayscale = 0x7f0d0028;
-		public static final int high_quality = 0x7f0d0029;
-		public static final int justified = 0x7f0d001f;
-		public static final int left = 0x7f0d0020;
-		public static final int low_quality = 0x7f0d002a;
-		public static final int no_cache = 0x7f0d002b;
-		public static final int plain = 0x7f0d0023;
-		public static final int right = 0x7f0d0021;
-		public static final int strikeThru = 0x7f0d0024;
-		public static final int underline = 0x7f0d0025;
+		public static final int auto_quality = 0x7f0d0028;
+		public static final int bold = 0x7f0d0023;
+		public static final int center = 0x7f0d001f;
+		public static final int formatted = 0x7f0d0027;
+		public static final int grayscale = 0x7f0d0029;
+		public static final int high_quality = 0x7f0d002a;
+		public static final int justified = 0x7f0d0020;
+		public static final int left = 0x7f0d0021;
+		public static final int low_quality = 0x7f0d002b;
+		public static final int no_cache = 0x7f0d002c;
+		public static final int plain = 0x7f0d0024;
+		public static final int right = 0x7f0d0022;
+		public static final int strikeThru = 0x7f0d0025;
+		public static final int underline = 0x7f0d0026;
 	}
 	public static final class styleable {
 		public static final int[] DocumentView = { 0x7f0100b7, 0x7f0100b8, 0x7f0100b9, 0x7f0100ba, 0x7f0100bb, 0x7f0100bc, 0x7f0100bd, 0x7f0100be, 0x7f0100bf, 0x7f0100c0, 0x7f0100c1, 0x7f0100c2, 0x7f0100c3, 0x7f0100c4, 0x7f0100c5, 0x7f0100c6, 0x7f0100c7, 0x7f0100c8, 0x7f0100c9, 0x7f0100ca, 0x7f0100cb, 0x7f0100cc, 0x7f0100cd, 0x7f0100ce, 0x7f0100cf, 0x7f0100d0 };

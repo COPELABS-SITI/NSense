@@ -1,0 +1,155 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cs.usense.activities.DetailsMobilityActivity"
+    tools:ignore="HardcodedText" >
+
+    <TextView
+        android:id="@+id/bssid_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="14dp"
+        android:text="BSSID: "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        tools:ignore="HardcodedText" />
+        
+	<TextView
+	    android:id="@+id/bssid_value"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@+id/ssid_label"
+	    android:layout_alignLeft="@+id/stationarytime_value"
+	    android:layout_toRightOf="@+id/bssid_label"
+	    android:text="Small Text"
+	    android:textAppearance="?android:attr/textAppearanceMedium"
+	    tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/ssid_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bssid_label"
+        android:layout_marginLeft="5dp"
+        android:text="SSID: "
+        android:textAppearance="?android:attr/textAppearanceMedium" />   
+
+	<TextView
+        android:id="@+id/ssid_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ssid_label"
+        android:layout_alignBottom="@+id/ssid_label"
+        android:layout_toRightOf="@+id/ssid_label"
+        android:layout_alignLeft="@+id/stationarytime_value"
+        android:text="Small Text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />  
+
+    <TextView
+        android:id="@+id/rank_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ssid_label"
+        android:layout_marginLeft="5dp"
+        android:text="Rank: "
+        android:textAppearance="?android:attr/textAppearanceMedium" />  
+        
+	<TextView
+        android:id="@+id/rank_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/rank_label"
+        android:layout_alignBottom="@+id/rank_label"
+        android:layout_toRightOf="@+id/rank_label"
+        android:layout_alignLeft="@+id/stationarytime_value"
+        android:text="Small Text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	<TextView
+        android:id="@+id/visitnumber_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rank_label"
+        android:layout_marginLeft="5dp"
+        android:text="Visits: "
+        android:textAppearance="?android:attr/textAppearanceMedium" /> 
+    
+    <TextView
+        android:id="@+id/visitnumber_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/visitnumber_label"
+        android:layout_alignBottom="@+id/visitnumber_label"
+        android:layout_toRightOf="@+id/visitnumber_label"
+        android:layout_alignLeft="@+id/stationarytime_value"
+        android:text="Small Text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/stationarytime_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/visitnumber_label"
+        android:layout_marginLeft="5dp"
+        android:text="Stationary Time: "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <TextView
+        android:id="@+id/stationarytime_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/stationarytime_label"
+        android:layout_alignBottom="@+id/stationarytime_label"
+        android:layout_toRightOf="@+id/stationarytime_label"
+        android:text="Small Text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	<ListView
+		android:id="@+id/listView1"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentStart="true"
+		android:layout_below="@+id/textView3"
+		android:layout_marginTop="15dp"></ListView>
+
+	<TextView
+		android:id="@+id/textView"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignLeft="@+id/stationarytime_label"
+		android:layout_below="@+id/stationarytime_label"
+		android:text="Rejections"
+		android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+	<TextView
+		android:id="@+id/rejections_value"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/stationarytime_label"
+		android:layout_toRightOf="@+id/stationarytime_label"
+		android:text="TextView"
+		android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+	<TextView
+		android:id="@+id/textView3"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignStart="@+id/textView"
+		android:layout_below="@+id/textView"
+		android:text="Attractiveness"
+		android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+	<TextView
+		android:id="@+id/attractiveness_value"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignStart="@+id/rejections_value"
+		android:layout_alignTop="@+id/textView3"
+		android:text="TextView"
+		android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+</RelativeLayout>

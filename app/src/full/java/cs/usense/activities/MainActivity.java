@@ -7,6 +7,7 @@
 package cs.usense.activities;
 
 import android.content.ComponentName;
+
 import android.content.Intent;
 import android.content.ServiceConnection;
 import android.location.Location;
@@ -29,7 +30,6 @@ import cs.usense.map.MapActivityListener;
 import cs.usense.map.MapManager;
 import cs.usense.preferences.InterestsPreferences;
 import cs.usense.services.NSenseService;
-import cs.usense.utilities.Utils;
 
 /**
  * This class provides the layout of NSense application and initialize the NSense Service.
@@ -42,7 +42,7 @@ import cs.usense.utilities.Utils;
  * @version 2.0, 2017
  */
 public class MainActivity extends ActionBarActivity implements MapActivityListener,
-        OnMapReadyCallback, ServiceConnection {
+        OnMapReadyCallback, ServiceConnection, AlarmReceiverInterface {
 
     /** This TAG is used to debug MainActivity class */
     private static final String TAG = "MainActivity";
@@ -64,6 +64,11 @@ public class MainActivity extends ActionBarActivity implements MapActivityListen
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Log.i(TAG, "onCreate was invoked");
+
+
+        AlarmInterfaceManager.registerListener(this);
+        cs.usense.pipelines.mobility.utils.Utils.setAlarm(this,11,0);
+
         setup();
     }
 
@@ -195,4 +200,10 @@ public class MainActivity extends ActionBarActivity implements MapActivityListen
         super.onDestroy();
     }
 
+    @Override
+    public void onAlarme() {
+        AlarmInterfaceManager.unRegisterListener(this);
+        //startActivity(new Intent(MainActivity.this, MobilityActivity.class));
+        //finish();
+    }
 }

@@ -2,13 +2,13 @@
 <resources>
 	<color name="white">#FFFFFF</color>
 	<color name="black">#212121</color>
-	<color name="hard_grey">#727272</color>
+	<color name="hard_gray">#727272</color>
 	<color name="red">#B3FF003C</color>
 	<color name="orange">#B3FF8A00</color>
 	<color name="yellow">#B3FABE28</color>
 	<color name="green">#B300DA3C</color>
 	<color name="blue">#B300CBE7</color>
-	<color name="grey">#e6e6e6</color>
+	<color name="gray">#e6e6e6</color>
 	<color name="dark_blue">#051A84</color>
 	<color name="lollipop_green">#009688</color>
 	<color name="light_green">#00CF9E</color>

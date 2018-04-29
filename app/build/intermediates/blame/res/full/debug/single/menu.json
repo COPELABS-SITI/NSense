@@ -1,6 +1,30 @@
 [
     {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/menu/activity_mobility.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/src/full/res/menu/activity_mobility.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/menu/activity_mobility.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/src/full/res/menu/activity_mobility.xml"
+    },
+    {
         "merged": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/build/intermediates/res/merged/full/debug/menu/menu_action_bar.xml",
         "source": "/home/miguel/AndroidStudioProjects/NSense_V2.0/app/src/full/res/menu/menu_action_bar.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/menu/activity_mobility_details.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/src/full/res/menu/activity_mobility_details.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/menu/activity_mobility_details.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/src/full/res/menu/activity_mobility_details.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/menu/menu_action_bar.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/src/full/res/menu/menu_action_bar.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/menu/menu_action_bar.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/src/full/res/menu/menu_action_bar.xml"
     }
 ]

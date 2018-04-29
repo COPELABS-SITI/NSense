@@ -16,7 +16,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="16sp"
-        android:textColor="@color/hard_grey"
+        android:textColor="@color/hard_gray"
         android:layout_below="@id/alert_device_name" />
 
 </RelativeLayout>

@@ -1,0 +1,62 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="eu.uloop.mobilitytracker.MTrackerApplication">
+
+    <item android:id="@+id/stopScanningMenuEntry"
+        android:enabled="true"
+        android:visible="true"
+        android:title="@string/stopScanning"
+        android:checkable="false"
+        android:checked="false"
+        android:menuCategory="container"
+        android:showAsAction="always|withText">restartScanningMenuEntryrestartScanningMenuEntry</item>
+
+    <item
+        android:id="@+id/restartScanningMenuEntry"
+        android:menuCategory="container"
+        android:title="@string/restartScanning"
+        android:visible="true"
+        android:checkable="false"
+        android:enabled="true"
+        android:checked="false" />
+
+    <item
+        android:id="@+id/writeAPEntriesToFile"
+        android:menuCategory="container"
+        android:title="@string/writeAPToFile"
+        android:enabled="true"
+        android:visible="true"
+        android:checkable="false"
+        android:checked="false" />
+
+    <item
+        android:id="@+id/writeVisitListToFile"
+        android:enabled="true"
+        android:visible="true"
+        android:checkable="false"
+        android:menuCategory="container"
+        android:checked="false"
+        android:title="@string/writeVisitToFile" />
+
+    <item
+        android:id="@+id/writeRankingToFile0"
+        android:enabled="true"
+        android:visible="true"
+        android:checkable="false"
+        android:menuCategory="container"
+        android:checked="false"
+        android:title="@string/writeRankToFile0" />
+
+    <item
+        android:id="@+id/connectoToAp"
+        android:enabled="true"
+        android:visible="true"
+        android:checkable="false"
+        android:menuCategory="container"
+        android:checked="false"
+        android:title="Connect to Ap" />
+
+
+
+</menu>

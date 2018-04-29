@@ -22,7 +22,7 @@ public class Splunk extends Application {
     public void onCreate() {
         super.onCreate();
         // The following line triggers the initialization of Splunk Mint.
-        Mint.initAndStartSession(this, "4fe0914a");
+        // Mint.initAndStartSession(this, "4fe0914a");
     }
 
 }

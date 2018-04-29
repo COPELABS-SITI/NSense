@@ -37,6 +37,7 @@ import cs.usense.pipelines.motion.MotionPipeline;
 import cs.usense.pipelines.proximity.BluetoothCore;
 import cs.usense.pipelines.sound.SoundPipeline;
 import cs.usense.reports.ReportManager;
+import cs.usense.wifi.Wifi;
 
 
 /**
@@ -77,6 +78,8 @@ public class NSenseService extends Service {
 
 	/** This class is to access functionality of FusionLocation pipeline */
 	private LocationPipeline mLocationPipeline;
+
+	private Wifi mWifi;
 
 	/** This class is to access core functionality of Bluetooth pipeline */
 	private BluetoothCore mBluetooth;
@@ -180,12 +183,16 @@ public class NSenseService extends Service {
 			runAsForeground();
 
 			/* Initializing the sensors */
+			Log.e(TAG, "ANTES");
 			mLocationPipeline = new LocationPipeline(this, mDataSource);
 			mBluetooth = new BluetoothCore(this, this, mDataSource);
 			mMicrophone = new SoundPipeline(this, mDataSource);
 			mAccelerometerPipeline = new MotionPipeline(this, mDataSource);
 			mSocialInteraction = new SocialInteraction(this, mDataSource);
+			mWifi = new Wifi(this);
+
 			//mEnergyManager = new EnergyManager(this);
+			Log.e(TAG, "DEPOIS");
 
 			/* Intializing ReportManager class */
 			mReportManager = new ReportManager(this, mDataSource);
@@ -242,6 +249,8 @@ public class NSenseService extends Service {
 			mReportManager.close();
 		if(mDataSource != null)
 			mDataSource.closeDB();
+		if(mWifi != null)
+			mWifi.close();
 		stopForeground(true);
 	}
 

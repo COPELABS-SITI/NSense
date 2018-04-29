@@ -10,10 +10,10 @@
     </style>
 
     <style name="MyActionBar" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
-        <item name="android:background">@color/grey</item>
+        <item name="android:background">@color/gray</item>
         <item name="displayOptions">showHome</item>
         <!-- Support library compatibility -->
-        <item name="background">@color/grey</item>
+        <item name="background">@color/gray</item>
     </style>
 
     <style name="CustomDialog" parent="Theme.AppCompat.Light.Dialog.Alert">

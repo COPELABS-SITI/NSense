@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/Users/copelabs/Documents/NSenseV3/NSense/app/src/main/jniLibs"/></dataSet><dataSet config="full"><source path="/Users/copelabs/Documents/NSenseV3/NSense/app/src/full/jniLibs"/></dataSet><dataSet config="debug"><source path="/Users/copelabs/Documents/NSenseV3/NSense/app/src/debug/jniLibs"/></dataSet><dataSet config="fullDebug"><source path="/Users/copelabs/Documents/NSenseV3/NSense/app/src/fullDebug/jniLibs"/></dataSet></merger>

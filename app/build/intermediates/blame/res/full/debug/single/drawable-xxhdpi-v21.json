@@ -1,0 +1,50 @@
+[
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable-xxhdpi-v21/ic_vector_circle.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/generated/res/pngs/full/debug/drawable-xxhdpi-v21/ic_vector_circle.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable-xxhdpi-v21/ic_function.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/generated/res/pngs/full/debug/drawable-xxhdpi-v21/ic_function.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable-xxhdpi-v21/ic_network_ping.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/generated/res/pngs/full/debug/drawable-xxhdpi-v21/ic_network_ping.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable-xxhdpi-v21/ic_access_point_network.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/generated/res/pngs/full/debug/drawable-xxhdpi-v21/ic_access_point_network.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable-xxhdpi-v21/ic_access_point_network.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/generated/res/pngs/full/debug/drawable-xxhdpi-v21/ic_access_point_network.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable-xxhdpi-v21/ic_wifi.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/generated/res/pngs/full/debug/drawable-xxhdpi-v21/ic_wifi.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable-xxhdpi-v21/ic_network_ping.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/generated/res/pngs/full/debug/drawable-xxhdpi-v21/ic_network_ping.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable-xxhdpi-v21/ic_vector_circle.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/generated/res/pngs/full/debug/drawable-xxhdpi-v21/ic_vector_circle.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable-xxhdpi-v21/ic_download_network.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/generated/res/pngs/full/debug/drawable-xxhdpi-v21/ic_download_network.xml"
+    },
+    {
+        "merged": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/intermediates/res/merged/full/debug/drawable-xxhdpi-v21/ic_wifi.xml",
+        "source": "/Users/copelabs/AndroidStudioProjects/NSense_Private/app/build/generated/res/pngs/full/debug/drawable-xxhdpi-v21/ic_wifi.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable-xxhdpi-v21/ic_download_network.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/generated/res/pngs/full/debug/drawable-xxhdpi-v21/ic_download_network.xml"
+    },
+    {
+        "merged": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/intermediates/res/merged/full/debug/drawable-xxhdpi-v21/ic_function.xml",
+        "source": "/Users/copelabs/Documents/NSenseV3/NSense/app/build/generated/res/pngs/full/debug/drawable-xxhdpi-v21/ic_function.xml"
+    }
+]
